@@ -1,0 +1,3 @@
+pandas
+solc-select
+slither-analyzer
