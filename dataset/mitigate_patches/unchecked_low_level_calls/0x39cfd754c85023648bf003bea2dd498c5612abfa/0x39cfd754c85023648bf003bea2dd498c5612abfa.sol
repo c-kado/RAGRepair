@@ -1,8 +1,4 @@
-/*
- * @source: etherscan.io 
- * @author: -
- * @vulnerable_at_lines: 44,97
- */
+
 
 pragma solidity ^0.4.18;
 
@@ -10,14 +6,14 @@ contract Ownable
 {
     address newOwner;
     address owner = msg.sender;
-    
+
     function changeOwner(address addr)
     public
     onlyOwner
     {
         newOwner = addr;
     }
-    
+
     function confirmOwner() 
     public
     {
@@ -26,7 +22,7 @@ contract Ownable
             owner=newOwner;
         }
     }
-    
+
     modifier onlyOwner
     {
         if(owner == msg.sender)_;
@@ -40,7 +36,7 @@ contract Token is Ownable
     public 
     onlyOwner
     {
-        // <yes> <report> UNCHECKED_LL_CALLS
+
         token.call(bytes4(sha3("transfer(address,uint256)")),to,amount); 
     }
 }
@@ -49,21 +45,20 @@ contract TokenBank is Token
 {
     uint public MinDeposit;
     mapping (address => uint) public Holders;
-    
-     ///Constructor
+
     function initTokenBank()
     public
     {
         owner = msg.sender;
         MinDeposit = 1 ether;
     }
-    
+
     function()
     payable
     {
         Deposit();
     }
-   
+
     function Deposit() 
     payable
     {
@@ -72,7 +67,7 @@ contract TokenBank is Token
             Holders[msg.sender]+=msg.value;
         }
     }
-    
+
     function WitdrawTokenToHolder(address _to,address _token,uint _amount)
     public
     onlyOwner
@@ -83,7 +78,7 @@ contract TokenBank is Token
             WithdrawToken(_token,_amount,_to);     
         }
     }
-   
+
     function WithdrawToHolder(address _addr, uint _wei) 
     public
     onlyOwner
@@ -93,12 +88,11 @@ contract TokenBank is Token
         {
             if(Holders[_addr]>=_wei)
             {
-                // <yes> <report> UNCHECKED_LL_CALLS
+
                 _addr.call.value(_wei);
                 Holders[_addr]-=_wei;
             }
         }
     }
-    
- 
+
 }

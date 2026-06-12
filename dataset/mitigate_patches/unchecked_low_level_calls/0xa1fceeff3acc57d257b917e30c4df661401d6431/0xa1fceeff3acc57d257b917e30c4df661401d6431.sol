@@ -10,7 +10,7 @@ contract AirDropContract{
         require(addr != address(this));
         _;
     }
-    
+
     function transfer(address contract_address,address[] tos,uint[] vs)
         public 
         validAddress(contract_address)

@@ -1,15 +1,6 @@
-/*
- * @source: https://smartcontractsecurity.github.io/SWC-registry/docs/SWC-105#wallet-02-refund-nosubsol
- * @author: -
- * @vulnerable_at_lines: 36
- */
+
 
  pragma solidity ^0.4.24;
-
- /* User can add pay in and withdraw Ether.
-    Unfortunately the developer forgot set the user's balance to 0 when refund() is called.
-    An attacker can pay in a small amount of Ether and call refund() repeatedly to empty the contract.
- */
 
  contract Wallet {
      address creator;
@@ -32,13 +23,14 @@
      }
 
      function refund() public {
-         // <yes> <report> ACCESS_CONTROL
-         uint256 tmp__1 = balances[msg.sender]; /* <FIX> Insert */
-         balances[msg.sender] = 0; /* <FIX> Insert */
-         msg.sender.transfer(tmp__1); /* <FIX> Replace: "balances[msg.sender]" => "tmp__1" */
-     }
 
-     // In an emergency the owner can migrate  allfunds to a different address.
+         uint256 tmp__1 = balances[msg.sender]; 
+
+         balances[msg.sender] = 0; 
+
+         msg.sender.transfer(tmp__1); 
+
+     }
 
      function migrateTo(address to) public {
          require(creator == msg.sender);

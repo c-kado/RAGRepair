@@ -14,10 +14,10 @@ contract Reentrancy_bonus{
 
     function getFirstWithdrawalBonus(address recipient) public {
         require(!claimedBonus[recipient], "Bonus already claimed");
-        // Effects
+
         claimedBonus[recipient] = true;
         rewardsForA[recipient] += 100;
-        // Interaction
+
         withdrawReward(recipient);
     }
 }

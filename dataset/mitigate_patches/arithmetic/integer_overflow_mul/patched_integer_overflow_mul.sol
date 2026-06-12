@@ -1,8 +1,7 @@
 
                         contract sGuardPlus {
                                 constructor() internal {
-                                        
-                                        
+
                                 }
                                 function mul_uint(uint a, uint b) internal pure returns (uint) {
                                 if (a == 0) {
@@ -12,9 +11,7 @@
                                 assert(c / a == b);
                                 return c;
                         }
-                                
-                                
-                                
+
                         }
                 contract IntegerOverflowMul is sGuardPlus {
 uint  public   count = 2;

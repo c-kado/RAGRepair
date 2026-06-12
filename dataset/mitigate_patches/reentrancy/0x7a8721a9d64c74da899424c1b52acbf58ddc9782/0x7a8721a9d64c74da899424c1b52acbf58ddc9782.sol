@@ -1,38 +1,32 @@
-/*
- * @source: etherscan.io 
- * @author: -
- * @vulnerable_at_lines: 52
- */
+
 
 pragma solidity ^0.4.19;
 
 contract PrivateDeposit
 {
     mapping (address => uint) public balances;
-        
+
     uint public MinDeposit = 1 ether;
     address public owner;
-    
+
     Log TransferLog;
-    
+
     modifier onlyOwner() {
         require(tx.origin == owner);
         _;
     }    
-    
+
     function PrivateDeposit()
     {
         owner = msg.sender;
         TransferLog = new Log();
     }
-    
-    
-    
+
     function setLog(address _lib) onlyOwner
     {
         TransferLog = Log(_lib);
     }    
-    
+
     function Deposit()
     public
     payable
@@ -43,12 +37,12 @@ contract PrivateDeposit
             TransferLog.AddMessage(msg.sender,msg.value,"Deposit");
         }
     }
-    
+
     function CashOut(uint _am)
     {
         if(_am<=balances[msg.sender])
         {            
-            // <yes> <report> REENTRANCY
+
             if(msg.sender.call.value(_am)())
             {
                 balances[msg.sender]-=_am;
@@ -56,14 +50,14 @@ contract PrivateDeposit
             }
         }
     }
-    
+
     function() public payable{}    
-    
+
 }
 
 contract Log 
 {
-   
+
     struct Message
     {
         address Sender;
@@ -71,11 +65,11 @@ contract Log
         uint Val;
         uint  Time;
     }
-    
+
     Message[] public History;
-    
+
     Message LastMsg;
-    
+
     function AddMessage(address _adr,uint _val,string _data)
     public
     {

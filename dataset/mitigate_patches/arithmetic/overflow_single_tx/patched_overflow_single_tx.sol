@@ -1,8 +1,7 @@
 
                         contract sGuardPlus {
                                 constructor() internal {
-                                        
-                                        
+
                                 }
                                 function add_uint(uint a, uint b) internal pure returns (uint) {
                                 uint c = a + b;
@@ -21,9 +20,7 @@ function sub_uint(uint a, uint b) internal pure returns (uint) {
                                 assert(b <= a);
                                 return a - b;
                         }
-                                
-                                
-                                
+
                         }
                 contract IntegerOverflowSingleTransaction is sGuardPlus {
 uint  public   count = 1;

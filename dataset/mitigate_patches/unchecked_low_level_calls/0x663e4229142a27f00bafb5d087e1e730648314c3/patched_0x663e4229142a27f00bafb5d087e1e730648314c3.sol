@@ -1,7 +1,7 @@
 contract ERC20 {
 	function totalSupply() view public returns(uint supply);function balanceOf(address who) view public returns(uint value);function allowance(address owner, address spender) view public returns(uint _allowance);function transfer(address to, uint value) public returns(bool ok);function transferFrom(address from, address to, uint value) public returns(bool ok);function approve(address spender, uint value) public returns(bool ok);event Transfer(address indexed from, address indexed to, uint value);
 	event Approval(address indexed owner, address indexed spender, uint value);
-	
+
 }contract Ownable {
 	address public owner;
 	constructor() public {
@@ -15,7 +15,7 @@ contract ERC20 {
 	owner = newOwner;
 	}
 	}
-	
+
 }contract ERC721 {
 	function totalSupply() view public returns(uint256 total);function balanceOf(address _owner) view public returns(uint256 balance);function ownerOf(uint256 _tokenId) view external returns(address owner);function approve(address _to, uint256 _tokenId) external ;function transfer(address _to, uint256 _tokenId) external ;function transferFrom(address _from, address _to, uint256 _tokenId) external ;event Transfer(address from, address to, uint256 tokenId);
 	event Approval(address owner, address approved, uint256 tokenId);
@@ -64,7 +64,7 @@ contract ERC20 {
 	function unpause() onlyCEO whenPaused public {
 	paused = false;
 	}
-	
+
 }contract PandaBase is PandaAccessControl {
 	uint256 public constant GEN0_TOTAL_COUNT = 16200;
 	uint256 public gen0CreatedCount;
@@ -166,7 +166,7 @@ contract ERC20 {
 	require(secs < cooldowns[0]);
 	secondsPerBlock = secs;
 	}
-	
+
 }contract ERC721Metadata {
 	function getMetadata(uint256 _tokenId, string ) view public returns(bytes32[4] buffer, uint256 count){
 	if(_tokenId == 1){
@@ -190,7 +190,7 @@ contract ERC20 {
 	}
 	}
 	}
-	
+
 }contract PandaOwnership is PandaBase , ERC721 {
 	string public constant name = "PandaEarth";
 	string public constant symbol = "PE";
@@ -280,7 +280,7 @@ contract ERC20 {
 }_memcpy(outputPtr, bytesPtr, _stringLength);
 	return outputString;
 	}
-	
+
 }contract PandaBreeding is PandaOwnership {
 	uint256 public constant GENSIS_TOTAL_COUNT = 100;
 	event Pregnant(address owner, uint256 matronId, uint256 sireId, uint256 cooldownEndBlock);
@@ -430,7 +430,7 @@ contract ERC20 {
 	delete childOwner[_matronId];
 	return kittenId;
 	}
-	
+
 }contract ClockAuctionBase {
 	struct Auction{
 	address seller;
@@ -509,7 +509,7 @@ contract ERC20 {
 	function _computeCut(uint256 _price) view internal returns(uint256 ){
 	return _price * ownerCut / 10000;
 	}
-	
+
 }contract Pausable is Ownable {
 	event Pause();
 	event Unpause();
@@ -530,7 +530,7 @@ contract ERC20 {
 	Unpause();
 	return true;
 	}
-	
+
 }contract ClockAuction is Pausable , ClockAuctionBase {
 	bytes4 constant InterfaceSignature_ERC721 = bytes4(0x9a20483d);
 	constructor(address _nftAddress, uint256 _cut) public {
@@ -580,7 +580,7 @@ contract ERC20 {
 	require(_isOnAuction(auction));
 	return _currentPrice(auction);
 	}
-	
+
 }contract SiringClockAuction is ClockAuction {
 	bool public isSiringClockAuction = true;
 	constructor(address _nftAddr, uint256 _cut) ClockAuction(_nftAddr,_cut) public {
@@ -600,7 +600,7 @@ contract ERC20 {
 	_bid(_tokenId, msg.value);
 	_transfer(seller, _tokenId);
 	}
-	
+
 }contract SaleClockAuction is ClockAuction {
 	bool public isSaleClockAuction = true;
 	uint256 public gen0SaleCount;
@@ -676,7 +676,7 @@ contract ERC20 {
 	}
 	return sum / 5;
 	}
-	
+
 }contract SaleClockAuctionERC20 is ClockAuction {
 	event AuctionERC20Created(uint256 tokenId, uint256 startingPrice, uint256 endingPrice, uint256 duration, address erc20Contract);
 	bool public isSaleClockAuctionERC20 = true;
@@ -749,7 +749,7 @@ contract ERC20 {
 	AuctionSuccessful(_tokenId, price, msg.sender);
 	return price;
 	}
-	
+
 }contract PandaAuction is PandaBreeding {
 	function setSaleAuctionAddress(address _address) onlyCEO external {
 	SaleClockAuction candidateContract = SaleClockAuction(_address);
@@ -805,7 +805,7 @@ contract ERC20 {
 	if(! saleAuctionERC20.withdrawERC20Balance(_erc20Address, _to)){
 	throw;}
 	}
-	
+
 }contract PandaMinting is PandaAuction {
 	uint256 public constant GEN0_CREATION_LIMIT = 45000;
 	uint256 public constant GEN0_STARTING_PRICE = 100 finney;
@@ -837,7 +837,7 @@ contract ERC20 {
 	}
 	return nextPrice;
 	}
-	
+
 }contract PandaCore is PandaMinting {
 	address public newContractAddress;
 	constructor() public {
@@ -886,5 +886,5 @@ contract ERC20 {
 	throw;}
 	}
 	}
-	
+
 }

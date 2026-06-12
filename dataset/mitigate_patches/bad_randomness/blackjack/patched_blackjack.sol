@@ -111,11 +111,11 @@ contract BlackJack {
     }
 
     function checkGameResult(Game storage game, bool finishGame) private {
-        // Implementation remains the same
+
     }
 
     function calculateScore(uint8[] cards) private view returns (uint8, uint8) {
-        // Implementation remains the same
+
     }
 
     function getPlayerCard(uint8 id) public gameIsGoingOn view returns(uint8) {

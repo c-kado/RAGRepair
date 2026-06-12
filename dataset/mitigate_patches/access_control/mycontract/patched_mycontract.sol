@@ -10,8 +10,8 @@ contract MyContract {
 
     function sendTo(address receiver, uint amount) public {
         require(msg.sender == owner);
-        require(receiver != address(0)); // Check if receiver address is valid
-        require(amount > 0); // Check if amount is greater than 0
+        require(receiver != address(0)); 
+        require(amount > 0); 
         receiver.transfer(amount);
     }
 }

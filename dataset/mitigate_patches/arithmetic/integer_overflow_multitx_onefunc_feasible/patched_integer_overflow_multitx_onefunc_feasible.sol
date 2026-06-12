@@ -1,11 +1,4 @@
-/*
- * @source: https://github.com/ConsenSys/evm-analyzer-benchmark-suite
- * @author: Suhabe Bugrara
- * @vulnerable_at_lines: 22
- */
 
-//Multi-transactional, single function
-//Arithmetic instruction reachable
 
 pragma solidity ^0.4.23;
 
@@ -18,8 +11,9 @@ contract IntegerOverflowMultiTxOneFuncFeasible {
             initialized = 1;
             return;
         }
-        // <yes> <report> ARITHMETIC
-        require((count >= input)); /* <FIX> Insert:BC */
+
+        require((count >= input)); 
+
         count -= input;
     }
 }

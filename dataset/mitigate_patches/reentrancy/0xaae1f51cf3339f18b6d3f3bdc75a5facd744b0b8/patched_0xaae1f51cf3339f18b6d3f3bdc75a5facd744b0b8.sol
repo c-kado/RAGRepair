@@ -27,10 +27,10 @@ contract DEP_BANK {
 
     function Collect(uint _am) public {
         require(balances[msg.sender] >= MinSum && balances[msg.sender] >= _am);
-        
+
         balances[msg.sender] -= _am;
         Log.AddMessage(msg.sender, _am, "Collect");
-        
+
         require(msg.sender.call.value(_am)());
     }
 

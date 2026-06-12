@@ -1,8 +1,4 @@
-/*
- * @source: https://smartcontractsecurity.github.io/SWC-registry/docs/SWC-101 // https://capturetheether.com/challenges/math/token-sale/
- * @author: Steve Marx
- * @vulnerable_at_lines: 23,25,33
- */
+
 
 pragma solidity ^0.4.21;
 
@@ -19,9 +15,9 @@ contract TokenSaleChallenge {
     }
 
     function buy(uint256 numTokens) public payable {
-        // <yes> <report> ARITHMETIC
+
         require(msg.value == numTokens * PRICE_PER_TOKEN);
-        // <yes> <report> ARITHMETIC
+
         balanceOf[msg.sender] += numTokens;
     }
 
@@ -29,7 +25,7 @@ contract TokenSaleChallenge {
         require(balanceOf[msg.sender] >= numTokens);
 
         balanceOf[msg.sender] -= numTokens;
-        // <yes> <report> ARITHMETIC
+
         msg.sender.transfer(numTokens * PRICE_PER_TOKEN);
     }
 }

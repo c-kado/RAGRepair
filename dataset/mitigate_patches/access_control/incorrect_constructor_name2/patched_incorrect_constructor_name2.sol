@@ -1,8 +1,3 @@
-/*
- * @source: https://smartcontractsecurity.github.io/SWC-registry/docs/SWC-118#incorrect-constructor-name1sol
- * @author: Ben Perez
- * @vulnerable_at_lines: 18
- */
 
 
 pragma solidity ^0.4.24;
@@ -14,8 +9,8 @@ contract Missing{
         require(msg.sender==owner);
         _;
     }
-    // <yes> <report> ACCESS_CONTROL
-     /* <FIX> Change to Cnstr: */ constructor()
+
+ constructor()
         public
     {
         owner = msg.sender;

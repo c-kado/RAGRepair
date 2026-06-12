@@ -10,11 +10,11 @@ contract Reentrancy_bonus{
     function withdrawReward(address recipient) public {
         require(!isWithdrawing[recipient]);
         isWithdrawing[recipient] = true;
-        
+
         uint amountToWithdraw = rewardsForA[recipient];
         rewardsForA[recipient] = 0;
         recipient.transfer(amountToWithdraw);
-        
+
         isWithdrawing[recipient] = false;
     }
 

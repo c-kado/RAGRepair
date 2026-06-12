@@ -46,8 +46,9 @@
 #     - patched_CONTRACT.sol
 
 
-import pandas as pd
 import os
+import pandas as pd
+import re
 import shutil
 
 
@@ -70,24 +71,40 @@ def extract_dataset():
     mitigate_patches_df = mitigate_patches_df.sort_values('Original', kind='stable').sort_values('Category', kind='stable')
 
     mitigate_patches_df.to_csv('mitigate_patches/mitigate_pathces.csv', index=False)
-    mitigate_patches_nodup = mitigate_patches_df.drop_duplicates(subset='Original', keep='first')
+    mitigate_patches_nodup_df = mitigate_patches_df.drop_duplicates(subset='Original', keep='first')
 
 
     # まず，1個目をvul/fix pairとしてソース取得
     original_path = '../tools/sb-heists/smartbugs-curated/0.4.x/contracts/dataset'
     patch_path = '../tools/RepairComp/results/smartbugs'
-    for idx, row in mitigate_patches_df_nodup.iterrows():
+    for idx, row in mitigate_patches_nodup_df.iterrows():
         contract_path = f'mitigate_patches/{row['Category']}/{row['Original'][:-4]}'
         os.makedirs(contract_path, exist_ok=True)
 
         # Originalのsolファイルを記録
-        shutil.copy(f'{original_path}/{row['Category']}/{row['Original']}', f'{contract_path}/{row['Original']}')
+        # shutil.copy(f'{original_path}/{row['Category']}/{row['Original']}', f'{contract_path}/{row['Original']}')
+        with open(f'{original_path}/{row['Category']}/{row['Original']}', 'r') as f:
+            # re.sub('/\*.*?\*/','', code, re.DOTALL)
+            # /*(改行含む任意の文字列)*/
+            # or
+            # //(改行含まない任意の文字列)'\n'
+            # を削除
+            code = re.sub(r'/\*.*?\*/','\n', f.read(), flags=re.DOTALL)
+            code = re.sub(r'//.*', '', code) 
+            code = re.sub(r'\n\s*\n+', '\n\n', code)
+        with open(f'{contract_path}/{row['Original']}', 'w') as f:
+            f.write(code)
 
-        # Pathのsolファイルを記録
+        # Patchのsolファイルを記録
+        # shutil.copy(f'{patch_path}/{row['Tool']}/{row['Category']}/{row['Original'][:-4]}/{row['Patch']}', f'{contract_path}/patched_{row['Original']}')
+        with open(f'{patch_path}/{row['Tool']}/{row['Category']}/{row['Original'][:-4]}/{row['Patch']}', 'r') as f:
+            code = re.sub(r'/\*.*?\*/','\n', f.read(), flags=re.DOTALL)
+            code = re.sub(r'//.*', '', code) 
+            code = re.sub(r'\n\s*\n+', '\n\n', code)
+        with open(f'{contract_path}/patched_{row['Original']}', 'w') as f:
+            f.write(code)
 
-        shutil.copy(f'{patch_path}/{row['Tool']}/{row['Category']}/{row['Original'][:-4]}/{row['Patch']}', f'{contract_path}/patched_{row['Original']}')
-
-    return mitigate_patches_nodup
+    return mitigate_patches_nodup_df
 
 
 
@@ -106,21 +123,62 @@ def get_mitigate_patches(df):
 
 
 def analyze_source(contract_info):
-    # analyze all vulnerable source codes in the dataset
+
+    # 1. get solidity version
+    # 2. get solc ast
+    # 3. get analysis result by Slither
+
     contract_dir = f'mitigate_patches/{contract_info['Category']}/{contract_info['Original'][:-4]}'
     
     vul_source = f'{contract_dir}/{contract_info['Original']}'
+
+    with open(vul_source, 'r') as f:
+        code = f.read()
     
+    # TODO: Revise the version parser to account for more complex version specification patterns.
+    solc_ver = re.search(r'pragma solidity \^?(0\.\d+\.\d+);', code).group(1)
+    change_solc_version(solc_ver)
+   
+    output_dir = f'{contract_dir}/output')
+    os.mkdir(output_dir)
+    solc_compile(vul_source, output_dir)
+
+
+
+    
+
+def change_solc_version(version):
+    proc = subprocess.run('solc-select use %s --always-install' % version, shell=True, stdout=PIPE, stderr=PIPE, text=True)
+    if proc.stderr != '':
+        print(version)
+        print('ERROR: ' + proc.stderr)
+    print('solc-select use >> ' + proc.stdout)
+
+
+def solc_compile(sol_file, output_dir):
+    proc = subprocess.run(f'solc {sol_file} --ast-json -o {output_dir}', shell=True, stdout=PIPE, stderr=PIPE, text=True)
+    if len(re.findall(rf'{patched_file.split("/")[-1]}:[\d]+:[\d]+: Error: ', proc.stderr)) > 0:
+        # Error message by solc: "'filename':line:column?: Error:" 
+        return False, proc.stderr
+    elif len(re.findall('Internal compiler error during compilation:', proc.stderr)) > 0:
+        # Compiler internal error?
+        return False, proc.stderr
+
+    return True, ''
+
 
 
 
 mitigate_patches = extract_dataset()
-for idx, row in mitigate_patches_df.iterrows():
-    # 各vul/fixのペアに対して，vulのファイルをslitherで解析
-    analyze_soure(row)
+
+for idx, row in mitigate_patches.iterrows():
+    # 各vul/fixのペアに対して，vulのファイルをslitherで解析, solcによるast出力
+    # 解析情報を記録
+    analyze_source(row)
+
     
 
-solc-select use 0.8.1 --always-install
+
 
 
 

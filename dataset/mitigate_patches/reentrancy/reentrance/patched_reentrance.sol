@@ -16,13 +16,13 @@ contract Reentrance {
     function withdraw(uint _amount) public {
         require(!locked[msg.sender]);
         require(balances[msg.sender] >= _amount);
-        
+
         locked[msg.sender] = true;
         uint balance = balances[msg.sender];
         balances[msg.sender] -= _amount;
         msg.sender.transfer(_amount);
         locked[msg.sender] = false;
-        
+
         assert(balances[msg.sender] == balance - _amount);
     }
 

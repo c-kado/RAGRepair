@@ -1,8 +1,4 @@
-/*
- * @source: etherscan.io 
- * @author: -
- * @vulnerable_at_lines: 63
- */
+
 
 pragma solidity ^0.4.19;
 
@@ -13,35 +9,35 @@ contract MONEY_BOX
         uint unlockTime;
         uint balance;
     }
-    
+
     mapping (address => Holder) public Acc;
-    
+
     uint public MinSum;
-    
+
     Log LogFile;
-    
+
     bool intitalized;
-    
+
     function SetMinSum(uint _val)
     public
     {
         if(intitalized)throw;
         MinSum = _val;
     }
-    
+
     function SetLogFile(address _log)
     public
     {
         if(intitalized)throw;
         LogFile = Log(_log);
     }
-    
+
     function Initialized()
     public
     {
         intitalized = true;
     }
-    
+
     function Put(uint _lockTime)
     public
     payable
@@ -51,7 +47,7 @@ contract MONEY_BOX
         if(now+_lockTime>acc.unlockTime)acc.unlockTime=now+_lockTime;
         LogFile.AddMessage(msg.sender,msg.value,"Put");
     }
-    
+
     function Collect(uint _am)
     public
     payable
@@ -59,7 +55,7 @@ contract MONEY_BOX
         var acc = Acc[msg.sender];
         if( acc.balance>=MinSum && acc.balance>=_am && now>acc.unlockTime)
         {
-            // <yes> <report> REENTRANCY
+
             if(msg.sender.call.value(_am)())
             {
                 acc.balance-=_am;
@@ -67,16 +63,15 @@ contract MONEY_BOX
             }
         }
     }
-    
+
     function() 
     public 
     payable
     {
         Put(0);
     }
-    
-}
 
+}
 
 contract Log 
 {
@@ -87,11 +82,11 @@ contract Log
         uint Val;
         uint  Time;
     }
-    
+
     Message[] public History;
-    
+
     Message LastMsg;
-    
+
     function AddMessage(address _adr,uint _val,string _data)
     public
     {
