@@ -1,0 +1,231 @@
+{
+	"children" : 
+	[
+		{
+			"attributes" : 
+			{
+				"literals" : 
+				[
+					"solidity",
+					"^",
+					"0.4",
+					".11"
+				]
+			},
+			"id" : 1,
+			"name" : "PragmaDirective",
+			"src" : "2:24:-1"
+		},
+		{
+			"attributes" : 
+			{
+				"fullyImplemented" : true,
+				"isLibrary" : false,
+				"linearizedBaseContracts" : 
+				[
+					20
+				],
+				"name" : "IntegerOverflowMappingSym1"
+			},
+			"children" : 
+			[
+				{
+					"attributes" : 
+					{
+						"constant" : false,
+						"name" : "map",
+						"storageLocation" : "default",
+						"type" : "mapping(uint256 => uint256)",
+						"visibility" : "internal"
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "uint256"
+									},
+									"id" : 2,
+									"name" : "ElementaryTypeName",
+									"src" : "78:7:-1"
+								},
+								{
+									"attributes" : 
+									{
+										"name" : "uint256"
+									},
+									"id" : 3,
+									"name" : "ElementaryTypeName",
+									"src" : "89:7:-1"
+								}
+							],
+							"id" : 4,
+							"name" : "Mapping",
+							"src" : "70:27:-1"
+						}
+					],
+					"id" : 5,
+					"name" : "VariableDeclaration",
+					"src" : "70:31:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : false,
+						"name" : "init",
+						"payable" : false,
+						"visibility" : "public"
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "k",
+										"storageLocation" : "default",
+										"type" : "uint256",
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint256"
+											},
+											"id" : 6,
+											"name" : "ElementaryTypeName",
+											"src" : "122:7:-1"
+										}
+									],
+									"id" : 7,
+									"name" : "VariableDeclaration",
+									"src" : "122:9:-1"
+								},
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "v",
+										"storageLocation" : "default",
+										"type" : "uint256",
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint256"
+											},
+											"id" : 8,
+											"name" : "ElementaryTypeName",
+											"src" : "133:7:-1"
+										}
+									],
+									"id" : 9,
+									"name" : "VariableDeclaration",
+									"src" : "133:9:-1"
+								}
+							],
+							"id" : 10,
+							"name" : "ParameterList",
+							"src" : "121:22:-1"
+						},
+						{
+							"children" : [],
+							"id" : 11,
+							"name" : "ParameterList",
+							"src" : "151:0:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"operator" : "-=",
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "mapping(uint256 => uint256)",
+																"value" : "map"
+															},
+															"id" : 12,
+															"name" : "Identifier",
+															"src" : "162:3:-1"
+														},
+														{
+															"attributes" : 
+															{
+																"type" : "uint256",
+																"value" : "k"
+															},
+															"id" : 13,
+															"name" : "Identifier",
+															"src" : "166:1:-1"
+														}
+													],
+													"id" : 14,
+													"name" : "IndexAccess",
+													"src" : "162:6:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "v"
+													},
+													"id" : 15,
+													"name" : "Identifier",
+													"src" : "172:1:-1"
+												}
+											],
+											"id" : 16,
+											"name" : "Assignment",
+											"src" : "162:11:-1"
+										}
+									],
+									"id" : 17,
+									"name" : "ExpressionStatement",
+									"src" : "162:11:-1"
+								}
+							],
+							"id" : 18,
+							"name" : "Block",
+							"src" : "151:29:-1"
+						}
+					],
+					"id" : 19,
+					"name" : "FunctionDefinition",
+					"src" : "108:72:-1"
+				}
+			],
+			"id" : 20,
+			"name" : "ContractDefinition",
+			"src" : "28:154:-1"
+		}
+	],
+	"name" : "SourceUnit"
+}

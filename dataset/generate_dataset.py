@@ -50,6 +50,8 @@ import os
 import pandas as pd
 import re
 import shutil
+import subprocess
+from subprocess import PIPE
 
 
 def extract_dataset():
@@ -82,7 +84,6 @@ def extract_dataset():
         os.makedirs(contract_path, exist_ok=True)
 
         # Originalのsolファイルを記録
-        # shutil.copy(f'{original_path}/{row['Category']}/{row['Original']}', f'{contract_path}/{row['Original']}')
         with open(f'{original_path}/{row['Category']}/{row['Original']}', 'r') as f:
             # re.sub('/\*.*?\*/','', code, re.DOTALL)
             # /*(改行含む任意の文字列)*/
@@ -96,7 +97,6 @@ def extract_dataset():
             f.write(code)
 
         # Patchのsolファイルを記録
-        # shutil.copy(f'{patch_path}/{row['Tool']}/{row['Category']}/{row['Original'][:-4]}/{row['Patch']}', f'{contract_path}/patched_{row['Original']}')
         with open(f'{patch_path}/{row['Tool']}/{row['Category']}/{row['Original'][:-4]}/{row['Patch']}', 'r') as f:
             code = re.sub(r'/\*.*?\*/','\n', f.read(), flags=re.DOTALL)
             code = re.sub(r'//.*', '', code) 
@@ -122,7 +122,7 @@ def get_mitigate_patches(df):
     return df[(df['functional_check'] == 'passed') & (df['mitigates'] == 'yes')]
 
 
-def analyze_source(contract_info):
+def record_contract_info(contract_info):
 
     # 1. get solidity version
     # 2. get solc ast
@@ -131,6 +131,7 @@ def analyze_source(contract_info):
     contract_dir = f'mitigate_patches/{contract_info['Category']}/{contract_info['Original'][:-4]}'
     
     vul_source = f'{contract_dir}/{contract_info['Original']}'
+    patched_source = f'{contract_dir}/patched_{contract_info['Original']}'
 
     with open(vul_source, 'r') as f:
         code = f.read()
@@ -139,13 +140,21 @@ def analyze_source(contract_info):
     solc_ver = re.search(r'pragma solidity \^?(0\.\d+\.\d+);', code).group(1)
     change_solc_version(solc_ver)
    
-    output_dir = f'{contract_dir}/output')
-    os.mkdir(output_dir)
-    solc_compile(vul_source, output_dir)
+    # In solc under v0.4.??, the option `-o ./' occurs an error.
+    # To except this, the ast output is recorded in `output/'.
+    output_dir = f'{contract_dir}/output'
+    os.makedirs(output_dir, exist_ok=True)
 
+    print(f'{vul_source[:-4]}\nRun Solc...')
+    if not solc_compile(vul_source, output_dir):
+       print('solc-error!!')
+       exit()
 
+    print('Run Slither....')
+    run_slither(vul_source, f'{contract_dir}/output/{contract_info['Original']}_slither.json')
+    run_slither(patched_source, f'{contract_dir}/output/patched_{contract_info['Original']}_slither.json')
+    # slitherの解析結果をファイル出力onlyにして，標準出力をしないようにできたら，それだけでエラー判定できそう．．．
 
-    
 
 def change_solc_version(version):
     proc = subprocess.run('solc-select use %s --always-install' % version, shell=True, stdout=PIPE, stderr=PIPE, text=True)
@@ -157,16 +166,23 @@ def change_solc_version(version):
 
 def solc_compile(sol_file, output_dir):
     proc = subprocess.run(f'solc {sol_file} --ast-json -o {output_dir}', shell=True, stdout=PIPE, stderr=PIPE, text=True)
-    if len(re.findall(rf'{patched_file.split("/")[-1]}:[\d]+:[\d]+: Error: ', proc.stderr)) > 0:
+    if len(re.findall(rf'{sol_file.split("/")[-1]}:[\d]+:[\d]+: Error: ', proc.stderr)) > 0:
         # Error message by solc: "'filename':line:column?: Error:" 
-        return False, proc.stderr
+        return False
     elif len(re.findall('Internal compiler error during compilation:', proc.stderr)) > 0:
         # Compiler internal error?
-        return False, proc.stderr
+        return False
 
-    return True, ''
+    return True
 
 
+def run_slither(sol_file, output_file):
+    
+    proc = subprocess.run(f'slither --exclude-informational --exclude-optimization {sol_file} --json {output_file}', shell=True, stdout=PIPE, stderr=PIPE, text=True)
+    
+
+    return True
+    
 
 
 mitigate_patches = extract_dataset()
@@ -174,7 +190,7 @@ mitigate_patches = extract_dataset()
 for idx, row in mitigate_patches.iterrows():
     # 各vul/fixのペアに対して，vulのファイルをslitherで解析, solcによるast出力
     # 解析情報を記録
-    analyze_source(row)
+    record_contract_info(row)
 
     
 

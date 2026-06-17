@@ -1,0 +1,184 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "withdrawReward",
+            "source_mapping": {
+              "start": 267,
+              "length": 324,
+              "filename_relative": "mitigate_patches/reentrancy/reentrancy_bonus/patched_reentrancy_bonus.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/reentrancy_bonus/patched_reentrancy_bonus.sol",
+              "filename_short": "mitigate_patches/reentrancy/reentrancy_bonus/patched_reentrancy_bonus.sol",
+              "is_dependency": false,
+              "lines": [
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "Reentrancy_bonus",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 800,
+                  "filename_relative": "mitigate_patches/reentrancy/reentrancy_bonus/patched_reentrancy_bonus.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/reentrancy_bonus/patched_reentrancy_bonus.sol",
+                  "filename_short": "mitigate_patches/reentrancy/reentrancy_bonus/patched_reentrancy_bonus.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "withdrawReward(address)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "recipient.transfer(amountToWithdraw)",
+            "source_mapping": {
+              "start": 505,
+              "length": 36,
+              "filename_relative": "mitigate_patches/reentrancy/reentrancy_bonus/patched_reentrancy_bonus.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/reentrancy_bonus/patched_reentrancy_bonus.sol",
+              "filename_short": "mitigate_patches/reentrancy/reentrancy_bonus/patched_reentrancy_bonus.sol",
+              "is_dependency": false,
+              "lines": [
+                16
+              ],
+              "starting_column": 9,
+              "ending_column": 45
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "withdrawReward",
+                "source_mapping": {
+                  "start": 267,
+                  "length": 324,
+                  "filename_relative": "mitigate_patches/reentrancy/reentrancy_bonus/patched_reentrancy_bonus.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/reentrancy_bonus/patched_reentrancy_bonus.sol",
+                  "filename_short": "mitigate_patches/reentrancy/reentrancy_bonus/patched_reentrancy_bonus.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "Reentrancy_bonus",
+                    "source_mapping": {
+                      "start": 26,
+                      "length": 800,
+                      "filename_relative": "mitigate_patches/reentrancy/reentrancy_bonus/patched_reentrancy_bonus.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/reentrancy_bonus/patched_reentrancy_bonus.sol",
+                      "filename_short": "mitigate_patches/reentrancy/reentrancy_bonus/patched_reentrancy_bonus.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "withdrawReward(address)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "Reentrancy_bonus.withdrawReward(address) (mitigate_patches/reentrancy/reentrancy_bonus/patched_reentrancy_bonus.sol#10-19) sends eth to arbitrary user\n\tDangerous calls:\n\t- recipient.transfer(amountToWithdraw) (mitigate_patches/reentrancy/reentrancy_bonus/patched_reentrancy_bonus.sol#16)\n",
+        "markdown": "[Reentrancy_bonus.withdrawReward(address)](mitigate_patches/reentrancy/reentrancy_bonus/patched_reentrancy_bonus.sol#L10-L19) sends eth to arbitrary user\n\tDangerous calls:\n\t- [recipient.transfer(amountToWithdraw)](mitigate_patches/reentrancy/reentrancy_bonus/patched_reentrancy_bonus.sol#L16)\n",
+        "first_markdown_element": "mitigate_patches/reentrancy/reentrancy_bonus/patched_reentrancy_bonus.sol#L10-L19",
+        "id": "790526477b2405ac6d2a4d4b6d86dafc374a49954ab49559af44a837de86d6db",
+        "check": "arbitrary-send-eth",
+        "impact": "High",
+        "confidence": "Medium"
+      }
+    ]
+  }
+}

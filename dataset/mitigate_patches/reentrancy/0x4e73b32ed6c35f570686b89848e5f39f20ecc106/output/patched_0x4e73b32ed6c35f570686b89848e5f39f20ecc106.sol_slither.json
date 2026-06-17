@@ -1,0 +1,230 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "contract",
+            "name": "LogFile",
+            "source_mapping": {
+              "start": 926,
+              "length": 437,
+              "filename_relative": "mitigate_patches/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106/patched_0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106/patched_0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol",
+              "filename_short": "mitigate_patches/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106/patched_0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol",
+              "is_dependency": false,
+              "lines": [
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61
+              ],
+              "starting_column": 1,
+              "ending_column": 0
+            }
+          },
+          {
+            "type": "node",
+            "name": "History.push(newMessage)",
+            "source_mapping": {
+              "start": 1330,
+              "length": 24,
+              "filename_relative": "mitigate_patches/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106/patched_0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106/patched_0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol",
+              "filename_short": "mitigate_patches/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106/patched_0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol",
+              "is_dependency": false,
+              "lines": [
+                58
+              ],
+              "starting_column": 9,
+              "ending_column": 33
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "AddMessage",
+                "source_mapping": {
+                  "start": 1090,
+                  "length": 271,
+                  "filename_relative": "mitigate_patches/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106/patched_0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106/patched_0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol",
+                  "filename_short": "mitigate_patches/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106/patched_0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    52,
+                    53,
+                    54,
+                    55,
+                    56,
+                    57,
+                    58,
+                    59
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "LogFile",
+                    "source_mapping": {
+                      "start": 926,
+                      "length": 437,
+                      "filename_relative": "mitigate_patches/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106/patched_0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106/patched_0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol",
+                      "filename_short": "mitigate_patches/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106/patched_0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        42,
+                        43,
+                        44,
+                        45,
+                        46,
+                        47,
+                        48,
+                        49,
+                        50,
+                        51,
+                        52,
+                        53,
+                        54,
+                        55,
+                        56,
+                        57,
+                        58,
+                        59,
+                        60,
+                        61
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "AddMessage(address,uint256,string)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "LogFile (mitigate_patches/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106/patched_0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol#42-61) contract sets array length with a user-controlled value:\n\t- History.push(newMessage) (mitigate_patches/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106/patched_0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol#58)\n",
+        "markdown": "[LogFile](mitigate_patches/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106/patched_0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol#L42-L61) contract sets array length with a user-controlled value:\n\t- [History.push(newMessage)](mitigate_patches/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106/patched_0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol#L58)\n",
+        "first_markdown_element": "mitigate_patches/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106/patched_0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol#L42-L61",
+        "id": "1794ae745cc11460db18c9e685a3bfdd7d8d30f1c1dbeaab16431e428a021c26",
+        "check": "controlled-array-length",
+        "impact": "High",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "newMessage",
+            "source_mapping": {
+              "start": 1166,
+              "length": 25,
+              "filename_relative": "mitigate_patches/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106/patched_0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106/patched_0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol",
+              "filename_short": "mitigate_patches/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106/patched_0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol",
+              "is_dependency": false,
+              "lines": [
+                53
+              ],
+              "starting_column": 9,
+              "ending_column": 34
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "AddMessage",
+                "source_mapping": {
+                  "start": 1090,
+                  "length": 271,
+                  "filename_relative": "mitigate_patches/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106/patched_0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106/patched_0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol",
+                  "filename_short": "mitigate_patches/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106/patched_0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    52,
+                    53,
+                    54,
+                    55,
+                    56,
+                    57,
+                    58,
+                    59
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "LogFile",
+                    "source_mapping": {
+                      "start": 926,
+                      "length": 437,
+                      "filename_relative": "mitigate_patches/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106/patched_0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106/patched_0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol",
+                      "filename_short": "mitigate_patches/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106/patched_0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        42,
+                        43,
+                        44,
+                        45,
+                        46,
+                        47,
+                        48,
+                        49,
+                        50,
+                        51,
+                        52,
+                        53,
+                        54,
+                        55,
+                        56,
+                        57,
+                        58,
+                        59,
+                        60,
+                        61
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "AddMessage(address,uint256,string)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "LogFile.AddMessage(address,uint256,string).newMessage (mitigate_patches/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106/patched_0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol#53) is a local variable never initialized\n",
+        "markdown": "[LogFile.AddMessage(address,uint256,string).newMessage](mitigate_patches/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106/patched_0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol#L53) is a local variable never initialized\n",
+        "first_markdown_element": "mitigate_patches/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106/patched_0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol#L53",
+        "id": "eb9ecd706d85ee18e4d3130aee205146db2c4e526bac85d467e14374c22b9ff8",
+        "check": "uninitialized-local",
+        "impact": "Medium",
+        "confidence": "Medium"
+      }
+    ]
+  }
+}

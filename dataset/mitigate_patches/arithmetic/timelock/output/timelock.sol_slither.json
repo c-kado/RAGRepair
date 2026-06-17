@@ -1,0 +1,168 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "withdraw",
+            "source_mapping": {
+              "start": 418,
+              "length": 257,
+              "filename_relative": "mitigate_patches/arithmetic/timelock/timelock.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/arithmetic/timelock/timelock.sol",
+              "filename_short": "mitigate_patches/arithmetic/timelock/timelock.sol",
+              "is_dependency": false,
+              "lines": [
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26
+              ],
+              "starting_column": 6,
+              "ending_column": 7
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "TimeLock",
+                "source_mapping": {
+                  "start": 30,
+                  "length": 648,
+                  "filename_relative": "mitigate_patches/arithmetic/timelock/timelock.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/arithmetic/timelock/timelock.sol",
+                  "filename_short": "mitigate_patches/arithmetic/timelock/timelock.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27
+                  ],
+                  "starting_column": 2,
+                  "ending_column": 3
+                }
+              },
+              "signature": "withdraw()"
+            }
+          },
+          {
+            "type": "node",
+            "name": "require(bool)(now > lockTime[msg.sender])",
+            "source_mapping": {
+              "start": 500,
+              "length": 35,
+              "filename_relative": "mitigate_patches/arithmetic/timelock/timelock.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/arithmetic/timelock/timelock.sol",
+              "filename_short": "mitigate_patches/arithmetic/timelock/timelock.sol",
+              "is_dependency": false,
+              "lines": [
+                22
+              ],
+              "starting_column": 10,
+              "ending_column": 45
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "withdraw",
+                "source_mapping": {
+                  "start": 418,
+                  "length": 257,
+                  "filename_relative": "mitigate_patches/arithmetic/timelock/timelock.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/arithmetic/timelock/timelock.sol",
+                  "filename_short": "mitigate_patches/arithmetic/timelock/timelock.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26
+                  ],
+                  "starting_column": 6,
+                  "ending_column": 7
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "TimeLock",
+                    "source_mapping": {
+                      "start": 30,
+                      "length": 648,
+                      "filename_relative": "mitigate_patches/arithmetic/timelock/timelock.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/arithmetic/timelock/timelock.sol",
+                      "filename_short": "mitigate_patches/arithmetic/timelock/timelock.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27
+                      ],
+                      "starting_column": 2,
+                      "ending_column": 3
+                    }
+                  },
+                  "signature": "withdraw()"
+                }
+              }
+            }
+          }
+        ],
+        "description": "TimeLock.withdraw() (mitigate_patches/arithmetic/timelock/timelock.sol#20-26) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool)(now > lockTime[msg.sender]) (mitigate_patches/arithmetic/timelock/timelock.sol#22)\n",
+        "markdown": "[TimeLock.withdraw()](mitigate_patches/arithmetic/timelock/timelock.sol#L20-L26) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- [require(bool)(now > lockTime[msg.sender])](mitigate_patches/arithmetic/timelock/timelock.sol#L22)\n",
+        "first_markdown_element": "mitigate_patches/arithmetic/timelock/timelock.sol#L20-L26",
+        "id": "f723da6e9ff61fc81c5746732838887c48f9674ad3b037f4b7838c4721ca27c2",
+        "check": "timestamp",
+        "impact": "Low",
+        "confidence": "Medium"
+      }
+    ]
+  }
+}

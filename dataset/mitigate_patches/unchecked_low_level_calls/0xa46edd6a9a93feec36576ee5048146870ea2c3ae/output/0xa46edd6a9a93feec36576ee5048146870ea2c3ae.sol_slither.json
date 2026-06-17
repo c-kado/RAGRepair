@@ -1,0 +1,622 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "transfer",
+            "source_mapping": {
+              "start": 47,
+              "length": 334,
+              "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+              "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+              "is_dependency": false,
+              "lines": [
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "EBU",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 355,
+                  "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                  "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "transfer(address,address,address[],uint256[])"
+            }
+          },
+          {
+            "type": "node",
+            "name": "caddress.call(id,from,_tos[i],v[i])",
+            "source_mapping": {
+              "start": 308,
+              "length": 35,
+              "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+              "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+              "is_dependency": false,
+              "lines": [
+                12
+              ],
+              "starting_column": 13,
+              "ending_column": 48
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transfer",
+                "source_mapping": {
+                  "start": 47,
+                  "length": 334,
+                  "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                  "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "EBU",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 355,
+                      "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                      "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "transfer(address,address,address[],uint256[])"
+                }
+              }
+            }
+          }
+        ],
+        "description": "EBU.transfer(address,address,address[],uint256[]) (mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#7-15) ignores return value by caddress.call(id,from,_tos[i],v[i]) (mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#12)\n",
+        "markdown": "[EBU.transfer(address,address,address[],uint256[])](mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#L7-L15) ignores return value by [caddress.call(id,from,_tos[i],v[i])](mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#L12)\n",
+        "first_markdown_element": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#L7-L15",
+        "id": "4089a8ce8c07b039e6859c78e7066d24380742eb06f38e1a8ad0b85084e91c97",
+        "check": "unchecked-lowlevel",
+        "impact": "Medium",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "caddress",
+            "source_mapping": {
+              "start": 78,
+              "length": 16,
+              "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+              "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+              "is_dependency": false,
+              "lines": [
+                7
+              ],
+              "starting_column": 36,
+              "ending_column": 52
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transfer",
+                "source_mapping": {
+                  "start": 47,
+                  "length": 334,
+                  "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                  "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "EBU",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 355,
+                      "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                      "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "transfer(address,address,address[],uint256[])"
+                }
+              }
+            }
+          },
+          {
+            "type": "node",
+            "name": "caddress.call(id,from,_tos[i],v[i])",
+            "source_mapping": {
+              "start": 308,
+              "length": 35,
+              "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+              "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+              "is_dependency": false,
+              "lines": [
+                12
+              ],
+              "starting_column": 13,
+              "ending_column": 48
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transfer",
+                "source_mapping": {
+                  "start": 47,
+                  "length": 334,
+                  "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                  "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "EBU",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 355,
+                      "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                      "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "transfer(address,address,address[],uint256[])"
+                }
+              }
+            }
+          }
+        ],
+        "description": "EBU.transfer(address,address,address[],uint256[]).caddress (mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#7) lacks a zero-check on :\n\t\t- caddress.call(id,from,_tos[i],v[i]) (mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#12)\n",
+        "markdown": "[EBU.transfer(address,address,address[],uint256[]).caddress](mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#L7) lacks a zero-check on :\n\t\t- [caddress.call(id,from,_tos[i],v[i])](mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#L12)\n",
+        "first_markdown_element": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#L7",
+        "id": "6533903637f5073b8d0165b0ea6ddda84beab4e028af6dbc07710b7445f71ff5",
+        "check": "missing-zero-check",
+        "impact": "Low",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "from",
+            "source_mapping": {
+              "start": 65,
+              "length": 12,
+              "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+              "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+              "is_dependency": false,
+              "lines": [
+                7
+              ],
+              "starting_column": 23,
+              "ending_column": 35
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transfer",
+                "source_mapping": {
+                  "start": 47,
+                  "length": 334,
+                  "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                  "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "EBU",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 355,
+                      "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                      "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "transfer(address,address,address[],uint256[])"
+                }
+              }
+            }
+          },
+          {
+            "type": "node",
+            "name": "caddress.call(id,from,_tos[i],v[i])",
+            "source_mapping": {
+              "start": 308,
+              "length": 35,
+              "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+              "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+              "is_dependency": false,
+              "lines": [
+                12
+              ],
+              "starting_column": 13,
+              "ending_column": 48
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transfer",
+                "source_mapping": {
+                  "start": 47,
+                  "length": 334,
+                  "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                  "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "EBU",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 355,
+                      "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                      "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "transfer(address,address,address[],uint256[])"
+                }
+              }
+            }
+          }
+        ],
+        "description": "EBU.transfer(address,address,address[],uint256[]).from (mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#7) lacks a zero-check on :\n\t\t- caddress.call(id,from,_tos[i],v[i]) (mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#12)\n",
+        "markdown": "[EBU.transfer(address,address,address[],uint256[]).from](mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#L7) lacks a zero-check on :\n\t\t- [caddress.call(id,from,_tos[i],v[i])](mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#L12)\n",
+        "first_markdown_element": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#L7",
+        "id": "c7922e628f47649ddb982d3f9b3dd44bdae031748859f8bde79913d5b91098a9",
+        "check": "missing-zero-check",
+        "impact": "Low",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "transfer",
+            "source_mapping": {
+              "start": 47,
+              "length": 334,
+              "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+              "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+              "is_dependency": false,
+              "lines": [
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "EBU",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 355,
+                  "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                  "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "transfer(address,address,address[],uint256[])"
+            }
+          },
+          {
+            "type": "node",
+            "name": "caddress.call(id,from,_tos[i],v[i])",
+            "source_mapping": {
+              "start": 308,
+              "length": 35,
+              "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+              "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+              "is_dependency": false,
+              "lines": [
+                12
+              ],
+              "starting_column": 13,
+              "ending_column": 48
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transfer",
+                "source_mapping": {
+                  "start": 47,
+                  "length": 334,
+                  "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                  "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "EBU",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 355,
+                      "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                      "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "transfer(address,address,address[],uint256[])"
+                }
+              }
+            }
+          }
+        ],
+        "description": "EBU.transfer(address,address,address[],uint256[]) (mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#7-15) has external calls inside a loop: caddress.call(id,from,_tos[i],v[i]) (mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#12)\n",
+        "markdown": "[EBU.transfer(address,address,address[],uint256[])](mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#L7-L15) has external calls inside a loop: [caddress.call(id,from,_tos[i],v[i])](mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#L12)\n",
+        "first_markdown_element": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#L7-L15",
+        "id": "294100a5e83602af229ad3e9debcaa8e22b815523606688f7d8992a754be1d51",
+        "check": "calls-loop",
+        "impact": "Low",
+        "confidence": "Medium"
+      }
+    ]
+  }
+}

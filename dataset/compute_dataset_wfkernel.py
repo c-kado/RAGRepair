@@ -1,0 +1,101 @@
+# ASTをグラフ化
+    # ASTの該当箇所を抽出
+        # パターン1. 脆弱な行を含む関数
+        # パターン2. 脆弱な行の1個上の親のノードから
+    # 脆弱性を適切に検出できない場合
+        # AST全体をグラフ化しとく？
+    # 脆弱性が複数検知されている場合
+        # パターン1. 今回は検出対象の脆弱性を制限しておく？
+        # パターン2. 脆弱なコントラクトのAST全体をグラフ化する方に含めちゃう？
+
+
+# カーネルを計算する
+
+
+
+# subgraphの方のnetworkxのカーネル計算方法で，bm25?でマッチしたやつで，astから近い部分を探す，とかできる．．？
+
+
+
+# networkx library reference
+# https://networkx.org/documentation/stable/tutorial.html#directed-graphs
+
+import json
+import networkx as nx
+from networkx.readwrite import json_graph
+
+
+
+
+
+
+
+def get_ast(file):
+    with open(file, 'r') as f:
+        ast_json = json.load(f)
+
+    return ast_json
+
+
+# Input: マッピングするAST（該当箇所抽出済みとする）
+def mapping_ast2graph(ast):
+    # ast の形式
+    # Tree_node = 
+    # {
+    #     "attributes" : key-value, // ノードの情報，ノードタイプによって中身変わる 
+    #     "children" : [{children_tree_node}],  // ない時もある
+    #     "id" : int, // unique number for each node
+    #     "name" : str, // node_type: ContractDefinition, Assignment, etc.
+    #     "src" : "start_char_num:char_count:0(?)"
+    # }
+
+    # mapping ast to graph(networkx)
+    # nx.node_attr に，astのname(node_type)をマッピング
+    # nx.nodeで，idをノードidとする
+    # TODO: nx.node_attrとして，astのattributesを入れたパターンもやってみる
+    #       (edge_attrにnode_typeをマッピングして，一番最初のSourceUnit?はなくなる形
+    #        node_attrにastのattributesとか？)
+
+    ast_graph = nx.Graph()
+    ast_graph.add_node(ast['id'], node_type=ast['name'])
+
+    if 'children' in ast:
+        add_children_node(ast_graph, ast['children'], ast['id'])
+
+    print('node_id: '+str(ast['id']))
+    print(list(ast_graph.neighbors(ast['id'])))
+    
+    # 回帰的にノードを追加していく
+
+    return ast_graph
+
+
+def add_children_node(g, children, parent_id):
+    for node in children:
+        g.add_node(node['id'], node_type=node['name'])
+        g.add_edge(parent_id, node['id'])
+        if 'children' in node:
+            add_children_node(g, node['children'], node['id'])
+
+        print('node_id: '+str(node['id']))
+        print(list(g.neighbors(node['id'])))
+    
+    
+    
+
+
+
+
+ast = get_ast('mitigate_patches/access_control/proxy/output/proxy.sol_json.ast')
+ast_graph = mapping_ast2graph(ast)
+ast_wlkernel = nx.weisfeiler_lehman_graph_hash(ast_graph, node_attr='node_type')
+
+# ast_graph.nodes(data=True)で，(id, {attributeのdict-key})のタプルのリストが得られる
+# ast_graph.edges()で，(id,id)のエッジをタプルで表したリストが得られる
+# デバッグ用に，ast_graphの情報をセーブしとく(後でgraph構築しやすい形？)
+
+# ast_graph_info = {'hashes': ast_hlkernel, 'nodes': ast_graph.nodes(data=True), 'edges': ast_graph.edges()}
+ast_graph_info = {'graph': json_graph.node_link_data(ast_graph), 'wlkernel': ast_wlkernel}
+
+with open('mitigate_patches/access_control/proxy/output/proxy.sol_ast_graph.json', 'w') as f:
+    json.dump(ast_graph_info, f, indent=2)
