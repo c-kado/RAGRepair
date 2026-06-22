@@ -54,7 +54,7 @@ import subprocess
 from subprocess import PIPE
 
 
-def extract_dataset():
+def extract_dataset(repcomp_file):
     # 論文参考に，精度の良いツールの結果を優先度高く採用
     # SolGPT    (74%)
     # SmartFix  (53%)
@@ -63,7 +63,6 @@ def extract_dataset():
     # sGuard    (33%)
     high_acc_tool = ['SolGPT', 'SmartFix', 'TIPS', 'sGuard+', 'sGuard']
 
-    repcomp_file = '../tools/RepairComp/results/smartbugs/data_analysis/all_patches_stats.csv'
     df = pd.read_csv(repcomp_file)
 
     # 修正できていないものをテストとして使ってみる？
@@ -151,9 +150,30 @@ def record_contract_info(contract_info):
        exit()
 
     print('Run Slither....')
+    # TODO: 実験設定メモ: 今回は対象の脆弱性を1つ含んでいる場合のみをデータセットとして持つ
+    # データセット生成時，slitherの解析結果としては対象の脆弱性の結果の身を記録
+    # ただし，脆弱性修正対象としては，他の脆弱性が増えてはいけないので，全ての解析結果と比べる． 
+    # TODO: TODO: TODO: 次のslither実行は，テスト対象として修正をする時，修正後に脆弱性が増加しないか確認するため，全脆弱性を解析
     run_slither(vul_source, f'{contract_dir}/output/{contract_info['Original']}_slither.json')
-    run_slither(patched_source, f'{contract_dir}/output/patched_{contract_info['Original']}_slither.json')
-    # slitherの解析結果をファイル出力onlyにして，標準出力をしないようにできたら，それだけでエラー判定できそう．．．
+    # run_slither(patched_source, f'{contract_dir}/output/patched_{contract_info['Original']}_slither.json')
+    
+    # TODO: TODO: TODO: 以下のslither実行は，bug-patchのデータセットとして，対象の脆弱性のみを解析し，それ用のファイルに保存するように変更
+
+    # slitherの結果を入れる'check'のやつ
+    # TODO: TODO: TODO: TODO: 以下のマッピングを，今回のに修正する. そんで，関数外に出しとく
+    detect_vul = {'access_control': ['tx-origin'], # incorrect_constructor検知できず, # TODO: mapping_writeの場合要確認
+                'arithmetic': [], # Slither do not detect overflow/underflow.
+                'bad_randomness': ['timestamp'],
+                'denial_of_service': ['controlled-array-length', 'costly-loop'],
+                'front_running': [], # No target contract
+                'reentrancy': ['reentrancy-eth'],
+                'time_manipulation': ['timestamp'],
+                'unchecked_low_level_calls': ['unchecked-lowlevel'],
+                'other': ['uninitialized-storage']}
+
+    run_slither(vul_source, f'{contract_dir}/output/{contract_info['Original']}_slither_{contract_info['Category']}.json', f'--detect {".".join(detect_vul[contract_info['Category']])}')
+
+    # TODO: TODO: TODO: ここで，slitherで解析できてない or 複数対象脆弱性あり，のコントラクトをmitigate_patchesから外すために，csvに追加の列を設定する処理を挟む．
 
 
 def change_solc_version(version):
@@ -172,20 +192,27 @@ def solc_compile(sol_file, output_dir):
     elif len(re.findall('Internal compiler error during compilation:', proc.stderr)) > 0:
         # Compiler internal error?
         return False
+    elif len(re.findall('Traceback (most recent call last):', proc.stderr)) > 0:
+        # run solc fail
+        print(proc.stderr)
+        return False
 
     return True
 
 
-def run_slither(sol_file, output_file):
+def run_slither(sol_file, output_file, execution_option=''):
     
-    proc = subprocess.run(f'slither --exclude-informational --exclude-optimization {sol_file} --json {output_file}', shell=True, stdout=PIPE, stderr=PIPE, text=True)
-    
-
+    proc = subprocess.run(f'slither --exclude-informational --exclude-optimization {" ".join(execution_option)} {sol_file} --json {output_file}', shell=True, stdout=PIPE, stderr=PIPE, text=True)
     return True
     
 
 
-mitigate_patches = extract_dataset()
+
+
+
+
+# MAIN
+mitigate_patches = extract_dataset('../tools/RepairComp/results/smartbugs/data_analysis/all_patches_stats.csv')
 
 for idx, row in mitigate_patches.iterrows():
     # 各vul/fixのペアに対して，vulのファイルをslitherで解析, solcによるast出力

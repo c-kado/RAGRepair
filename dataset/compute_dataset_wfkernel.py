@@ -12,22 +12,19 @@
 # カーネルを計算する
 
 
-
+# カーネルの比較対象を減らすために，脆弱性の検知結果（1つの脆弱性に絞って）をbm25で検索(bm25というより，語彙的に似ているものを探す簡易的なもので足切りする感じ)
+# これで，同じ脆弱性とかぐらいには絞れる？
 # subgraphの方のnetworkxのカーネル計算方法で，bm25?でマッチしたやつで，astから近い部分を探す，とかできる．．？
-
 
 
 # networkx library reference
 # https://networkx.org/documentation/stable/tutorial.html#directed-graphs
 
+import os
+from pathlib import Path
 import json
 import networkx as nx
 from networkx.readwrite import json_graph
-
-
-
-
-
 
 
 def get_ast(file):
@@ -44,7 +41,7 @@ def mapping_ast2graph(ast):
     # {
     #     "attributes" : key-value, // ノードの情報，ノードタイプによって中身変わる 
     #     "children" : [{children_tree_node}],  // ない時もある
-    #     "id" : int, // unique number for each node
+    #     "id" : int, // unique number for each node    // --ast-jsonではない場合も
     #     "name" : str, // node_type: ContractDefinition, Assignment, etc.
     #     "src" : "start_char_num:char_count:0(?)"
     # }
@@ -56,46 +53,75 @@ def mapping_ast2graph(ast):
     #       (edge_attrにnode_typeをマッピングして，一番最初のSourceUnit?はなくなる形
     #        node_attrにastのattributesとか？)
 
-    ast_graph = nx.Graph()
-    ast_graph.add_node(ast['id'], node_type=ast['name'])
+    ast_graph = nx.DiGraph()
 
+    # solc option '--ast-json' is legacy ast option
+    # id does not always exist
+    no_id_node = 0
+    if 'id' in ast:
+        node_id = ast['id']
+    else:
+        no_id_node -= 1
+        node_id = no_id_node
+        print(node_id)
+        print(ast['name'])
+
+    ast_graph.add_node(node_id, node_type=ast['name'])
+
+    # add nodes to the graph recursively
     if 'children' in ast:
-        add_children_node(ast_graph, ast['children'], ast['id'])
-
-    print('node_id: '+str(ast['id']))
-    print(list(ast_graph.neighbors(ast['id'])))
-    
-    # 回帰的にノードを追加していく
+        add_children_node(ast_graph, ast['children'], node_id, no_id_node) 
 
     return ast_graph
 
 
-def add_children_node(g, children, parent_id):
+def add_children_node(g, children, parent_id, no_id_node):
     for node in children:
-        g.add_node(node['id'], node_type=node['name'])
-        g.add_edge(parent_id, node['id'])
+        if 'id' in node:
+            node_id = node['id']
+        else:
+            no_id_node -= 1
+            node_id = no_id_node
+            print(node_id)
+            print(node['name'])
+
+        g.add_node(node_id, node_type=node['name'])
+        g.add_edge(parent_id, node_id)
+
         if 'children' in node:
-            add_children_node(g, node['children'], node['id'])
-
-        print('node_id: '+str(node['id']))
-        print(list(g.neighbors(node['id'])))
-    
-    
-    
+            add_children_node(g, node['children'], node_id, no_id_node)
 
 
 
+for category in os.listdir('mitigate_patches'):
+    if not os.path.isdir(f'mitigate_patches/{category}'):
+        continue
 
-ast = get_ast('mitigate_patches/access_control/proxy/output/proxy.sol_json.ast')
-ast_graph = mapping_ast2graph(ast)
-ast_wlkernel = nx.weisfeiler_lehman_graph_hash(ast_graph, node_attr='node_type')
+    for contract in os.listdir(f'mitigate_patches/{category}'):
+        if not os.path.isdir(f'mitigate_patches/{category}/{contract}'):
+            continue
+        
+        print(f'{category}/{contract}')
 
-# ast_graph.nodes(data=True)で，(id, {attributeのdict-key})のタプルのリストが得られる
-# ast_graph.edges()で，(id,id)のエッジをタプルで表したリストが得られる
-# デバッグ用に，ast_graphの情報をセーブしとく(後でgraph構築しやすい形？)
+        # Build ast graph
+        ast = get_ast(f'mitigate_patches/{category}/{contract}/output/{contract}.sol_json.ast')
+        ast_graph = mapping_ast2graph(ast)
 
-# ast_graph_info = {'hashes': ast_hlkernel, 'nodes': ast_graph.nodes(data=True), 'edges': ast_graph.edges()}
-ast_graph_info = {'graph': json_graph.node_link_data(ast_graph), 'wlkernel': ast_wlkernel}
+        # Get wl subgraph hashes
+        # TODO: iterationの値は要検討．kernelで計算するグラフのサイズ(行単位/関数単位/etc.)によって変える？適切な値を検討(empiricalに？？？)
+        ast_hashes = nx.weisfeiler_lehman_subgraph_hashes(ast_graph, node_attr='node_type', iterations=2)
 
-with open('mitigate_patches/access_control/proxy/output/proxy.sol_ast_graph.json', 'w') as f:
-    json.dump(ast_graph_info, f, indent=2)
+        # compute wlhash of vulnerable position
+        # TODO: TODO: TODO: tx_verification/src/dataset_creation/generate_prompt.pyを参考に，各脆弱性ごとに，該当する行を取得する．(elementでnodeを探すやつ)
+        # その後，test_compute.pyのように，rootを設定（行の一番上にあるのーどid?）して，ハッシュ計算，counter
+        # 以上をファイルに保存しておく
+
+        # save the graph info
+        ast_graph_info = {'graph': json_graph.node_link_data(ast_graph), 'wl_hashes': ast_hashes}
+
+        with open(f'mitigate_patches/{category}/{contract}/output/{contract}.sol_ast_graph.json', 'w') as f:
+            json.dump(ast_graph_info, f, indent=2)
+
+
+
+

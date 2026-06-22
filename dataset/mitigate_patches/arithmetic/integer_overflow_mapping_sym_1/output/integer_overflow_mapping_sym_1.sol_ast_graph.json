@@ -1,0 +1,282 @@
+{
+  "graph": {
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+      {
+        "node_type": "SourceUnit",
+        "id": -1
+      },
+      {
+        "node_type": "PragmaDirective",
+        "id": 1
+      },
+      {
+        "node_type": "ContractDefinition",
+        "id": 20
+      },
+      {
+        "node_type": "VariableDeclaration",
+        "id": 5
+      },
+      {
+        "node_type": "Mapping",
+        "id": 4
+      },
+      {
+        "node_type": "ElementaryTypeName",
+        "id": 2
+      },
+      {
+        "node_type": "ElementaryTypeName",
+        "id": 3
+      },
+      {
+        "node_type": "FunctionDefinition",
+        "id": 19
+      },
+      {
+        "node_type": "ParameterList",
+        "id": 10
+      },
+      {
+        "node_type": "VariableDeclaration",
+        "id": 7
+      },
+      {
+        "node_type": "ElementaryTypeName",
+        "id": 6
+      },
+      {
+        "node_type": "VariableDeclaration",
+        "id": 9
+      },
+      {
+        "node_type": "ElementaryTypeName",
+        "id": 8
+      },
+      {
+        "node_type": "ParameterList",
+        "id": 11
+      },
+      {
+        "node_type": "Block",
+        "id": 18
+      },
+      {
+        "node_type": "ExpressionStatement",
+        "id": 17
+      },
+      {
+        "node_type": "Assignment",
+        "id": 16
+      },
+      {
+        "node_type": "IndexAccess",
+        "id": 14
+      },
+      {
+        "node_type": "Identifier",
+        "id": 12
+      },
+      {
+        "node_type": "Identifier",
+        "id": 13
+      },
+      {
+        "node_type": "Identifier",
+        "id": 15
+      }
+    ],
+    "edges": [
+      {
+        "source": -1,
+        "target": 1
+      },
+      {
+        "source": -1,
+        "target": 20
+      },
+      {
+        "source": 20,
+        "target": 5
+      },
+      {
+        "source": 20,
+        "target": 19
+      },
+      {
+        "source": 5,
+        "target": 4
+      },
+      {
+        "source": 4,
+        "target": 2
+      },
+      {
+        "source": 4,
+        "target": 3
+      },
+      {
+        "source": 19,
+        "target": 10
+      },
+      {
+        "source": 19,
+        "target": 11
+      },
+      {
+        "source": 19,
+        "target": 18
+      },
+      {
+        "source": 10,
+        "target": 7
+      },
+      {
+        "source": 10,
+        "target": 9
+      },
+      {
+        "source": 7,
+        "target": 6
+      },
+      {
+        "source": 9,
+        "target": 8
+      },
+      {
+        "source": 18,
+        "target": 17
+      },
+      {
+        "source": 17,
+        "target": 16
+      },
+      {
+        "source": 16,
+        "target": 14
+      },
+      {
+        "source": 16,
+        "target": 15
+      },
+      {
+        "source": 14,
+        "target": 12
+      },
+      {
+        "source": 14,
+        "target": 13
+      }
+    ]
+  },
+  "wl_hashes": {
+    "-1": [
+      "c51cbb528d36e0b72cc9d2127e20594a",
+      "8b4fa9215954502fb65c1546dca2d3af",
+      "32bfadb4dc584004ff076735b7c67205"
+    ],
+    "1": [
+      "ea5296c085e037aacda78e258e269fb2",
+      "285260cc5eeb4b586dc33080272ad246",
+      "e3653ce742ea6d76bd54eaebc878225b"
+    ],
+    "20": [
+      "4bf72d699da2f393c8c20e9d535a8cac",
+      "342a4e857bbd71b2792b7a48b3c4a7c5",
+      "60ebe428fb365e37ccc5f743593417cc"
+    ],
+    "5": [
+      "77da5c642ef0be48b25b1962b80fec3f",
+      "ec2d5c88b4a297465adde23d510a294b",
+      "71ba6c1da8041638bd7deb4434d6cdd4"
+    ],
+    "4": [
+      "61ef5a972af2083e76796eef4e3c04d1",
+      "aa0229d3118e0a1878319b528e467df4",
+      "0e1049ec9906d3dca4df7e53bc77f72e"
+    ],
+    "2": [
+      "cada269cd5ab7c52cedcc14a5d2a62a3",
+      "d26c0f961b6bb40144d4c55f8c27a801",
+      "6f79018c9d3072da230d5cc51f4640e4"
+    ],
+    "3": [
+      "cada269cd5ab7c52cedcc14a5d2a62a3",
+      "d26c0f961b6bb40144d4c55f8c27a801",
+      "6f79018c9d3072da230d5cc51f4640e4"
+    ],
+    "19": [
+      "eef31b9887d965c50be4b7566dd47424",
+      "55c6af2754d1d26a4597dae9d1a5b0ae",
+      "3d4df122bbc0f78ca0847155b73d7e9b"
+    ],
+    "10": [
+      "62bc9683c79b0117db24f7a9a7c4f276",
+      "69ec5a93252c309e24280cf01d61900e",
+      "952d6e174bae34d4987547c3fd047e14"
+    ],
+    "7": [
+      "17885d5c6ededc02e9f1c1fafb9a40ea",
+      "4449ae42f7fe6730da65a44c8ad77c6a",
+      "b84b3308f23f193c7b97ef4207976f73"
+    ],
+    "6": [
+      "a55239e7ae3bd76237022f6e3a4b18bb",
+      "e1aece5d90924399f35cce5006a0ec75",
+      "af62a9e440cf42f5dbcaa56950bf72cc"
+    ],
+    "9": [
+      "17885d5c6ededc02e9f1c1fafb9a40ea",
+      "4449ae42f7fe6730da65a44c8ad77c6a",
+      "b84b3308f23f193c7b97ef4207976f73"
+    ],
+    "8": [
+      "a55239e7ae3bd76237022f6e3a4b18bb",
+      "e1aece5d90924399f35cce5006a0ec75",
+      "af62a9e440cf42f5dbcaa56950bf72cc"
+    ],
+    "11": [
+      "661f49551d5d04313fddacb7e8d31ab9",
+      "fb17a2ad027868c649b371a62a608582",
+      "0f7347acdee6e1d979d6a96534c03d10"
+    ],
+    "18": [
+      "a67d8c469f5c806664adacca8ec7c9c3",
+      "07ce76fa1fc39244063a77dffa3478c8",
+      "1a863396bb3347f00f66140aaef33739"
+    ],
+    "17": [
+      "29de1aa9d58381490d362e336aa75b61",
+      "50885dad73dfa30b8437aa6c1789a33c",
+      "65a8a89dab72a8478cabc02836a5175a"
+    ],
+    "16": [
+      "24ed62dafe03fb37e631f060f6ada894",
+      "ccf6d704a12df5c42f4ca7db40ac9601",
+      "ba39605e4ed1044e20b37c42c5a8bbd3"
+    ],
+    "14": [
+      "febf52909e5d6efbf3cd9f6b3b85372d",
+      "07d60f9ff2d439ebdfef924fa036c814",
+      "e0e671bb641d41c657bff6295050f8d9"
+    ],
+    "12": [
+      "482dbcdf757776db604b1b02d31dabea",
+      "8a0e3dba4231dcdd05ca32816e1d505e",
+      "617ef1a3dea3164b36e8bddf936bc5a7"
+    ],
+    "13": [
+      "482dbcdf757776db604b1b02d31dabea",
+      "8a0e3dba4231dcdd05ca32816e1d505e",
+      "617ef1a3dea3164b36e8bddf936bc5a7"
+    ],
+    "15": [
+      "02a2b5291c6fc7f3a5ca3725ac19372a",
+      "bfa11228462717000fb9b355a2f38e04",
+      "75179df3482a6d35a01f5acd484bfad6"
+    ]
+  }
+}
