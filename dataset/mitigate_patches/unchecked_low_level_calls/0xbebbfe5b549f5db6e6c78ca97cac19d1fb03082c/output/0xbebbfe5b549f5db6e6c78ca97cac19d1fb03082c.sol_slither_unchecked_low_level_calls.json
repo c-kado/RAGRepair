@@ -1,0 +1,132 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "proxy",
+            "source_mapping": {
+              "start": 214,
+              "length": 110,
+              "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c.sol",
+              "filename_short": "mitigate_patches/unchecked_low_level_calls/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c.sol",
+              "is_dependency": false,
+              "lines": [
+                8,
+                9,
+                10,
+                11
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "Proxy",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 298,
+                  "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c.sol",
+                  "filename_short": "mitigate_patches/unchecked_low_level_calls/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "proxy(address,bytes)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "target.call.value(msg.value)(data)",
+            "source_mapping": {
+              "start": 283,
+              "length": 34,
+              "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c.sol",
+              "filename_short": "mitigate_patches/unchecked_low_level_calls/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c.sol",
+              "is_dependency": false,
+              "lines": [
+                10
+              ],
+              "starting_column": 9,
+              "ending_column": 43
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "proxy",
+                "source_mapping": {
+                  "start": 214,
+                  "length": 110,
+                  "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c.sol",
+                  "filename_short": "mitigate_patches/unchecked_low_level_calls/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    8,
+                    9,
+                    10,
+                    11
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "Proxy",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 298,
+                      "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c.sol",
+                      "filename_short": "mitigate_patches/unchecked_low_level_calls/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "proxy(address,bytes)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "Proxy.proxy(address,bytes) (mitigate_patches/unchecked_low_level_calls/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c.sol#8-11) ignores return value by target.call.value(msg.value)(data) (mitigate_patches/unchecked_low_level_calls/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c.sol#10)\n",
+        "markdown": "[Proxy.proxy(address,bytes)](mitigate_patches/unchecked_low_level_calls/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c.sol#L8-L11) ignores return value by [target.call.value(msg.value)(data)](mitigate_patches/unchecked_low_level_calls/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c.sol#L10)\n",
+        "first_markdown_element": "mitigate_patches/unchecked_low_level_calls/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c.sol#L8-L11",
+        "id": "418ac71db5b2205941a3e522da19da360381c91e458e07d765fa4cca50b71c1b",
+        "check": "unchecked-lowlevel",
+        "impact": "Medium",
+        "confidence": "Medium"
+      }
+    ]
+  }
+}

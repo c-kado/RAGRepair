@@ -2,10 +2,10 @@ pragma solidity ^0.4.23;
 
 contract Proxy  {
     modifier onlyOwner { 
-        require(msg.sender == Owner);
+        require(msg.sender == Owner); 
         _; 
     } 
-    address public Owner;
+    address public Owner = msg.sender;
 
     function transferOwner(address _owner) public onlyOwner { 
         Owner = _owner; 

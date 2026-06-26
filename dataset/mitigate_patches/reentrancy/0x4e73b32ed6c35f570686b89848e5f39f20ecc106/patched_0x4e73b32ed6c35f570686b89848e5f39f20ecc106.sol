@@ -2,8 +2,11 @@ pragma solidity ^0.4.19;
 
 contract PRIVATE_ETH_CELL {
     mapping (address => uint256) public balances;
+
     uint public MinSum;
+
     LogFile Log;
+
     bool initialized;
 
     function SetMinSum(uint _val) public {
@@ -25,13 +28,13 @@ contract PRIVATE_ETH_CELL {
         Log.AddMessage(msg.sender, msg.value, "Put");
     }
 
-    function Collect(uint _am) public {
+    function Collect(uint _am) public payable {
         require(balances[msg.sender] >= MinSum && balances[msg.sender] >= _am);
 
         balances[msg.sender] -= _am;
         Log.AddMessage(msg.sender, _am, "Collect");
 
-        require(msg.sender.call.value(_am)());
+        msg.sender.transfer(_am);
     }
 
     function() public payable {

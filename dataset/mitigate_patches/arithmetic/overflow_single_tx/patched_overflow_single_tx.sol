@@ -1,51 +1,46 @@
 
-                        contract sGuardPlus {
-                                constructor() internal {
 
-                                }
-                                function add_uint(uint a, uint b) internal pure returns (uint) {
-                                uint c = a + b;
-                                assert(c >= a);
-                                return c;
-                        }
-function mul_uint(uint a, uint b) internal pure returns (uint) {
-                                if (a == 0) {
-                                        return 0;
-                                }
-                                uint c = a * b;
-                                assert(c / a == b);
-                                return c;
-                        }
-function sub_uint(uint a, uint b) internal pure returns (uint) {
-                                assert(b <= a);
-                                return a - b;
-                        }
+pragma solidity ^0.4.23;
 
-                        }
-                contract IntegerOverflowSingleTransaction is sGuardPlus {
-uint  public   count = 1;
-function overflowaddtostate (uint256    input) public  {
-count=add_uint(count, input);
-}
+contract IntegerOverflowSingleTransaction {
+    uint public count = 1;
 
-function overflowmultostate (uint256    input) public  {
-count=mul_uint(count, input);
-}
+    function overflowaddtostate(uint256 input) public {
 
-function underflowtostate (uint256    input) public  {
-count=sub_uint(count, input);
-}
+        require(((count + input) >= count)); 
 
-function overflowlocalonly (uint256    input) public  {
-uint     res = count+input;
-}
+        count += input;
+    }
 
-function overflowmulocalonly (uint256    input) public  {
-uint     res = mul_uint(count, input);
-}
+    function overflowmultostate(uint256 input) public {
 
-function underflowlocalonly (uint256    input) public  {
-uint     res = count-input;
-}
+        count *= input;
+    }
+
+    function underflowtostate(uint256 input) public {
+
+        require((count >= input)); 
+
+        count -= input;
+    }
+
+    function overflowlocalonly(uint256 input) public {
+
+        require(((count + input) >= count)); 
+
+        uint res = count + input;
+    }
+
+    function overflowmulocalonly(uint256 input) public {
+
+        uint res = count * input;
+    }
+
+    function underflowlocalonly(uint256 input) public {
+
+       	require((count >= input)); 
+
+       	uint res = count - input;
+    }
 
 }

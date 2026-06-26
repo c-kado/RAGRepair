@@ -21,14 +21,11 @@ contract ETH_VAULT {
     function CashOut(uint _am) public {
         require(_am <= balances[msg.sender]);
 
-        uint amountToWithdraw = _am;
-        balances[msg.sender] -= amountToWithdraw;
+        uint amount = _am;
+        balances[msg.sender] -= amount;
+        TransferLog.AddMessage(msg.sender, amount, "CashOut");
 
-        if(!msg.sender.call.value(amountToWithdraw)()) {
-            revert();
-        }
-
-        TransferLog.AddMessage(msg.sender, amountToWithdraw, "CashOut");
+        msg.sender.transfer(amount);
     }
 
     function() public payable {}
@@ -50,7 +47,6 @@ contract Log {
         newMessage.Time = now;
         newMessage.Val = _val;
         newMessage.Data = _data;
-
         History.push(newMessage);
     }
 }

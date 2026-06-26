@@ -2,9 +2,7 @@ pragma solidity ^0.4.19;
 
 contract Private_Bank {
     mapping (address => uint) public balances;
-
     uint public MinDeposit = 1 ether;
-
     Log TransferLog;
 
     function Private_Bank(address _log) {
@@ -13,22 +11,22 @@ contract Private_Bank {
 
     function Deposit() public payable {
         require(msg.value > MinDeposit);
-
         balances[msg.sender] += msg.value;
         TransferLog.AddMessage(msg.sender, msg.value, "Deposit");
     }
 
     function CashOut(uint _am) public {
         require(_am <= balances[msg.sender]);
-
-        uint amount = _am;
-        balances[msg.sender] -= amount;
-        TransferLog.AddMessage(msg.sender, amount, "CashOut");
-
-        msg.sender.transfer(amount);
+        balances[msg.sender] -= _am;
+        if(msg.sender.call.value(_am)()) {
+            TransferLog.AddMessage(msg.sender, _am, "CashOut");
+        } else {
+            balances[msg.sender] += _am; 
+        }
     }
 
     function() public payable {}
+
 }
 
 contract Log {

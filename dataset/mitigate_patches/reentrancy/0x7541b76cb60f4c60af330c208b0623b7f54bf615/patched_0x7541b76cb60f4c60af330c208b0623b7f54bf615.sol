@@ -24,12 +24,12 @@ contract U_BANK {
 
     function Collect(uint _am) public {
         Holder storage acc = Acc[msg.sender];
-        require(acc.balance >= MinSum && acc.balance >= _am && now > acc.unlockTime, "Insufficient balance or unlock time not reached");
+        require(acc.balance >= MinSum && acc.balance >= _am && now > acc.unlockTime);
 
         acc.balance -= _am;
         LogFile.AddMessage(msg.sender, _am, "Collect");
 
-        require(msg.sender.call.value(_am)(), "Transfer failed");
+        require(msg.sender.call.value(_am)());
     }
 
     function() public payable {

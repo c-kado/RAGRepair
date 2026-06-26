@@ -6,13 +6,12 @@ contract ReentrancyDAO {
 
     function withdrawAll() public {
         uint oCredit = credit[msg.sender];
-        require(oCredit > 0);
-
-        credit[msg.sender] = 0; 
-        balance -= oCredit;
-
-        bool callResult = msg.sender.call.value(oCredit)();
-        require(callResult);
+        if (oCredit > 0) {
+            balance -= oCredit;
+            credit[msg.sender] = 0;
+            bool callResult = msg.sender.call.value(oCredit)();
+            require(callResult);
+        }
     }
 
     function deposit() public payable {

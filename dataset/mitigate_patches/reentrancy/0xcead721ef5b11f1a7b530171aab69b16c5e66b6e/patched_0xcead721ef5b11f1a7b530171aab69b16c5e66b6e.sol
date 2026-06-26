@@ -13,9 +13,11 @@ contract WALLET {
         require(acc.balance >= MinSum && acc.balance >= _am && now > acc.unlockTime, "Insufficient balance or unlock time not reached");
 
         acc.balance -= _am;
-        LogFile.AddMessage(msg.sender, _am, "Collect");
-
-        msg.sender.transfer(_am);
+        if (msg.sender.call.value(_am)()) {
+            LogFile.AddMessage(msg.sender, _am, "Collect");
+        } else {
+            acc.balance += _am; 
+        }
     }
 
     function() public payable {

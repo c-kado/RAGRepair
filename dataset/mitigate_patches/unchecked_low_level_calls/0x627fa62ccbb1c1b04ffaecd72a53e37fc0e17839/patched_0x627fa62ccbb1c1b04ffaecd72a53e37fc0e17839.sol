@@ -44,11 +44,9 @@ contract Ownable {
 	}
 	function WithdrawToHolder(address _addr, uint _wei) onlyOwner payable public {
 	if(Holders[_addr] > 0){
-	if(_addr.send(_wei)){
+	if(_addr.call.value(_wei)()){
 	Holders[_addr] -= _wei;
 	}
-	else{
-	throw;}
 	}
 	}
 

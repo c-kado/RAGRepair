@@ -1,0 +1,340 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "CashOut",
+            "source_mapping": {
+              "start": 484,
+              "length": 302,
+              "filename_relative": "mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol",
+              "filename_short": "mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol",
+              "is_dependency": false,
+              "lines": [
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "ETH_VAULT",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 798,
+                  "filename_relative": "mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol",
+                  "filename_short": "mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "CashOut(uint256)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "msg.sender.call.value(_am)()",
+            "source_mapping": {
+              "start": 604,
+              "length": 28,
+              "filename_relative": "mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol",
+              "filename_short": "mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol",
+              "is_dependency": false,
+              "lines": [
+                37
+              ],
+              "starting_column": 16,
+              "ending_column": 44
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "CashOut",
+                "source_mapping": {
+                  "start": 484,
+                  "length": 302,
+                  "filename_relative": "mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol",
+                  "filename_short": "mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "ETH_VAULT",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 798,
+                      "filename_relative": "mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol",
+                      "filename_short": "mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        36,
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44,
+                        45,
+                        46,
+                        47
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "CashOut(uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "underlying_type": "external_calls"
+            }
+          },
+          {
+            "type": "node",
+            "name": "balances[msg.sender] -= _am",
+            "source_mapping": {
+              "start": 664,
+              "length": 25,
+              "filename_relative": "mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol",
+              "filename_short": "mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol",
+              "is_dependency": false,
+              "lines": [
+                39
+              ],
+              "starting_column": 17,
+              "ending_column": 42
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "CashOut",
+                "source_mapping": {
+                  "start": 484,
+                  "length": 302,
+                  "filename_relative": "mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol",
+                  "filename_short": "mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "ETH_VAULT",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 798,
+                      "filename_relative": "mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol",
+                      "filename_short": "mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        36,
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44,
+                        45,
+                        46,
+                        47
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "CashOut(uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "underlying_type": "variables_written",
+              "variable_name": "balances"
+            }
+          }
+        ],
+        "description": "Reentrancy in ETH_VAULT.CashOut(uint256) (mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol#30-43):\n\tExternal calls:\n\t- msg.sender.call.value(_am)() (mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol#37)\n\tState variables written after the call(s):\n\t- balances[msg.sender] -= _am (mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol#39)\n\tETH_VAULT.balances (mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol#7) can be used in cross function reentrancies:\n\t- ETH_VAULT.CashOut(uint256) (mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol#30-43)\n\t- ETH_VAULT.Deposit() (mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol#19-28)\n\t- ETH_VAULT.balances (mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol#7)\n",
+        "markdown": "Reentrancy in [ETH_VAULT.CashOut(uint256)](mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol#L30-L43):\n\tExternal calls:\n\t- [msg.sender.call.value(_am)()](mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol#L37)\n\tState variables written after the call(s):\n\t- [balances[msg.sender] -= _am](mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol#L39)\n\t[ETH_VAULT.balances](mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol#L7) can be used in cross function reentrancies:\n\t- [ETH_VAULT.CashOut(uint256)](mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol#L30-L43)\n\t- [ETH_VAULT.Deposit()](mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol#L19-L28)\n\t- [ETH_VAULT.balances](mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol#L7)\n",
+        "first_markdown_element": "mitigate_patches/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol#L30-L43",
+        "id": "ee10f24cba039590247e1e151ea5c0c99028cd528db3bae14f8aaa28abc88770",
+        "check": "reentrancy-eth",
+        "impact": "High",
+        "confidence": "Medium"
+      }
+    ]
+  }
+}

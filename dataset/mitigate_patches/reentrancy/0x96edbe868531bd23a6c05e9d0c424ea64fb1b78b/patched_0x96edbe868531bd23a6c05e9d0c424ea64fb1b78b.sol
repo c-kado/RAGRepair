@@ -7,8 +7,11 @@ contract PENNY_BY_PENNY {
     }
 
     mapping (address => Holder) public Acc;
+
     uint public MinSum;
+
     LogFile Log;
+
     bool initialized;
 
     function SetMinSum(uint _val) public {
@@ -38,11 +41,12 @@ contract PENNY_BY_PENNY {
         Holder storage acc = Acc[msg.sender];
         require(acc.balance >= MinSum && acc.balance >= _am && now > acc.unlockTime);
 
-        acc.balance -= _am;
-        if (!msg.sender.call.value(_am)()) {
+        uint amount = _am;
+        acc.balance -= amount;
+        if (!msg.sender.call.value(amount)()) {
             revert();
         }
-        Log.AddMessage(msg.sender, _am, "Collect");
+        Log.AddMessage(msg.sender, amount, "Collect");
     }
 
     function() public payable {
@@ -59,13 +63,13 @@ contract LogFile {
     }
 
     Message[] public History;
-    Message LastMsg;
 
     function AddMessage(address _adr, uint _val, string _data) public {
-        LastMsg.Sender = _adr;
-        LastMsg.Time = now;
-        LastMsg.Val = _val;
-        LastMsg.Data = _data;
-        History.push(LastMsg);
+        Message memory newMessage;
+        newMessage.Sender = _adr;
+        newMessage.Time = now;
+        newMessage.Val = _val;
+        newMessage.Data = _data;
+        History.push(newMessage);
     }
 }

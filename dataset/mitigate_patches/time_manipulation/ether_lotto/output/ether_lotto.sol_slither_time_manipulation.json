@@ -1,0 +1,208 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "play",
+            "source_mapping": {
+              "start": 240,
+              "length": 310,
+              "filename_relative": "mitigate_patches/time_manipulation/ether_lotto/ether_lotto.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/ether_lotto/ether_lotto.sol",
+              "filename_short": "mitigate_patches/time_manipulation/ether_lotto/ether_lotto.sol",
+              "is_dependency": false,
+              "lines": [
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "EtherLotto",
+                "source_mapping": {
+                  "start": 29,
+                  "length": 524,
+                  "filename_relative": "mitigate_patches/time_manipulation/ether_lotto/ether_lotto.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/ether_lotto/ether_lotto.sol",
+                  "filename_short": "mitigate_patches/time_manipulation/ether_lotto/ether_lotto.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "play()"
+            }
+          },
+          {
+            "type": "node",
+            "name": "random == 0",
+            "source_mapping": {
+              "start": 406,
+              "length": 11,
+              "filename_relative": "mitigate_patches/time_manipulation/ether_lotto/ether_lotto.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/ether_lotto/ether_lotto.sol",
+              "filename_short": "mitigate_patches/time_manipulation/ether_lotto/ether_lotto.sol",
+              "is_dependency": false,
+              "lines": [
+                27
+              ],
+              "starting_column": 13,
+              "ending_column": 24
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "play",
+                "source_mapping": {
+                  "start": 240,
+                  "length": 310,
+                  "filename_relative": "mitigate_patches/time_manipulation/ether_lotto/ether_lotto.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/ether_lotto/ether_lotto.sol",
+                  "filename_short": "mitigate_patches/time_manipulation/ether_lotto/ether_lotto.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "EtherLotto",
+                    "source_mapping": {
+                      "start": 29,
+                      "length": 524,
+                      "filename_relative": "mitigate_patches/time_manipulation/ether_lotto/ether_lotto.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/ether_lotto/ether_lotto.sol",
+                      "filename_short": "mitigate_patches/time_manipulation/ether_lotto/ether_lotto.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        36,
+                        37
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "play()"
+                }
+              }
+            }
+          }
+        ],
+        "description": "EtherLotto.play() (mitigate_patches/time_manipulation/ether_lotto/ether_lotto.sol#19-35) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- random == 0 (mitigate_patches/time_manipulation/ether_lotto/ether_lotto.sol#27)\n",
+        "markdown": "[EtherLotto.play()](mitigate_patches/time_manipulation/ether_lotto/ether_lotto.sol#L19-L35) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- [random == 0](mitigate_patches/time_manipulation/ether_lotto/ether_lotto.sol#L27)\n",
+        "first_markdown_element": "mitigate_patches/time_manipulation/ether_lotto/ether_lotto.sol#L19-L35",
+        "id": "02dcc881fab0c481a3c62ef11b74cd736fcfb10679498b97a041d0ff2fe8f6be",
+        "check": "timestamp",
+        "impact": "Low",
+        "confidence": "Medium"
+      }
+    ]
+  }
+}

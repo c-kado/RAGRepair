@@ -40,7 +40,12 @@ hashes2 = nx.weisfeiler_lehman_subgraph_hashes(VulF2, node_attr='node_type')
 
 # print(hashes1)
 
-
+!!!!!!
+slitherの解析結果では，原因となる箇所についてのelementsで書かれている．(contract, function, node)など
+contractやfunctionは，主にこの脆弱性がこの関数の中にありますよ，みたいな説明で使われていそう
+ -> まず，contract, function以外のelementの両方が入る一番上のノードから？(reentrancyがcallとstatechangeの2つになってるから参考にできる)
+ -> contractかfunctionしかなければ，それ支点で
+そもそも，nodeとastのidのマッピングをどうするか．
 
 
 # パターン1: counterで，ノードのattributeのみで出現回数をカウントして比較

@@ -8,7 +8,6 @@ contract X_WALLET {
 
     mapping (address => Holder) public Acc;
     Log LogFile;
-
     uint public MinSum = 1 ether;
 
     function X_WALLET(address log) public {
@@ -24,12 +23,12 @@ contract X_WALLET {
 
     function Collect(uint _am) public {
         Holder storage acc = Acc[msg.sender];
-        require(acc.balance >= MinSum && acc.balance >= _am && now > acc.unlockTime);
+        require(acc.balance >= MinSum && acc.balance >= _am && now > acc.unlockTime, "Insufficient balance or unlock time not reached");
 
         acc.balance -= _am;
         LogFile.AddMessage(msg.sender, _am, "Collect");
 
-        require(msg.sender.call.value(_am)());
+        msg.sender.transfer(_am);
     }
 
     function() public payable {

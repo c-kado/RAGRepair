@@ -1,30 +1,28 @@
+pragma solidity ^0.4.15;
 
+contract Reentrance {
+    mapping (address => uint) userBalance;
+    mapping (address => bool) locked;
 
- pragma solidity ^0.4.15;
+    function getBalance(address u) constant returns(uint){
+        return userBalance[u];
+    }
 
- contract Reentrance {
-     mapping (address => uint) userBalance;
+    function addToBalance() payable{
+        userBalance[msg.sender] += msg.value;
+    }
 
-     function getBalance(address u) constant returns(uint){
-         return userBalance[u];
-     }
+    function withdrawBalance(){
+        require(!locked[msg.sender]);
+        locked[msg.sender] = true;
 
-     function addToBalance() payable{
-         require(((userBalance[msg.sender] + msg.value) >= userBalance[msg.sender])); 
+        uint balance = userBalance[msg.sender];
+        userBalance[msg.sender] = 0;
 
-         userBalance[msg.sender] += msg.value;
-     }
+        if( !msg.sender.call.value(balance)() ){
+            revert();
+        }
 
-     function withdrawBalance(){
-
-         uint256 tmp__1 = userBalance[msg.sender]; 
-
-         userBalance[msg.sender] = 0; 
-
-         if( ! (msg.sender.call.value(tmp__1)() ) ){ 
-
-             throw;
-         }
-
-     }
- }
+        locked[msg.sender] = false;
+    }
+}

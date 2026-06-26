@@ -45,13 +45,26 @@
 #     |
 #     - patched_CONTRACT.sol
 
-
+import json
 import os
 import pandas as pd
 import re
 import shutil
 import subprocess
 from subprocess import PIPE
+
+
+vul_mapping = {'access_control': ['tx-origin', 'controlled-delegatecall', 'suicidal'], # incorrect_constructor, mappin_write, wallet_0x検知できず, 
+                'arithmetic': [], # Slither do not detect overflow/underflow.
+                'bad_randomness': ['timestamp'], # blackjack検知できず
+                'denial_of_service': [],
+                'front_running': [], # No target contract
+                'reentrancy': ['reentrancy-eth'],   #modifier_reentrancyのreentrancy-no-ethは修正後にも検知, reentrancy_bonus検知できず
+                'time_manipulation': ['timestamp'],
+                'unchecked_low_level_calls': ['unchecked-lowlevel', 'unchecked-send'],    # 0x52..のやつは他のところも変わってるけど，，-xa1f...は検知できず
+                'other': ['uninitialized-storage']}
+
+
 
 
 def extract_dataset(repcomp_file):
@@ -71,7 +84,7 @@ def extract_dataset(repcomp_file):
     mitigate_patches_df = mitigate_patches_df.sort_values('Tool', key=lambda s: s.map({v: i for i, v in enumerate(high_acc_tool)}))
     mitigate_patches_df = mitigate_patches_df.sort_values('Original', kind='stable').sort_values('Category', kind='stable')
 
-    mitigate_patches_df.to_csv('mitigate_patches/mitigate_pathces.csv', index=False)
+    mitigate_patches_df.to_csv('mitigate_patches/mitigate_patches.csv', index=False)
     mitigate_patches_nodup_df = mitigate_patches_df.drop_duplicates(subset='Original', keep='first')
 
 
@@ -115,9 +128,6 @@ def get_solfix_pair(df):
 def get_mitigate_patches(df):
     # get the fixed contract mitigating vulnerability
 
-    # regard the patches satisfying 'consistence' as mitigate patches
-    df = df[df['Consistent'] == True]
-
     return df[(df['functional_check'] == 'passed') & (df['mitigates'] == 'yes')]
 
 
@@ -128,7 +138,7 @@ def record_contract_info(contract_info):
     # 3. get analysis result by Slither
 
     contract_dir = f'mitigate_patches/{contract_info['Category']}/{contract_info['Original'][:-4]}'
-    
+ 
     vul_source = f'{contract_dir}/{contract_info['Original']}'
     patched_source = f'{contract_dir}/patched_{contract_info['Original']}'
 
@@ -141,39 +151,58 @@ def record_contract_info(contract_info):
    
     # In solc under v0.4.??, the option `-o ./' occurs an error.
     # To except this, the ast output is recorded in `output/'.
-    output_dir = f'{contract_dir}/output'
-    os.makedirs(output_dir, exist_ok=True)
 
     print(f'{vul_source[:-4]}\nRun Solc...')
-    if not solc_compile(vul_source, output_dir):
+    if not solc_compile(vul_source, f'{contract_dir}/output'):
        print('solc-error!!')
        exit()
 
     print('Run Slither....')
     # TODO: 実験設定メモ: 今回は対象の脆弱性を1つ含んでいる場合のみをデータセットとして持つ
-    # データセット生成時，slitherの解析結果としては対象の脆弱性の結果の身を記録
+    # データセット生成時，slitherの解析結果としては対象の脆弱性の結果のみを記録
     # ただし，脆弱性修正対象としては，他の脆弱性が増えてはいけないので，全ての解析結果と比べる． 
-    # TODO: TODO: TODO: 次のslither実行は，テスト対象として修正をする時，修正後に脆弱性が増加しないか確認するため，全脆弱性を解析
-    run_slither(vul_source, f'{contract_dir}/output/{contract_info['Original']}_slither.json')
-    # run_slither(patched_source, f'{contract_dir}/output/patched_{contract_info['Original']}_slither.json')
+
+    # TODO: 実験設定メモ: 次のslither実行は，テスト対象として修正をする時，修正後に脆弱性が増加しないか確認するため，全脆弱性を解析
+
+    all_results_file = f'{contract_dir}/output/{contract_info['Original']}_slither.json'
+    targetvul_results_file = f'{contract_dir}/output/{contract_info['Original']}_slither_{contract_info['Category']}.json'
+
+    # slither can not overwrite -> remove file
+    if os.path.exists(all_results_file):
+        os.remove(all_results_file)
+    if not run_slither(vul_source, all_results_file):
+        return False
     
-    # TODO: TODO: TODO: 以下のslither実行は，bug-patchのデータセットとして，対象の脆弱性のみを解析し，それ用のファイルに保存するように変更
+    # extract results of only target vulnerability from all results
+    targetvul_detection = extract_vul_results(all_results_file, contract_info['Category'])
+    with open(targetvul_results_file, 'w') as f:
+        json.dump(targetvul_detection, f, indent=2)
+    # run_slither(vul_source, f'{contract_dir}/output/{contract_info['Original']}_slither_{contract_info['Category']}.json', option=[f'--detect {','.join(vul_mapping[contract_info['Category']])}'])
 
-    # slitherの結果を入れる'check'のやつ
-    # TODO: TODO: TODO: TODO: 以下のマッピングを，今回のに修正する. そんで，関数外に出しとく
-    detect_vul = {'access_control': ['tx-origin'], # incorrect_constructor検知できず, # TODO: mapping_writeの場合要確認
-                'arithmetic': [], # Slither do not detect overflow/underflow.
-                'bad_randomness': ['timestamp'],
-                'denial_of_service': ['controlled-array-length', 'costly-loop'],
-                'front_running': [], # No target contract
-                'reentrancy': ['reentrancy-eth'],
-                'time_manipulation': ['timestamp'],
-                'unchecked_low_level_calls': ['unchecked-lowlevel'],
-                'other': ['uninitialized-storage']}
 
-    run_slither(vul_source, f'{contract_dir}/output/{contract_info['Original']}_slither_{contract_info['Category']}.json', f'--detect {".".join(detect_vul[contract_info['Category']])}')
+    # まず，originalの脆弱性を検知できていなければアウト
+    if not targetvul_detection['results']:
+        return False 
 
-    # TODO: TODO: TODO: ここで，slitherで解析できてない or 複数対象脆弱性あり，のコントラクトをmitigate_patchesから外すために，csvに追加の列を設定する処理を挟む．
+    # 今回はretriever側のデータセットとしては1つの解析結果の場合のみに限定．複数検知されているのもアウト
+    if len(targetvul_detection['results']['detectors']) != 1:
+        return False
+
+    # originalとpatchで結果を比較
+    # originalの解析から脆弱性が減っていない場合（slitherでは検知できない場合?）はデータセットから除外
+    patched_targetvul_results_file = f'{contract_dir}/output/patched_{contract_info['Original']}_slither_{contract_info['Category']}.json'
+    if not run_slither(patched_source, patched_targetvul_results_file, option=[f'--detect {','.join(vul_mapping[contract_info['Category']])}']):
+        return False
+
+    with open(patched_targetvul_results_file, 'r') as f:
+        patch_detection = json.load(f)
+
+    if not patch_detection['results']:
+        # 脆弱性なし！
+        return True
+    else:
+        return False
+
 
 
 def change_solc_version(version):
@@ -200,30 +229,47 @@ def solc_compile(sol_file, output_dir):
     return True
 
 
-def run_slither(sol_file, output_file, execution_option=''):
-    
-    proc = subprocess.run(f'slither --exclude-informational --exclude-optimization {" ".join(execution_option)} {sol_file} --json {output_file}', shell=True, stdout=PIPE, stderr=PIPE, text=True)
+def run_slither(sol_file, output_file, option=''):
+    proc = subprocess.run(f'slither --exclude-informational --exclude-optimization {" ".join(option)} {sol_file} --json {output_file}', shell=True, stdout=PIPE, stderr=PIPE, text=True)
+    if not os.path.exists(output_file):
+        print(proc.stderr)
+        return False
     return True
     
 
+def extract_vul_results(all_results_file, category):
+    with open(all_results_file, 'r') as f:
+        results = json.load(f)
 
+    if not results['results']:
+        # 脆弱性なし
+        return results    
+    
+    results['results']['detectors'] = [d for d in results['results']['detectors'] if d['check'] in vul_mapping[category]]
+    
+    if len(results['results']['detectors']) == 0:
+        results['results'] = {}
+
+    return results
 
 
 
 
 # MAIN
 mitigate_patches = extract_dataset('../tools/RepairComp/results/smartbugs/data_analysis/all_patches_stats.csv')
+mitigate_patches['retriever_dataset'] = True
+mitigate_patches.loc[mitigate_patches['Category'] == 'arithmetic', 'retriever_dataset'] = False
 
-for idx, row in mitigate_patches.iterrows():
+
+for idx, contract_info in mitigate_patches[mitigate_patches['retriever_dataset']==True].iterrows():
     # 各vul/fixのペアに対して，vulのファイルをslitherで解析, solcによるast出力
     # 解析情報を記録
-    record_contract_info(row)
-
     
+    os.makedirs(f'mitigate_patches/{contract_info['Category']}/{contract_info['Original'][:-4]}/output', exist_ok=True)
+    if not record_contract_info(contract_info):
+        # not match for retrieved dataset
+        # shutil.rmtree(f'mitigate_patches/{contract_info['Category']}/{contract_info['Original'][:-4]}/')
+        mitigate_patches.at[idx, 'retriever_dataset'] = False
+        print(f'{contract_info['Category']}/{contract_info['Original']}: not match dataset')
 
-
-
-
-
-
-
+mitigate_patches.to_csv('mitigate_patches/mitigate_patches.csv', index=False)

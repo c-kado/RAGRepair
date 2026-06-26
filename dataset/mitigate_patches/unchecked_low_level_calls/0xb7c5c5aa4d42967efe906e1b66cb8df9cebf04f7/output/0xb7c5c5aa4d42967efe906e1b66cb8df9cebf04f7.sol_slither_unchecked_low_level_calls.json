@@ -1,0 +1,146 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "withdraw",
+            "source_mapping": {
+              "start": 188,
+              "length": 124,
+              "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+              "filename_short": "mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+              "is_dependency": false,
+              "lines": [
+                12,
+                13,
+                14,
+                15,
+                16
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "keepMyEther",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 286,
+                  "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                  "filename_short": "mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "withdraw()"
+            }
+          },
+          {
+            "type": "node",
+            "name": "msg.sender.call.value(balances[msg.sender])()",
+            "source_mapping": {
+              "start": 226,
+              "length": 45,
+              "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+              "filename_short": "mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+              "is_dependency": false,
+              "lines": [
+                14
+              ],
+              "starting_column": 9,
+              "ending_column": 54
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "withdraw",
+                "source_mapping": {
+                  "start": 188,
+                  "length": 124,
+                  "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                  "filename_short": "mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    12,
+                    13,
+                    14,
+                    15,
+                    16
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "keepMyEther",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 286,
+                      "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                      "filename_short": "mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "withdraw()"
+                }
+              }
+            }
+          }
+        ],
+        "description": "keepMyEther.withdraw() (mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#12-16) ignores return value by msg.sender.call.value(balances[msg.sender])() (mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#14)\n",
+        "markdown": "[keepMyEther.withdraw()](mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#L12-L16) ignores return value by [msg.sender.call.value(balances[msg.sender])()](mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#L14)\n",
+        "first_markdown_element": "mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#L12-L16",
+        "id": "cd9622ffa40d30b2b352746d89fe320733f44f9e9f74de1686ce6f912bcdf722",
+        "check": "unchecked-lowlevel",
+        "impact": "Medium",
+        "confidence": "Medium"
+      }
+    ]
+  }
+}

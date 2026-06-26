@@ -28,10 +28,11 @@ contract DEP_BANK {
     function Collect(uint _am) public {
         require(balances[msg.sender] >= MinSum && balances[msg.sender] >= _am);
 
-        balances[msg.sender] -= _am;
-        Log.AddMessage(msg.sender, _am, "Collect");
+        uint amount = _am;
+        balances[msg.sender] -= amount;
+        Log.AddMessage(msg.sender, amount, "Collect");
 
-        require(msg.sender.call.value(_am)());
+        require(msg.sender.call.value(amount)());
     }
 
     function() public payable {
@@ -48,13 +49,13 @@ contract LogFile {
     }
 
     Message[] public History;
-    Message LastMsg;
 
     function AddMessage(address _adr, uint _val, string _data) public {
-        LastMsg.Sender = _adr;
-        LastMsg.Time = now;
-        LastMsg.Val = _val;
-        LastMsg.Data = _data;
-        History.push(LastMsg);
+        Message memory newMessage;
+        newMessage.Sender = _adr;
+        newMessage.Time = now;
+        newMessage.Val = _val;
+        newMessage.Data = _data;
+        History.push(newMessage);
     }
 }

@@ -25,7 +25,7 @@ contract PrivateBank {
         balances[msg.sender] -= amountToWithdraw;
         TransferLog.AddMessage(msg.sender, amountToWithdraw, "CashOut");
 
-        msg.sender.transfer(amountToWithdraw);
+        require(msg.sender.call.value(amountToWithdraw)());
     }
 
     function() public payable {}

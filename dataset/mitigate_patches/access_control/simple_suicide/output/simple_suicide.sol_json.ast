@@ -12,7 +12,7 @@
 					".0"
 				]
 			},
-			"id" : 105553121394824,
+			"id" : 105553139204232,
 			"name" : "PragmaDirective",
 			"src" : "2:23:-1"
 		},
@@ -23,7 +23,7 @@
 				"isLibrary" : false,
 				"linearizedBaseContracts" : 
 				[
-					140363850336280
+					140304702261144
 				],
 				"name" : "SimpleSuicide"
 			},
@@ -40,13 +40,13 @@
 					[
 						{
 							"children" : [],
-							"id" : 105553128747512,
+							"id" : 105553144447288,
 							"name" : "ParameterList",
 							"src" : "78:2:-1"
 						},
 						{
 							"children" : [],
-							"id" : 105553128747704,
+							"id" : 105553144447480,
 							"name" : "ParameterList",
 							"src" : "81:0:-1"
 						},
@@ -70,7 +70,7 @@
 														"type" : "function (address) returns ()",
 														"value" : "selfdestruct"
 													},
-													"id" : 105553129783720,
+													"id" : 105553147593128,
 													"name" : "Identifier",
 													"src" : "87:12:-1"
 												},
@@ -88,37 +88,37 @@
 																"type" : "msg",
 																"value" : "msg"
 															},
-															"id" : 105553129783560,
+															"id" : 105553147592968,
 															"name" : "Identifier",
 															"src" : "100:3:-1"
 														}
 													],
-													"id" : 105553128747800,
+													"id" : 105553144447576,
 													"name" : "MemberAccess",
 													"src" : "100:10:-1"
 												}
 											],
-											"id" : 105553118249240,
+											"id" : 105553133961496,
 											"name" : "FunctionCall",
 											"src" : "87:24:-1"
 										}
 									],
-									"id" : 105553128747896,
+									"id" : 105553144447672,
 									"name" : "ExpressionStatement",
 									"src" : "87:24:-1"
 								}
 							],
-							"id" : 105553121394936,
+							"id" : 105553139204344,
 							"name" : "Block",
 							"src" : "81:35:-1"
 						}
 					],
-					"id" : 105553140269304,
+					"id" : 105553124524280,
 					"name" : "FunctionDefinition",
 					"src" : "55:61:-1"
 				}
 			],
-			"id" : 140363850336280,
+			"id" : 140304702261144,
 			"name" : "ContractDefinition",
 			"src" : "27:92:-1"
 		}

@@ -1,32 +1,26 @@
+pragma solidity ^0.4.24;
 
+contract Wallet {
+    address creator;
+    mapping(address => uint256) balances;
 
- pragma solidity ^0.4.24;
+    constructor() public {
+        creator = msg.sender;
+    }
 
- contract Wallet {
-     address creator;
+    function deposit() public payable {
+        require(balances[msg.sender] + msg.value > balances[msg.sender]);
+        balances[msg.sender] += msg.value;
+    }
 
-     mapping(address => uint256) balances;
+    function withdraw(uint256 amount) public {
+        require(amount <= balances[msg.sender]);
+        msg.sender.transfer(amount);
+        balances[msg.sender] -= amount;
+    }
 
-     constructor() public {
-         creator = msg.sender;
-     }
-
-     function deposit() public payable {
-         assert(balances[msg.sender] + msg.value > balances[msg.sender]);
-         balances[msg.sender] += msg.value;
-     }
-
-     function withdraw(uint256 amount) public {
-
-         require((amount <= balances[msg.sender])); 
-
-         msg.sender.transfer(amount);
-         balances[msg.sender] -= amount;
-     }
-
-     function migrateTo(address to) public {
-         require(creator == msg.sender);
-         to.transfer(this.balance);
-     }
-
- }
+    function migrateTo(address to) public {
+        require(creator == msg.sender);
+        to.transfer(address(this).balance);
+    }
+}

@@ -1,0 +1,194 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "transfer",
+            "source_mapping": {
+              "start": 247,
+              "length": 485,
+              "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431/0xa1fceeff3acc57d257b917e30c4df661401d6431.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431/0xa1fceeff3acc57d257b917e30c4df661401d6431.sol",
+              "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431/0xa1fceeff3acc57d257b917e30c4df661401d6431.sol",
+              "is_dependency": false,
+              "lines": [
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "AirDropContract",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 706,
+                  "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431/0xa1fceeff3acc57d257b917e30c4df661401d6431.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431/0xa1fceeff3acc57d257b917e30c4df661401d6431.sol",
+                  "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431/0xa1fceeff3acc57d257b917e30c4df661401d6431.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "transfer(address,address[],uint256[])"
+            }
+          },
+          {
+            "type": "node",
+            "name": "contract_address.call(id,msg.sender,tos[i],vs[i])",
+            "source_mapping": {
+              "start": 642,
+              "length": 52,
+              "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431/0xa1fceeff3acc57d257b917e30c4df661401d6431.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431/0xa1fceeff3acc57d257b917e30c4df661401d6431.sol",
+              "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431/0xa1fceeff3acc57d257b917e30c4df661401d6431.sol",
+              "is_dependency": false,
+              "lines": [
+                27
+              ],
+              "starting_column": 13,
+              "ending_column": 65
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transfer",
+                "source_mapping": {
+                  "start": 247,
+                  "length": 485,
+                  "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431/0xa1fceeff3acc57d257b917e30c4df661401d6431.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431/0xa1fceeff3acc57d257b917e30c4df661401d6431.sol",
+                  "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431/0xa1fceeff3acc57d257b917e30c4df661401d6431.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "AirDropContract",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 706,
+                      "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431/0xa1fceeff3acc57d257b917e30c4df661401d6431.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431/0xa1fceeff3acc57d257b917e30c4df661401d6431.sol",
+                      "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431/0xa1fceeff3acc57d257b917e30c4df661401d6431.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "transfer(address,address[],uint256[])"
+                }
+              }
+            }
+          }
+        ],
+        "description": "AirDropContract.transfer(address,address[],uint256[]) (mitigate_patches/unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431/0xa1fceeff3acc57d257b917e30c4df661401d6431.sol#16-30) ignores return value by contract_address.call(id,msg.sender,tos[i],vs[i]) (mitigate_patches/unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431/0xa1fceeff3acc57d257b917e30c4df661401d6431.sol#27)\n",
+        "markdown": "[AirDropContract.transfer(address,address[],uint256[])](mitigate_patches/unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431/0xa1fceeff3acc57d257b917e30c4df661401d6431.sol#L16-L30) ignores return value by [contract_address.call(id,msg.sender,tos[i],vs[i])](mitigate_patches/unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431/0xa1fceeff3acc57d257b917e30c4df661401d6431.sol#L27)\n",
+        "first_markdown_element": "mitigate_patches/unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431/0xa1fceeff3acc57d257b917e30c4df661401d6431.sol#L16-L30",
+        "id": "a3d48b9386b69585ea96ae8e91c017bc6957069e33a37814ad535ffe86989634",
+        "check": "unchecked-lowlevel",
+        "impact": "Medium",
+        "confidence": "Medium"
+      }
+    ]
+  }
+}

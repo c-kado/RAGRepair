@@ -20,10 +20,13 @@ contract PrivateBank {
         balances[msg.sender] -= _am;
         if(msg.sender.call.value(_am)()) {
             TransferLog.AddMessage(msg.sender, _am, "CashOut");
+        } else {
+            balances[msg.sender] += _am; 
         }
     }
 
     function() public payable {}
+
 }
 
 contract Log {

@@ -1,0 +1,240 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "fallback",
+            "source_mapping": {
+              "start": 123,
+              "length": 232,
+              "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
+              "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+              "is_dependency": false,
+              "lines": [
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "Roulette",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 329,
+                  "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
+                  "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "fallback()"
+            }
+          },
+          {
+            "type": "node",
+            "name": "require(bool)(now != pastBlockTime)",
+            "source_mapping": {
+              "start": 202,
+              "length": 29,
+              "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
+              "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+              "is_dependency": false,
+              "lines": [
+                13
+              ],
+              "starting_column": 9,
+              "ending_column": 38
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "fallback",
+                "source_mapping": {
+                  "start": 123,
+                  "length": 232,
+                  "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
+                  "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "Roulette",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 329,
+                      "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
+                      "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "fallback()"
+                }
+              }
+            }
+          },
+          {
+            "type": "node",
+            "name": "now % 15 == 0",
+            "source_mapping": {
+              "start": 275,
+              "length": 13,
+              "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
+              "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+              "is_dependency": false,
+              "lines": [
+                16
+              ],
+              "starting_column": 12,
+              "ending_column": 25
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "fallback",
+                "source_mapping": {
+                  "start": 123,
+                  "length": 232,
+                  "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
+                  "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "Roulette",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 329,
+                      "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
+                      "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "fallback()"
+                }
+              }
+            }
+          }
+        ],
+        "description": "Roulette.fallback() (mitigate_patches/time_manipulation/roulette/roulette.sol#10-19) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool)(now != pastBlockTime) (mitigate_patches/time_manipulation/roulette/roulette.sol#13)\n\t- now % 15 == 0 (mitigate_patches/time_manipulation/roulette/roulette.sol#16)\n",
+        "markdown": "[Roulette.fallback()](mitigate_patches/time_manipulation/roulette/roulette.sol#L10-L19) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- [require(bool)(now != pastBlockTime)](mitigate_patches/time_manipulation/roulette/roulette.sol#L13)\n\t- [now % 15 == 0](mitigate_patches/time_manipulation/roulette/roulette.sol#L16)\n",
+        "first_markdown_element": "mitigate_patches/time_manipulation/roulette/roulette.sol#L10-L19",
+        "id": "9405b0b28bbd889612b11a41c02b00678aa6180dd9f6f581d07f1d23b9f9231d",
+        "check": "timestamp",
+        "impact": "Low",
+        "confidence": "Medium"
+      }
+    ]
+  }
+}

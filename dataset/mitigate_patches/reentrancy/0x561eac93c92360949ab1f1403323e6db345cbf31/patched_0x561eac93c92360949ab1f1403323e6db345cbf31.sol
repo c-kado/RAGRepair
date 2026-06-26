@@ -2,11 +2,8 @@ pragma solidity ^0.4.19;
 
 contract BANK_SAFE {
     mapping (address => uint256) public balances;
-
     uint public MinSum;
-
     LogFile Log;
-
     bool initialized;
 
     function SetMinSum(uint _val) public {
@@ -31,11 +28,10 @@ contract BANK_SAFE {
     function Collect(uint _am) public {
         require(balances[msg.sender] >= MinSum && balances[msg.sender] >= _am);
 
-        uint amount = _am;
-        balances[msg.sender] -= amount;
-        Log.AddMessage(msg.sender, amount, "Collect");
+        balances[msg.sender] -= _am;
+        Log.AddMessage(msg.sender, _am, "Collect");
 
-        require(msg.sender.call.value(amount)());
+        require(msg.sender.call.value(_am)());
     }
 
     function() public payable {

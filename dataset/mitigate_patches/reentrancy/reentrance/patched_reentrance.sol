@@ -3,7 +3,7 @@ pragma solidity ^0.4.18;
 contract Reentrance {
 
     mapping(address => uint) public balances;
-    mapping(address => bool) public locked;
+    mapping(address => bool) locked;
 
     function donate(address _to) public payable {
         balances[_to] += msg.value;

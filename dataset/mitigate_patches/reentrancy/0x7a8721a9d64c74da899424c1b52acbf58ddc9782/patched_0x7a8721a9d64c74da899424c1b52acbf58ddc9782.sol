@@ -59,7 +59,6 @@ contract Log {
         newMessage.Time = now;
         newMessage.Val = _val;
         newMessage.Data = _data;
-
         History.push(newMessage);
     }
 }

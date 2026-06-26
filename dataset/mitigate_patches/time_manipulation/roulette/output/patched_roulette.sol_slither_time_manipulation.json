@@ -1,0 +1,162 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "fallback",
+            "source_mapping": {
+              "start": 121,
+              "length": 240,
+              "filename_relative": "mitigate_patches/time_manipulation/roulette/patched_roulette.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/patched_roulette.sol",
+              "filename_short": "mitigate_patches/time_manipulation/roulette/patched_roulette.sol",
+              "is_dependency": false,
+              "lines": [
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "Roulette",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 337,
+                  "filename_relative": "mitigate_patches/time_manipulation/roulette/patched_roulette.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/patched_roulette.sol",
+                  "filename_short": "mitigate_patches/time_manipulation/roulette/patched_roulette.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "fallback()"
+            }
+          },
+          {
+            "type": "node",
+            "name": "require(bool)(now > pastBlockTime)",
+            "source_mapping": {
+              "start": 200,
+              "length": 28,
+              "filename_relative": "mitigate_patches/time_manipulation/roulette/patched_roulette.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/patched_roulette.sol",
+              "filename_short": "mitigate_patches/time_manipulation/roulette/patched_roulette.sol",
+              "is_dependency": false,
+              "lines": [
+                11
+              ],
+              "starting_column": 9,
+              "ending_column": 37
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "fallback",
+                "source_mapping": {
+                  "start": 121,
+                  "length": 240,
+                  "filename_relative": "mitigate_patches/time_manipulation/roulette/patched_roulette.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/patched_roulette.sol",
+                  "filename_short": "mitigate_patches/time_manipulation/roulette/patched_roulette.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "Roulette",
+                    "source_mapping": {
+                      "start": 26,
+                      "length": 337,
+                      "filename_relative": "mitigate_patches/time_manipulation/roulette/patched_roulette.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/patched_roulette.sol",
+                      "filename_short": "mitigate_patches/time_manipulation/roulette/patched_roulette.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "fallback()"
+                }
+              }
+            }
+          }
+        ],
+        "description": "Roulette.fallback() (mitigate_patches/time_manipulation/roulette/patched_roulette.sol#8-17) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool)(now > pastBlockTime) (mitigate_patches/time_manipulation/roulette/patched_roulette.sol#11)\n",
+        "markdown": "[Roulette.fallback()](mitigate_patches/time_manipulation/roulette/patched_roulette.sol#L8-L17) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- [require(bool)(now > pastBlockTime)](mitigate_patches/time_manipulation/roulette/patched_roulette.sol#L11)\n",
+        "first_markdown_element": "mitigate_patches/time_manipulation/roulette/patched_roulette.sol#L8-L17",
+        "id": "5ed1b5c5bbf85e0badf878cafd13b0f65075b0a15293cf21135c6e5a3c64691d",
+        "check": "timestamp",
+        "impact": "Low",
+        "confidence": "Medium"
+      }
+    ]
+  }
+}

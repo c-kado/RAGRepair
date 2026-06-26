@@ -48,7 +48,7 @@ contract LogFile {
     }
 
     Message[] public History;
-    Message public LastMsg;
+    Message LastMsg;
 
     function AddMessage(address _adr, uint _val, string _data) public {
         LastMsg.Sender = _adr;

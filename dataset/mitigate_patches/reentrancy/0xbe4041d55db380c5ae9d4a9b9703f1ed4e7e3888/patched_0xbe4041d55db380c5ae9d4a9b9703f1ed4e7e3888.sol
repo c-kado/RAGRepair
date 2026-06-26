@@ -41,10 +41,11 @@ contract MONEY_BOX {
         Holder storage acc = Acc[msg.sender];
         require(acc.balance >= MinSum && acc.balance >= _am && now > acc.unlockTime);
 
-        acc.balance -= _am;
-        LogFile.AddMessage(msg.sender, _am, "Collect");
+        uint amount = _am;
+        acc.balance -= amount;
+        LogFile.AddMessage(msg.sender, amount, "Collect");
 
-        msg.sender.transfer(_am);
+        msg.sender.transfer(amount);
     }
 
     function() public payable {

@@ -9,8 +9,7 @@
         # パターン2. 脆弱なコントラクトのAST全体をグラフ化する方に含めちゃう？
 
 
-# カーネルを計算する
-
+# ハッシュを計算する
 
 # カーネルの比較対象を減らすために，脆弱性の検知結果（1つの脆弱性に絞って）をbm25で検索(bm25というより，語彙的に似ているものを探す簡易的なもので足切りする感じ)
 # これで，同じ脆弱性とかぐらいには絞れる？
@@ -92,6 +91,88 @@ def add_children_node(g, children, parent_id, no_id_node):
             add_children_node(g, node['children'], node_id, no_id_node)
 
 
+def get_ast_hash_vect():
+
+    # 脆弱性の該当行のトップのrootIDが欲しい
+        # 脆弱性の該当行を特定
+            # slitherの結果を確認
+            # 脆弱性ごとに，脆弱性箇所のelementを抽出
+            # 該当elementの行を抜き出し
+        # 該当行の一番上のIDを特定
+            # 脆弱行のノードをastから特定
+            # 行の最大部分木(行の一部でなく全体になるよう)のrootをとる
+   
+
+    # TODO: ここでのelement抽出時に，elementが(funcitonやcontractを除いて)複数にまたがる場合，
+    # 複数elementを子孫に持つノードをハッシュ計算のrootとする？
+    # 各elementを統合して見る場合（element内で重複しているけど，重複させるのが重み的に重要なところのマッチを見れる？）
+    # funcion, contract単位はdepth=3，nodeならdepth=2とかにして，統合？？
+    # それぞれでコサイン類似度とって，nodeとかの方に重みつける？(nodeの数が異なった場合に困る？)reentrancyで，statevariableの更新が1つか2つか，みたいな差をどうするか
+    # ハッシュをdepthだけ変えて求めてそのまま統合が良さげ？
+ 
+    
+    vul_trigger_element = {
+        'tx-origin': {'type': 'node'},
+        'controlled-delegatecall': {'type': 'node'},
+        'suicidal': {'type': 'function'},
+        'timestamp': {'type': 'node'},
+        'reentrancy-eth': {'type': 'node', 'additional_fields':{'underlying_type': 'external_calls'}},
+        'unchecked-lowlevel': {'type': 'node'},
+        'unchecked-send': {'type': 'node'},
+        'uninitialized-storage': {'type': 'variable'}}
+
+   
+
+    # 脆弱性の該当行を特定
+    with open(file.sol_slither_{category}.json, 'r') as f:
+        detection_result = json.load(f)
+
+    # datasetとして記録するvulfileは，1つのターゲット脆弱性のみ
+    vul_info = detection_result['results']['detectors'][0]
+
+
+    # 行単位で見る場合
+    elements = vul_info['elements']
+    for element in elements:
+        if check_element(element, vul_trigger_element[vul_info['check']]):
+            vul_element = element
+            print('vul_element: '+element['name']+'\n')
+            break
+
+    # elementの行を抜き出す（該当行のスタートからエンドまでの文字位置）
+    start_vul = vul_element['source_mapping']['start']
+    end_vul = start_vul + vul_element['source_mapping']['length']
+
+
+    # 該当行の一番上のノードID
+    # -> 該当文字位置全てを最小で含むノードを探す．
+    # 親から再帰的に文字が含まれるか見ていって，含まれなくなる1個上のノードが該当ノード
+
+    with open(ast_file, 'r') as f:
+        ast = json.load(f)
+        # TODO: TODO: TODO: 
+        jsonか？127行目のfile名の与え方と，ここのファイル名の与え方考える
+
+
+
+def check_element(element, trigger):
+    for attr, value in trigger.items():
+        if not check_element_attr(element, attr, value):
+            return False            
+
+    return True
+   
+
+def check_element_attr(element, attr, value):
+    if type(value) == str:
+        return element[attr] == value
+    else:
+        return check_element_attr(element[attr], value.keys[0], value.values[0])
+
+
+
+
+# MAIN
 
 for category in os.listdir('mitigate_patches'):
     if not os.path.isdir(f'mitigate_patches/{category}'):
@@ -115,6 +196,12 @@ for category in os.listdir('mitigate_patches'):
         # TODO: TODO: TODO: tx_verification/src/dataset_creation/generate_prompt.pyを参考に，各脆弱性ごとに，該当する行を取得する．(elementでnodeを探すやつ)
         # その後，test_compute.pyのように，rootを設定（行の一番上にあるのーどid?）して，ハッシュ計算，counter
         # 以上をファイルに保存しておく
+        
+        get_ast_hash_vect(category, contract)
+        slitherのvul限定の結果がいる．
+
+
+
 
         # save the graph info
         ast_graph_info = {'graph': json_graph.node_link_data(ast_graph), 'wl_hashes': ast_hashes}
