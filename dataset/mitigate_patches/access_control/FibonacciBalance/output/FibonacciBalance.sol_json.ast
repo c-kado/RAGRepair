@@ -1,7 +1,7 @@
 {
 	"attributes" : 
 	{
-		"absolutePath" : "mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
+		"absolutePath" : "../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
 		"exportedSymbols" : 
 		{
 			"FibonacciBalance" : 

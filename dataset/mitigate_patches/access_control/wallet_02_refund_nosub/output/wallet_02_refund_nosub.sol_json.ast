@@ -1,7 +1,7 @@
 {
 	"attributes" : 
 	{
-		"absolutePath" : "mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
+		"absolutePath" : "../dataset/mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
 		"exportedSymbols" : 
 		{
 			"Wallet" : 

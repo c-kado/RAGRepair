@@ -1,7 +1,7 @@
 {
 	"attributes" : 
 	{
-		"absolutePath" : "mitigate_patches/bad_randomness/etheraffle/etheraffle.sol",
+		"absolutePath" : "../dataset/mitigate_patches/bad_randomness/etheraffle/etheraffle.sol",
 		"exportedSymbols" : 
 		{
 			"Ethraffle_v4b" : 

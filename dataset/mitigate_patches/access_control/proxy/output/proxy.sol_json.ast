@@ -1,7 +1,7 @@
 {
 	"attributes" : 
 	{
-		"absolutePath" : "mitigate_patches/access_control/proxy/proxy.sol",
+		"absolutePath" : "../dataset/mitigate_patches/access_control/proxy/proxy.sol",
 		"exportedSymbols" : 
 		{
 			"Proxy" : 

@@ -11,9 +11,9 @@
             "source_mapping": {
               "start": 541,
               "length": 326,
-              "filename_relative": "mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
-              "filename_short": "mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
               "is_dependency": false,
               "lines": [
                 33,
@@ -41,9 +41,9 @@
                 "source_mapping": {
                   "start": 28,
                   "length": 879,
-                  "filename_relative": "mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
-                  "filename_short": "mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
                   "is_dependency": false,
                   "lines": [
                     5,
@@ -106,9 +106,9 @@
             "source_mapping": {
               "start": 685,
               "length": 28,
-              "filename_relative": "mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
-              "filename_short": "mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
               "is_dependency": false,
               "lines": [
                 40
@@ -123,9 +123,9 @@
                 "source_mapping": {
                   "start": 541,
                   "length": 326,
-                  "filename_relative": "mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
-                  "filename_short": "mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
                   "is_dependency": false,
                   "lines": [
                     33,
@@ -153,9 +153,9 @@
                     "source_mapping": {
                       "start": 28,
                       "length": 879,
-                      "filename_relative": "mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
+                      "filename_relative": "../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
-                      "filename_short": "mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
+                      "filename_short": "../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -223,9 +223,9 @@
             "source_mapping": {
               "start": 745,
               "length": 25,
-              "filename_relative": "mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
-              "filename_short": "mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
               "is_dependency": false,
               "lines": [
                 42
@@ -240,9 +240,9 @@
                 "source_mapping": {
                   "start": 541,
                   "length": 326,
-                  "filename_relative": "mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
-                  "filename_short": "mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
                   "is_dependency": false,
                   "lines": [
                     33,
@@ -270,9 +270,9 @@
                     "source_mapping": {
                       "start": 28,
                       "length": 879,
-                      "filename_relative": "mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
+                      "filename_relative": "../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
-                      "filename_short": "mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
+                      "filename_short": "../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -336,10 +336,10 @@
             }
           }
         ],
-        "description": "Reentrancy in ETH_FUND.CashOut(uint256) (mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#33-46):\n\tExternal calls:\n\t- msg.sender.call.value(_am)() (mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#40)\n\tState variables written after the call(s):\n\t- balances[msg.sender] -= _am (mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#42)\n\tETH_FUND.balances (mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#7) can be used in cross function reentrancies:\n\t- ETH_FUND.CashOut(uint256) (mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#33-46)\n\t- ETH_FUND.Deposit() (mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#21-31)\n\t- ETH_FUND.balances (mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#7)\n",
-        "markdown": "Reentrancy in [ETH_FUND.CashOut(uint256)](mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#L33-L46):\n\tExternal calls:\n\t- [msg.sender.call.value(_am)()](mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#L40)\n\tState variables written after the call(s):\n\t- [balances[msg.sender] -= _am](mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#L42)\n\t[ETH_FUND.balances](mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#L7) can be used in cross function reentrancies:\n\t- [ETH_FUND.CashOut(uint256)](mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#L33-L46)\n\t- [ETH_FUND.Deposit()](mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#L21-L31)\n\t- [ETH_FUND.balances](mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#L7)\n",
-        "first_markdown_element": "mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#L33-L46",
-        "id": "2fc8c107e5cd2739aa8c198223fefa742553f42cb0f71aad10e85d47ee72d7d3",
+        "description": "Reentrancy in ETH_FUND.CashOut(uint256) (../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#33-46):\n\tExternal calls:\n\t- msg.sender.call.value(_am)() (../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#40)\n\tState variables written after the call(s):\n\t- balances[msg.sender] -= _am (../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#42)\n\tETH_FUND.balances (../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#7) can be used in cross function reentrancies:\n\t- ETH_FUND.CashOut(uint256) (../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#33-46)\n\t- ETH_FUND.Deposit() (../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#21-31)\n\t- ETH_FUND.balances (../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#7)\n",
+        "markdown": "Reentrancy in [ETH_FUND.CashOut(uint256)](../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#L33-L46):\n\tExternal calls:\n\t- [msg.sender.call.value(_am)()](../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#L40)\n\tState variables written after the call(s):\n\t- [balances[msg.sender] -= _am](../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#L42)\n\t[ETH_FUND.balances](../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#L7) can be used in cross function reentrancies:\n\t- [ETH_FUND.CashOut(uint256)](../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#L33-L46)\n\t- [ETH_FUND.Deposit()](../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#L21-L31)\n\t- [ETH_FUND.balances](../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#L7)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol#L33-L46",
+        "id": "53a4ac112c6077582a717c7d92c487b4b3d323e256f2716e708933576a4f4be4",
         "check": "reentrancy-eth",
         "impact": "High",
         "confidence": "Medium"

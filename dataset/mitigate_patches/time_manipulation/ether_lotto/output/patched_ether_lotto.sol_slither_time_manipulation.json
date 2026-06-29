@@ -11,9 +11,9 @@
             "source_mapping": {
               "start": 233,
               "length": 330,
-              "filename_relative": "mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol",
+              "filename_relative": "../dataset/mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol",
-              "filename_short": "mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol",
+              "filename_short": "../dataset/mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol",
               "is_dependency": false,
               "lines": [
                 13,
@@ -39,9 +39,9 @@
                 "source_mapping": {
                   "start": 26,
                   "length": 539,
-                  "filename_relative": "mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol",
+                  "filename_relative": "../dataset/mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol",
-                  "filename_short": "mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol",
+                  "filename_short": "../dataset/mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol",
                   "is_dependency": false,
                   "lines": [
                     3,
@@ -82,9 +82,9 @@
             "source_mapping": {
               "start": 422,
               "length": 11,
-              "filename_relative": "mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol",
+              "filename_relative": "../dataset/mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol",
-              "filename_short": "mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol",
+              "filename_short": "../dataset/mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol",
               "is_dependency": false,
               "lines": [
                 19
@@ -99,9 +99,9 @@
                 "source_mapping": {
                   "start": 233,
                   "length": 330,
-                  "filename_relative": "mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol",
+                  "filename_relative": "../dataset/mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol",
-                  "filename_short": "mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol",
+                  "filename_short": "../dataset/mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol",
                   "is_dependency": false,
                   "lines": [
                     13,
@@ -127,9 +127,9 @@
                     "source_mapping": {
                       "start": 26,
                       "length": 539,
-                      "filename_relative": "mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol",
+                      "filename_relative": "../dataset/mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol",
-                      "filename_short": "mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol",
+                      "filename_short": "../dataset/mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol",
                       "is_dependency": false,
                       "lines": [
                         3,
@@ -167,10 +167,10 @@
             }
           }
         ],
-        "description": "EtherLotto.play() (mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol#13-24) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- random == 0 (mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol#19)\n",
-        "markdown": "[EtherLotto.play()](mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol#L13-L24) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- [random == 0](mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol#L19)\n",
-        "first_markdown_element": "mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol#L13-L24",
-        "id": "5c2d1dbc8fbfe8d0ac8cf3f41a828f8fb6dbe59307b519534ef4c1ab268933ba",
+        "description": "EtherLotto.play() (../dataset/mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol#13-24) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- random == 0 (../dataset/mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol#19)\n",
+        "markdown": "[EtherLotto.play()](../dataset/mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol#L13-L24) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- [random == 0](../dataset/mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol#L19)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/time_manipulation/ether_lotto/patched_ether_lotto.sol#L13-L24",
+        "id": "9f091fb980fa084b55057439a94f80996b585763236bce0f32f5fa9bc40a0038",
         "check": "timestamp",
         "impact": "Low",
         "confidence": "Medium"

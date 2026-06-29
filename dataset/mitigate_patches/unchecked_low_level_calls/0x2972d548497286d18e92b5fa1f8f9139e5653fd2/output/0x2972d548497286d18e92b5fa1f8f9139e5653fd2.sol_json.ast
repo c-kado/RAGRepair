@@ -1,7 +1,7 @@
 {
 	"attributes" : 
 	{
-		"absolutePath" : "mitigate_patches/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2.sol",
+		"absolutePath" : "../dataset/mitigate_patches/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2.sol",
 		"exportedSymbols" : 
 		{
 			"demo" : 

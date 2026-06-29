@@ -1,7 +1,7 @@
 {
 	"attributes" : 
 	{
-		"absolutePath" : "mitigate_patches/access_control/phishable/phishable.sol",
+		"absolutePath" : "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
 		"exportedSymbols" : 
 		{
 			"Phishable" : 

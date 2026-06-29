@@ -11,9 +11,9 @@
             "source_mapping": {
               "start": 559,
               "length": 10,
-              "filename_relative": "mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
+              "filename_relative": "../dataset/mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
-              "filename_short": "mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
               "is_dependency": false,
               "lines": [
                 26
@@ -28,9 +28,9 @@
                 "source_mapping": {
                   "start": 540,
                   "length": 123,
-                  "filename_relative": "mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
+                  "filename_relative": "../dataset/mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
-                  "filename_short": "mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
                   "is_dependency": false,
                   "lines": [
                     26,
@@ -48,9 +48,9 @@
                     "source_mapping": {
                       "start": 30,
                       "length": 637,
-                      "filename_relative": "mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
+                      "filename_relative": "../dataset/mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
-                      "filename_short": "mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
+                      "filename_short": "../dataset/mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -96,9 +96,9 @@
             "source_mapping": {
               "start": 630,
               "length": 25,
-              "filename_relative": "mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
+              "filename_relative": "../dataset/mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
-              "filename_short": "mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
               "is_dependency": false,
               "lines": [
                 28
@@ -113,9 +113,9 @@
                 "source_mapping": {
                   "start": 540,
                   "length": 123,
-                  "filename_relative": "mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
+                  "filename_relative": "../dataset/mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
-                  "filename_short": "mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
                   "is_dependency": false,
                   "lines": [
                     26,
@@ -133,9 +133,9 @@
                     "source_mapping": {
                       "start": 30,
                       "length": 637,
-                      "filename_relative": "mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
+                      "filename_relative": "../dataset/mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
-                      "filename_short": "mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
+                      "filename_short": "../dataset/mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -176,10 +176,10 @@
             }
           }
         ],
-        "description": "Wallet.migrateTo(address).to (mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol#26) lacks a zero-check on :\n\t\t- to.transfer(this.balance) (mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol#28)\n",
-        "markdown": "[Wallet.migrateTo(address).to](mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol#L26) lacks a zero-check on :\n\t\t- [to.transfer(this.balance)](mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol#L28)\n",
-        "first_markdown_element": "mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol#L26",
-        "id": "e2a623003337dba83553334f3afa68a2d8d44d55397ecaef2507be5820e079a4",
+        "description": "Wallet.migrateTo(address).to (../dataset/mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol#26) lacks a zero-check on :\n\t\t- to.transfer(this.balance) (../dataset/mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol#28)\n",
+        "markdown": "[Wallet.migrateTo(address).to](../dataset/mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol#L26) lacks a zero-check on :\n\t\t- [to.transfer(this.balance)](../dataset/mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol#L28)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol#L26",
+        "id": "308a34ab060bac23593d0c143a3b44412728a7b75ac69ecfb9b2ce8696dc557b",
         "check": "missing-zero-check",
         "impact": "Low",
         "confidence": "Medium"

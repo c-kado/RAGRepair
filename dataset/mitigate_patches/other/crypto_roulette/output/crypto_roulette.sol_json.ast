@@ -1,7 +1,7 @@
 {
 	"attributes" : 
 	{
-		"absolutePath" : "mitigate_patches/other/crypto_roulette/crypto_roulette.sol",
+		"absolutePath" : "../dataset/mitigate_patches/other/crypto_roulette/crypto_roulette.sol",
 		"exportedSymbols" : 
 		{
 			"CryptoRoulette" : 

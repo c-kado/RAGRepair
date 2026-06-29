@@ -11,9 +11,9 @@
             "source_mapping": {
               "start": 145,
               "length": 134,
-              "filename_relative": "mitigate_patches/access_control/mycontract/mycontract.sol",
+              "filename_relative": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
-              "filename_short": "mitigate_patches/access_control/mycontract/mycontract.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
               "is_dependency": false,
               "lines": [
                 13,
@@ -32,9 +32,9 @@
                 "source_mapping": {
                   "start": 28,
                   "length": 254,
-                  "filename_relative": "mitigate_patches/access_control/mycontract/mycontract.sol",
+                  "filename_relative": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
-                  "filename_short": "mitigate_patches/access_control/mycontract/mycontract.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
                   "is_dependency": false,
                   "lines": [
                     5,
@@ -66,9 +66,9 @@
             "source_mapping": {
               "start": 247,
               "length": 25,
-              "filename_relative": "mitigate_patches/access_control/mycontract/mycontract.sol",
+              "filename_relative": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
-              "filename_short": "mitigate_patches/access_control/mycontract/mycontract.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
               "is_dependency": false,
               "lines": [
                 16
@@ -83,9 +83,9 @@
                 "source_mapping": {
                   "start": 145,
                   "length": 134,
-                  "filename_relative": "mitigate_patches/access_control/mycontract/mycontract.sol",
+                  "filename_relative": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
-                  "filename_short": "mitigate_patches/access_control/mycontract/mycontract.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
                   "is_dependency": false,
                   "lines": [
                     13,
@@ -104,9 +104,9 @@
                     "source_mapping": {
                       "start": 28,
                       "length": 254,
-                      "filename_relative": "mitigate_patches/access_control/mycontract/mycontract.sol",
+                      "filename_relative": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
-                      "filename_short": "mitigate_patches/access_control/mycontract/mycontract.sol",
+                      "filename_short": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -135,10 +135,10 @@
             }
           }
         ],
-        "description": "MyContract.sendTo(address,uint256) (mitigate_patches/access_control/mycontract/mycontract.sol#13-17) sends eth to arbitrary user\n\tDangerous calls:\n\t- receiver.transfer(amount) (mitigate_patches/access_control/mycontract/mycontract.sol#16)\n",
-        "markdown": "[MyContract.sendTo(address,uint256)](mitigate_patches/access_control/mycontract/mycontract.sol#L13-L17) sends eth to arbitrary user\n\tDangerous calls:\n\t- [receiver.transfer(amount)](mitigate_patches/access_control/mycontract/mycontract.sol#L16)\n",
-        "first_markdown_element": "mitigate_patches/access_control/mycontract/mycontract.sol#L13-L17",
-        "id": "ac3de36e635164460f73570638d7ea5a4b786ec4046e762ab57977810fb745cc",
+        "description": "MyContract.sendTo(address,uint256) (../dataset/mitigate_patches/access_control/mycontract/mycontract.sol#13-17) sends eth to arbitrary user\n\tDangerous calls:\n\t- receiver.transfer(amount) (../dataset/mitigate_patches/access_control/mycontract/mycontract.sol#16)\n",
+        "markdown": "[MyContract.sendTo(address,uint256)](../dataset/mitigate_patches/access_control/mycontract/mycontract.sol#L13-L17) sends eth to arbitrary user\n\tDangerous calls:\n\t- [receiver.transfer(amount)](../dataset/mitigate_patches/access_control/mycontract/mycontract.sol#L16)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol#L13-L17",
+        "id": "c31abffb95c9dd948f170360285b970450976cacae0049e53d5308d28b689c6b",
         "check": "arbitrary-send-eth",
         "impact": "High",
         "confidence": "Medium"
@@ -151,9 +151,9 @@
             "source_mapping": {
               "start": 145,
               "length": 134,
-              "filename_relative": "mitigate_patches/access_control/mycontract/mycontract.sol",
+              "filename_relative": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
-              "filename_short": "mitigate_patches/access_control/mycontract/mycontract.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
               "is_dependency": false,
               "lines": [
                 13,
@@ -172,9 +172,9 @@
                 "source_mapping": {
                   "start": 28,
                   "length": 254,
-                  "filename_relative": "mitigate_patches/access_control/mycontract/mycontract.sol",
+                  "filename_relative": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
-                  "filename_short": "mitigate_patches/access_control/mycontract/mycontract.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
                   "is_dependency": false,
                   "lines": [
                     5,
@@ -206,9 +206,9 @@
             "source_mapping": {
               "start": 210,
               "length": 27,
-              "filename_relative": "mitigate_patches/access_control/mycontract/mycontract.sol",
+              "filename_relative": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
-              "filename_short": "mitigate_patches/access_control/mycontract/mycontract.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
               "is_dependency": false,
               "lines": [
                 15
@@ -223,9 +223,9 @@
                 "source_mapping": {
                   "start": 145,
                   "length": 134,
-                  "filename_relative": "mitigate_patches/access_control/mycontract/mycontract.sol",
+                  "filename_relative": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
-                  "filename_short": "mitigate_patches/access_control/mycontract/mycontract.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
                   "is_dependency": false,
                   "lines": [
                     13,
@@ -244,9 +244,9 @@
                     "source_mapping": {
                       "start": 28,
                       "length": 254,
-                      "filename_relative": "mitigate_patches/access_control/mycontract/mycontract.sol",
+                      "filename_relative": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
-                      "filename_short": "mitigate_patches/access_control/mycontract/mycontract.sol",
+                      "filename_short": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -275,10 +275,10 @@
             }
           }
         ],
-        "description": "MyContract.sendTo(address,uint256) (mitigate_patches/access_control/mycontract/mycontract.sol#13-17) uses tx.origin for authorization: require(bool)(tx.origin == owner) (mitigate_patches/access_control/mycontract/mycontract.sol#15)\n",
-        "markdown": "[MyContract.sendTo(address,uint256)](mitigate_patches/access_control/mycontract/mycontract.sol#L13-L17) uses tx.origin for authorization: [require(bool)(tx.origin == owner)](mitigate_patches/access_control/mycontract/mycontract.sol#L15)\n",
-        "first_markdown_element": "mitigate_patches/access_control/mycontract/mycontract.sol#L13-L17",
-        "id": "5491cdf9b30e9920769b322a9e58af49850a0a534c4c6938898ff9808d840b43",
+        "description": "MyContract.sendTo(address,uint256) (../dataset/mitigate_patches/access_control/mycontract/mycontract.sol#13-17) uses tx.origin for authorization: require(bool)(tx.origin == owner) (../dataset/mitigate_patches/access_control/mycontract/mycontract.sol#15)\n",
+        "markdown": "[MyContract.sendTo(address,uint256)](../dataset/mitigate_patches/access_control/mycontract/mycontract.sol#L13-L17) uses tx.origin for authorization: [require(bool)(tx.origin == owner)](../dataset/mitigate_patches/access_control/mycontract/mycontract.sol#L15)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol#L13-L17",
+        "id": "5b97c482daed68981dfa03cc5bb36d5e600cafb9f5ad0d9ff4c2435a6e1aa71b",
         "check": "tx-origin",
         "impact": "Medium",
         "confidence": "Medium"
@@ -291,9 +291,9 @@
             "source_mapping": {
               "start": 161,
               "length": 16,
-              "filename_relative": "mitigate_patches/access_control/mycontract/mycontract.sol",
+              "filename_relative": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
-              "filename_short": "mitigate_patches/access_control/mycontract/mycontract.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
               "is_dependency": false,
               "lines": [
                 13
@@ -308,9 +308,9 @@
                 "source_mapping": {
                   "start": 145,
                   "length": 134,
-                  "filename_relative": "mitigate_patches/access_control/mycontract/mycontract.sol",
+                  "filename_relative": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
-                  "filename_short": "mitigate_patches/access_control/mycontract/mycontract.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
                   "is_dependency": false,
                   "lines": [
                     13,
@@ -329,9 +329,9 @@
                     "source_mapping": {
                       "start": 28,
                       "length": 254,
-                      "filename_relative": "mitigate_patches/access_control/mycontract/mycontract.sol",
+                      "filename_relative": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
-                      "filename_short": "mitigate_patches/access_control/mycontract/mycontract.sol",
+                      "filename_short": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -365,9 +365,9 @@
             "source_mapping": {
               "start": 247,
               "length": 25,
-              "filename_relative": "mitigate_patches/access_control/mycontract/mycontract.sol",
+              "filename_relative": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
-              "filename_short": "mitigate_patches/access_control/mycontract/mycontract.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
               "is_dependency": false,
               "lines": [
                 16
@@ -382,9 +382,9 @@
                 "source_mapping": {
                   "start": 145,
                   "length": 134,
-                  "filename_relative": "mitigate_patches/access_control/mycontract/mycontract.sol",
+                  "filename_relative": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
-                  "filename_short": "mitigate_patches/access_control/mycontract/mycontract.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
                   "is_dependency": false,
                   "lines": [
                     13,
@@ -403,9 +403,9 @@
                     "source_mapping": {
                       "start": 28,
                       "length": 254,
-                      "filename_relative": "mitigate_patches/access_control/mycontract/mycontract.sol",
+                      "filename_relative": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
-                      "filename_short": "mitigate_patches/access_control/mycontract/mycontract.sol",
+                      "filename_short": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -434,10 +434,10 @@
             }
           }
         ],
-        "description": "MyContract.sendTo(address,uint256).receiver (mitigate_patches/access_control/mycontract/mycontract.sol#13) lacks a zero-check on :\n\t\t- receiver.transfer(amount) (mitigate_patches/access_control/mycontract/mycontract.sol#16)\n",
-        "markdown": "[MyContract.sendTo(address,uint256).receiver](mitigate_patches/access_control/mycontract/mycontract.sol#L13) lacks a zero-check on :\n\t\t- [receiver.transfer(amount)](mitigate_patches/access_control/mycontract/mycontract.sol#L16)\n",
-        "first_markdown_element": "mitigate_patches/access_control/mycontract/mycontract.sol#L13",
-        "id": "9963ec581eb9e3b5a59eb32a9c8121768bfa067369f9a4b3d4dd72371384d3db",
+        "description": "MyContract.sendTo(address,uint256).receiver (../dataset/mitigate_patches/access_control/mycontract/mycontract.sol#13) lacks a zero-check on :\n\t\t- receiver.transfer(amount) (../dataset/mitigate_patches/access_control/mycontract/mycontract.sol#16)\n",
+        "markdown": "[MyContract.sendTo(address,uint256).receiver](../dataset/mitigate_patches/access_control/mycontract/mycontract.sol#L13) lacks a zero-check on :\n\t\t- [receiver.transfer(amount)](../dataset/mitigate_patches/access_control/mycontract/mycontract.sol#L16)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol#L13",
+        "id": "b59784fe9b82e4bd2b31c68165e99ff0a91fa2100c2c306f55aa7a968e5ecc42",
         "check": "missing-zero-check",
         "impact": "Low",
         "confidence": "Medium"

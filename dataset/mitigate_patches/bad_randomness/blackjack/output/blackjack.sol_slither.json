@@ -11,9 +11,9 @@
             "source_mapping": {
               "start": 712,
               "length": 5987,
-              "filename_relative": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+              "filename_relative": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
-              "filename_short": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+              "filename_short": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
               "is_dependency": false,
               "lines": [
                 36,
@@ -283,9 +283,9 @@
             "source_mapping": {
               "start": 2856,
               "length": 42,
-              "filename_relative": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+              "filename_relative": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
-              "filename_short": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+              "filename_short": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
               "is_dependency": false,
               "lines": [
                 136
@@ -300,9 +300,9 @@
                 "source_mapping": {
                   "start": 2596,
                   "length": 477,
-                  "filename_relative": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+                  "filename_relative": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
-                  "filename_short": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+                  "filename_short": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
                   "is_dependency": false,
                   "lines": [
                     129,
@@ -331,9 +331,9 @@
                     "source_mapping": {
                       "start": 712,
                       "length": 5987,
-                      "filename_relative": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+                      "filename_relative": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
-                      "filename_short": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+                      "filename_short": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
                       "is_dependency": false,
                       "lines": [
                         36,
@@ -603,10 +603,10 @@
             }
           }
         ],
-        "description": "BlackJack (mitigate_patches/bad_randomness/blackjack/blackjack.sol#36-291) contract sets array length with a user-controlled value:\n\t- games[msg.sender].houseCards.push(newCard) (mitigate_patches/bad_randomness/blackjack/blackjack.sol#136)\n",
-        "markdown": "[BlackJack](mitigate_patches/bad_randomness/blackjack/blackjack.sol#L36-L291) contract sets array length with a user-controlled value:\n\t- [games[msg.sender].houseCards.push(newCard)](mitigate_patches/bad_randomness/blackjack/blackjack.sol#L136)\n",
-        "first_markdown_element": "mitigate_patches/bad_randomness/blackjack/blackjack.sol#L36-L291",
-        "id": "60cb1b582f7437c1d0c091b78f9dfba935393a3c0085ef0ff6b39253c975395a",
+        "description": "BlackJack (../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol#36-291) contract sets array length with a user-controlled value:\n\t- games[msg.sender].houseCards.push(newCard) (../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol#136)\n",
+        "markdown": "[BlackJack](../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol#L36-L291) contract sets array length with a user-controlled value:\n\t- [games[msg.sender].houseCards.push(newCard)](../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol#L136)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol#L36-L291",
+        "id": "593f9dc5976222a93dad2d47ac1c97893c34eeb6a539fdad3b913fc52105d8d0",
         "check": "controlled-array-length",
         "impact": "High",
         "confidence": "Medium"
@@ -619,9 +619,9 @@
             "source_mapping": {
               "start": 712,
               "length": 5987,
-              "filename_relative": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+              "filename_relative": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
-              "filename_short": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+              "filename_short": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
               "is_dependency": false,
               "lines": [
                 36,
@@ -891,9 +891,9 @@
             "source_mapping": {
               "start": 2343,
               "length": 67,
-              "filename_relative": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+              "filename_relative": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
-              "filename_short": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+              "filename_short": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
               "is_dependency": false,
               "lines": [
                 123
@@ -908,9 +908,9 @@
                 "source_mapping": {
                   "start": 2254,
                   "length": 339,
-                  "filename_relative": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+                  "filename_relative": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
-                  "filename_short": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+                  "filename_short": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
                   "is_dependency": false,
                   "lines": [
                     121,
@@ -931,9 +931,9 @@
                     "source_mapping": {
                       "start": 712,
                       "length": 5987,
-                      "filename_relative": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+                      "filename_relative": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
-                      "filename_short": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+                      "filename_short": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
                       "is_dependency": false,
                       "lines": [
                         36,
@@ -1203,10 +1203,10 @@
             }
           }
         ],
-        "description": "BlackJack (mitigate_patches/bad_randomness/blackjack/blackjack.sol#36-291) contract sets array length with a user-controlled value:\n\t- games[msg.sender].playerCards.push(Deck.deal(msg.sender,nextCard)) (mitigate_patches/bad_randomness/blackjack/blackjack.sol#123)\n",
-        "markdown": "[BlackJack](mitigate_patches/bad_randomness/blackjack/blackjack.sol#L36-L291) contract sets array length with a user-controlled value:\n\t- [games[msg.sender].playerCards.push(Deck.deal(msg.sender,nextCard))](mitigate_patches/bad_randomness/blackjack/blackjack.sol#L123)\n",
-        "first_markdown_element": "mitigate_patches/bad_randomness/blackjack/blackjack.sol#L36-L291",
-        "id": "d3880e7b7d07abae2cc59103721f353eb95dd46799e50c8da70f17cdfc1cc368",
+        "description": "BlackJack (../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol#36-291) contract sets array length with a user-controlled value:\n\t- games[msg.sender].playerCards.push(Deck.deal(msg.sender,nextCard)) (../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol#123)\n",
+        "markdown": "[BlackJack](../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol#L36-L291) contract sets array length with a user-controlled value:\n\t- [games[msg.sender].playerCards.push(Deck.deal(msg.sender,nextCard))](../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol#L123)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol#L36-L291",
+        "id": "c963aff8299a78daadc67d4e7cf66b6ef81dd7ff47779ce1de17fdaa3ef631de",
         "check": "controlled-array-length",
         "impact": "High",
         "confidence": "Medium"
@@ -1219,9 +1219,9 @@
             "source_mapping": {
               "start": 45,
               "length": 233,
-              "filename_relative": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+              "filename_relative": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
-              "filename_short": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+              "filename_short": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
               "is_dependency": false,
               "lines": [
                 7,
@@ -1243,9 +1243,9 @@
                 "source_mapping": {
                   "start": 28,
                   "length": 682,
-                  "filename_relative": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+                  "filename_relative": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
-                  "filename_short": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+                  "filename_short": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
                   "is_dependency": false,
                   "lines": [
                     5,
@@ -1292,9 +1292,9 @@
             "source_mapping": {
               "start": 186,
               "length": 88,
-              "filename_relative": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+              "filename_relative": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
-              "filename_short": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+              "filename_short": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
               "is_dependency": false,
               "lines": [
                 13
@@ -1309,9 +1309,9 @@
                 "source_mapping": {
                   "start": 45,
                   "length": 233,
-                  "filename_relative": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+                  "filename_relative": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
-                  "filename_short": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+                  "filename_short": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
                   "is_dependency": false,
                   "lines": [
                     7,
@@ -1333,9 +1333,9 @@
                     "source_mapping": {
                       "start": 28,
                       "length": 682,
-                      "filename_relative": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+                      "filename_relative": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
-                      "filename_short": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+                      "filename_short": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -1379,10 +1379,10 @@
             }
           }
         ],
-        "description": "Deck.deal(address,uint8) (mitigate_patches/bad_randomness/blackjack/blackjack.sol#7-14) uses a weak PRNG: \"uint8(uint256(keccak256()(block.blockhash(b),player,cardNumber,timestamp)) % 52) (mitigate_patches/bad_randomness/blackjack/blackjack.sol#13)\" \n",
-        "markdown": "[Deck.deal(address,uint8)](mitigate_patches/bad_randomness/blackjack/blackjack.sol#L7-L14) uses a weak PRNG: \"[uint8(uint256(keccak256()(block.blockhash(b),player,cardNumber,timestamp)) % 52)](mitigate_patches/bad_randomness/blackjack/blackjack.sol#L13)\" \n",
-        "first_markdown_element": "mitigate_patches/bad_randomness/blackjack/blackjack.sol#L7-L14",
-        "id": "90ec992120139ee6889cbdfd7c7b77e78e427aebcc627bfcece7351b0253bae7",
+        "description": "Deck.deal(address,uint8) (../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol#7-14) uses a weak PRNG: \"uint8(uint256(keccak256()(block.blockhash(b),player,cardNumber,timestamp)) % 52) (../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol#13)\" \n",
+        "markdown": "[Deck.deal(address,uint8)](../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol#L7-L14) uses a weak PRNG: \"[uint8(uint256(keccak256()(block.blockhash(b),player,cardNumber,timestamp)) % 52)](../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol#L13)\" \n",
+        "first_markdown_element": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol#L7-L14",
+        "id": "c0b9c72d20df99be647981158bfa8b2883b8a91a36822a1c8ffbe147a19cd8c3",
         "check": "weak-prng",
         "impact": "High",
         "confidence": "Medium"
@@ -1395,9 +1395,9 @@
             "source_mapping": {
               "start": 5703,
               "length": 201,
-              "filename_relative": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+              "filename_relative": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
-              "filename_short": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+              "filename_short": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
               "is_dependency": false,
               "lines": [
                 249,
@@ -1417,9 +1417,9 @@
                 "source_mapping": {
                   "start": 712,
                   "length": 5987,
-                  "filename_relative": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+                  "filename_relative": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
-                  "filename_short": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+                  "filename_short": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
                   "is_dependency": false,
                   "lines": [
                     36,
@@ -1692,9 +1692,9 @@
             "source_mapping": {
               "start": 5789,
               "length": 51,
-              "filename_relative": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+              "filename_relative": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
-              "filename_short": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+              "filename_short": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
               "is_dependency": false,
               "lines": [
                 250
@@ -1709,9 +1709,9 @@
                 "source_mapping": {
                   "start": 5703,
                   "length": 201,
-                  "filename_relative": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+                  "filename_relative": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
-                  "filename_short": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+                  "filename_short": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
                   "is_dependency": false,
                   "lines": [
                     249,
@@ -1731,9 +1731,9 @@
                     "source_mapping": {
                       "start": 712,
                       "length": 5987,
-                      "filename_relative": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+                      "filename_relative": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
-                      "filename_short": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+                      "filename_short": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
                       "is_dependency": false,
                       "lines": [
                         36,
@@ -2003,10 +2003,10 @@
             }
           }
         ],
-        "description": "BlackJack.getPlayerCard(uint8) (mitigate_patches/bad_randomness/blackjack/blackjack.sol#249-254) contains a tautology or contradiction:\n\t- id < 0 || id > games[msg.sender].playerCards.length (mitigate_patches/bad_randomness/blackjack/blackjack.sol#250)\n",
-        "markdown": "[BlackJack.getPlayerCard(uint8)](mitigate_patches/bad_randomness/blackjack/blackjack.sol#L249-L254) contains a tautology or contradiction:\n\t- [id < 0 || id > games[msg.sender].playerCards.length](mitigate_patches/bad_randomness/blackjack/blackjack.sol#L250)\n",
-        "first_markdown_element": "mitigate_patches/bad_randomness/blackjack/blackjack.sol#L249-L254",
-        "id": "1ad7a8d733f3c3bdb722a0193d65d44f619a6fcf945d4ba8bac5ee216e4eea72",
+        "description": "BlackJack.getPlayerCard(uint8) (../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol#249-254) contains a tautology or contradiction:\n\t- id < 0 || id > games[msg.sender].playerCards.length (../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol#250)\n",
+        "markdown": "[BlackJack.getPlayerCard(uint8)](../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol#L249-L254) contains a tautology or contradiction:\n\t- [id < 0 || id > games[msg.sender].playerCards.length](../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol#L250)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol#L249-L254",
+        "id": "9c7f755ba8950cdcc16c88fd42bdcdf561908be216ab8495f66f275644804726",
         "check": "tautology",
         "impact": "Medium",
         "confidence": "High"
@@ -2019,9 +2019,9 @@
             "source_mapping": {
               "start": 5907,
               "length": 198,
-              "filename_relative": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+              "filename_relative": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
-              "filename_short": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+              "filename_short": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
               "is_dependency": false,
               "lines": [
                 256,
@@ -2041,9 +2041,9 @@
                 "source_mapping": {
                   "start": 712,
                   "length": 5987,
-                  "filename_relative": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+                  "filename_relative": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
-                  "filename_short": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+                  "filename_short": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
                   "is_dependency": false,
                   "lines": [
                     36,
@@ -2316,9 +2316,9 @@
             "source_mapping": {
               "start": 5992,
               "length": 50,
-              "filename_relative": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+              "filename_relative": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
-              "filename_short": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+              "filename_short": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
               "is_dependency": false,
               "lines": [
                 257
@@ -2333,9 +2333,9 @@
                 "source_mapping": {
                   "start": 5907,
                   "length": 198,
-                  "filename_relative": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+                  "filename_relative": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
-                  "filename_short": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+                  "filename_short": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
                   "is_dependency": false,
                   "lines": [
                     256,
@@ -2355,9 +2355,9 @@
                     "source_mapping": {
                       "start": 712,
                       "length": 5987,
-                      "filename_relative": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+                      "filename_relative": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
-                      "filename_short": "mitigate_patches/bad_randomness/blackjack/blackjack.sol",
+                      "filename_short": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol",
                       "is_dependency": false,
                       "lines": [
                         36,
@@ -2627,10 +2627,10 @@
             }
           }
         ],
-        "description": "BlackJack.getHouseCard(uint8) (mitigate_patches/bad_randomness/blackjack/blackjack.sol#256-261) contains a tautology or contradiction:\n\t- id < 0 || id > games[msg.sender].houseCards.length (mitigate_patches/bad_randomness/blackjack/blackjack.sol#257)\n",
-        "markdown": "[BlackJack.getHouseCard(uint8)](mitigate_patches/bad_randomness/blackjack/blackjack.sol#L256-L261) contains a tautology or contradiction:\n\t- [id < 0 || id > games[msg.sender].houseCards.length](mitigate_patches/bad_randomness/blackjack/blackjack.sol#L257)\n",
-        "first_markdown_element": "mitigate_patches/bad_randomness/blackjack/blackjack.sol#L256-L261",
-        "id": "56a8339de1a72a4c05776f5172312b0721402886c5a26870f13fec674ba35a15",
+        "description": "BlackJack.getHouseCard(uint8) (../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol#256-261) contains a tautology or contradiction:\n\t- id < 0 || id > games[msg.sender].houseCards.length (../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol#257)\n",
+        "markdown": "[BlackJack.getHouseCard(uint8)](../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol#L256-L261) contains a tautology or contradiction:\n\t- [id < 0 || id > games[msg.sender].houseCards.length](../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol#L257)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/bad_randomness/blackjack/blackjack.sol#L256-L261",
+        "id": "eafd4a74159a9cedd7de24bac4c24ae7bde88d01d817d2350105bc4326b3822e",
         "check": "tautology",
         "impact": "Medium",
         "confidence": "High"

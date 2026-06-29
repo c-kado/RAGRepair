@@ -1,7 +1,7 @@
 {
 	"attributes" : 
 	{
-		"absolutePath" : "mitigate_patches/access_control/mycontract/mycontract.sol",
+		"absolutePath" : "../dataset/mitigate_patches/access_control/mycontract/mycontract.sol",
 		"exportedSymbols" : 
 		{
 			"MyContract" : 

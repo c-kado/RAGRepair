@@ -1,7 +1,7 @@
 {
 	"attributes" : 
 	{
-		"absolutePath" : "mitigate_patches/time_manipulation/roulette/roulette.sol",
+		"absolutePath" : "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
 		"exportedSymbols" : 
 		{
 			"Roulette" : 

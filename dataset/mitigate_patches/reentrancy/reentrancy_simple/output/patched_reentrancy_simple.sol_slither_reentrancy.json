@@ -11,9 +11,9 @@
             "source_mapping": {
               "start": 321,
               "length": 311,
-              "filename_relative": "mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
-              "filename_short": "mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
               "is_dependency": false,
               "lines": [
                 15,
@@ -40,9 +40,9 @@
                 "source_mapping": {
                   "start": 26,
                   "length": 608,
-                  "filename_relative": "mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
-                  "filename_short": "mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
                   "is_dependency": false,
                   "lines": [
                     3,
@@ -86,9 +86,9 @@
             "source_mapping": {
               "start": 521,
               "length": 33,
-              "filename_relative": "mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
-              "filename_short": "mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
               "is_dependency": false,
               "lines": [
                 22
@@ -103,9 +103,9 @@
                 "source_mapping": {
                   "start": 321,
                   "length": 311,
-                  "filename_relative": "mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
-                  "filename_short": "mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
                   "is_dependency": false,
                   "lines": [
                     15,
@@ -132,9 +132,9 @@
                     "source_mapping": {
                       "start": 26,
                       "length": 608,
-                      "filename_relative": "mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
+                      "filename_relative": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
-                      "filename_short": "mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
+                      "filename_short": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
                       "is_dependency": false,
                       "lines": [
                         3,
@@ -183,9 +183,9 @@
             "source_mapping": {
               "start": 599,
               "length": 26,
-              "filename_relative": "mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
-              "filename_short": "mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
               "is_dependency": false,
               "lines": [
                 26
@@ -200,9 +200,9 @@
                 "source_mapping": {
                   "start": 321,
                   "length": 311,
-                  "filename_relative": "mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
-                  "filename_short": "mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
                   "is_dependency": false,
                   "lines": [
                     15,
@@ -229,9 +229,9 @@
                     "source_mapping": {
                       "start": 26,
                       "length": 608,
-                      "filename_relative": "mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
+                      "filename_relative": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
-                      "filename_short": "mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
+                      "filename_short": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol",
                       "is_dependency": false,
                       "lines": [
                         3,
@@ -276,10 +276,10 @@
             }
           }
         ],
-        "description": "Reentrancy in Reentrance.withdrawBalance() (mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol#15-27):\n\tExternal calls:\n\t- ! msg.sender.call.value(balance)() (mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol#22)\n\tState variables written after the call(s):\n\t- locked[msg.sender] = false (mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol#26)\n\tReentrance.locked (mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol#5) can be used in cross function reentrancies:\n\t- Reentrance.withdrawBalance() (mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol#15-27)\n",
-        "markdown": "Reentrancy in [Reentrance.withdrawBalance()](mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol#L15-L27):\n\tExternal calls:\n\t- [! msg.sender.call.value(balance)()](mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol#L22)\n\tState variables written after the call(s):\n\t- [locked[msg.sender] = false](mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol#L26)\n\t[Reentrance.locked](mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol#L5) can be used in cross function reentrancies:\n\t- [Reentrance.withdrawBalance()](mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol#L15-L27)\n",
-        "first_markdown_element": "mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol#L15-L27",
-        "id": "09513c53e2027ae5f495461f32bbdaa617bd74f25b85296a60b538db04383820",
+        "description": "Reentrancy in Reentrance.withdrawBalance() (../dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol#15-27):\n\tExternal calls:\n\t- ! msg.sender.call.value(balance)() (../dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol#22)\n\tState variables written after the call(s):\n\t- locked[msg.sender] = false (../dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol#26)\n\tReentrance.locked (../dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol#5) can be used in cross function reentrancies:\n\t- Reentrance.withdrawBalance() (../dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol#15-27)\n",
+        "markdown": "Reentrancy in [Reentrance.withdrawBalance()](../dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol#L15-L27):\n\tExternal calls:\n\t- [! msg.sender.call.value(balance)()](../dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol#L22)\n\tState variables written after the call(s):\n\t- [locked[msg.sender] = false](../dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol#L26)\n\t[Reentrance.locked](../dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol#L5) can be used in cross function reentrancies:\n\t- [Reentrance.withdrawBalance()](../dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol#L15-L27)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/patched_reentrancy_simple.sol#L15-L27",
+        "id": "c1ee47a1a87a0f41ea0277561396ffe8b82d80287f63220f797290e2430293e1",
         "check": "reentrancy-eth",
         "impact": "High",
         "confidence": "Medium"

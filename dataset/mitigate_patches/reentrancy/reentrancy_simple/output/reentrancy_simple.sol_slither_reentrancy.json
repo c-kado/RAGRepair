@@ -11,9 +11,9 @@
             "source_mapping": {
               "start": 295,
               "length": 174,
-              "filename_relative": "mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
-              "filename_short": "mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
               "is_dependency": false,
               "lines": [
                 16,
@@ -34,9 +34,9 @@
                 "source_mapping": {
                   "start": 30,
                   "length": 442,
-                  "filename_relative": "mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
-                  "filename_short": "mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
                   "is_dependency": false,
                   "lines": [
                     5,
@@ -72,9 +72,9 @@
             "source_mapping": {
               "start": 337,
               "length": 53,
-              "filename_relative": "mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
-              "filename_short": "mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
               "is_dependency": false,
               "lines": [
                 18
@@ -89,9 +89,9 @@
                 "source_mapping": {
                   "start": 295,
                   "length": 174,
-                  "filename_relative": "mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
-                  "filename_short": "mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
                   "is_dependency": false,
                   "lines": [
                     16,
@@ -112,9 +112,9 @@
                     "source_mapping": {
                       "start": 30,
                       "length": 442,
-                      "filename_relative": "mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
+                      "filename_relative": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
-                      "filename_short": "mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
+                      "filename_short": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -155,9 +155,9 @@
             "source_mapping": {
               "start": 434,
               "length": 27,
-              "filename_relative": "mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
-              "filename_short": "mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
               "is_dependency": false,
               "lines": [
                 21
@@ -172,9 +172,9 @@
                 "source_mapping": {
                   "start": 295,
                   "length": 174,
-                  "filename_relative": "mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
-                  "filename_short": "mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
                   "is_dependency": false,
                   "lines": [
                     16,
@@ -195,9 +195,9 @@
                     "source_mapping": {
                       "start": 30,
                       "length": 442,
-                      "filename_relative": "mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
+                      "filename_relative": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
-                      "filename_short": "mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
+                      "filename_short": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -234,10 +234,10 @@
             }
           }
         ],
-        "description": "Reentrancy in Reentrance.withdrawBalance() (mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#16-22):\n\tExternal calls:\n\t- ! (msg.sender.call.value(userBalance[msg.sender])()) (mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#18)\n\tState variables written after the call(s):\n\t- userBalance[msg.sender] = 0 (mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#21)\n\tReentrance.userBalance (mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#6) can be used in cross function reentrancies:\n\t- Reentrance.addToBalance() (mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#12-14)\n\t- Reentrance.getBalance(address) (mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#8-10)\n\t- Reentrance.withdrawBalance() (mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#16-22)\n",
-        "markdown": "Reentrancy in [Reentrance.withdrawBalance()](mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#L16-L22):\n\tExternal calls:\n\t- [! (msg.sender.call.value(userBalance[msg.sender])())](mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#L18)\n\tState variables written after the call(s):\n\t- [userBalance[msg.sender] = 0](mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#L21)\n\t[Reentrance.userBalance](mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#L6) can be used in cross function reentrancies:\n\t- [Reentrance.addToBalance()](mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#L12-L14)\n\t- [Reentrance.getBalance(address)](mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#L8-L10)\n\t- [Reentrance.withdrawBalance()](mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#L16-L22)\n",
-        "first_markdown_element": "mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#L16-L22",
-        "id": "edd0cb3c392f68ff9af38517936b6f5c62171e88e715b79f4c357cd5877c60d4",
+        "description": "Reentrancy in Reentrance.withdrawBalance() (../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#16-22):\n\tExternal calls:\n\t- ! (msg.sender.call.value(userBalance[msg.sender])()) (../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#18)\n\tState variables written after the call(s):\n\t- userBalance[msg.sender] = 0 (../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#21)\n\tReentrance.userBalance (../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#6) can be used in cross function reentrancies:\n\t- Reentrance.addToBalance() (../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#12-14)\n\t- Reentrance.getBalance(address) (../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#8-10)\n\t- Reentrance.withdrawBalance() (../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#16-22)\n",
+        "markdown": "Reentrancy in [Reentrance.withdrawBalance()](../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#L16-L22):\n\tExternal calls:\n\t- [! (msg.sender.call.value(userBalance[msg.sender])())](../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#L18)\n\tState variables written after the call(s):\n\t- [userBalance[msg.sender] = 0](../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#L21)\n\t[Reentrance.userBalance](../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#L6) can be used in cross function reentrancies:\n\t- [Reentrance.addToBalance()](../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#L12-L14)\n\t- [Reentrance.getBalance(address)](../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#L8-L10)\n\t- [Reentrance.withdrawBalance()](../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#L16-L22)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/reentrancy/reentrancy_simple/reentrancy_simple.sol#L16-L22",
+        "id": "6f697631af2e9e20263755054452e3864f71866a36a76ba03a05ecb9d9572d9a",
         "check": "reentrancy-eth",
         "impact": "High",
         "confidence": "Medium"

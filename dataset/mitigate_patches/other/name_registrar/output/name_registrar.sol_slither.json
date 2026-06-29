@@ -11,9 +11,9 @@
             "source_mapping": {
               "start": 369,
               "length": 21,
-              "filename_relative": "mitigate_patches/other/name_registrar/name_registrar.sol",
+              "filename_relative": "../dataset/mitigate_patches/other/name_registrar/name_registrar.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/other/name_registrar/name_registrar.sol",
-              "filename_short": "mitigate_patches/other/name_registrar/name_registrar.sol",
+              "filename_short": "../dataset/mitigate_patches/other/name_registrar/name_registrar.sol",
               "is_dependency": false,
               "lines": [
                 18
@@ -28,9 +28,9 @@
                 "source_mapping": {
                   "start": 294,
                   "length": 309,
-                  "filename_relative": "mitigate_patches/other/name_registrar/name_registrar.sol",
+                  "filename_relative": "../dataset/mitigate_patches/other/name_registrar/name_registrar.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/other/name_registrar/name_registrar.sol",
-                  "filename_short": "mitigate_patches/other/name_registrar/name_registrar.sol",
+                  "filename_short": "../dataset/mitigate_patches/other/name_registrar/name_registrar.sol",
                   "is_dependency": false,
                   "lines": [
                     16,
@@ -55,9 +55,9 @@
                     "source_mapping": {
                       "start": 27,
                       "length": 578,
-                      "filename_relative": "mitigate_patches/other/name_registrar/name_registrar.sol",
+                      "filename_relative": "../dataset/mitigate_patches/other/name_registrar/name_registrar.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/other/name_registrar/name_registrar.sol",
-                      "filename_short": "mitigate_patches/other/name_registrar/name_registrar.sol",
+                      "filename_short": "../dataset/mitigate_patches/other/name_registrar/name_registrar.sol",
                       "is_dependency": false,
                       "lines": [
                         4,
@@ -95,9 +95,9 @@
             }
           }
         ],
-        "description": "NameRegistrar.register(bytes32,address).newRecord (mitigate_patches/other/name_registrar/name_registrar.sol#18) is a storage variable never initialized\n",
-        "markdown": "[NameRegistrar.register(bytes32,address).newRecord](mitigate_patches/other/name_registrar/name_registrar.sol#L18) is a storage variable never initialized\n",
-        "first_markdown_element": "mitigate_patches/other/name_registrar/name_registrar.sol#L18",
+        "description": "NameRegistrar.register(bytes32,address).newRecord (../dataset/mitigate_patches/other/name_registrar/name_registrar.sol#18) is a storage variable never initialized\n",
+        "markdown": "[NameRegistrar.register(bytes32,address).newRecord](../dataset/mitigate_patches/other/name_registrar/name_registrar.sol#L18) is a storage variable never initialized\n",
+        "first_markdown_element": "../dataset/mitigate_patches/other/name_registrar/name_registrar.sol#L18",
         "id": "bf82f175ef7cff59a4b37ce9976fee11916c96ca80a6f717af2c1b0ed7fadf7c",
         "check": "uninitialized-storage",
         "impact": "High",

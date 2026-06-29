@@ -1,7 +1,7 @@
 {
 	"attributes" : 
 	{
-		"absolutePath" : "mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
+		"absolutePath" : "../dataset/mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
 		"exportedSymbols" : 
 		{
 			"Wallet" : 

@@ -11,9 +11,9 @@
             "source_mapping": {
               "start": 47,
               "length": 334,
-              "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+              "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
-              "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+              "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
               "is_dependency": false,
               "lines": [
                 7,
@@ -36,9 +36,9 @@
                 "source_mapping": {
                   "start": 28,
                   "length": 355,
-                  "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                  "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
-                  "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                  "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
                   "is_dependency": false,
                   "lines": [
                     5,
@@ -68,9 +68,9 @@
             "source_mapping": {
               "start": 308,
               "length": 35,
-              "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+              "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
-              "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+              "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
               "is_dependency": false,
               "lines": [
                 12
@@ -85,9 +85,9 @@
                 "source_mapping": {
                   "start": 47,
                   "length": 334,
-                  "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                  "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
-                  "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                  "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
                   "is_dependency": false,
                   "lines": [
                     7,
@@ -110,9 +110,9 @@
                     "source_mapping": {
                       "start": 28,
                       "length": 355,
-                      "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                      "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
-                      "filename_short": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+                      "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -139,10 +139,10 @@
             }
           }
         ],
-        "description": "EBU.transfer(address,address,address[],uint256[]) (mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#7-15) ignores return value by caddress.call(id,from,_tos[i],v[i]) (mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#12)\n",
-        "markdown": "[EBU.transfer(address,address,address[],uint256[])](mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#L7-L15) ignores return value by [caddress.call(id,from,_tos[i],v[i])](mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#L12)\n",
-        "first_markdown_element": "mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#L7-L15",
-        "id": "4089a8ce8c07b039e6859c78e7066d24380742eb06f38e1a8ad0b85084e91c97",
+        "description": "EBU.transfer(address,address,address[],uint256[]) (../dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#7-15) ignores return value by caddress.call(id,from,_tos[i],v[i]) (../dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#12)\n",
+        "markdown": "[EBU.transfer(address,address,address[],uint256[])](../dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#L7-L15) ignores return value by [caddress.call(id,from,_tos[i],v[i])](../dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#L12)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol#L7-L15",
+        "id": "d267b0f554cc92a014e2a2600c98d59a3da898d32a03980f4b2419dff88cb597",
         "check": "unchecked-lowlevel",
         "impact": "Medium",
         "confidence": "Medium"

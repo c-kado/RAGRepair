@@ -1,7 +1,7 @@
 {
 	"attributes" : 
 	{
-		"absolutePath" : "mitigate_patches/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol",
+		"absolutePath" : "../dataset/mitigate_patches/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol",
 		"exportedSymbols" : 
 		{
 			"ERC20Interface" : 

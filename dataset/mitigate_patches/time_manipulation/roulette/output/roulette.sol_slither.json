@@ -11,9 +11,9 @@
             "source_mapping": {
               "start": 123,
               "length": 232,
-              "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+              "filename_relative": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
-              "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+              "filename_short": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
               "is_dependency": false,
               "lines": [
                 10,
@@ -37,9 +37,9 @@
                 "source_mapping": {
                   "start": 28,
                   "length": 329,
-                  "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                  "filename_relative": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
-                  "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                  "filename_short": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
                   "is_dependency": false,
                   "lines": [
                     5,
@@ -72,9 +72,9 @@
             "source_mapping": {
               "start": 305,
               "length": 33,
-              "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+              "filename_relative": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
-              "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+              "filename_short": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
               "is_dependency": false,
               "lines": [
                 17
@@ -89,9 +89,9 @@
                 "source_mapping": {
                   "start": 123,
                   "length": 232,
-                  "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                  "filename_relative": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
-                  "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                  "filename_short": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
                   "is_dependency": false,
                   "lines": [
                     10,
@@ -115,9 +115,9 @@
                     "source_mapping": {
                       "start": 28,
                       "length": 329,
-                      "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                      "filename_relative": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
-                      "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                      "filename_short": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -147,10 +147,10 @@
             }
           }
         ],
-        "description": "Roulette.fallback() (mitigate_patches/time_manipulation/roulette/roulette.sol#10-19) sends eth to arbitrary user\n\tDangerous calls:\n\t- msg.sender.transfer(this.balance) (mitigate_patches/time_manipulation/roulette/roulette.sol#17)\n",
-        "markdown": "[Roulette.fallback()](mitigate_patches/time_manipulation/roulette/roulette.sol#L10-L19) sends eth to arbitrary user\n\tDangerous calls:\n\t- [msg.sender.transfer(this.balance)](mitigate_patches/time_manipulation/roulette/roulette.sol#L17)\n",
-        "first_markdown_element": "mitigate_patches/time_manipulation/roulette/roulette.sol#L10-L19",
-        "id": "eeb232dc169add86a8e7597cbb2f60fd8c60d169ed92d5fb081c2ebfcc7836bf",
+        "description": "Roulette.fallback() (../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol#10-19) sends eth to arbitrary user\n\tDangerous calls:\n\t- msg.sender.transfer(this.balance) (../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol#17)\n",
+        "markdown": "[Roulette.fallback()](../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol#L10-L19) sends eth to arbitrary user\n\tDangerous calls:\n\t- [msg.sender.transfer(this.balance)](../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol#L17)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol#L10-L19",
+        "id": "af4a025a1bd810a6a822dee1636b03061f39ca8cdf24288de2e82854ae5368c3",
         "check": "arbitrary-send-eth",
         "impact": "High",
         "confidence": "Medium"
@@ -163,9 +163,9 @@
             "source_mapping": {
               "start": 123,
               "length": 232,
-              "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+              "filename_relative": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
-              "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+              "filename_short": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
               "is_dependency": false,
               "lines": [
                 10,
@@ -189,9 +189,9 @@
                 "source_mapping": {
                   "start": 28,
                   "length": 329,
-                  "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                  "filename_relative": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
-                  "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                  "filename_short": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
                   "is_dependency": false,
                   "lines": [
                     5,
@@ -224,9 +224,9 @@
             "source_mapping": {
               "start": 275,
               "length": 13,
-              "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+              "filename_relative": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
-              "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+              "filename_short": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
               "is_dependency": false,
               "lines": [
                 16
@@ -241,9 +241,9 @@
                 "source_mapping": {
                   "start": 123,
                   "length": 232,
-                  "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                  "filename_relative": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
-                  "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                  "filename_short": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
                   "is_dependency": false,
                   "lines": [
                     10,
@@ -267,9 +267,9 @@
                     "source_mapping": {
                       "start": 28,
                       "length": 329,
-                      "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                      "filename_relative": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
-                      "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                      "filename_short": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -299,10 +299,10 @@
             }
           }
         ],
-        "description": "Roulette.fallback() (mitigate_patches/time_manipulation/roulette/roulette.sol#10-19) uses a weak PRNG: \"now % 15 == 0 (mitigate_patches/time_manipulation/roulette/roulette.sol#16)\" \n",
-        "markdown": "[Roulette.fallback()](mitigate_patches/time_manipulation/roulette/roulette.sol#L10-L19) uses a weak PRNG: \"[now % 15 == 0](mitigate_patches/time_manipulation/roulette/roulette.sol#L16)\" \n",
-        "first_markdown_element": "mitigate_patches/time_manipulation/roulette/roulette.sol#L10-L19",
-        "id": "532b5d5d523d0338e364d607f87a6230e6887cd967d94795eb8eaec2ab06212b",
+        "description": "Roulette.fallback() (../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol#10-19) uses a weak PRNG: \"now % 15 == 0 (../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol#16)\" \n",
+        "markdown": "[Roulette.fallback()](../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol#L10-L19) uses a weak PRNG: \"[now % 15 == 0](../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol#L16)\" \n",
+        "first_markdown_element": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol#L10-L19",
+        "id": "8be1ffa8486e1655b56202861c3b8dec7cc4b75d32386967f0fe4b8e722d39e2",
         "check": "weak-prng",
         "impact": "High",
         "confidence": "Medium"
@@ -315,9 +315,9 @@
             "source_mapping": {
               "start": 123,
               "length": 232,
-              "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+              "filename_relative": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
-              "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+              "filename_short": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
               "is_dependency": false,
               "lines": [
                 10,
@@ -341,9 +341,9 @@
                 "source_mapping": {
                   "start": 28,
                   "length": 329,
-                  "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                  "filename_relative": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
-                  "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                  "filename_short": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
                   "is_dependency": false,
                   "lines": [
                     5,
@@ -376,9 +376,9 @@
             "source_mapping": {
               "start": 275,
               "length": 13,
-              "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+              "filename_relative": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
-              "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+              "filename_short": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
               "is_dependency": false,
               "lines": [
                 16
@@ -393,9 +393,9 @@
                 "source_mapping": {
                   "start": 123,
                   "length": 232,
-                  "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                  "filename_relative": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
-                  "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                  "filename_short": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
                   "is_dependency": false,
                   "lines": [
                     10,
@@ -419,9 +419,9 @@
                     "source_mapping": {
                       "start": 28,
                       "length": 329,
-                      "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                      "filename_relative": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
-                      "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                      "filename_short": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -451,10 +451,10 @@
             }
           }
         ],
-        "description": "Roulette.fallback() (mitigate_patches/time_manipulation/roulette/roulette.sol#10-19) uses a dangerous strict equality:\n\t- now % 15 == 0 (mitigate_patches/time_manipulation/roulette/roulette.sol#16)\n",
-        "markdown": "[Roulette.fallback()](mitigate_patches/time_manipulation/roulette/roulette.sol#L10-L19) uses a dangerous strict equality:\n\t- [now % 15 == 0](mitigate_patches/time_manipulation/roulette/roulette.sol#L16)\n",
-        "first_markdown_element": "mitigate_patches/time_manipulation/roulette/roulette.sol#L10-L19",
-        "id": "1780bf70d2ed2ed7cefa757f34a272c5b7e7b52cec521c14a058f3c1939d471d",
+        "description": "Roulette.fallback() (../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol#10-19) uses a dangerous strict equality:\n\t- now % 15 == 0 (../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol#16)\n",
+        "markdown": "[Roulette.fallback()](../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol#L10-L19) uses a dangerous strict equality:\n\t- [now % 15 == 0](../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol#L16)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol#L10-L19",
+        "id": "1e3c608eb2fab9c1f0f8b202cdc84bba907ce39df079dafeed5540cc7d8bc608",
         "check": "incorrect-equality",
         "impact": "Medium",
         "confidence": "High"
@@ -467,9 +467,9 @@
             "source_mapping": {
               "start": 123,
               "length": 232,
-              "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+              "filename_relative": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
-              "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+              "filename_short": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
               "is_dependency": false,
               "lines": [
                 10,
@@ -493,9 +493,9 @@
                 "source_mapping": {
                   "start": 28,
                   "length": 329,
-                  "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                  "filename_relative": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
-                  "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                  "filename_short": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
                   "is_dependency": false,
                   "lines": [
                     5,
@@ -528,9 +528,9 @@
             "source_mapping": {
               "start": 202,
               "length": 29,
-              "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+              "filename_relative": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
-              "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+              "filename_short": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
               "is_dependency": false,
               "lines": [
                 13
@@ -545,9 +545,9 @@
                 "source_mapping": {
                   "start": 123,
                   "length": 232,
-                  "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                  "filename_relative": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
-                  "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                  "filename_short": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
                   "is_dependency": false,
                   "lines": [
                     10,
@@ -571,9 +571,9 @@
                     "source_mapping": {
                       "start": 28,
                       "length": 329,
-                      "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                      "filename_relative": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
-                      "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                      "filename_short": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -608,9 +608,9 @@
             "source_mapping": {
               "start": 275,
               "length": 13,
-              "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+              "filename_relative": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
-              "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+              "filename_short": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
               "is_dependency": false,
               "lines": [
                 16
@@ -625,9 +625,9 @@
                 "source_mapping": {
                   "start": 123,
                   "length": 232,
-                  "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                  "filename_relative": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
-                  "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                  "filename_short": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
                   "is_dependency": false,
                   "lines": [
                     10,
@@ -651,9 +651,9 @@
                     "source_mapping": {
                       "start": 28,
                       "length": 329,
-                      "filename_relative": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                      "filename_relative": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
-                      "filename_short": "mitigate_patches/time_manipulation/roulette/roulette.sol",
+                      "filename_short": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -683,10 +683,10 @@
             }
           }
         ],
-        "description": "Roulette.fallback() (mitigate_patches/time_manipulation/roulette/roulette.sol#10-19) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool)(now != pastBlockTime) (mitigate_patches/time_manipulation/roulette/roulette.sol#13)\n\t- now % 15 == 0 (mitigate_patches/time_manipulation/roulette/roulette.sol#16)\n",
-        "markdown": "[Roulette.fallback()](mitigate_patches/time_manipulation/roulette/roulette.sol#L10-L19) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- [require(bool)(now != pastBlockTime)](mitigate_patches/time_manipulation/roulette/roulette.sol#L13)\n\t- [now % 15 == 0](mitigate_patches/time_manipulation/roulette/roulette.sol#L16)\n",
-        "first_markdown_element": "mitigate_patches/time_manipulation/roulette/roulette.sol#L10-L19",
-        "id": "9405b0b28bbd889612b11a41c02b00678aa6180dd9f6f581d07f1d23b9f9231d",
+        "description": "Roulette.fallback() (../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol#10-19) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool)(now != pastBlockTime) (../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol#13)\n\t- now % 15 == 0 (../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol#16)\n",
+        "markdown": "[Roulette.fallback()](../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol#L10-L19) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- [require(bool)(now != pastBlockTime)](../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol#L13)\n\t- [now % 15 == 0](../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol#L16)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/time_manipulation/roulette/roulette.sol#L10-L19",
+        "id": "51c2c09c62f46ffdfdd0e4c08b569bb59d2a54409471f10b6d1754936c8516f0",
         "check": "timestamp",
         "impact": "Low",
         "confidence": "Medium"

@@ -1,7 +1,7 @@
 {
 	"attributes" : 
 	{
-		"absolutePath" : "mitigate_patches/reentrancy/reentrancy_bonus/reentrancy_bonus.sol",
+		"absolutePath" : "../dataset/mitigate_patches/reentrancy/reentrancy_bonus/reentrancy_bonus.sol",
 		"exportedSymbols" : 
 		{
 			"Reentrancy_bonus" : 

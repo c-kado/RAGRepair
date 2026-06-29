@@ -11,9 +11,9 @@
             "source_mapping": {
               "start": 634,
               "length": 9,
-              "filename_relative": "mitigate_patches/other/crypto_roulette/crypto_roulette.sol",
+              "filename_relative": "../dataset/mitigate_patches/other/crypto_roulette/crypto_roulette.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/other/crypto_roulette/crypto_roulette.sol",
-              "filename_short": "mitigate_patches/other/crypto_roulette/crypto_roulette.sol",
+              "filename_short": "../dataset/mitigate_patches/other/crypto_roulette/crypto_roulette.sol",
               "is_dependency": false,
               "lines": [
                 31
@@ -28,9 +28,9 @@
                 "source_mapping": {
                   "start": 522,
                   "length": 368,
-                  "filename_relative": "mitigate_patches/other/crypto_roulette/crypto_roulette.sol",
+                  "filename_relative": "../dataset/mitigate_patches/other/crypto_roulette/crypto_roulette.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/other/crypto_roulette/crypto_roulette.sol",
-                  "filename_short": "mitigate_patches/other/crypto_roulette/crypto_roulette.sol",
+                  "filename_short": "../dataset/mitigate_patches/other/crypto_roulette/crypto_roulette.sol",
                   "is_dependency": false,
                   "lines": [
                     28,
@@ -60,9 +60,9 @@
                     "source_mapping": {
                       "start": 28,
                       "length": 1046,
-                      "filename_relative": "mitigate_patches/other/crypto_roulette/crypto_roulette.sol",
+                      "filename_relative": "../dataset/mitigate_patches/other/crypto_roulette/crypto_roulette.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/other/crypto_roulette/crypto_roulette.sol",
-                      "filename_short": "mitigate_patches/other/crypto_roulette/crypto_roulette.sol",
+                      "filename_short": "../dataset/mitigate_patches/other/crypto_roulette/crypto_roulette.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -124,9 +124,9 @@
             }
           }
         ],
-        "description": "CryptoRoulette.play(uint256).game (mitigate_patches/other/crypto_roulette/crypto_roulette.sol#31) is a storage variable never initialized\n",
-        "markdown": "[CryptoRoulette.play(uint256).game](mitigate_patches/other/crypto_roulette/crypto_roulette.sol#L31) is a storage variable never initialized\n",
-        "first_markdown_element": "mitigate_patches/other/crypto_roulette/crypto_roulette.sol#L31",
+        "description": "CryptoRoulette.play(uint256).game (../dataset/mitigate_patches/other/crypto_roulette/crypto_roulette.sol#31) is a storage variable never initialized\n",
+        "markdown": "[CryptoRoulette.play(uint256).game](../dataset/mitigate_patches/other/crypto_roulette/crypto_roulette.sol#L31) is a storage variable never initialized\n",
+        "first_markdown_element": "../dataset/mitigate_patches/other/crypto_roulette/crypto_roulette.sol#L31",
         "id": "90f2072daf323a47f1d907795047eccd950b8e3b8826751b14b9365c87260e28",
         "check": "uninitialized-storage",
         "impact": "High",

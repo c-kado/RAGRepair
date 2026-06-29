@@ -1,7 +1,7 @@
 {
 	"attributes" : 
 	{
-		"absolutePath" : "mitigate_patches/access_control/mapping_write/mapping_write.sol",
+		"absolutePath" : "../dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol",
 		"exportedSymbols" : 
 		{
 			"Map" : 

@@ -11,9 +11,9 @@
             "source_mapping": {
               "start": 168,
               "length": 166,
-              "filename_relative": "mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
-              "filename_short": "mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
               "is_dependency": false,
               "lines": [
                 12,
@@ -34,9 +34,9 @@
                 "source_mapping": {
                   "start": 27,
                   "length": 388,
-                  "filename_relative": "mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
-                  "filename_short": "mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
                   "is_dependency": false,
                   "lines": [
                     5,
@@ -72,9 +72,9 @@
             "source_mapping": {
               "start": 247,
               "length": 42,
-              "filename_relative": "mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
-              "filename_short": "mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
               "is_dependency": false,
               "lines": [
                 15
@@ -89,9 +89,9 @@
                 "source_mapping": {
                   "start": 168,
                   "length": 166,
-                  "filename_relative": "mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
-                  "filename_short": "mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
                   "is_dependency": false,
                   "lines": [
                     12,
@@ -112,9 +112,9 @@
                     "source_mapping": {
                       "start": 27,
                       "length": 388,
-                      "filename_relative": "mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
+                      "filename_relative": "../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
-                      "filename_short": "mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
+                      "filename_short": "../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -155,9 +155,9 @@
             "source_mapping": {
               "start": 297,
               "length": 26,
-              "filename_relative": "mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
-              "filename_short": "mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
               "is_dependency": false,
               "lines": [
                 16
@@ -172,9 +172,9 @@
                 "source_mapping": {
                   "start": 168,
                   "length": 166,
-                  "filename_relative": "mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
-                  "filename_short": "mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
                   "is_dependency": false,
                   "lines": [
                     12,
@@ -195,9 +195,9 @@
                     "source_mapping": {
                       "start": 27,
                       "length": 388,
-                      "filename_relative": "mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
+                      "filename_relative": "../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
-                      "filename_short": "mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
+                      "filename_short": "../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -234,10 +234,10 @@
             }
           }
         ],
-        "description": "Reentrancy in SimpleDAO.withdraw(uint256) (mitigate_patches/reentrancy/simple_dao/simple_dao.sol#12-18):\n\tExternal calls:\n\t- res = msg.sender.call.value(amount)() (mitigate_patches/reentrancy/simple_dao/simple_dao.sol#15)\n\tState variables written after the call(s):\n\t- credit[msg.sender] -= amount (mitigate_patches/reentrancy/simple_dao/simple_dao.sol#16)\n\tSimpleDAO.credit (mitigate_patches/reentrancy/simple_dao/simple_dao.sol#6) can be used in cross function reentrancies:\n\t- SimpleDAO.donate(address) (mitigate_patches/reentrancy/simple_dao/simple_dao.sol#8-10)\n\t- SimpleDAO.queryCredit(address) (mitigate_patches/reentrancy/simple_dao/simple_dao.sol#20-22)\n\t- SimpleDAO.withdraw(uint256) (mitigate_patches/reentrancy/simple_dao/simple_dao.sol#12-18)\n",
-        "markdown": "Reentrancy in [SimpleDAO.withdraw(uint256)](mitigate_patches/reentrancy/simple_dao/simple_dao.sol#L12-L18):\n\tExternal calls:\n\t- [res = msg.sender.call.value(amount)()](mitigate_patches/reentrancy/simple_dao/simple_dao.sol#L15)\n\tState variables written after the call(s):\n\t- [credit[msg.sender] -= amount](mitigate_patches/reentrancy/simple_dao/simple_dao.sol#L16)\n\t[SimpleDAO.credit](mitigate_patches/reentrancy/simple_dao/simple_dao.sol#L6) can be used in cross function reentrancies:\n\t- [SimpleDAO.donate(address)](mitigate_patches/reentrancy/simple_dao/simple_dao.sol#L8-L10)\n\t- [SimpleDAO.queryCredit(address)](mitigate_patches/reentrancy/simple_dao/simple_dao.sol#L20-L22)\n\t- [SimpleDAO.withdraw(uint256)](mitigate_patches/reentrancy/simple_dao/simple_dao.sol#L12-L18)\n",
-        "first_markdown_element": "mitigate_patches/reentrancy/simple_dao/simple_dao.sol#L12-L18",
-        "id": "65bd537b6dc1ab5dc66e2fd04ec3749e665a419bdc0434a1d099aa8630b3bd55",
+        "description": "Reentrancy in SimpleDAO.withdraw(uint256) (../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol#12-18):\n\tExternal calls:\n\t- res = msg.sender.call.value(amount)() (../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol#15)\n\tState variables written after the call(s):\n\t- credit[msg.sender] -= amount (../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol#16)\n\tSimpleDAO.credit (../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol#6) can be used in cross function reentrancies:\n\t- SimpleDAO.donate(address) (../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol#8-10)\n\t- SimpleDAO.queryCredit(address) (../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol#20-22)\n\t- SimpleDAO.withdraw(uint256) (../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol#12-18)\n",
+        "markdown": "Reentrancy in [SimpleDAO.withdraw(uint256)](../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol#L12-L18):\n\tExternal calls:\n\t- [res = msg.sender.call.value(amount)()](../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol#L15)\n\tState variables written after the call(s):\n\t- [credit[msg.sender] -= amount](../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol#L16)\n\t[SimpleDAO.credit](../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol#L6) can be used in cross function reentrancies:\n\t- [SimpleDAO.donate(address)](../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol#L8-L10)\n\t- [SimpleDAO.queryCredit(address)](../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol#L20-L22)\n\t- [SimpleDAO.withdraw(uint256)](../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol#L12-L18)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/reentrancy/simple_dao/simple_dao.sol#L12-L18",
+        "id": "0cf39ba250dc035ac857dc76117d829ad62a9aabde049b460563170bdd3f87cd",
         "check": "reentrancy-eth",
         "impact": "High",
         "confidence": "Medium"

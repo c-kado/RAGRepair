@@ -1,7 +1,7 @@
 {
 	"attributes" : 
 	{
-		"absolutePath" : "mitigate_patches/access_control/incorrect_constructor_name1/incorrect_constructor_name1.sol",
+		"absolutePath" : "../dataset/mitigate_patches/access_control/incorrect_constructor_name1/incorrect_constructor_name1.sol",
 		"exportedSymbols" : 
 		{
 			"Missing" : 

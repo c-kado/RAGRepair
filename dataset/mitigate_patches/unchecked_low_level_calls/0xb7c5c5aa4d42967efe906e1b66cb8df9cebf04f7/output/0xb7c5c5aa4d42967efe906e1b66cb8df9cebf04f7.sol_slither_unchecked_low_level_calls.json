@@ -11,9 +11,9 @@
             "source_mapping": {
               "start": 188,
               "length": 124,
-              "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+              "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
-              "filename_short": "mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+              "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
               "is_dependency": false,
               "lines": [
                 12,
@@ -32,9 +32,9 @@
                 "source_mapping": {
                   "start": 28,
                   "length": 286,
-                  "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                  "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
-                  "filename_short": "mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                  "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
                   "is_dependency": false,
                   "lines": [
                     5,
@@ -65,9 +65,9 @@
             "source_mapping": {
               "start": 226,
               "length": 45,
-              "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+              "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
-              "filename_short": "mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+              "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
               "is_dependency": false,
               "lines": [
                 14
@@ -82,9 +82,9 @@
                 "source_mapping": {
                   "start": 188,
                   "length": 124,
-                  "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                  "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
-                  "filename_short": "mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                  "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
                   "is_dependency": false,
                   "lines": [
                     12,
@@ -103,9 +103,9 @@
                     "source_mapping": {
                       "start": 28,
                       "length": 286,
-                      "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                      "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
-                      "filename_short": "mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                      "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -133,10 +133,10 @@
             }
           }
         ],
-        "description": "keepMyEther.withdraw() (mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#12-16) ignores return value by msg.sender.call.value(balances[msg.sender])() (mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#14)\n",
-        "markdown": "[keepMyEther.withdraw()](mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#L12-L16) ignores return value by [msg.sender.call.value(balances[msg.sender])()](mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#L14)\n",
-        "first_markdown_element": "mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#L12-L16",
-        "id": "cd9622ffa40d30b2b352746d89fe320733f44f9e9f74de1686ce6f912bcdf722",
+        "description": "keepMyEther.withdraw() (../dataset/mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#12-16) ignores return value by msg.sender.call.value(balances[msg.sender])() (../dataset/mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#14)\n",
+        "markdown": "[keepMyEther.withdraw()](../dataset/mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#L12-L16) ignores return value by [msg.sender.call.value(balances[msg.sender])()](../dataset/mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#L14)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#L12-L16",
+        "id": "13053becf292b4c2fe26221fc2759df9ca61bf009ed69fbf5969f64f2f4ac6fd",
         "check": "unchecked-lowlevel",
         "impact": "Medium",
         "confidence": "Medium"

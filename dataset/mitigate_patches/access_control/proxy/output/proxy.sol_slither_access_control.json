@@ -11,9 +11,9 @@
             "source_mapping": {
               "start": 120,
               "length": 101,
-              "filename_relative": "mitigate_patches/access_control/proxy/proxy.sol",
+              "filename_relative": "../dataset/mitigate_patches/access_control/proxy/proxy.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/proxy/proxy.sol",
-              "filename_short": "mitigate_patches/access_control/proxy/proxy.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/proxy/proxy.sol",
               "is_dependency": false,
               "lines": [
                 13,
@@ -31,9 +31,9 @@
                 "source_mapping": {
                   "start": 28,
                   "length": 196,
-                  "filename_relative": "mitigate_patches/access_control/proxy/proxy.sol",
+                  "filename_relative": "../dataset/mitigate_patches/access_control/proxy/proxy.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/proxy/proxy.sol",
-                  "filename_short": "mitigate_patches/access_control/proxy/proxy.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/proxy/proxy.sol",
                   "is_dependency": false,
                   "lines": [
                     5,
@@ -64,9 +64,9 @@
             "source_mapping": {
               "start": 180,
               "length": 35,
-              "filename_relative": "mitigate_patches/access_control/proxy/proxy.sol",
+              "filename_relative": "../dataset/mitigate_patches/access_control/proxy/proxy.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/proxy/proxy.sol",
-              "filename_short": "mitigate_patches/access_control/proxy/proxy.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/proxy/proxy.sol",
               "is_dependency": false,
               "lines": [
                 15
@@ -81,9 +81,9 @@
                 "source_mapping": {
                   "start": 120,
                   "length": 101,
-                  "filename_relative": "mitigate_patches/access_control/proxy/proxy.sol",
+                  "filename_relative": "../dataset/mitigate_patches/access_control/proxy/proxy.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/proxy/proxy.sol",
-                  "filename_short": "mitigate_patches/access_control/proxy/proxy.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/proxy/proxy.sol",
                   "is_dependency": false,
                   "lines": [
                     13,
@@ -101,9 +101,9 @@
                     "source_mapping": {
                       "start": 28,
                       "length": 196,
-                      "filename_relative": "mitigate_patches/access_control/proxy/proxy.sol",
+                      "filename_relative": "../dataset/mitigate_patches/access_control/proxy/proxy.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/proxy/proxy.sol",
-                      "filename_short": "mitigate_patches/access_control/proxy/proxy.sol",
+                      "filename_short": "../dataset/mitigate_patches/access_control/proxy/proxy.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -131,10 +131,10 @@
             }
           }
         ],
-        "description": "Proxy.forward(address,bytes) (mitigate_patches/access_control/proxy/proxy.sol#13-16) uses delegatecall to a input-controlled function id\n\t- require(bool)(callee.delegatecall(_data)) (mitigate_patches/access_control/proxy/proxy.sol#15)\n",
-        "markdown": "[Proxy.forward(address,bytes)](mitigate_patches/access_control/proxy/proxy.sol#L13-L16) uses delegatecall to a input-controlled function id\n\t- [require(bool)(callee.delegatecall(_data))](mitigate_patches/access_control/proxy/proxy.sol#L15)\n",
-        "first_markdown_element": "mitigate_patches/access_control/proxy/proxy.sol#L13-L16",
-        "id": "209307588b036687b21f973529b9343f7c5fa7f6a0765f7b4396e05838f111c6",
+        "description": "Proxy.forward(address,bytes) (../dataset/mitigate_patches/access_control/proxy/proxy.sol#13-16) uses delegatecall to a input-controlled function id\n\t- require(bool)(callee.delegatecall(_data)) (../dataset/mitigate_patches/access_control/proxy/proxy.sol#15)\n",
+        "markdown": "[Proxy.forward(address,bytes)](../dataset/mitigate_patches/access_control/proxy/proxy.sol#L13-L16) uses delegatecall to a input-controlled function id\n\t- [require(bool)(callee.delegatecall(_data))](../dataset/mitigate_patches/access_control/proxy/proxy.sol#L15)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/access_control/proxy/proxy.sol#L13-L16",
+        "id": "a895d6c7b41bd54d4d777cc1bf0182e5b730adf07454952c88c3b8411e975512",
         "check": "controlled-delegatecall",
         "impact": "High",
         "confidence": "Medium"

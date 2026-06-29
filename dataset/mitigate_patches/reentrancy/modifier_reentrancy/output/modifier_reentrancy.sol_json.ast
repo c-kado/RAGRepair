@@ -1,7 +1,7 @@
 {
 	"attributes" : 
 	{
-		"absolutePath" : "mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
+		"absolutePath" : "../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
 		"exportedSymbols" : 
 		{
 			"Bank" : 

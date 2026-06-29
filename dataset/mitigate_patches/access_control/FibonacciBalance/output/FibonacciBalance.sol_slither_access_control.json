@@ -11,9 +11,9 @@
             "source_mapping": {
               "start": 583,
               "length": 84,
-              "filename_relative": "mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
+              "filename_relative": "../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
-              "filename_short": "mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
               "is_dependency": false,
               "lines": [
                 27,
@@ -31,9 +31,9 @@
                 "source_mapping": {
                   "start": 28,
                   "length": 641,
-                  "filename_relative": "mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
+                  "filename_relative": "../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
-                  "filename_short": "mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
                   "is_dependency": false,
                   "lines": [
                     5,
@@ -77,9 +77,9 @@
             "source_mapping": {
               "start": 612,
               "length": 48,
-              "filename_relative": "mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
+              "filename_relative": "../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
-              "filename_short": "mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
               "is_dependency": false,
               "lines": [
                 29
@@ -94,9 +94,9 @@
                 "source_mapping": {
                   "start": 583,
                   "length": 84,
-                  "filename_relative": "mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
+                  "filename_relative": "../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
-                  "filename_short": "mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
                   "is_dependency": false,
                   "lines": [
                     27,
@@ -114,9 +114,9 @@
                     "source_mapping": {
                       "start": 28,
                       "length": 641,
-                      "filename_relative": "mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
+                      "filename_relative": "../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
-                      "filename_short": "mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
+                      "filename_short": "../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -157,10 +157,10 @@
             }
           }
         ],
-        "description": "FibonacciBalance.fallback() (mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol#27-30) uses delegatecall to a input-controlled function id\n\t- require(bool)(fibonacciLibrary.delegatecall(msg.data)) (mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol#29)\n",
-        "markdown": "[FibonacciBalance.fallback()](mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol#L27-L30) uses delegatecall to a input-controlled function id\n\t- [require(bool)(fibonacciLibrary.delegatecall(msg.data))](mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol#L29)\n",
-        "first_markdown_element": "mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol#L27-L30",
-        "id": "0e9a2ebc68daccef0cf09796de216a0a37bb38ddf4fa6eb5c469b61ada16d2f9",
+        "description": "FibonacciBalance.fallback() (../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol#27-30) uses delegatecall to a input-controlled function id\n\t- require(bool)(fibonacciLibrary.delegatecall(msg.data)) (../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol#29)\n",
+        "markdown": "[FibonacciBalance.fallback()](../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol#L27-L30) uses delegatecall to a input-controlled function id\n\t- [require(bool)(fibonacciLibrary.delegatecall(msg.data))](../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol#L29)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol#L27-L30",
+        "id": "04be8757190e3d18f078bfbf644ef45cc0bad52c03f6b31a8dc2b5568df3d92d",
         "check": "controlled-delegatecall",
         "impact": "High",
         "confidence": "Medium"
@@ -173,9 +173,9 @@
             "source_mapping": {
               "start": 382,
               "length": 195,
-              "filename_relative": "mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
+              "filename_relative": "../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
-              "filename_short": "mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
               "is_dependency": false,
               "lines": [
                 20,
@@ -195,9 +195,9 @@
                 "source_mapping": {
                   "start": 28,
                   "length": 641,
-                  "filename_relative": "mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
+                  "filename_relative": "../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
-                  "filename_short": "mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
                   "is_dependency": false,
                   "lines": [
                     5,
@@ -241,9 +241,9 @@
             "source_mapping": {
               "start": 445,
               "length": 65,
-              "filename_relative": "mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
+              "filename_relative": "../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
-              "filename_short": "mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
               "is_dependency": false,
               "lines": [
                 23
@@ -258,9 +258,9 @@
                 "source_mapping": {
                   "start": 382,
                   "length": 195,
-                  "filename_relative": "mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
+                  "filename_relative": "../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
-                  "filename_short": "mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
                   "is_dependency": false,
                   "lines": [
                     20,
@@ -280,9 +280,9 @@
                     "source_mapping": {
                       "start": 28,
                       "length": 641,
-                      "filename_relative": "mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
+                      "filename_relative": "../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
-                      "filename_short": "mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
+                      "filename_short": "../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -323,10 +323,10 @@
             }
           }
         ],
-        "description": "FibonacciBalance.withdraw() (mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol#20-25) uses delegatecall to a input-controlled function id\n\t- require(bool)(fibonacciLibrary.delegatecall(fibSig,withdrawalCounter)) (mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol#23)\n",
-        "markdown": "[FibonacciBalance.withdraw()](mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol#L20-L25) uses delegatecall to a input-controlled function id\n\t- [require(bool)(fibonacciLibrary.delegatecall(fibSig,withdrawalCounter))](mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol#L23)\n",
-        "first_markdown_element": "mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol#L20-L25",
-        "id": "6a7e4e9ba810b86480a05d068761ae0795d3a507fdf15626b8f1d2d5ea1eeddc",
+        "description": "FibonacciBalance.withdraw() (../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol#20-25) uses delegatecall to a input-controlled function id\n\t- require(bool)(fibonacciLibrary.delegatecall(fibSig,withdrawalCounter)) (../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol#23)\n",
+        "markdown": "[FibonacciBalance.withdraw()](../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol#L20-L25) uses delegatecall to a input-controlled function id\n\t- [require(bool)(fibonacciLibrary.delegatecall(fibSig,withdrawalCounter))](../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol#L23)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/access_control/FibonacciBalance/FibonacciBalance.sol#L20-L25",
+        "id": "d2eaf260b72856e0fa887d0a1aab10dd29884baf486ff0a27feb0a1f3740e544",
         "check": "controlled-delegatecall",
         "impact": "High",
         "confidence": "Medium"

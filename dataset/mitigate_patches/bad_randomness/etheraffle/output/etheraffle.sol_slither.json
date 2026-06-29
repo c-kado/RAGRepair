@@ -11,9 +11,9 @@
             "source_mapping": {
               "start": 3125,
               "length": 607,
-              "filename_relative": "mitigate_patches/bad_randomness/etheraffle/etheraffle.sol",
+              "filename_relative": "../dataset/mitigate_patches/bad_randomness/etheraffle/etheraffle.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/etheraffle/etheraffle.sol",
-              "filename_short": "mitigate_patches/bad_randomness/etheraffle/etheraffle.sol",
+              "filename_short": "../dataset/mitigate_patches/bad_randomness/etheraffle/etheraffle.sol",
               "is_dependency": false,
               "lines": [
                 124,
@@ -46,9 +46,9 @@
                 "source_mapping": {
                   "start": 29,
                   "length": 3952,
-                  "filename_relative": "mitigate_patches/bad_randomness/etheraffle/etheraffle.sol",
+                  "filename_relative": "../dataset/mitigate_patches/bad_randomness/etheraffle/etheraffle.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/etheraffle/etheraffle.sol",
-                  "filename_short": "mitigate_patches/bad_randomness/etheraffle/etheraffle.sol",
+                  "filename_short": "../dataset/mitigate_patches/bad_randomness/etheraffle/etheraffle.sol",
                   "is_dependency": false,
                   "lines": [
                     5,
@@ -216,9 +216,9 @@
             "source_mapping": {
               "start": 3424,
               "length": 44,
-              "filename_relative": "mitigate_patches/bad_randomness/etheraffle/etheraffle.sol",
+              "filename_relative": "../dataset/mitigate_patches/bad_randomness/etheraffle/etheraffle.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/etheraffle/etheraffle.sol",
-              "filename_short": "mitigate_patches/bad_randomness/etheraffle/etheraffle.sol",
+              "filename_short": "../dataset/mitigate_patches/bad_randomness/etheraffle/etheraffle.sol",
               "is_dependency": false,
               "lines": [
                 131
@@ -233,9 +233,9 @@
                 "source_mapping": {
                   "start": 3125,
                   "length": 607,
-                  "filename_relative": "mitigate_patches/bad_randomness/etheraffle/etheraffle.sol",
+                  "filename_relative": "../dataset/mitigate_patches/bad_randomness/etheraffle/etheraffle.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/etheraffle/etheraffle.sol",
-                  "filename_short": "mitigate_patches/bad_randomness/etheraffle/etheraffle.sol",
+                  "filename_short": "../dataset/mitigate_patches/bad_randomness/etheraffle/etheraffle.sol",
                   "is_dependency": false,
                   "lines": [
                     124,
@@ -268,9 +268,9 @@
                     "source_mapping": {
                       "start": 29,
                       "length": 3952,
-                      "filename_relative": "mitigate_patches/bad_randomness/etheraffle/etheraffle.sol",
+                      "filename_relative": "../dataset/mitigate_patches/bad_randomness/etheraffle/etheraffle.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/etheraffle/etheraffle.sol",
-                      "filename_short": "mitigate_patches/bad_randomness/etheraffle/etheraffle.sol",
+                      "filename_short": "../dataset/mitigate_patches/bad_randomness/etheraffle/etheraffle.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -435,10 +435,10 @@
             }
           }
         ],
-        "description": "Ethraffle_v4b.endRaffle() (mitigate_patches/bad_randomness/etheraffle/etheraffle.sol#124-142) has external calls inside a loop: contestants[i].addr.transfer(pricePerTicket) (mitigate_patches/bad_randomness/etheraffle/etheraffle.sol#131)\n",
-        "markdown": "[Ethraffle_v4b.endRaffle()](mitigate_patches/bad_randomness/etheraffle/etheraffle.sol#L124-L142) has external calls inside a loop: [contestants[i].addr.transfer(pricePerTicket)](mitigate_patches/bad_randomness/etheraffle/etheraffle.sol#L131)\n",
-        "first_markdown_element": "mitigate_patches/bad_randomness/etheraffle/etheraffle.sol#L124-L142",
-        "id": "0ad3d61ed3b93ace2be31f12c940ef1c17903027895725753977ff8b587b17dd",
+        "description": "Ethraffle_v4b.endRaffle() (../dataset/mitigate_patches/bad_randomness/etheraffle/etheraffle.sol#124-142) has external calls inside a loop: contestants[i].addr.transfer(pricePerTicket) (../dataset/mitigate_patches/bad_randomness/etheraffle/etheraffle.sol#131)\n",
+        "markdown": "[Ethraffle_v4b.endRaffle()](../dataset/mitigate_patches/bad_randomness/etheraffle/etheraffle.sol#L124-L142) has external calls inside a loop: [contestants[i].addr.transfer(pricePerTicket)](../dataset/mitigate_patches/bad_randomness/etheraffle/etheraffle.sol#L131)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/bad_randomness/etheraffle/etheraffle.sol#L124-L142",
+        "id": "765d0ea581a8a8d1b2cdaba4ef713b7de1b839412ad642ae484a3226d3f53bde",
         "check": "calls-loop",
         "impact": "Low",
         "confidence": "Medium"

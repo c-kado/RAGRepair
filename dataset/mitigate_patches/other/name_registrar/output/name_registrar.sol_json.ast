@@ -1,7 +1,7 @@
 {
 	"attributes" : 
 	{
-		"absolutePath" : "mitigate_patches/other/name_registrar/name_registrar.sol",
+		"absolutePath" : "../dataset/mitigate_patches/other/name_registrar/name_registrar.sol",
 		"exportedSymbols" : 
 		{
 			"NameRegistrar" : 

@@ -1,7 +1,7 @@
 {
 	"attributes" : 
 	{
-		"absolutePath" : "mitigate_patches/reentrancy/0xbe4041d55db380c5ae9d4a9b9703f1ed4e7e3888/0xbe4041d55db380c5ae9d4a9b9703f1ed4e7e3888.sol",
+		"absolutePath" : "../dataset/mitigate_patches/reentrancy/0xbe4041d55db380c5ae9d4a9b9703f1ed4e7e3888/0xbe4041d55db380c5ae9d4a9b9703f1ed4e7e3888.sol",
 		"exportedSymbols" : 
 		{
 			"Log" : 

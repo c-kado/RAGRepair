@@ -1,7 +1,7 @@
 {
 	"attributes" : 
 	{
-		"absolutePath" : "mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
+		"absolutePath" : "../dataset/mitigate_patches/access_control/wallet_04_confused_sign/wallet_04_confused_sign.sol",
 		"exportedSymbols" : 
 		{
 			"Wallet" : 

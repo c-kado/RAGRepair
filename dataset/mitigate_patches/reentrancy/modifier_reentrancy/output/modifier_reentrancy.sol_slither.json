@@ -11,9 +11,9 @@
             "source_mapping": {
               "start": 145,
               "length": 94,
-              "filename_relative": "mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
-              "filename_short": "mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
               "is_dependency": false,
               "lines": [
                 9,
@@ -30,9 +30,9 @@
                 "source_mapping": {
                   "start": 28,
                   "length": 430,
-                  "filename_relative": "mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
-                  "filename_short": "mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
                   "is_dependency": false,
                   "lines": [
                     5,
@@ -67,9 +67,9 @@
             "source_mapping": {
               "start": 177,
               "length": 13,
-              "filename_relative": "mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
-              "filename_short": "mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
               "is_dependency": false,
               "lines": [
                 9
@@ -84,9 +84,9 @@
                 "source_mapping": {
                   "start": 145,
                   "length": 94,
-                  "filename_relative": "mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
-                  "filename_short": "mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
                   "is_dependency": false,
                   "lines": [
                     9,
@@ -103,9 +103,9 @@
                     "source_mapping": {
                       "start": 28,
                       "length": 430,
-                      "filename_relative": "mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
+                      "filename_relative": "../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
-                      "filename_short": "mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
+                      "filename_short": "../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -145,9 +145,9 @@
             "source_mapping": {
               "start": 274,
               "length": 84,
-              "filename_relative": "mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
-              "filename_short": "mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
               "is_dependency": false,
               "lines": [
                 14
@@ -162,9 +162,9 @@
                 "source_mapping": {
                   "start": 243,
                   "length": 127,
-                  "filename_relative": "mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
-                  "filename_short": "mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
                   "is_dependency": false,
                   "lines": [
                     13,
@@ -182,9 +182,9 @@
                     "source_mapping": {
                       "start": 28,
                       "length": 430,
-                      "filename_relative": "mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
+                      "filename_relative": "../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
-                      "filename_short": "mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
+                      "filename_short": "../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -224,9 +224,9 @@
             "source_mapping": {
               "start": 204,
               "length": 30,
-              "filename_relative": "mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
-              "filename_short": "mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
               "is_dependency": false,
               "lines": [
                 10
@@ -241,9 +241,9 @@
                 "source_mapping": {
                   "start": 145,
                   "length": 94,
-                  "filename_relative": "mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
-                  "filename_short": "mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
                   "is_dependency": false,
                   "lines": [
                     9,
@@ -260,9 +260,9 @@
                     "source_mapping": {
                       "start": 28,
                       "length": 430,
-                      "filename_relative": "mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
+                      "filename_relative": "../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
-                      "filename_short": "mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
+                      "filename_short": "../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -298,10 +298,10 @@
             }
           }
         ],
-        "description": "Reentrancy in ModifierEntrancy.airDrop() (mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#9-11):\n\tExternal calls:\n\t- supportsToken() (mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#9)\n\t\t- require(bool)(keccak256()(abi.encodePacked(Nu Token)) == Bank(msg.sender).supportsToken()) (mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#14)\n\tState variables written after the call(s):\n\t- tokenBalance[msg.sender] += 20 (mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#10)\n\tModifierEntrancy.tokenBalance (mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#6) can be used in cross function reentrancies:\n\t- ModifierEntrancy.airDrop() (mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#9-11)\n\t- ModifierEntrancy.hasNoBalance() (mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#18-21)\n\t- ModifierEntrancy.tokenBalance (mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#6)\n",
-        "markdown": "Reentrancy in [ModifierEntrancy.airDrop()](mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#L9-L11):\n\tExternal calls:\n\t- [supportsToken()](mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#L9)\n\t\t- [require(bool)(keccak256()(abi.encodePacked(Nu Token)) == Bank(msg.sender).supportsToken())](mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#L14)\n\tState variables written after the call(s):\n\t- [tokenBalance[msg.sender] += 20](mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#L10)\n\t[ModifierEntrancy.tokenBalance](mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#L6) can be used in cross function reentrancies:\n\t- [ModifierEntrancy.airDrop()](mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#L9-L11)\n\t- [ModifierEntrancy.hasNoBalance()](mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#L18-L21)\n\t- [ModifierEntrancy.tokenBalance](mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#L6)\n",
-        "first_markdown_element": "mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#L9-L11",
-        "id": "b984e995db461b2cb1b0202e550dbbbf02d29f6f69719ac049d1d425d5ccacd1",
+        "description": "Reentrancy in ModifierEntrancy.airDrop() (../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#9-11):\n\tExternal calls:\n\t- supportsToken() (../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#9)\n\t\t- require(bool)(keccak256()(abi.encodePacked(Nu Token)) == Bank(msg.sender).supportsToken()) (../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#14)\n\tState variables written after the call(s):\n\t- tokenBalance[msg.sender] += 20 (../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#10)\n\tModifierEntrancy.tokenBalance (../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#6) can be used in cross function reentrancies:\n\t- ModifierEntrancy.airDrop() (../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#9-11)\n\t- ModifierEntrancy.hasNoBalance() (../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#18-21)\n\t- ModifierEntrancy.tokenBalance (../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#6)\n",
+        "markdown": "Reentrancy in [ModifierEntrancy.airDrop()](../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#L9-L11):\n\tExternal calls:\n\t- [supportsToken()](../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#L9)\n\t\t- [require(bool)(keccak256()(abi.encodePacked(Nu Token)) == Bank(msg.sender).supportsToken())](../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#L14)\n\tState variables written after the call(s):\n\t- [tokenBalance[msg.sender] += 20](../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#L10)\n\t[ModifierEntrancy.tokenBalance](../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#L6) can be used in cross function reentrancies:\n\t- [ModifierEntrancy.airDrop()](../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#L9-L11)\n\t- [ModifierEntrancy.hasNoBalance()](../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#L18-L21)\n\t- [ModifierEntrancy.tokenBalance](../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#L6)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/reentrancy/modifier_reentrancy/modifier_reentrancy.sol#L9-L11",
+        "id": "cc04734e371698a6a2f39239fec439672fbbd2950efd34de7cb6f5aa58835ccb",
         "check": "reentrancy-no-eth",
         "impact": "Medium",
         "confidence": "Medium"

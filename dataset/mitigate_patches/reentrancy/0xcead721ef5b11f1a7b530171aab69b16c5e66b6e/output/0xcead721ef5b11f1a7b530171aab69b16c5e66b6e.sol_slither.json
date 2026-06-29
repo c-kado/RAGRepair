@@ -11,9 +11,9 @@
             "source_mapping": {
               "start": 997,
               "length": 418,
-              "filename_relative": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-              "filename_short": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
               "is_dependency": false,
               "lines": [
                 57,
@@ -52,9 +52,9 @@
             "source_mapping": {
               "start": 1385,
               "length": 21,
-              "filename_relative": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-              "filename_short": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
               "is_dependency": false,
               "lines": [
                 78
@@ -69,9 +69,9 @@
                 "source_mapping": {
                   "start": 1186,
                   "length": 227,
-                  "filename_relative": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-                  "filename_short": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
                   "is_dependency": false,
                   "lines": [
                     71,
@@ -94,9 +94,9 @@
                     "source_mapping": {
                       "start": 997,
                       "length": 418,
-                      "filename_relative": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+                      "filename_relative": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-                      "filename_short": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+                      "filename_short": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
                       "is_dependency": false,
                       "lines": [
                         57,
@@ -135,10 +135,10 @@
             }
           }
         ],
-        "description": "Log (mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#57-81) contract sets array length with a user-controlled value:\n\t- History.push(LastMsg) (mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#78)\n",
-        "markdown": "[Log](mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L57-L81) contract sets array length with a user-controlled value:\n\t- [History.push(LastMsg)](mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L78)\n",
-        "first_markdown_element": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L57-L81",
-        "id": "b1bd8c7344ae9eec1c4046da2eea5863529ba289a654be28b7906f49ca6c0f14",
+        "description": "Log (../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#57-81) contract sets array length with a user-controlled value:\n\t- History.push(LastMsg) (../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#78)\n",
+        "markdown": "[Log](../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L57-L81) contract sets array length with a user-controlled value:\n\t- [History.push(LastMsg)](../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L78)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L57-L81",
+        "id": "d4fc320f43139a938d58d96e069a735be509700b6cb1ee6e7be8b97a6ff73bd8",
         "check": "controlled-array-length",
         "impact": "High",
         "confidence": "Medium"
@@ -151,9 +151,9 @@
             "source_mapping": {
               "start": 304,
               "length": 361,
-              "filename_relative": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-              "filename_short": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
               "is_dependency": false,
               "lines": [
                 17,
@@ -182,9 +182,9 @@
                 "source_mapping": {
                   "start": 28,
                   "length": 967,
-                  "filename_relative": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-                  "filename_short": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
                   "is_dependency": false,
                   "lines": [
                     5,
@@ -252,9 +252,9 @@
             "source_mapping": {
               "start": 496,
               "length": 28,
-              "filename_relative": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-              "filename_short": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
               "is_dependency": false,
               "lines": [
                 25
@@ -269,9 +269,9 @@
                 "source_mapping": {
                   "start": 304,
                   "length": 361,
-                  "filename_relative": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-                  "filename_short": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
                   "is_dependency": false,
                   "lines": [
                     17,
@@ -300,9 +300,9 @@
                     "source_mapping": {
                       "start": 28,
                       "length": 967,
-                      "filename_relative": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+                      "filename_relative": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-                      "filename_short": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+                      "filename_short": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -375,9 +375,9 @@
             "source_mapping": {
               "start": 556,
               "length": 16,
-              "filename_relative": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-              "filename_short": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
               "is_dependency": false,
               "lines": [
                 27
@@ -392,9 +392,9 @@
                 "source_mapping": {
                   "start": 304,
                   "length": 361,
-                  "filename_relative": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-                  "filename_short": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
                   "is_dependency": false,
                   "lines": [
                     17,
@@ -423,9 +423,9 @@
                     "source_mapping": {
                       "start": 28,
                       "length": 967,
-                      "filename_relative": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+                      "filename_relative": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-                      "filename_short": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+                      "filename_short": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -494,232 +494,12 @@
             }
           }
         ],
-        "description": "Reentrancy in WALLET.Collect(uint256) (mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#17-31):\n\tExternal calls:\n\t- msg.sender.call.value(_am)() (mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#25)\n\tState variables written after the call(s):\n\t- acc.balance -= _am (mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#27)\n\tWALLET.Acc (mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#46) can be used in cross function reentrancies:\n\t- WALLET.Acc (mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#46)\n\t- WALLET.Collect(uint256) (mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#17-31)\n\t- WALLET.Put(uint256) (mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#7-15)\n",
-        "markdown": "Reentrancy in [WALLET.Collect(uint256)](mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L17-L31):\n\tExternal calls:\n\t- [msg.sender.call.value(_am)()](mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L25)\n\tState variables written after the call(s):\n\t- [acc.balance -= _am](mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L27)\n\t[WALLET.Acc](mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L46) can be used in cross function reentrancies:\n\t- [WALLET.Acc](mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L46)\n\t- [WALLET.Collect(uint256)](mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L17-L31)\n\t- [WALLET.Put(uint256)](mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L7-L15)\n",
-        "first_markdown_element": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L17-L31",
-        "id": "0d15f91d97b1639beec1433b52cb85ad24bc83ec7b4f7dcb14374f98eba5f278",
+        "description": "Reentrancy in WALLET.Collect(uint256) (../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#17-31):\n\tExternal calls:\n\t- msg.sender.call.value(_am)() (../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#25)\n\tState variables written after the call(s):\n\t- acc.balance -= _am (../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#27)\n\tWALLET.Acc (../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#46) can be used in cross function reentrancies:\n\t- WALLET.Acc (../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#46)\n\t- WALLET.Collect(uint256) (../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#17-31)\n\t- WALLET.Put(uint256) (../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#7-15)\n",
+        "markdown": "Reentrancy in [WALLET.Collect(uint256)](../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L17-L31):\n\tExternal calls:\n\t- [msg.sender.call.value(_am)()](../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L25)\n\tState variables written after the call(s):\n\t- [acc.balance -= _am](../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L27)\n\t[WALLET.Acc](../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L46) can be used in cross function reentrancies:\n\t- [WALLET.Acc](../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L46)\n\t- [WALLET.Collect(uint256)](../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L17-L31)\n\t- [WALLET.Put(uint256)](../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L7-L15)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L17-L31",
+        "id": "db92081650e054843173cb66eee84b238619f1129d3dd5bf72c4616682adee34",
         "check": "reentrancy-eth",
         "impact": "High",
-        "confidence": "Medium"
-      },
-      {
-        "elements": [
-          {
-            "type": "function",
-            "name": "Put",
-            "source_mapping": {
-              "start": 50,
-              "length": 248,
-              "filename_relative": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-              "filename_short": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-              "is_dependency": false,
-              "lines": [
-                7,
-                8,
-                9,
-                10,
-                11,
-                12,
-                13,
-                14,
-                15
-              ],
-              "starting_column": 5,
-              "ending_column": 6
-            },
-            "type_specific_fields": {
-              "parent": {
-                "type": "contract",
-                "name": "WALLET",
-                "source_mapping": {
-                  "start": 28,
-                  "length": 967,
-                  "filename_relative": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-                  "filename_short": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-                  "is_dependency": false,
-                  "lines": [
-                    5,
-                    6,
-                    7,
-                    8,
-                    9,
-                    10,
-                    11,
-                    12,
-                    13,
-                    14,
-                    15,
-                    16,
-                    17,
-                    18,
-                    19,
-                    20,
-                    21,
-                    22,
-                    23,
-                    24,
-                    25,
-                    26,
-                    27,
-                    28,
-                    29,
-                    30,
-                    31,
-                    32,
-                    33,
-                    34,
-                    35,
-                    36,
-                    37,
-                    38,
-                    39,
-                    40,
-                    41,
-                    42,
-                    43,
-                    44,
-                    45,
-                    46,
-                    47,
-                    48,
-                    49,
-                    50,
-                    51,
-                    52,
-                    53,
-                    54,
-                    55
-                  ],
-                  "starting_column": 1,
-                  "ending_column": 2
-                }
-              },
-              "signature": "Put(uint256)"
-            }
-          },
-          {
-            "type": "node",
-            "name": "_unlockTime > now",
-            "source_mapping": {
-              "start": 187,
-              "length": 48,
-              "filename_relative": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-              "filename_short": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-              "is_dependency": false,
-              "lines": [
-                13
-              ],
-              "starting_column": 9,
-              "ending_column": 57
-            },
-            "type_specific_fields": {
-              "parent": {
-                "type": "function",
-                "name": "Put",
-                "source_mapping": {
-                  "start": 50,
-                  "length": 248,
-                  "filename_relative": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-                  "filename_short": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-                  "is_dependency": false,
-                  "lines": [
-                    7,
-                    8,
-                    9,
-                    10,
-                    11,
-                    12,
-                    13,
-                    14,
-                    15
-                  ],
-                  "starting_column": 5,
-                  "ending_column": 6
-                },
-                "type_specific_fields": {
-                  "parent": {
-                    "type": "contract",
-                    "name": "WALLET",
-                    "source_mapping": {
-                      "start": 28,
-                      "length": 967,
-                      "filename_relative": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-                      "filename_short": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-                      "is_dependency": false,
-                      "lines": [
-                        5,
-                        6,
-                        7,
-                        8,
-                        9,
-                        10,
-                        11,
-                        12,
-                        13,
-                        14,
-                        15,
-                        16,
-                        17,
-                        18,
-                        19,
-                        20,
-                        21,
-                        22,
-                        23,
-                        24,
-                        25,
-                        26,
-                        27,
-                        28,
-                        29,
-                        30,
-                        31,
-                        32,
-                        33,
-                        34,
-                        35,
-                        36,
-                        37,
-                        38,
-                        39,
-                        40,
-                        41,
-                        42,
-                        43,
-                        44,
-                        45,
-                        46,
-                        47,
-                        48,
-                        49,
-                        50,
-                        51,
-                        52,
-                        53,
-                        54,
-                        55
-                      ],
-                      "starting_column": 1,
-                      "ending_column": 2
-                    }
-                  },
-                  "signature": "Put(uint256)"
-                }
-              }
-            }
-          }
-        ],
-        "description": "WALLET.Put(uint256) (mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#7-15) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- _unlockTime > now (mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#13)\n",
-        "markdown": "[WALLET.Put(uint256)](mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L7-L15) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- [_unlockTime > now](mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L13)\n",
-        "first_markdown_element": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L7-L15",
-        "id": "434ed640c9bc5c997c56340a726299a6efcd145f9d8eaf102c3427628d069f1f",
-        "check": "timestamp",
-        "impact": "Low",
         "confidence": "Medium"
       },
       {
@@ -730,9 +510,9 @@
             "source_mapping": {
               "start": 304,
               "length": 361,
-              "filename_relative": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-              "filename_short": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
               "is_dependency": false,
               "lines": [
                 17,
@@ -761,9 +541,9 @@
                 "source_mapping": {
                   "start": 28,
                   "length": 967,
-                  "filename_relative": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-                  "filename_short": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
                   "is_dependency": false,
                   "lines": [
                     5,
@@ -831,9 +611,9 @@
             "source_mapping": {
               "start": 407,
               "length": 61,
-              "filename_relative": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-              "filename_short": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
               "is_dependency": false,
               "lines": [
                 22
@@ -848,9 +628,9 @@
                 "source_mapping": {
                   "start": 304,
                   "length": 361,
-                  "filename_relative": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-                  "filename_short": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
                   "is_dependency": false,
                   "lines": [
                     17,
@@ -879,9 +659,9 @@
                     "source_mapping": {
                       "start": 28,
                       "length": 967,
-                      "filename_relative": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+                      "filename_relative": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
-                      "filename_short": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+                      "filename_short": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -946,10 +726,230 @@
             }
           }
         ],
-        "description": "WALLET.Collect(uint256) (mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#17-31) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- acc.balance >= MinSum && acc.balance >= _am && now > acc.unlockTime (mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#22)\n",
-        "markdown": "[WALLET.Collect(uint256)](mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L17-L31) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- [acc.balance >= MinSum && acc.balance >= _am && now > acc.unlockTime](mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L22)\n",
-        "first_markdown_element": "mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L17-L31",
-        "id": "5d63c6408038cc0e47c462c8b27fb80567cbff4683495c2da0c444508b84509f",
+        "description": "WALLET.Collect(uint256) (../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#17-31) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- acc.balance >= MinSum && acc.balance >= _am && now > acc.unlockTime (../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#22)\n",
+        "markdown": "[WALLET.Collect(uint256)](../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L17-L31) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- [acc.balance >= MinSum && acc.balance >= _am && now > acc.unlockTime](../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L22)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L17-L31",
+        "id": "9ec438dbe4c048904dadff6fa889163c4b811637f19a2e429093513c849f3df4",
+        "check": "timestamp",
+        "impact": "Low",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "Put",
+            "source_mapping": {
+              "start": 50,
+              "length": 248,
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+              "is_dependency": false,
+              "lines": [
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "WALLET",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 967,
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47,
+                    48,
+                    49,
+                    50,
+                    51,
+                    52,
+                    53,
+                    54,
+                    55
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "Put(uint256)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "_unlockTime > now",
+            "source_mapping": {
+              "start": 187,
+              "length": 48,
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+              "is_dependency": false,
+              "lines": [
+                13
+              ],
+              "starting_column": 9,
+              "ending_column": 57
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "Put",
+                "source_mapping": {
+                  "start": 50,
+                  "length": 248,
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "WALLET",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 967,
+                      "filename_relative": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+                      "filename_short": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        36,
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44,
+                        45,
+                        46,
+                        47,
+                        48,
+                        49,
+                        50,
+                        51,
+                        52,
+                        53,
+                        54,
+                        55
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "Put(uint256)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "WALLET.Put(uint256) (../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#7-15) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- _unlockTime > now (../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#13)\n",
+        "markdown": "[WALLET.Put(uint256)](../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L7-L15) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- [_unlockTime > now](../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L13)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol#L7-L15",
+        "id": "f171eb3f192219cbdddf320f54d099a81002e768eff015d50d5d9ca28c7ef8da",
         "check": "timestamp",
         "impact": "Low",
         "confidence": "Medium"

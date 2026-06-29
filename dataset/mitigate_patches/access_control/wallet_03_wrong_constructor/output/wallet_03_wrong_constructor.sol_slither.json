@@ -11,9 +11,9 @@
             "source_mapping": {
               "start": 566,
               "length": 10,
-              "filename_relative": "mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
+              "filename_relative": "../dataset/mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
-              "filename_short": "mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
               "is_dependency": false,
               "lines": [
                 25
@@ -28,9 +28,9 @@
                 "source_mapping": {
                   "start": 547,
                   "length": 123,
-                  "filename_relative": "mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
+                  "filename_relative": "../dataset/mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
-                  "filename_short": "mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
                   "is_dependency": false,
                   "lines": [
                     25,
@@ -48,9 +48,9 @@
                     "source_mapping": {
                       "start": 30,
                       "length": 644,
-                      "filename_relative": "mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
+                      "filename_relative": "../dataset/mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
-                      "filename_short": "mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
+                      "filename_short": "../dataset/mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -95,9 +95,9 @@
             "source_mapping": {
               "start": 637,
               "length": 25,
-              "filename_relative": "mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
+              "filename_relative": "../dataset/mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
-              "filename_short": "mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
               "is_dependency": false,
               "lines": [
                 27
@@ -112,9 +112,9 @@
                 "source_mapping": {
                   "start": 547,
                   "length": 123,
-                  "filename_relative": "mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
+                  "filename_relative": "../dataset/mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
-                  "filename_short": "mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
                   "is_dependency": false,
                   "lines": [
                     25,
@@ -132,9 +132,9 @@
                     "source_mapping": {
                       "start": 30,
                       "length": 644,
-                      "filename_relative": "mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
+                      "filename_relative": "../dataset/mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
-                      "filename_short": "mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
+                      "filename_short": "../dataset/mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -174,10 +174,10 @@
             }
           }
         ],
-        "description": "Wallet.migrateTo(address).to (mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol#25) lacks a zero-check on :\n\t\t- to.transfer(this.balance) (mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol#27)\n",
-        "markdown": "[Wallet.migrateTo(address).to](mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol#L25) lacks a zero-check on :\n\t\t- [to.transfer(this.balance)](mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol#L27)\n",
-        "first_markdown_element": "mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol#L25",
-        "id": "7e5dda6579e76c122c93ba95dd8372fc87c89b5f9894e2b59dead78a691dc79e",
+        "description": "Wallet.migrateTo(address).to (../dataset/mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol#25) lacks a zero-check on :\n\t\t- to.transfer(this.balance) (../dataset/mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol#27)\n",
+        "markdown": "[Wallet.migrateTo(address).to](../dataset/mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol#L25) lacks a zero-check on :\n\t\t- [to.transfer(this.balance)](../dataset/mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol#L27)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/access_control/wallet_03_wrong_constructor/wallet_03_wrong_constructor.sol#L25",
+        "id": "cbefad378f948cf4f638412d851d0d6302139c3002d0a4e7db5f7c1865f7bcc9",
         "check": "missing-zero-check",
         "impact": "Low",
         "confidence": "Medium"

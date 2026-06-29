@@ -11,9 +11,9 @@
             "source_mapping": {
               "start": 30,
               "length": 683,
-              "filename_relative": "mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
+              "filename_relative": "../dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
-              "filename_short": "mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
               "is_dependency": false,
               "lines": [
                 5,
@@ -59,9 +59,9 @@
             "source_mapping": {
               "start": 307,
               "length": 18,
-              "filename_relative": "mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
+              "filename_relative": "../dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
-              "filename_short": "mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
               "is_dependency": false,
               "lines": [
                 18
@@ -76,9 +76,9 @@
                 "source_mapping": {
                   "start": 258,
                   "length": 75,
-                  "filename_relative": "mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
+                  "filename_relative": "../dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
-                  "filename_short": "mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
                   "is_dependency": false,
                   "lines": [
                     17,
@@ -95,9 +95,9 @@
                     "source_mapping": {
                       "start": 30,
                       "length": 683,
-                      "filename_relative": "mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
+                      "filename_relative": "../dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
-                      "filename_short": "mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
+                      "filename_short": "../dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -143,10 +143,10 @@
             }
           }
         ],
-        "description": "Wallet (mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol#5-36) contract sets array length with a user-controlled value:\n\t- bonusCodes.push(c) (mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol#18)\n",
-        "markdown": "[Wallet](mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol#L5-L36) contract sets array length with a user-controlled value:\n\t- [bonusCodes.push(c)](mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol#L18)\n",
-        "first_markdown_element": "mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol#L5-L36",
-        "id": "6c1e68017261b421f3ff109bde20235920d3a0436f745cbc1d3073638b18ef4d",
+        "description": "Wallet (../dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol#5-36) contract sets array length with a user-controlled value:\n\t- bonusCodes.push(c) (../dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol#18)\n",
+        "markdown": "[Wallet](../dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol#L5-L36) contract sets array length with a user-controlled value:\n\t- [bonusCodes.push(c)](../dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol#L18)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol#L5-L36",
+        "id": "e1b4739e3dc48d61ae257f7af3920a42768343f7cb001082d1dd4db11614c815",
         "check": "controlled-array-length",
         "impact": "High",
         "confidence": "Medium"
@@ -159,9 +159,9 @@
             "source_mapping": {
               "start": 340,
               "length": 114,
-              "filename_relative": "mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
+              "filename_relative": "../dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
-              "filename_short": "mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
               "is_dependency": false,
               "lines": [
                 21,
@@ -180,9 +180,9 @@
                 "source_mapping": {
                   "start": 30,
                   "length": 683,
-                  "filename_relative": "mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
+                  "filename_relative": "../dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
-                  "filename_short": "mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
                   "is_dependency": false,
                   "lines": [
                     5,
@@ -231,9 +231,9 @@
             "source_mapping": {
               "start": 383,
               "length": 31,
-              "filename_relative": "mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
+              "filename_relative": "../dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
-              "filename_short": "mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
               "is_dependency": false,
               "lines": [
                 23
@@ -248,9 +248,9 @@
                 "source_mapping": {
                   "start": 340,
                   "length": 114,
-                  "filename_relative": "mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
+                  "filename_relative": "../dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
-                  "filename_short": "mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
                   "is_dependency": false,
                   "lines": [
                     21,
@@ -269,9 +269,9 @@
                     "source_mapping": {
                       "start": 30,
                       "length": 683,
-                      "filename_relative": "mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
+                      "filename_relative": "../dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
-                      "filename_short": "mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
+                      "filename_short": "../dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -317,10 +317,10 @@
             }
           }
         ],
-        "description": "Wallet.PopBonusCode() (mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol#21-25) contains a tautology or contradiction:\n\t- require(bool)(0 <= bonusCodes.length) (mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol#23)\n",
-        "markdown": "[Wallet.PopBonusCode()](mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol#L21-L25) contains a tautology or contradiction:\n\t- [require(bool)(0 <= bonusCodes.length)](mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol#L23)\n",
-        "first_markdown_element": "mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol#L21-L25",
-        "id": "fea2a259a69410a5186fbbcfd25d654cbcbd158bbc076867078f22c222254bcc",
+        "description": "Wallet.PopBonusCode() (../dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol#21-25) contains a tautology or contradiction:\n\t- require(bool)(0 <= bonusCodes.length) (../dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol#23)\n",
+        "markdown": "[Wallet.PopBonusCode()](../dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol#L21-L25) contains a tautology or contradiction:\n\t- [require(bool)(0 <= bonusCodes.length)](../dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol#L23)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/access_control/arbitrary_location_write_simple/arbitrary_location_write_simple.sol#L21-L25",
+        "id": "ef96c84a2d6e7662570128baa8938acee7f275bab67ea6eed1eee9dda7a2316f",
         "check": "tautology",
         "impact": "Medium",
         "confidence": "High"

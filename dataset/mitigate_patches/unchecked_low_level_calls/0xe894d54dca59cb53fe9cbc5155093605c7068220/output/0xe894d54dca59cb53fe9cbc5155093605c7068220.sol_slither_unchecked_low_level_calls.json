@@ -11,9 +11,9 @@
             "source_mapping": {
               "start": 51,
               "length": 393,
-              "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol",
+              "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol",
-              "filename_short": "mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol",
+              "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol",
               "is_dependency": false,
               "lines": [
                 7,
@@ -37,9 +37,9 @@
                 "source_mapping": {
                   "start": 28,
                   "length": 418,
-                  "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol",
+                  "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol",
-                  "filename_short": "mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol",
+                  "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol",
                   "is_dependency": false,
                   "lines": [
                     5,
@@ -70,9 +70,9 @@
             "source_mapping": {
               "start": 369,
               "length": 37,
-              "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol",
+              "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol",
-              "filename_short": "mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol",
+              "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol",
               "is_dependency": false,
               "lines": [
                 13
@@ -87,9 +87,9 @@
                 "source_mapping": {
                   "start": 51,
                   "length": 393,
-                  "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol",
+                  "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol",
-                  "filename_short": "mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol",
+                  "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol",
                   "is_dependency": false,
                   "lines": [
                     7,
@@ -113,9 +113,9 @@
                     "source_mapping": {
                       "start": 28,
                       "length": 418,
-                      "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol",
+                      "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol",
-                      "filename_short": "mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol",
+                      "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -143,10 +143,10 @@
             }
           }
         ],
-        "description": "airDrop.transfer(address,address,address[],uint256,uint256) (mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol#7-16) ignores return value by caddress.call(id,from,_tos[i],_value) (mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol#13)\n",
-        "markdown": "[airDrop.transfer(address,address,address[],uint256,uint256)](mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol#L7-L16) ignores return value by [caddress.call(id,from,_tos[i],_value)](mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol#L13)\n",
-        "first_markdown_element": "mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol#L7-L16",
-        "id": "8f0deac10a7c83802f02ca93070b5f94f35abc54a2b788270d0bc73394ece71b",
+        "description": "airDrop.transfer(address,address,address[],uint256,uint256) (../dataset/mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol#7-16) ignores return value by caddress.call(id,from,_tos[i],_value) (../dataset/mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol#13)\n",
+        "markdown": "[airDrop.transfer(address,address,address[],uint256,uint256)](../dataset/mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol#L7-L16) ignores return value by [caddress.call(id,from,_tos[i],_value)](../dataset/mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol#L13)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol#L7-L16",
+        "id": "f6c25b4b355f2c67eb92aea774623a78d22a4aaf518cc1771108be53fd1259d2",
         "check": "unchecked-lowlevel",
         "impact": "Medium",
         "confidence": "Medium"

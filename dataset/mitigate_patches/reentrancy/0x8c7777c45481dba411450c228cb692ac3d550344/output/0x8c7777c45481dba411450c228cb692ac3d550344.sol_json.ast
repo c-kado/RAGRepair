@@ -1,7 +1,7 @@
 {
 	"attributes" : 
 	{
-		"absolutePath" : "mitigate_patches/reentrancy/0x8c7777c45481dba411450c228cb692ac3d550344/0x8c7777c45481dba411450c228cb692ac3d550344.sol",
+		"absolutePath" : "../dataset/mitigate_patches/reentrancy/0x8c7777c45481dba411450c228cb692ac3d550344/0x8c7777c45481dba411450c228cb692ac3d550344.sol",
 		"exportedSymbols" : 
 		{
 			"ETH_VAULT" : 

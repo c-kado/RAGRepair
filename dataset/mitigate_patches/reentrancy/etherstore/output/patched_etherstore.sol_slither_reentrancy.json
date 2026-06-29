@@ -11,9 +11,9 @@
             "source_mapping": {
               "start": 338,
               "length": 495,
-              "filename_relative": "mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
-              "filename_short": "mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
               "is_dependency": false,
               "lines": [
                 14,
@@ -39,9 +39,9 @@
                 "source_mapping": {
                   "start": 26,
                   "length": 809,
-                  "filename_relative": "mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
-                  "filename_short": "mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
                   "is_dependency": false,
                   "lines": [
                     3,
@@ -83,9 +83,9 @@
             "source_mapping": {
               "start": 650,
               "length": 48,
-              "filename_relative": "mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
-              "filename_short": "mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
               "is_dependency": false,
               "lines": [
                 21
@@ -100,9 +100,9 @@
                 "source_mapping": {
                   "start": 338,
                   "length": 495,
-                  "filename_relative": "mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
-                  "filename_short": "mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
                   "is_dependency": false,
                   "lines": [
                     14,
@@ -128,9 +128,9 @@
                     "source_mapping": {
                       "start": 26,
                       "length": 809,
-                      "filename_relative": "mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
+                      "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
-                      "filename_short": "mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
+                      "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
                       "is_dependency": false,
                       "lines": [
                         3,
@@ -177,9 +177,9 @@
             "source_mapping": {
               "start": 708,
               "length": 38,
-              "filename_relative": "mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
-              "filename_short": "mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
               "is_dependency": false,
               "lines": [
                 22
@@ -194,9 +194,9 @@
                 "source_mapping": {
                   "start": 338,
                   "length": 495,
-                  "filename_relative": "mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
-                  "filename_short": "mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
                   "is_dependency": false,
                   "lines": [
                     14,
@@ -222,9 +222,9 @@
                     "source_mapping": {
                       "start": 26,
                       "length": 809,
-                      "filename_relative": "mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
+                      "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
-                      "filename_short": "mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
+                      "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
                       "is_dependency": false,
                       "lines": [
                         3,
@@ -272,9 +272,9 @@
             "source_mapping": {
               "start": 756,
               "length": 34,
-              "filename_relative": "mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
-              "filename_short": "mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
               "is_dependency": false,
               "lines": [
                 23
@@ -289,9 +289,9 @@
                 "source_mapping": {
                   "start": 338,
                   "length": 495,
-                  "filename_relative": "mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
-                  "filename_short": "mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
                   "is_dependency": false,
                   "lines": [
                     14,
@@ -317,9 +317,9 @@
                     "source_mapping": {
                       "start": 26,
                       "length": 809,
-                      "filename_relative": "mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
+                      "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
-                      "filename_short": "mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
+                      "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
                       "is_dependency": false,
                       "lines": [
                         3,
@@ -367,9 +367,9 @@
             "source_mapping": {
               "start": 800,
               "length": 26,
-              "filename_relative": "mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
-              "filename_short": "mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
               "is_dependency": false,
               "lines": [
                 24
@@ -384,9 +384,9 @@
                 "source_mapping": {
                   "start": 338,
                   "length": 495,
-                  "filename_relative": "mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
-                  "filename_short": "mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
                   "is_dependency": false,
                   "lines": [
                     14,
@@ -412,9 +412,9 @@
                     "source_mapping": {
                       "start": 26,
                       "length": 809,
-                      "filename_relative": "mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
+                      "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
-                      "filename_short": "mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
+                      "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol",
                       "is_dependency": false,
                       "lines": [
                         3,
@@ -457,10 +457,10 @@
             }
           }
         ],
-        "description": "Reentrancy in EtherStore.withdrawFunds(uint256) (mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#14-25):\n\tExternal calls:\n\t- require(bool)(msg.sender.call.value(_weiToWithdraw)()) (mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#21)\n\tState variables written after the call(s):\n\t- balances[msg.sender] -= _weiToWithdraw (mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#22)\n\tEtherStore.balances (mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#7) can be used in cross function reentrancies:\n\t- EtherStore.depositFunds() (mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#10-12)\n\t- EtherStore.withdrawFunds(uint256) (mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#14-25)\n\t- lastWithdrawTime[msg.sender] = now (mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#23)\n\tEtherStore.lastWithdrawTime (mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#6) can be used in cross function reentrancies:\n\t- EtherStore.withdrawFunds(uint256) (mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#14-25)\n\t- locked[msg.sender] = false (mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#24)\n\tEtherStore.locked (mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#8) can be used in cross function reentrancies:\n\t- EtherStore.withdrawFunds(uint256) (mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#14-25)\n",
-        "markdown": "Reentrancy in [EtherStore.withdrawFunds(uint256)](mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#L14-L25):\n\tExternal calls:\n\t- [require(bool)(msg.sender.call.value(_weiToWithdraw)())](mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#L21)\n\tState variables written after the call(s):\n\t- [balances[msg.sender] -= _weiToWithdraw](mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#L22)\n\t[EtherStore.balances](mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#L7) can be used in cross function reentrancies:\n\t- [EtherStore.depositFunds()](mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#L10-L12)\n\t- [EtherStore.withdrawFunds(uint256)](mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#L14-L25)\n\t- [lastWithdrawTime[msg.sender] = now](mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#L23)\n\t[EtherStore.lastWithdrawTime](mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#L6) can be used in cross function reentrancies:\n\t- [EtherStore.withdrawFunds(uint256)](mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#L14-L25)\n\t- [locked[msg.sender] = false](mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#L24)\n\t[EtherStore.locked](mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#L8) can be used in cross function reentrancies:\n\t- [EtherStore.withdrawFunds(uint256)](mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#L14-L25)\n",
-        "first_markdown_element": "mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#L14-L25",
-        "id": "f5af2041d9c1e31282c0f778a685550bdc6f740f70d63dc7137e70d1c9904736",
+        "description": "Reentrancy in EtherStore.withdrawFunds(uint256) (../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#14-25):\n\tExternal calls:\n\t- require(bool)(msg.sender.call.value(_weiToWithdraw)()) (../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#21)\n\tState variables written after the call(s):\n\t- balances[msg.sender] -= _weiToWithdraw (../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#22)\n\tEtherStore.balances (../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#7) can be used in cross function reentrancies:\n\t- EtherStore.depositFunds() (../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#10-12)\n\t- EtherStore.withdrawFunds(uint256) (../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#14-25)\n\t- lastWithdrawTime[msg.sender] = now (../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#23)\n\tEtherStore.lastWithdrawTime (../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#6) can be used in cross function reentrancies:\n\t- EtherStore.withdrawFunds(uint256) (../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#14-25)\n\t- locked[msg.sender] = false (../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#24)\n\tEtherStore.locked (../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#8) can be used in cross function reentrancies:\n\t- EtherStore.withdrawFunds(uint256) (../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#14-25)\n",
+        "markdown": "Reentrancy in [EtherStore.withdrawFunds(uint256)](../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#L14-L25):\n\tExternal calls:\n\t- [require(bool)(msg.sender.call.value(_weiToWithdraw)())](../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#L21)\n\tState variables written after the call(s):\n\t- [balances[msg.sender] -= _weiToWithdraw](../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#L22)\n\t[EtherStore.balances](../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#L7) can be used in cross function reentrancies:\n\t- [EtherStore.depositFunds()](../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#L10-L12)\n\t- [EtherStore.withdrawFunds(uint256)](../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#L14-L25)\n\t- [lastWithdrawTime[msg.sender] = now](../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#L23)\n\t[EtherStore.lastWithdrawTime](../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#L6) can be used in cross function reentrancies:\n\t- [EtherStore.withdrawFunds(uint256)](../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#L14-L25)\n\t- [locked[msg.sender] = false](../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#L24)\n\t[EtherStore.locked](../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#L8) can be used in cross function reentrancies:\n\t- [EtherStore.withdrawFunds(uint256)](../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#L14-L25)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/reentrancy/etherstore/patched_etherstore.sol#L14-L25",
+        "id": "c2503765f2c8a5c529cde3b0a161e7b5504965daa0c6973275cde29bd0b3eaaf",
         "check": "reentrancy-eth",
         "impact": "High",
         "confidence": "Medium"

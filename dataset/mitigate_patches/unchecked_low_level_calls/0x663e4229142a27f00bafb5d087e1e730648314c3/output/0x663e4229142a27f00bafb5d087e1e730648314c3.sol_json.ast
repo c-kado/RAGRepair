@@ -1,7 +1,7 @@
 {
 	"attributes" : 
 	{
-		"absolutePath" : "mitigate_patches/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3/0x663e4229142a27f00bafb5d087e1e730648314c3.sol",
+		"absolutePath" : "../dataset/mitigate_patches/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3/0x663e4229142a27f00bafb5d087e1e730648314c3.sol",
 		"exportedSymbols" : 
 		{
 			"ClockAuction" : 
@@ -23271,22 +23271,22 @@
 														"externalReferences" : 
 														[
 															{
-																"_dest" : 
-																{
-																	"declaration" : 1420,
-																	"isOffset" : false,
-																	"isSlot" : false,
-																	"src" : "12811:5:0",
-																	"valueSize" : 1
-																}
-															},
-															{
 																"_src" : 
 																{
 																	"declaration" : 1422,
 																	"isOffset" : false,
 																	"isSlot" : false,
 																	"src" : "12824:4:0",
+																	"valueSize" : 1
+																}
+															},
+															{
+																"_dest" : 
+																{
+																	"declaration" : 1420,
+																	"isOffset" : false,
+																	"isSlot" : false,
+																	"src" : "12811:5:0",
 																	"valueSize" : 1
 																}
 															}
@@ -23635,26 +23635,6 @@
 										"externalReferences" : 
 										[
 											{
-												"mask" : 
-												{
-													"declaration" : 1446,
-													"isOffset" : false,
-													"isSlot" : false,
-													"src" : "13072:4:0",
-													"valueSize" : 1
-												}
-											},
-											{
-												"_dest" : 
-												{
-													"declaration" : 1420,
-													"isOffset" : false,
-													"isSlot" : false,
-													"src" : "13097:5:0",
-													"valueSize" : 1
-												}
-											},
-											{
 												"_src" : 
 												{
 													"declaration" : 1422,
@@ -23681,6 +23661,26 @@
 													"isOffset" : false,
 													"isSlot" : false,
 													"src" : "13064:5:0",
+													"valueSize" : 1
+												}
+											},
+											{
+												"mask" : 
+												{
+													"declaration" : 1446,
+													"isOffset" : false,
+													"isSlot" : false,
+													"src" : "13072:4:0",
+													"valueSize" : 1
+												}
+											},
+											{
+												"_dest" : 
+												{
+													"declaration" : 1420,
+													"isOffset" : false,
+													"isSlot" : false,
+													"src" : "13097:5:0",
 													"valueSize" : 1
 												}
 											}
@@ -24059,22 +24059,22 @@
 										"externalReferences" : 
 										[
 											{
-												"outputString" : 
-												{
-													"declaration" : 1469,
-													"isOffset" : false,
-													"isSlot" : false,
-													"src" : "13400:12:0",
-													"valueSize" : 1
-												}
-											},
-											{
 												"_rawBytes" : 
 												{
 													"declaration" : 1462,
 													"isOffset" : false,
 													"isSlot" : false,
 													"src" : "13442:9:0",
+													"valueSize" : 1
+												}
+											},
+											{
+												"outputString" : 
+												{
+													"declaration" : 1469,
+													"isOffset" : false,
+													"isSlot" : false,
+													"src" : "13400:12:0",
 													"valueSize" : 1
 												}
 											},

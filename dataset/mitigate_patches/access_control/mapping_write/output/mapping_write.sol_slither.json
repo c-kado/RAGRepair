@@ -11,9 +11,9 @@
             "source_mapping": {
               "start": 30,
               "length": 460,
-              "filename_relative": "mitigate_patches/access_control/mapping_write/mapping_write.sol",
+              "filename_relative": "../dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol",
-              "filename_short": "mitigate_patches/access_control/mapping_write/mapping_write.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol",
               "is_dependency": false,
               "lines": [
                 5,
@@ -47,9 +47,9 @@
             "source_mapping": {
               "start": 195,
               "length": 20,
-              "filename_relative": "mitigate_patches/access_control/mapping_write/mapping_write.sol",
+              "filename_relative": "../dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol",
-              "filename_short": "mitigate_patches/access_control/mapping_write/mapping_write.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol",
               "is_dependency": false,
               "lines": [
                 11
@@ -64,9 +64,9 @@
                 "source_mapping": {
                   "start": 98,
                   "length": 164,
-                  "filename_relative": "mitigate_patches/access_control/mapping_write/mapping_write.sol",
+                  "filename_relative": "../dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol",
-                  "filename_short": "mitigate_patches/access_control/mapping_write/mapping_write.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol",
                   "is_dependency": false,
                   "lines": [
                     9,
@@ -87,9 +87,9 @@
                     "source_mapping": {
                       "start": 30,
                       "length": 460,
-                      "filename_relative": "mitigate_patches/access_control/mapping_write/mapping_write.sol",
+                      "filename_relative": "../dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol",
-                      "filename_short": "mitigate_patches/access_control/mapping_write/mapping_write.sol",
+                      "filename_short": "../dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -123,10 +123,10 @@
             }
           }
         ],
-        "description": "Map (mitigate_patches/access_control/mapping_write/mapping_write.sol#5-24) contract sets array length with a user-controlled value:\n\t- map.length = key + 1 (mitigate_patches/access_control/mapping_write/mapping_write.sol#11)\n",
-        "markdown": "[Map](mitigate_patches/access_control/mapping_write/mapping_write.sol#L5-L24) contract sets array length with a user-controlled value:\n\t- [map.length = key + 1](mitigate_patches/access_control/mapping_write/mapping_write.sol#L11)\n",
-        "first_markdown_element": "mitigate_patches/access_control/mapping_write/mapping_write.sol#L5-L24",
-        "id": "74353c72e8e5c4ff345deea8cad874b594203162338908f308269326f8e75c3f",
+        "description": "Map (../dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol#5-24) contract sets array length with a user-controlled value:\n\t- map.length = key + 1 (../dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol#11)\n",
+        "markdown": "[Map](../dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol#L5-L24) contract sets array length with a user-controlled value:\n\t- [map.length = key + 1](../dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol#L11)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol#L5-L24",
+        "id": "080e2e94b32bbe996c0356544b4d9952f4848c884eedb7b0d04778b76676eb80",
         "check": "controlled-array-length",
         "impact": "High",
         "confidence": "Medium"
@@ -139,9 +139,9 @@
             "source_mapping": {
               "start": 50,
               "length": 20,
-              "filename_relative": "mitigate_patches/access_control/mapping_write/mapping_write.sol",
+              "filename_relative": "../dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol",
-              "filename_short": "mitigate_patches/access_control/mapping_write/mapping_write.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol",
               "is_dependency": false,
               "lines": [
                 6
@@ -156,9 +156,9 @@
                 "source_mapping": {
                   "start": 30,
                   "length": 460,
-                  "filename_relative": "mitigate_patches/access_control/mapping_write/mapping_write.sol",
+                  "filename_relative": "../dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol",
-                  "filename_short": "mitigate_patches/access_control/mapping_write/mapping_write.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol",
                   "is_dependency": false,
                   "lines": [
                     5,
@@ -194,9 +194,9 @@
             "source_mapping": {
               "start": 365,
               "length": 122,
-              "filename_relative": "mitigate_patches/access_control/mapping_write/mapping_write.sol",
+              "filename_relative": "../dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol",
-              "filename_short": "mitigate_patches/access_control/mapping_write/mapping_write.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol",
               "is_dependency": false,
               "lines": [
                 20,
@@ -214,9 +214,9 @@
                 "source_mapping": {
                   "start": 30,
                   "length": 460,
-                  "filename_relative": "mitigate_patches/access_control/mapping_write/mapping_write.sol",
+                  "filename_relative": "../dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol",
-                  "filename_short": "mitigate_patches/access_control/mapping_write/mapping_write.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol",
                   "is_dependency": false,
                   "lines": [
                     5,
@@ -248,9 +248,9 @@
             }
           }
         ],
-        "description": "Map.owner (mitigate_patches/access_control/mapping_write/mapping_write.sol#6) is never initialized. It is used in:\n\t- Map.withdraw() (mitigate_patches/access_control/mapping_write/mapping_write.sol#20-23)\n",
-        "markdown": "[Map.owner](mitigate_patches/access_control/mapping_write/mapping_write.sol#L6) is never initialized. It is used in:\n\t- [Map.withdraw()](mitigate_patches/access_control/mapping_write/mapping_write.sol#L20-L23)\n",
-        "first_markdown_element": "mitigate_patches/access_control/mapping_write/mapping_write.sol#L6",
+        "description": "Map.owner (../dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol#6) is never initialized. It is used in:\n\t- Map.withdraw() (../dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol#20-23)\n",
+        "markdown": "[Map.owner](../dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol#L6) is never initialized. It is used in:\n\t- [Map.withdraw()](../dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol#L20-L23)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/access_control/mapping_write/mapping_write.sol#L6",
         "id": "74d5e7c281cc1d6c4fce11d5ca6981298fc7317d5ea3aeced8fd84e43f308918",
         "check": "uninitialized-state",
         "impact": "High",

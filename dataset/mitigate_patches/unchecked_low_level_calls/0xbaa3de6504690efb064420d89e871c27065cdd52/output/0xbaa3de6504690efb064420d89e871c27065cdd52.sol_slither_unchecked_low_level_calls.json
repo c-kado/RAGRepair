@@ -11,9 +11,9 @@
             "source_mapping": {
               "start": 214,
               "length": 110,
-              "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol",
+              "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol",
-              "filename_short": "mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol",
+              "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol",
               "is_dependency": false,
               "lines": [
                 8,
@@ -31,9 +31,9 @@
                 "source_mapping": {
                   "start": 28,
                   "length": 298,
-                  "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol",
+                  "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol",
-                  "filename_short": "mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol",
+                  "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol",
                   "is_dependency": false,
                   "lines": [
                     5,
@@ -58,9 +58,9 @@
             "source_mapping": {
               "start": 283,
               "length": 34,
-              "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol",
+              "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol",
-              "filename_short": "mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol",
+              "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol",
               "is_dependency": false,
               "lines": [
                 10
@@ -75,9 +75,9 @@
                 "source_mapping": {
                   "start": 214,
                   "length": 110,
-                  "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol",
+                  "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol",
-                  "filename_short": "mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol",
+                  "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol",
                   "is_dependency": false,
                   "lines": [
                     8,
@@ -95,9 +95,9 @@
                     "source_mapping": {
                       "start": 28,
                       "length": 298,
-                      "filename_relative": "mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol",
+                      "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol",
-                      "filename_short": "mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol",
+                      "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -119,10 +119,10 @@
             }
           }
         ],
-        "description": "Proxy.proxy(address,bytes) (mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol#8-11) ignores return value by target.call.value(msg.value)(data) (mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol#10)\n",
-        "markdown": "[Proxy.proxy(address,bytes)](mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol#L8-L11) ignores return value by [target.call.value(msg.value)(data)](mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol#L10)\n",
-        "first_markdown_element": "mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol#L8-L11",
-        "id": "eba40dd73e650417a77f41b1b942131e63bfced8be663abde133afbc1febe65f",
+        "description": "Proxy.proxy(address,bytes) (../dataset/mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol#8-11) ignores return value by target.call.value(msg.value)(data) (../dataset/mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol#10)\n",
+        "markdown": "[Proxy.proxy(address,bytes)](../dataset/mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol#L8-L11) ignores return value by [target.call.value(msg.value)(data)](../dataset/mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol#L10)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52/0xbaa3de6504690efb064420d89e871c27065cdd52.sol#L8-L11",
+        "id": "267a04ff73d3649b3fe017e734d3a105f4bddb4a4971ff80eeda0f38a8a24db5",
         "check": "unchecked-lowlevel",
         "impact": "Medium",
         "confidence": "Medium"

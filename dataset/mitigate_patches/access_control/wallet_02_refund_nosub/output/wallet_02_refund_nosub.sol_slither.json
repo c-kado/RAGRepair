@@ -11,9 +11,9 @@
             "source_mapping": {
               "start": 651,
               "length": 10,
-              "filename_relative": "mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
+              "filename_relative": "../dataset/mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
-              "filename_short": "mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
               "is_dependency": false,
               "lines": [
                 30
@@ -28,9 +28,9 @@
                 "source_mapping": {
                   "start": 632,
                   "length": 123,
-                  "filename_relative": "mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
+                  "filename_relative": "../dataset/mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
-                  "filename_short": "mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
                   "is_dependency": false,
                   "lines": [
                     30,
@@ -48,9 +48,9 @@
                     "source_mapping": {
                       "start": 30,
                       "length": 729,
-                      "filename_relative": "mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
+                      "filename_relative": "../dataset/mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
-                      "filename_short": "mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
+                      "filename_short": "../dataset/mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -100,9 +100,9 @@
             "source_mapping": {
               "start": 722,
               "length": 25,
-              "filename_relative": "mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
+              "filename_relative": "../dataset/mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
-              "filename_short": "mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
               "is_dependency": false,
               "lines": [
                 32
@@ -117,9 +117,9 @@
                 "source_mapping": {
                   "start": 632,
                   "length": 123,
-                  "filename_relative": "mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
+                  "filename_relative": "../dataset/mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
-                  "filename_short": "mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
                   "is_dependency": false,
                   "lines": [
                     30,
@@ -137,9 +137,9 @@
                     "source_mapping": {
                       "start": 30,
                       "length": 729,
-                      "filename_relative": "mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
+                      "filename_relative": "../dataset/mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
-                      "filename_short": "mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
+                      "filename_short": "../dataset/mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol",
                       "is_dependency": false,
                       "lines": [
                         5,
@@ -184,10 +184,10 @@
             }
           }
         ],
-        "description": "Wallet.migrateTo(address).to (mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol#30) lacks a zero-check on :\n\t\t- to.transfer(this.balance) (mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol#32)\n",
-        "markdown": "[Wallet.migrateTo(address).to](mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol#L30) lacks a zero-check on :\n\t\t- [to.transfer(this.balance)](mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol#L32)\n",
-        "first_markdown_element": "mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol#L30",
-        "id": "d54dd5e463bcdfc8e26429e78cd656c459543340e0937fb0e892ee3230fe4050",
+        "description": "Wallet.migrateTo(address).to (../dataset/mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol#30) lacks a zero-check on :\n\t\t- to.transfer(this.balance) (../dataset/mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol#32)\n",
+        "markdown": "[Wallet.migrateTo(address).to](../dataset/mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol#L30) lacks a zero-check on :\n\t\t- [to.transfer(this.balance)](../dataset/mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol#L32)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/access_control/wallet_02_refund_nosub/wallet_02_refund_nosub.sol#L30",
+        "id": "eeea39016b7ae3de3db9c1537e5714a30b243cfe0ac8c92c11ffc25b7c0fe15a",
         "check": "missing-zero-check",
         "impact": "Low",
         "confidence": "Medium"

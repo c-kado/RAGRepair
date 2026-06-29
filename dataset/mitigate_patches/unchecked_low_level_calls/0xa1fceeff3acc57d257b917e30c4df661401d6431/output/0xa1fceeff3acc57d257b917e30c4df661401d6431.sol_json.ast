@@ -1,7 +1,7 @@
 {
 	"attributes" : 
 	{
-		"absolutePath" : "mitigate_patches/unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431/0xa1fceeff3acc57d257b917e30c4df661401d6431.sol",
+		"absolutePath" : "../dataset/mitigate_patches/unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431/0xa1fceeff3acc57d257b917e30c4df661401d6431.sol",
 		"exportedSymbols" : 
 		{
 			"AirDropContract" : 
