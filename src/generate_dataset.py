@@ -32,18 +32,19 @@
 
 
 
-
-# mitigate_patches
+# dataset
 # |
-# - mitigate_patches.csv
-# |
-# - VUL
+# - mitigate_patches
 #   |
-#   - CONTRACT
-#     | 
-#     - CONTRACT.sol
+#   - mitigate_patches.csv
+#   |
+#   - VUL
 #     |
-#     - patched_CONTRACT.sol
+#     - CONTRACT
+#       | 
+#       - CONTRACT.sol
+#       |
+#       - patched_CONTRACT.sol
 
 import json
 import os
@@ -64,7 +65,7 @@ vul_mapping = {'access_control': ['tx-origin', 'controlled-delegatecall', 'suici
                 'unchecked_low_level_calls': ['unchecked-lowlevel', 'unchecked-send'],    # 0x52..のやつは他のところも変わってるけど，，-xa1f...は検知できず
                 'other': ['uninitialized-storage']}
 
-
+dataset_dir = '../dataset'
 
 
 def extract_dataset(repcomp_file):
@@ -84,7 +85,7 @@ def extract_dataset(repcomp_file):
     mitigate_patches_df = mitigate_patches_df.sort_values('Tool', key=lambda s: s.map({v: i for i, v in enumerate(high_acc_tool)}))
     mitigate_patches_df = mitigate_patches_df.sort_values('Original', kind='stable').sort_values('Category', kind='stable')
 
-    mitigate_patches_df.to_csv('mitigate_patches/mitigate_patches.csv', index=False)
+    mitigate_patches_df.to_csv(f'{dataset_dir}/mitigate_patches/mitigate_patches.csv', index=False)
     mitigate_patches_nodup_df = mitigate_patches_df.drop_duplicates(subset='Original', keep='first')
 
 
@@ -92,7 +93,7 @@ def extract_dataset(repcomp_file):
     original_path = '../tools/sb-heists/smartbugs-curated/0.4.x/contracts/dataset'
     patch_path = '../tools/RepairComp/results/smartbugs'
     for idx, row in mitigate_patches_nodup_df.iterrows():
-        contract_path = f'mitigate_patches/{row['Category']}/{row['Original'][:-4]}'
+        contract_path = f'{dataset_dir}/mitigate_patches/{row['Category']}/{row['Original'][:-4]}'
         os.makedirs(contract_path, exist_ok=True)
 
         # Originalのsolファイルを記録
@@ -137,7 +138,7 @@ def record_contract_info(contract_info):
     # 2. get solc ast
     # 3. get analysis result by Slither
 
-    contract_dir = f'mitigate_patches/{contract_info['Category']}/{contract_info['Original'][:-4]}'
+    contract_dir = f'{dataset_dir}/mitigate_patches/{contract_info['Category']}/{contract_info['Original'][:-4]}'
  
     vul_source = f'{contract_dir}/{contract_info['Original']}'
     patched_source = f'{contract_dir}/patched_{contract_info['Original']}'
@@ -214,7 +215,7 @@ def change_solc_version(version):
 
 
 def solc_compile(sol_file, output_dir):
-    proc = subprocess.run(f'solc {sol_file} --ast-json -o {output_dir}', shell=True, stdout=PIPE, stderr=PIPE, text=True)
+    proc = subprocess.run(f'solc {sol_file} --ast-json -o {output_dir} --overwrite', shell=True, stdout=PIPE, stderr=PIPE, text=True)
     if len(re.findall(rf'{sol_file.split("/")[-1]}:[\d]+:[\d]+: Error: ', proc.stderr)) > 0:
         # Error message by solc: "'filename':line:column?: Error:" 
         return False
@@ -256,6 +257,9 @@ def extract_vul_results(all_results_file, category):
 
 
 # MAIN
+if not os.path.exists(f'{dataset_dir}/mitigate_patches/'):
+    os.makedirs(f'{dataset_dir}/mitigate_patches/')
+
 mitigate_patches = extract_dataset('../tools/RepairComp/results/smartbugs/data_analysis/all_patches_stats.csv')
 mitigate_patches['retriever_dataset'] = True
 mitigate_patches.loc[mitigate_patches['Category'] == 'arithmetic', 'retriever_dataset'] = False
@@ -265,11 +269,11 @@ for idx, contract_info in mitigate_patches[mitigate_patches['retriever_dataset']
     # 各vul/fixのペアに対して，vulのファイルをslitherで解析, solcによるast出力
     # 解析情報を記録
     
-    os.makedirs(f'mitigate_patches/{contract_info['Category']}/{contract_info['Original'][:-4]}/output', exist_ok=True)
+    os.makedirs(f'{dataset_dir}/mitigate_patches/{contract_info['Category']}/{contract_info['Original'][:-4]}/output', exist_ok=True)
     if not record_contract_info(contract_info):
         # not match for retrieved dataset
         # shutil.rmtree(f'mitigate_patches/{contract_info['Category']}/{contract_info['Original'][:-4]}/')
         mitigate_patches.at[idx, 'retriever_dataset'] = False
         print(f'{contract_info['Category']}/{contract_info['Original']}: not match dataset')
 
-mitigate_patches.to_csv('mitigate_patches/mitigate_patches.csv', index=False)
+mitigate_patches.to_csv(f'{dataset_dir}/mitigate_patches/mitigate_patches.csv', index=False)

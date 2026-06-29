@@ -19,11 +19,24 @@
 # networkx library reference
 # https://networkx.org/documentation/stable/tutorial.html#directed-graphs
 
-import os
-from pathlib import Path
+import warnings
+
+warnings.filterwarnings(
+    "ignore",
+    message="The hashes produced for directed graphs changed in v3.5 due to a bugfix*"
+)
+
+from collections import Counter
 import json
 import networkx as nx
 from networkx.readwrite import json_graph
+import numpy as np
+import os
+import pandas as pd
+from pathlib import Path
+from sklearn.metrics.pairwise import cosine_similarity
+
+dataset_dir = '../dataset'
 
 
 def get_ast(file):
@@ -62,25 +75,25 @@ def mapping_ast2graph(ast):
     else:
         no_id_node -= 1
         node_id = no_id_node
-        print(node_id)
-        print(ast['name'])
+        ast['id'] = node_id
 
     ast_graph.add_node(node_id, node_type=ast['name'])
 
     # add nodes to the graph recursively
     if 'children' in ast:
-        add_children_node(ast_graph, ast['children'], node_id, no_id_node) 
+        ast['children'] = add_children_node(ast_graph, ast['children'], node_id, no_id_node) 
 
     return ast_graph
 
 
 def add_children_node(g, children, parent_id, no_id_node):
-    for node in children:
+    for i, node in enumerate(children):
         if 'id' in node:
             node_id = node['id']
         else:
             no_id_node -= 1
             node_id = no_id_node
+            children[i]['id'] = node_id
             print(node_id)
             print(node['name'])
 
@@ -88,10 +101,11 @@ def add_children_node(g, children, parent_id, no_id_node):
         g.add_edge(parent_id, node_id)
 
         if 'children' in node:
-            add_children_node(g, node['children'], node_id, no_id_node)
+            children[i]['children'] = add_children_node(g, node['children'], node_id, no_id_node)
 
+    return children
 
-def get_ast_hash_vect():
+def get_vul_root(detection_file, ast_file):
 
     # 脆弱性の該当行のトップのrootIDが欲しい
         # 脆弱性の該当行を特定
@@ -121,15 +135,12 @@ def get_ast_hash_vect():
         'unchecked-send': {'type': 'node'},
         'uninitialized-storage': {'type': 'variable'}}
 
-   
-
     # 脆弱性の該当行を特定
-    with open(file.sol_slither_{category}.json, 'r') as f:
+    with open(detection_file, 'r') as f:
         detection_result = json.load(f)
 
     # datasetとして記録するvulfileは，1つのターゲット脆弱性のみ
     vul_info = detection_result['results']['detectors'][0]
-
 
     # 行単位で見る場合
     elements = vul_info['elements']
@@ -141,7 +152,7 @@ def get_ast_hash_vect():
 
     # elementの行を抜き出す（該当行のスタートからエンドまでの文字位置）
     start_vul = vul_element['source_mapping']['start']
-    end_vul = start_vul + vul_element['source_mapping']['length']
+    vul_len = vul_element['source_mapping']['length']
 
 
     # 該当行の一番上のノードID
@@ -150,9 +161,8 @@ def get_ast_hash_vect():
 
     with open(ast_file, 'r') as f:
         ast = json.load(f)
-        # TODO: TODO: TODO: 
-        jsonか？127行目のfile名の与え方と，ここのファイル名の与え方考える
 
+    return is_include_vulsrc(ast['children'], ast['id'], start_vul, vul_len)
 
 
 def check_element(element, trigger):
@@ -167,48 +177,76 @@ def check_element_attr(element, attr, value):
     if type(value) == str:
         return element[attr] == value
     else:
-        return check_element_attr(element[attr], value.keys[0], value.values[0])
+        return check_element_attr(element[attr], *next(iter(value.items())))
+
+
+def is_include_vulsrc(children_nodes, node_id, src_start, src_len):
+    
+    for node in children_nodes:
+        node_start, node_len, _ = map(int, node['src'].split(':'))
+
+        # node includes vulnerable line
+        if node_start <= src_start and src_start+src_len <= node_start+node_len:
+            if 'children' in node.keys():
+                return is_include_vulsrc(node['children'], node['id'], src_start, src_len)
+            else:
+                return node['id']
+
+    return node_id
+
+
+def hash_to_vect(hashes):
+    counter = Counter()
+    for h in hashes.values():
+        counter.update(h)
+
+    return counter
+
+
+
+
 
 
 
 
 # MAIN
+wl_counter_df = pd.DataFrame(columns=['Category', 'contract', 'subtree_root', 'node_num', 'wl_counter'])
+patch_list = pd.read_csv(f'{dataset_dir}/mitigate_patches/mitigate_patches.csv')
 
-for category in os.listdir('mitigate_patches'):
-    if not os.path.isdir(f'mitigate_patches/{category}'):
+for category in os.listdir(f'{dataset_dir}/mitigate_patches'):
+    if not os.path.isdir(f'{dataset_dir}/mitigate_patches/{category}'):
         continue
 
-    for contract in os.listdir(f'mitigate_patches/{category}'):
-        if not os.path.isdir(f'mitigate_patches/{category}/{contract}'):
+    for contract in os.listdir(f'{dataset_dir}/mitigate_patches/{category}'):
+        if not os.path.isdir(f'{dataset_dir}/mitigate_patches/{category}/{contract}'):
+           continue
+
+        if not patch_list.loc[(patch_list['Original'] == f'{contract}.sol'), 'retriever_dataset'].iloc[0]:
             continue
-        
+ 
         print(f'{category}/{contract}')
+        contract_dir = f'{dataset_dir}/mitigate_patches/{category}/{contract}'
 
         # Build ast graph
-        ast = get_ast(f'mitigate_patches/{category}/{contract}/output/{contract}.sol_json.ast')
+        ast = get_ast(f'{contract_dir}/output/{contract}.sol_json.ast')
         ast_graph = mapping_ast2graph(ast)
 
         # Get wl subgraph hashes
+        # compute wlhash of vulnerable position 
+        vul_root = get_vul_root(
+            f'{contract_dir}/output/{contract}.sol_slither_{category}.json',
+            f'{contract_dir}/output/{contract}.sol_json.ast')
+        vul_sub_tree = {vul_root} | nx.descendants(nx.DiGraph(ast_graph), vul_root)
         # TODO: iterationの値は要検討．kernelで計算するグラフのサイズ(行単位/関数単位/etc.)によって変える？適切な値を検討(empiricalに？？？)
-        ast_hashes = nx.weisfeiler_lehman_subgraph_hashes(ast_graph, node_attr='node_type', iterations=2)
-
-        # compute wlhash of vulnerable position
-        # TODO: TODO: TODO: tx_verification/src/dataset_creation/generate_prompt.pyを参考に，各脆弱性ごとに，該当する行を取得する．(elementでnodeを探すやつ)
-        # その後，test_compute.pyのように，rootを設定（行の一番上にあるのーどid?）して，ハッシュ計算，counter
-        # 以上をファイルに保存しておく
-        
-        get_ast_hash_vect(category, contract)
-        slitherのvul限定の結果がいる．
-
-
-
+        vul_hashes = nx.weisfeiler_lehman_subgraph_hashes(ast_graph.subgraph(vul_sub_tree), node_attr='node_type', iterations=2)
+        vul_wl_counter = hash_to_vect(vul_hashes)
 
         # save the graph info
-        ast_graph_info = {'graph': json_graph.node_link_data(ast_graph), 'wl_hashes': ast_hashes}
-
-        with open(f'mitigate_patches/{category}/{contract}/output/{contract}.sol_ast_graph.json', 'w') as f:
+        ast_graph_info = {'graph': json_graph.node_link_data(ast_graph), 'vul_root': vul_root, 'vul_node_num': len(vul_sub_tree), 'vul_subgraph_hashes': vul_hashes, 'wl_counter': json.dumps(vul_wl_counter)}
+        with open(f'{contract_dir}/output/{contract}.sol_ast_graph.json', 'w') as f:
             json.dump(ast_graph_info, f, indent=2)
 
+        wl_counter_df.loc[len(wl_counter_df)] = {'Category': category, 'contract': contract, 'subtree_root': vul_root, 'node_num': len(vul_sub_tree), 'wl_counter': json.dumps(vul_wl_counter)}
 
-
+wl_counter_df.to_csv(f'{dataset_dir}/wl_counter.csv', index=False)
 
