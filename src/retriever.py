@@ -1,65 +1,210 @@
+import argparse
+from collections import Counter
+import json
+import networkx as nx
+import numpy as np
+import os
+import pandas as pd
+import re
+import shutil
+from sklearn.metrics.pairwise import cosine_similarity
+import subprocess
+from subprocess import PIPE
+
+import compute_dataset_wlkernel as comwl
 
 
 
-retrieverの構成
-1. vulのsolファイルでAST比較
-    - 全体比較 or 脆弱性該当箇所比較 or 脆弱性関数比較
-2. vulの解析結果でスパース比較
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        'category',
+        choices=['access_control', 'arithmetic', 'bad_randomness', 'other', 'reentrancy', 'unchecked_low_level_calls'],
+        help='specify the vulnerabilty category of a fix target contract'
+    )
 
-両方でスコア計算．
-あるいは
-スパース検索での上位からAST比較？
+    parser.add_argument(
+        'contract',
+        help='specify the fix target contract'
+    )
 
-
-コンテキスト検索：タグやキーワードなどのメタデータをチャンクに付与して検索を容易に
-→ 脆弱性のタイプを付与
-<VUL_TYPE>reentrancy</VUL_TYPE><VUL_INFO>{analysis_results}</VUL_INFO><VUL_CODE>{vulnerable_sourcecode}</VUL_CODE><FIX_CODE>{fixed_sourcecode}</FIX_CODE>
-みたいにしとく？VUL_TYPE検索後に各検索，あるいは，スパース検索のヒット率を上げるために入れる，ということにしとく？
-
-
-
-AST比較の手法候補
-(比較するとして，関数名などの固有情報は関係ない→構造のみを抽出して類似度計算？？同じ変数，といった情報も消えちゃう．．)
-
-- Tree edit distance (Graph edit distance?)
-- AST部分木のJaccard類似度
-- Weisfeiler-Lehman Kernel
+    return parser.parse_args()
 
 
+def get_target_contract(category, contract):
+    vul_source = 'tmp/tmp.sol'
+    vul_mapping = {'access_control': ['tx-origin', 'controlled-delegatecall', 'suicidal'], # incorrect_constructor, mappin_write, wallet_0x検知できず, 
+                'arithmetic': [], # Slither do not detect overflow/underflow.
+                'bad_randomness': ['timestamp'], # blackjack検知できず
+                'denial_of_service': [],
+                'front_running': [], # No target contract
+                'reentrancy': ['reentrancy-eth'],   #modifier_reentrancyのreentrancy-no-ethは修正後にも検知, reentrancy_bonus検知できず
+                'time_manipulation': ['timestamp'],
+                'unchecked_low_level_calls': ['unchecked-lowlevel', 'unchecked-send'],    # 0x52..のやつは他のところも変わってるけど，，-xa1f...は検知できず
+                'other': ['uninitialized-storage']}
+
+    shutil.copy(f'../dataset/mitigate_patches/{category}/{contract}/{contract}.sol', vul_source)
+    with open(vul_source, 'r') as f:
+        code = f.read()
+    
+    solc_ver = re.search(r'pragma solidity \^?(0\.\d+\.\d+);', code).group(1)
+    change_solc_version(solc_ver)
+
+    if not solc_compile(vul_source, 'tmp/output'):
+       print('solc-error!!')
+       exit()
+
+    result_file = 'tmp/output/tmp.sol_slither.json'
+    if os.path.exists(result_file):
+        os.remove(result_file)
+    # if not run_slither(vul_source, result_file):
+    #    return False
+ 
+    if not run_slither(vul_source, result_file, option=[f'--detect {','.join(vul_mapping[category])}']):
+        return False
 
 
-weisfeiler-lehman kernelで検討
-- networkXでの実装を試す．
-    - AST出力
-    - ASTをnetworkXのWSkernelのグラフにマッチングさせる
-    - 計算
+def change_solc_version(version):
+    proc = subprocess.run('solc-select use %s --always-install' % version, shell=True, stdout=PIPE, stderr=PIPE, text=True)
+    if proc.stderr != '':
+        print(version)
+        print('ERROR: ' + proc.stderr)
+    print('solc-select use >> ' + proc.stdout)
 
 
-- ASTの出力方法について，
-今回のデータセットは0.8以降は含まれれない -> --ast-jsonで対応
-ただし，以降を考慮し，--ast-compact-jsonを用いた変換も考慮する．
+def solc_compile(sol_file, output_dir):
+    proc = subprocess.run(f'solc {sol_file} --ast-json -o {output_dir} --overwrite', shell=True, stdout=PIPE, stderr=PIPE, text=True)
+    if len(re.findall(rf'{sol_file.split("/")[-1]}:[\d]+:[\d]+: Error: ', proc.stderr)) > 0:
+        # Error message by solc: "'filename':line:column?: Error:" 
+        return False
+    elif len(re.findall('Internal compiler error during compilation:', proc.stderr)) > 0:
+        # Compiler internal error?
+        return False
+    elif len(re.findall('Traceback (most recent call last):', proc.stderr)) > 0:
+        # run solc fail
+        print(proc.stderr)
+        return False
+
+    return True
 
 
-networkXのライブラリを確認
-ノードの追加，(ノードの識別子はint or str? intでASTのノードの識別子があればそれを使えば良さげ)
-各ノードに，dict形式でattributeの設定ができる．→ typeとか諸々の必要な情報をそこで設定？
-どの範囲のASTを比較するか．
-候補1. 修正で変更が生じた箇所（この場合，修正対象のコントラクトどこまで渡したら良いか難しそう）
-候補2. 脆弱性の含まれる関数（この場合，関数内に脆弱性と関係ない処理が入っている場合，比較に影響しそう．ただし，「類似度の高いもの」やから，それも含めてやってみても良さげ？）
-候補3. 脆弱性が検知された箇所の前後数行（行数で考えると，ASTで抜き出すの難しそう）
-候補4. 脆弱性が検知されたノードの親ノードが含む範囲（切り取る範囲が物によってかなり変わりそう．ただし，ASTからの抽出は簡単そう．解析結果の行数とASTをどうマッチさせるか．）
+def run_slither(sol_file, output_file, option=''):
+    proc = subprocess.run(f'slither --exclude-informational --exclude-optimization {" ".join(option)} {sol_file} --json {output_file}', shell=True, stdout=PIPE, stderr=PIPE, text=True)
+    if not os.path.exists(output_file):
+        print(proc.stderr)
+        return False
+    return True
+ 
 
-候補4で試す．
-Slitherでは，xx行目の結果が出てくる
-ASTは，ソースコードの何文字目の表記
-Slitherの結果で出てくる行数が何文字目か計算して，ASTのノードのソースに含まれるかを順に辿っていって，該当箇所をゲット
-!!! Slitherの結果も，該当する行について，xx文字からxx文字の表記になってる！
-完全に含む（一致だと1行になるから，A ⊆ Bじゃなく，A ⊂ BになるBを探してくる．）
-脆弱行のスタート: Vs, エンド: Ve, 抽出行のスタート: Es, エンド: Eeとした時
-( Es < Vs && Ve < Ee ) || ( Es < Vs && Ve <= Ee ) || ( Es <= Vs && Ve < Ee )
-を満たす最小ノードを探す．
+def compute_wlcounter(ast_file, detection_file):
+    ast_graph = comwl.mapping_ast2graph(ast_file)
+    # TODO: TODO: slitherで複数の脆弱性が検知されてても，前から順番に修正みたいな形を考慮すると，get_vul_rootでしてる1個目の検知結果のrootを取るでOK
+    vul_root = comwl.get_vul_root(detection_file, ast_file)
+    vul_sub_tree = {vul_root} | nx.descendants(nx.DiGraph(ast_graph), vul_root)
+    vul_hashes = nx.weisfeiler_lehman_subgraph_hashes(ast_graph.subgraph(vul_sub_tree), node_attr='node_type', iterations=2)
+    return comwl.hash_to_vect(vul_hashes)
 
 
+def retrieve_similar_vectors(hash_counter, target_category, target_contract):
+    # データベースopen
+    counter_db = pd.read_csv('../dataset/wl_counter.csv')
+    counter_db = counter_db[(counter_db['Category'] != target_category) | (counter_db['contract'] != target_contract)]
 
-!!! slitherで脆弱性を検知しないものでも，データセット等に入れておく．
-検知されない結果で比較して，修正結果を渡せば，同じ検知結果「検知されず」やけど，修正があった，みたいに渡せる
+    nearest = 0
+    max_sim = 0
+    for idx, row in counter_db.iterrows(): 
+        # 順にhashの類似度を計算
+        db_counter = Counter(json.loads(row['wl_counter']))
+        sim = compute_similarity(hash_counter, db_counter)
+
+        if sim > max_sim:
+            # 一番近いものを取得
+            nearest = idx
+            max_sim = sim
+
+    return counter_db.iloc[nearest], max_sim
+
+
+def compute_similarity(counter1, counter2):
+# MIN: 0, MAX: 1
+    labels = sorted(set(counter1) | set(counter2))
+
+    vec1 = [counter1.get(x,0) for x in labels]
+    vec2 = [counter2.get(x,0) for x in labels]
+
+    sim = cosine_similarity(
+        np.array(vec1).reshape(1,-1),
+        np.array(vec2).reshape(1,-1)
+    )[0,0]
+
+    return sim
+
+
+def get_argument_prompt(category, contract):
+    contract_path = f'../dataset/mitigate_patches/{category}/{contract}'
+
+    with open(f'{contract_path}/{contract}.sol', 'r') as f:
+        code = f.read()
+
+    with open(f'{contract_path}/patched_{contract}.sol', 'r') as f:
+        fix_code = f.read()
+
+    return f'[VUL_EX]{code}[FIX_EX]{fix_code}'
+
+
+
+
+# 入力：修正対象のコントラクト
+    # solfile名
+
+# 出力；元のプロンプトの後ろにつける補強情報
+    # [VUL_EX]vul_source_code[FIX_EX]fixed_source_code
+
+
+# MAIN
+
+# categoryとコントラクト名の入力
+
+args = parse_args()
+if not os.path.exists(f'../dataset/mitigate_patches/{args.category}/{args.contract}'):
+    print(f'"../dataset/mitigate_patches/{args.category}/{args.contract}" does not exist.')
+    exit()
+
+target_category = args.category
+target_contract = args.contract
+
+
+
+# tmpファイルにターゲットのコントラクトコピー
+# tmp/
+# |
+# - tmp.sol
+# - output
+#   |
+#   - empty -> ast, slither, etc
+
+os.makedirs('tmp/output', exist_ok=True)
+get_target_contract(target_category, target_contract)
+
+
+target_hash_counter = compute_wlcounter('tmp/output/tmp.sol_json.ast', 'tmp/output/tmp.sol_slither.json')
+
+nearest_cntr, sim = retrieve_similar_vectors(target_hash_counter, target_category, target_contract)
+print(f'Nearest contract: {nearest_cntr['Category']}/{nearest_cntr['contract']}')
+print(f'Similarity: {sim}')
+
+print(get_argument_prompt(nearest_cntr['Category'], nearest_cntr['contract']))
+
+
+
+
+
+
+
+
+
+
+
+
+
+

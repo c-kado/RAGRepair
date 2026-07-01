@@ -38,16 +38,17 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 dataset_dir = '../dataset'
 
-
+'''
 def get_ast(file):
     with open(file, 'r') as f:
         ast_json = json.load(f)
 
     return ast_json
+'''
 
 
 # Input: マッピングするAST（該当箇所抽出済みとする）
-def mapping_ast2graph(ast):
+def mapping_ast2graph(ast_file):
     # ast の形式
     # Tree_node = 
     # {
@@ -64,6 +65,9 @@ def mapping_ast2graph(ast):
     # TODO: nx.node_attrとして，astのattributesを入れたパターンもやってみる
     #       (edge_attrにnode_typeをマッピングして，一番最初のSourceUnit?はなくなる形
     #        node_attrにastのattributesとか？)
+
+    with open(ast_file, 'r') as f:
+        ast = json.load(f)
 
     ast_graph = nx.DiGraph()
 
@@ -139,6 +143,10 @@ def get_vul_root(detection_file, ast_file):
     with open(detection_file, 'r') as f:
         detection_result = json.load(f)
 
+    # node_ids start from 1(, 2, 3,..) or -1(, -2, -3, ..)
+    if not detection_result['results']:
+        return 0
+
     # datasetとして記録するvulfileは，1つのターゲット脆弱性のみ
     vul_info = detection_result['results']['detectors'][0]
 
@@ -208,45 +216,48 @@ def hash_to_vect(hashes):
 
 
 
+def main():
+    wl_counter_df = pd.DataFrame(columns=['Category', 'contract', 'subtree_root', 'node_num', 'wl_counter'])
+    patch_list = pd.read_csv(f'{dataset_dir}/mitigate_patches/mitigate_patches.csv')
 
-# MAIN
-wl_counter_df = pd.DataFrame(columns=['Category', 'contract', 'subtree_root', 'node_num', 'wl_counter'])
-patch_list = pd.read_csv(f'{dataset_dir}/mitigate_patches/mitigate_patches.csv')
-
-for category in os.listdir(f'{dataset_dir}/mitigate_patches'):
-    if not os.path.isdir(f'{dataset_dir}/mitigate_patches/{category}'):
-        continue
-
-    for contract in os.listdir(f'{dataset_dir}/mitigate_patches/{category}'):
-        if not os.path.isdir(f'{dataset_dir}/mitigate_patches/{category}/{contract}'):
-           continue
-
-        if not patch_list.loc[(patch_list['Original'] == f'{contract}.sol'), 'retriever_dataset'].iloc[0]:
+    for category in os.listdir(f'{dataset_dir}/mitigate_patches'):
+        if not os.path.isdir(f'{dataset_dir}/mitigate_patches/{category}'):
             continue
- 
-        print(f'{category}/{contract}')
-        contract_dir = f'{dataset_dir}/mitigate_patches/{category}/{contract}'
 
-        # Build ast graph
-        ast = get_ast(f'{contract_dir}/output/{contract}.sol_json.ast')
-        ast_graph = mapping_ast2graph(ast)
+        for contract in os.listdir(f'{dataset_dir}/mitigate_patches/{category}'):
+            if not os.path.isdir(f'{dataset_dir}/mitigate_patches/{category}/{contract}'):
+               continue
 
-        # Get wl subgraph hashes
-        # compute wlhash of vulnerable position 
-        vul_root = get_vul_root(
-            f'{contract_dir}/output/{contract}.sol_slither_{category}.json',
-            f'{contract_dir}/output/{contract}.sol_json.ast')
-        vul_sub_tree = {vul_root} | nx.descendants(nx.DiGraph(ast_graph), vul_root)
-        # TODO: iterationの値は要検討．kernelで計算するグラフのサイズ(行単位/関数単位/etc.)によって変える？適切な値を検討(empiricalに？？？)
-        vul_hashes = nx.weisfeiler_lehman_subgraph_hashes(ast_graph.subgraph(vul_sub_tree), node_attr='node_type', iterations=2)
-        vul_wl_counter = hash_to_vect(vul_hashes)
+            if not patch_list.loc[(patch_list['Original'] == f'{contract}.sol'), 'retriever_dataset'].iloc[0]:
+                continue
+     
+            print(f'{category}/{contract}')
+            contract_dir = f'{dataset_dir}/mitigate_patches/{category}/{contract}'
 
-        # save the graph info
-        ast_graph_info = {'graph': json_graph.node_link_data(ast_graph), 'vul_root': vul_root, 'vul_node_num': len(vul_sub_tree), 'vul_subgraph_hashes': vul_hashes, 'wl_counter': json.dumps(vul_wl_counter)}
-        with open(f'{contract_dir}/output/{contract}.sol_ast_graph.json', 'w') as f:
-            json.dump(ast_graph_info, f, indent=2)
+            # Build ast graph
+            # ast = get_ast(f'{contract_dir}/output/{contract}.sol_json.ast')
+            ast_graph = mapping_ast2graph(f'{contract_dir}/output/{contract}.sol_json.ast')
 
-        wl_counter_df.loc[len(wl_counter_df)] = {'Category': category, 'contract': contract, 'subtree_root': vul_root, 'node_num': len(vul_sub_tree), 'wl_counter': json.dumps(vul_wl_counter)}
+            # Get wl subgraph hashes
+            # compute wlhash of vulnerable position 
+            vul_root = get_vul_root(
+                f'{contract_dir}/output/{contract}.sol_slither_{category}.json',
+                f'{contract_dir}/output/{contract}.sol_json.ast')
+            vul_sub_tree = {vul_root} | nx.descendants(nx.DiGraph(ast_graph), vul_root)
+            # TODO: iterationの値は要検討．kernelで計算するグラフのサイズ(行単位/関数単位/etc.)によって変える？適切な値を検討(empiricalに？？？)
+            vul_hashes = nx.weisfeiler_lehman_subgraph_hashes(ast_graph.subgraph(vul_sub_tree), node_attr='node_type', iterations=2)
+            vul_wl_counter = hash_to_vect(vul_hashes)
 
-wl_counter_df.to_csv(f'{dataset_dir}/wl_counter.csv', index=False)
+            # save the graph info
+            ast_graph_info = {'graph': json_graph.node_link_data(ast_graph), 'vul_root': vul_root, 'vul_node_num': len(vul_sub_tree), 'vul_subgraph_hashes': vul_hashes, 'wl_counter': json.dumps(vul_wl_counter)}
+            with open(f'{contract_dir}/output/{contract}.sol_ast_graph.json', 'w') as f:
+                json.dump(ast_graph_info, f, indent=2)
 
+            wl_counter_df.loc[len(wl_counter_df)] = {'Category': category, 'contract': contract, 'subtree_root': vul_root, 'node_num': len(vul_sub_tree), 'wl_counter': json.dumps(vul_wl_counter)}
+
+    wl_counter_df.to_csv(f'{dataset_dir}/wl_counter.csv', index=False)
+
+
+
+if __name__ == '__main__':
+    main()
