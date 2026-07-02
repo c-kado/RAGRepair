@@ -1,9 +1,9 @@
 .DS_Store
+api_key.txt
 
 # Other repository tools
 tools/RepairComp
 tools/sb-heists
-
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

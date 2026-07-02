@@ -1,52 +1,17 @@
 
 
-pragma solidity ^0.4.19;
+pragma solidity ^0.4.24;
 
-contract CryptoRoulette {
+contract airDrop{
 
-    uint256 private secretNumber;
-    uint256 public lastPlayed;
-    uint256 public betPrice = 0.1 ether;
-    address public ownerAddr;
+    function transfer(address from,address caddress,address[] _tos,uint v, uint _decimals)public returns (bool){
+        require(_tos.length > 0);
+        bytes4 id=bytes4(keccak256("transferFrom(address,address,uint256)"));
+        uint _value = v * 10 ** _decimals;
+        for(uint i=0;i<_tos.length;i++){
 
-    struct Game {
-        address player;
-        uint256 number;
-    }
-    Game[] public gamesPlayed;
-
-    function CryptoRoulette() public {
-        ownerAddr = msg.sender;
-        shuffle();
-    }
-
-    function shuffle() internal {
-
-        secretNumber = uint8(sha3(now, block.blockhash(block.number-1))) % 20 + 1;
-    }
-
-    function play(uint256 number) payable public {
-        require(msg.value >= betPrice && number <= 10);
-
-        Game game; 
-        game.player = msg.sender;
-        game.number = number;
-        gamesPlayed.push(game);
-
-        if (number == secretNumber) {
-
-            msg.sender.transfer(this.balance);
+            caddress.call(id,from,_tos[i],_value);
         }
-
-        shuffle();
-        lastPlayed = now;
+        return true;
     }
-
-    function kill() public {
-        if (msg.sender == ownerAddr && now > lastPlayed + 1 days) {
-            suicide(msg.sender);
-        }
-    }
-
-    function() public payable { }
 }

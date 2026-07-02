@@ -161,50 +161,39 @@ def get_argument_prompt(category, contract):
     # [VUL_EX]vul_source_code[FIX_EX]fixed_source_code
 
 
-# MAIN
+
+def retrieve(category, contract):
+    # tmpファイルにターゲットのコントラクトコピー
+    # tmp/
+    # |
+    # - tmp.sol
+    # - output
+    #   |
+    #   - empty -> ast, slither, etc
+
+    os.makedirs('tmp/output', exist_ok=True)
+    get_target_contract(category, contract)
+
+
+    target_hash_counter = compute_wlcounter('tmp/output/tmp.sol_json.ast', 'tmp/output/tmp.sol_slither.json')
+
+    nearest_cntr, sim = retrieve_similar_vectors(target_hash_counter, category, contract)
+    print(f'Nearest contract: {nearest_cntr['Category']}/{nearest_cntr['contract']}')
+    print(f'Similarity: {sim}')
+
+    return get_argument_prompt(nearest_cntr['Category'], nearest_cntr['contract'])
+
+
+
 
 # categoryとコントラクト名の入力
+if __name__ == '__main__':
+    args = parse_args()
+    if not os.path.exists(f'../dataset/mitigate_patches/{args.category}/{args.contract}'):
+        print(f'"../dataset/mitigate_patches/{args.category}/{args.contract}" does not exist.')
+        exit()
 
-args = parse_args()
-if not os.path.exists(f'../dataset/mitigate_patches/{args.category}/{args.contract}'):
-    print(f'"../dataset/mitigate_patches/{args.category}/{args.contract}" does not exist.')
-    exit()
-
-target_category = args.category
-target_contract = args.contract
-
-
-
-# tmpファイルにターゲットのコントラクトコピー
-# tmp/
-# |
-# - tmp.sol
-# - output
-#   |
-#   - empty -> ast, slither, etc
-
-os.makedirs('tmp/output', exist_ok=True)
-get_target_contract(target_category, target_contract)
-
-
-target_hash_counter = compute_wlcounter('tmp/output/tmp.sol_json.ast', 'tmp/output/tmp.sol_slither.json')
-
-nearest_cntr, sim = retrieve_similar_vectors(target_hash_counter, target_category, target_contract)
-print(f'Nearest contract: {nearest_cntr['Category']}/{nearest_cntr['contract']}')
-print(f'Similarity: {sim}')
-
-print(get_argument_prompt(nearest_cntr['Category'], nearest_cntr['contract']))
-
-
-
-
-
-
-
-
-
-
-
+    print(retrieve(args.category, args.contract))
 
 
 

@@ -6,49 +6,102 @@
       {
         "elements": [
           {
-            "type": "variable",
-            "name": "game",
+            "type": "function",
+            "name": "transfer",
             "source_mapping": {
-              "start": 634,
-              "length": 9,
+              "start": 51,
+              "length": 393,
               "filename_relative": "tmp/tmp.sol",
               "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/src/tmp/tmp.sol",
               "filename_short": "tmp/tmp.sol",
               "is_dependency": false,
               "lines": [
-                31
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16
               ],
-              "starting_column": 9,
-              "ending_column": 18
+              "starting_column": 5,
+              "ending_column": 6
             },
             "type_specific_fields": {
               "parent": {
-                "type": "function",
-                "name": "play",
+                "type": "contract",
+                "name": "airDrop",
                 "source_mapping": {
-                  "start": 522,
-                  "length": 368,
+                  "start": 28,
+                  "length": 418,
                   "filename_relative": "tmp/tmp.sol",
                   "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/src/tmp/tmp.sol",
                   "filename_short": "tmp/tmp.sol",
                   "is_dependency": false,
                   "lines": [
-                    28,
-                    29,
-                    30,
-                    31,
-                    32,
-                    33,
-                    34,
-                    35,
-                    36,
-                    37,
-                    38,
-                    39,
-                    40,
-                    41,
-                    42,
-                    43
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "transfer(address,address,address[],uint256,uint256)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "caddress.call(id,from,_tos[i],_value)",
+            "source_mapping": {
+              "start": 369,
+              "length": 37,
+              "filename_relative": "tmp/tmp.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/src/tmp/tmp.sol",
+              "filename_short": "tmp/tmp.sol",
+              "is_dependency": false,
+              "lines": [
+                13
+              ],
+              "starting_column": 13,
+              "ending_column": 50
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transfer",
+                "source_mapping": {
+                  "start": 51,
+                  "length": 393,
+                  "filename_relative": "tmp/tmp.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/src/tmp/tmp.sol",
+                  "filename_short": "tmp/tmp.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16
                   ],
                   "starting_column": 5,
                   "ending_column": 6
@@ -56,10 +109,10 @@
                 "type_specific_fields": {
                   "parent": {
                     "type": "contract",
-                    "name": "CryptoRoulette",
+                    "name": "airDrop",
                     "source_mapping": {
                       "start": 28,
-                      "length": 1046,
+                      "length": 418,
                       "filename_relative": "tmp/tmp.sol",
                       "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/src/tmp/tmp.sol",
                       "filename_short": "tmp/tmp.sol",
@@ -78,59 +131,25 @@
                         15,
                         16,
                         17,
-                        18,
-                        19,
-                        20,
-                        21,
-                        22,
-                        23,
-                        24,
-                        25,
-                        26,
-                        27,
-                        28,
-                        29,
-                        30,
-                        31,
-                        32,
-                        33,
-                        34,
-                        35,
-                        36,
-                        37,
-                        38,
-                        39,
-                        40,
-                        41,
-                        42,
-                        43,
-                        44,
-                        45,
-                        46,
-                        47,
-                        48,
-                        49,
-                        50,
-                        51,
-                        52
+                        18
                       ],
                       "starting_column": 1,
-                      "ending_column": 2
+                      "ending_column": 0
                     }
                   },
-                  "signature": "play(uint256)"
+                  "signature": "transfer(address,address,address[],uint256,uint256)"
                 }
               }
             }
           }
         ],
-        "description": "CryptoRoulette.play(uint256).game (tmp/tmp.sol#31) is a storage variable never initialized\n",
-        "markdown": "[CryptoRoulette.play(uint256).game](tmp/tmp.sol#L31) is a storage variable never initialized\n",
-        "first_markdown_element": "tmp/tmp.sol#L31",
-        "id": "90f2072daf323a47f1d907795047eccd950b8e3b8826751b14b9365c87260e28",
-        "check": "uninitialized-storage",
-        "impact": "High",
-        "confidence": "High"
+        "description": "airDrop.transfer(address,address,address[],uint256,uint256) (tmp/tmp.sol#7-16) ignores return value by caddress.call(id,from,_tos[i],_value) (tmp/tmp.sol#13)\n",
+        "markdown": "[airDrop.transfer(address,address,address[],uint256,uint256)](tmp/tmp.sol#L7-L16) ignores return value by [caddress.call(id,from,_tos[i],_value)](tmp/tmp.sol#L13)\n",
+        "first_markdown_element": "tmp/tmp.sol#L7-L16",
+        "id": "433cfa51e6582f9563d3d727dc7b4f88deeb257be460aeea5b0ee9f4bd03af9e",
+        "check": "unchecked-lowlevel",
+        "impact": "Medium",
+        "confidence": "Medium"
       }
     ]
   }

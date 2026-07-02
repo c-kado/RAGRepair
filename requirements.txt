@@ -1,3 +1,7 @@
 pandas
 solc-select
 slither-analyzer
+torch
+numpy
+transformers
+openai
