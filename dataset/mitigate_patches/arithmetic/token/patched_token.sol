@@ -1,23 +1,28 @@
-pragma solidity ^0.4.18;
 
-contract Token {
 
-    mapping(address => uint) balances;
-    uint public totalSupply;
+ pragma solidity ^0.4.18;
 
-    function Token(uint _initialSupply) {
-        balances[msg.sender] = totalSupply = _initialSupply;
-    }
+ contract Token {
 
-    function transfer(address _to, uint _value) public returns (bool) {
-        require(balances[msg.sender] >= _value); 
+   mapping(address => uint) balances;
+   uint public totalSupply;
 
-        balances[msg.sender] -= _value;
-        balances[_to] += _value;
-        return true;
-    }
+   function Token(uint _initialSupply) {
+     balances[msg.sender] = totalSupply = _initialSupply;
+   }
 
-    function balanceOf(address _owner) public constant returns (uint balance) {
-        return balances[_owner];
-    }
-}
+   function transfer(address _to, uint _value) public returns (bool) {
+
+     require((balances[msg.sender] >= _value)); 
+
+     require(balances[msg.sender] - _value >= 0);
+
+     balances[msg.sender] -= _value;
+     balances[_to] += _value;
+     return true;
+   }
+
+   function balanceOf(address _owner) public constant returns (uint balance) {
+     return balances[_owner];
+   }
+ }

@@ -1,0 +1,667 @@
+{
+	"children" : 
+	[
+		{
+			"attributes" : 
+			{
+				"literals" : 
+				[
+					"solidity",
+					"^",
+					"0.4",
+					".2"
+				]
+			},
+			"id" : 105553122885768,
+			"name" : "PragmaDirective",
+			"src" : "2:23:-1"
+		},
+		{
+			"attributes" : 
+			{
+				"fullyImplemented" : true,
+				"isLibrary" : false,
+				"linearizedBaseContracts" : 
+				[
+					140564775322184
+				],
+				"name" : "SimpleDAO"
+			},
+			"children" : 
+			[
+				{
+					"attributes" : 
+					{
+						"name" : "credit",
+						"type" : "mapping(address => uint256)"
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "address"
+									},
+									"id" : 105553131274584,
+									"name" : "ElementaryTypeName",
+									"src" : "59:7:-1"
+								},
+								{
+									"attributes" : 
+									{
+										"name" : "uint"
+									},
+									"id" : 105553131274424,
+									"name" : "ElementaryTypeName",
+									"src" : "70:4:-1"
+								}
+							],
+							"id" : 105553126031480,
+							"name" : "Mapping",
+							"src" : "50:25:-1"
+						}
+					],
+					"id" : 105553149116440,
+					"name" : "VariableDeclaration",
+					"src" : "50:39:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : false,
+						"name" : "donate",
+						"public" : true
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "to",
+										"type" : "address"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "address"
+											},
+											"id" : 105553131274904,
+											"name" : "ElementaryTypeName",
+											"src" : "110:7:-1"
+										}
+									],
+									"id" : 105553149116584,
+									"name" : "VariableDeclaration",
+									"src" : "110:10:-1"
+								}
+							],
+							"id" : 105553126031672,
+							"name" : "ParameterList",
+							"src" : "109:12:-1"
+						},
+						{
+							"children" : [],
+							"id" : 105553126031768,
+							"name" : "ParameterList",
+							"src" : "130:0:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"operator" : "+=",
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "mapping(address => uint256)",
+																"value" : "credit"
+															},
+															"id" : 105553131274984,
+															"name" : "Identifier",
+															"src" : "136:6:-1"
+														},
+														{
+															"attributes" : 
+															{
+																"type" : "address",
+																"value" : "to"
+															},
+															"id" : 105553131275064,
+															"name" : "Identifier",
+															"src" : "143:2:-1"
+														}
+													],
+													"id" : 105553126031864,
+													"name" : "IndexAccess",
+													"src" : "136:10:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"member_name" : "value",
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "msg",
+																"value" : "msg"
+															},
+															"id" : 105553131275144,
+															"name" : "Identifier",
+															"src" : "150:3:-1"
+														}
+													],
+													"id" : 105553126031960,
+													"name" : "MemberAccess",
+													"src" : "150:9:-1"
+												}
+											],
+											"id" : 105553122885880,
+											"name" : "Assignment",
+											"src" : "136:23:-1"
+										}
+									],
+									"id" : 105553126032056,
+									"name" : "ExpressionStatement",
+									"src" : "136:23:-1"
+								}
+							],
+							"id" : 105553122885992,
+							"name" : "Block",
+							"src" : "130:34:-1"
+						}
+					],
+					"id" : 105553137582328,
+					"name" : "FunctionDefinition",
+					"src" : "94:70:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : false,
+						"name" : "withdraw",
+						"public" : true
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "amount",
+										"type" : "uint256"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint"
+											},
+											"id" : 105553131275224,
+											"name" : "ElementaryTypeName",
+											"src" : "186:4:-1"
+										}
+									],
+									"id" : 105553149116728,
+									"name" : "VariableDeclaration",
+									"src" : "186:11:-1"
+								}
+							],
+							"id" : 105553126032344,
+							"name" : "ParameterList",
+							"src" : "185:13:-1"
+						},
+						{
+							"children" : [],
+							"id" : 105553126032248,
+							"name" : "ParameterList",
+							"src" : "199:0:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"operator" : ">=",
+												"type" : "bool"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "mapping(address => uint256)",
+																"value" : "credit"
+															},
+															"id" : 105553131275304,
+															"name" : "Identifier",
+															"src" : "209:6:-1"
+														},
+														{
+															"attributes" : 
+															{
+																"member_name" : "sender",
+																"type" : "address"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"type" : "msg",
+																		"value" : "msg"
+																	},
+																	"id" : 105553131275384,
+																	"name" : "Identifier",
+																	"src" : "216:3:-1"
+																}
+															],
+															"id" : 105553126032440,
+															"name" : "MemberAccess",
+															"src" : "216:10:-1"
+														}
+													],
+													"id" : 105553126032536,
+													"name" : "IndexAccess",
+													"src" : "209:18:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "amount"
+													},
+													"id" : 105553131275464,
+													"name" : "Identifier",
+													"src" : "230:6:-1"
+												}
+											],
+											"id" : 105553122886104,
+											"name" : "BinaryOperation",
+											"src" : "209:27:-1"
+										},
+										{
+											"children" : 
+											[
+												{
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"name" : "res",
+																"type" : "bool"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"name" : "bool"
+																	},
+																	"id" : 105553131275544,
+																	"name" : "ElementaryTypeName",
+																	"src" : "247:4:-1"
+																}
+															],
+															"id" : 105553149116872,
+															"name" : "VariableDeclaration",
+															"src" : "247:8:-1"
+														},
+														{
+															"attributes" : 
+															{
+																"type" : "bool",
+																"type_conversion" : false
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"type" : "function () returns (bool)",
+																		"type_conversion" : false
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"member_name" : "value",
+																				"type" : "function (uint256) returns (function () returns (bool))"
+																			},
+																			"children" : 
+																			[
+																				{
+																					"attributes" : 
+																					{
+																						"member_name" : "call",
+																						"type" : "function () returns (bool)"
+																					},
+																					"children" : 
+																					[
+																						{
+																							"attributes" : 
+																							{
+																								"member_name" : "sender",
+																								"type" : "address"
+																							},
+																							"children" : 
+																							[
+																								{
+																									"attributes" : 
+																									{
+																										"type" : "msg",
+																										"value" : "msg"
+																									},
+																									"id" : 105553131275624,
+																									"name" : "Identifier",
+																									"src" : "258:3:-1"
+																								}
+																							],
+																							"id" : 105553126032632,
+																							"name" : "MemberAccess",
+																							"src" : "258:10:-1"
+																						}
+																					],
+																					"id" : 105553126032152,
+																					"name" : "MemberAccess",
+																					"src" : "258:15:-1"
+																				}
+																			],
+																			"id" : 105553126032728,
+																			"name" : "MemberAccess",
+																			"src" : "258:21:-1"
+																		},
+																		{
+																			"attributes" : 
+																			{
+																				"type" : "uint256",
+																				"value" : "amount"
+																			},
+																			"id" : 105553131275704,
+																			"name" : "Identifier",
+																			"src" : "280:6:-1"
+																		}
+																	],
+																	"id" : 105553119739928,
+																	"name" : "FunctionCall",
+																	"src" : "258:29:-1"
+																}
+															],
+															"id" : 105553119740056,
+															"name" : "FunctionCall",
+															"src" : "258:31:-1"
+														}
+													],
+													"id" : 105553119740184,
+													"name" : "VariableDefinitionStatement",
+													"src" : "247:42:-1"
+												},
+												{
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"operator" : "-=",
+																"type" : "uint256"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"type" : "uint256"
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"type" : "mapping(address => uint256)",
+																				"value" : "credit"
+																			},
+																			"id" : 105553131275784,
+																			"name" : "Identifier",
+																			"src" : "297:6:-1"
+																		},
+																		{
+																			"attributes" : 
+																			{
+																				"member_name" : "sender",
+																				"type" : "address"
+																			},
+																			"children" : 
+																			[
+																				{
+																					"attributes" : 
+																					{
+																						"type" : "msg",
+																						"value" : "msg"
+																					},
+																					"id" : 105553131275864,
+																					"name" : "Identifier",
+																					"src" : "304:3:-1"
+																				}
+																			],
+																			"id" : 105553126032824,
+																			"name" : "MemberAccess",
+																			"src" : "304:10:-1"
+																		}
+																	],
+																	"id" : 105553126032920,
+																	"name" : "IndexAccess",
+																	"src" : "297:18:-1"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"type" : "uint256",
+																		"value" : "amount"
+																	},
+																	"id" : 105553131275944,
+																	"name" : "Identifier",
+																	"src" : "317:6:-1"
+																}
+															],
+															"id" : 105553122886216,
+															"name" : "Assignment",
+															"src" : "297:26:-1"
+														}
+													],
+													"id" : 105553126033016,
+													"name" : "ExpressionStatement",
+													"src" : "297:26:-1"
+												}
+											],
+											"id" : 105553122886328,
+											"name" : "Block",
+											"src" : "238:92:-1"
+										}
+									],
+									"id" : 105553119740312,
+									"name" : "IfStatement",
+									"src" : "205:125:-1"
+								}
+							],
+							"id" : 105553122886440,
+							"name" : "Block",
+							"src" : "199:135:-1"
+						}
+					],
+					"id" : 105553137582552,
+					"name" : "FunctionDefinition",
+					"src" : "168:166:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : false,
+						"name" : "queryCredit",
+						"public" : true
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "to",
+										"type" : "address"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "address"
+											},
+											"id" : 105553131276024,
+											"name" : "ElementaryTypeName",
+											"src" : "359:7:-1"
+										}
+									],
+									"id" : 105553149117016,
+									"name" : "VariableDeclaration",
+									"src" : "359:10:-1"
+								}
+							],
+							"id" : 105553126033112,
+							"name" : "ParameterList",
+							"src" : "358:12:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "",
+										"type" : "uint256"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint"
+											},
+											"id" : 105553131276104,
+											"name" : "ElementaryTypeName",
+											"src" : "380:4:-1"
+										}
+									],
+									"id" : 105553149117160,
+									"name" : "VariableDeclaration",
+									"src" : "380:4:-1"
+								}
+							],
+							"id" : 105553126033208,
+							"name" : "ParameterList",
+							"src" : "379:6:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "mapping(address => uint256)",
+														"value" : "credit"
+													},
+													"id" : 105553131276184,
+													"name" : "Identifier",
+													"src" : "398:6:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "address",
+														"value" : "to"
+													},
+													"id" : 105553131276264,
+													"name" : "Identifier",
+													"src" : "405:2:-1"
+												}
+											],
+											"id" : 105553126033304,
+											"name" : "IndexAccess",
+											"src" : "398:10:-1"
+										}
+									],
+									"id" : 105553126033400,
+									"name" : "Return",
+									"src" : "391:17:-1"
+								}
+							],
+							"id" : 105553122886552,
+							"name" : "Block",
+							"src" : "385:28:-1"
+						}
+					],
+					"id" : 105553137582776,
+					"name" : "FunctionDefinition",
+					"src" : "338:75:-1"
+				}
+			],
+			"id" : 140564775322184,
+			"name" : "ContractDefinition",
+			"src" : "27:388:-1"
+		}
+	],
+	"name" : "SourceUnit"
+}

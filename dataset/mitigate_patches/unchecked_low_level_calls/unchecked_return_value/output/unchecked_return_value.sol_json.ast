@@ -1,0 +1,419 @@
+{
+	"attributes" : 
+	{
+		"absolutePath" : "../dataset/mitigate_patches/unchecked_low_level_calls/unchecked_return_value/unchecked_return_value.sol",
+		"exportedSymbols" : 
+		{
+			"ReturnValue" : 
+			[
+				25
+			]
+		}
+	},
+	"children" : 
+	[
+		{
+			"attributes" : 
+			{
+				"literals" : 
+				[
+					"solidity",
+					"0.4",
+					".25"
+				]
+			},
+			"id" : 1,
+			"name" : "PragmaDirective",
+			"src" : "2:23:0"
+		},
+		{
+			"attributes" : 
+			{
+				"baseContracts" : 
+				[
+					null
+				],
+				"contractDependencies" : 
+				[
+					null
+				],
+				"contractKind" : "contract",
+				"documentation" : null,
+				"fullyImplemented" : true,
+				"linearizedBaseContracts" : 
+				[
+					25
+				],
+				"name" : "ReturnValue",
+				"scope" : 26
+			},
+			"children" : 
+			[
+				{
+					"attributes" : 
+					{
+						"constant" : false,
+						"documentation" : null,
+						"implemented" : true,
+						"isConstructor" : false,
+						"modifiers" : 
+						[
+							null
+						],
+						"name" : "callchecked",
+						"payable" : false,
+						"scope" : 25,
+						"stateMutability" : "nonpayable",
+						"superFunction" : null,
+						"visibility" : "public"
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "callee",
+										"scope" : 13,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "address",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "address",
+												"type" : "address"
+											},
+											"id" : 2,
+											"name" : "ElementaryTypeName",
+											"src" : "74:7:0"
+										}
+									],
+									"id" : 3,
+									"name" : "VariableDeclaration",
+									"src" : "74:14:0"
+								}
+							],
+							"id" : 4,
+							"name" : "ParameterList",
+							"src" : "73:16:0"
+						},
+						{
+							"attributes" : 
+							{
+								"parameters" : 
+								[
+									null
+								]
+							},
+							"children" : [],
+							"id" : 5,
+							"name" : "ParameterList",
+							"src" : "97:0:0"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"isStructConstructorCall" : false,
+												"lValueRequested" : false,
+												"names" : 
+												[
+													null
+												],
+												"type" : "tuple()",
+												"type_conversion" : false
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : 
+														[
+															{
+																"typeIdentifier" : "t_bool",
+																"typeString" : "bool"
+															}
+														],
+														"overloadedDeclarations" : 
+														[
+															43,
+															44
+														],
+														"referencedDeclaration" : 43,
+														"type" : "function (bool) pure",
+														"value" : "require"
+													},
+													"id" : 6,
+													"name" : "Identifier",
+													"src" : "103:7:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"arguments" : 
+														[
+															null
+														],
+														"isConstant" : false,
+														"isLValue" : false,
+														"isPure" : false,
+														"isStructConstructorCall" : false,
+														"lValueRequested" : false,
+														"names" : 
+														[
+															null
+														],
+														"type" : "bool",
+														"type_conversion" : false
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : 
+																[
+																	null
+																],
+																"isConstant" : false,
+																"isLValue" : false,
+																"isPure" : false,
+																"lValueRequested" : false,
+																"member_name" : "call",
+																"referencedDeclaration" : null,
+																"type" : "function () payable returns (bool)"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"overloadedDeclarations" : 
+																		[
+																			null
+																		],
+																		"referencedDeclaration" : 3,
+																		"type" : "address",
+																		"value" : "callee"
+																	},
+																	"id" : 7,
+																	"name" : "Identifier",
+																	"src" : "111:6:0"
+																}
+															],
+															"id" : 8,
+															"name" : "MemberAccess",
+															"src" : "111:11:0"
+														}
+													],
+													"id" : 9,
+													"name" : "FunctionCall",
+													"src" : "111:13:0"
+												}
+											],
+											"id" : 10,
+											"name" : "FunctionCall",
+											"src" : "103:22:0"
+										}
+									],
+									"id" : 11,
+									"name" : "ExpressionStatement",
+									"src" : "103:22:0"
+								}
+							],
+							"id" : 12,
+							"name" : "Block",
+							"src" : "97:33:0"
+						}
+					],
+					"id" : 13,
+					"name" : "FunctionDefinition",
+					"src" : "53:77:0"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : false,
+						"documentation" : null,
+						"implemented" : true,
+						"isConstructor" : false,
+						"modifiers" : 
+						[
+							null
+						],
+						"name" : "callnotchecked",
+						"payable" : false,
+						"scope" : 25,
+						"stateMutability" : "nonpayable",
+						"superFunction" : null,
+						"visibility" : "public"
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "callee",
+										"scope" : 24,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "address",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "address",
+												"type" : "address"
+											},
+											"id" : 14,
+											"name" : "ElementaryTypeName",
+											"src" : "158:7:0"
+										}
+									],
+									"id" : 15,
+									"name" : "VariableDeclaration",
+									"src" : "158:14:0"
+								}
+							],
+							"id" : 16,
+							"name" : "ParameterList",
+							"src" : "157:16:0"
+						},
+						{
+							"attributes" : 
+							{
+								"parameters" : 
+								[
+									null
+								]
+							},
+							"children" : [],
+							"id" : 17,
+							"name" : "ParameterList",
+							"src" : "181:0:0"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"arguments" : 
+												[
+													null
+												],
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"isStructConstructorCall" : false,
+												"lValueRequested" : false,
+												"names" : 
+												[
+													null
+												],
+												"type" : "bool",
+												"type_conversion" : false
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : 
+														[
+															null
+														],
+														"isConstant" : false,
+														"isLValue" : false,
+														"isPure" : false,
+														"lValueRequested" : false,
+														"member_name" : "call",
+														"referencedDeclaration" : null,
+														"type" : "function () payable returns (bool)"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"overloadedDeclarations" : 
+																[
+																	null
+																],
+																"referencedDeclaration" : 15,
+																"type" : "address",
+																"value" : "callee"
+															},
+															"id" : 18,
+															"name" : "Identifier",
+															"src" : "188:6:0"
+														}
+													],
+													"id" : 20,
+													"name" : "MemberAccess",
+													"src" : "188:11:0"
+												}
+											],
+											"id" : 21,
+											"name" : "FunctionCall",
+											"src" : "188:13:0"
+										}
+									],
+									"id" : 22,
+									"name" : "ExpressionStatement",
+									"src" : "188:13:0"
+								}
+							],
+							"id" : 23,
+							"name" : "Block",
+							"src" : "181:25:0"
+						}
+					],
+					"id" : 24,
+					"name" : "FunctionDefinition",
+					"src" : "134:72:0"
+				}
+			],
+			"id" : 25,
+			"name" : "ContractDefinition",
+			"src" : "27:181:0"
+		}
+	],
+	"id" : 26,
+	"name" : "SourceUnit",
+	"src" : "2:207:0"
+}

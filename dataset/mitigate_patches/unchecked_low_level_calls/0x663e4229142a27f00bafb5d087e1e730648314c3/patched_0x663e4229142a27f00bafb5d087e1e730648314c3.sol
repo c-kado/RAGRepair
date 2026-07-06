@@ -425,8 +425,7 @@ contract ERC20 {
 	}
 	delete matron.siringWithId;
 	pregnantPandas--;
-	if(! msg.sender.send(autoBirthFee)){
-	throw;}
+	msg.sender.transfer(autoBirthFee);
 	delete childOwner[_matronId];
 	return kittenId;
 	}
@@ -802,8 +801,7 @@ contract ERC20 {
 	}
 	function withdrawERC20Balance(address _erc20Address, address _to) onlyCLevel external {
 	require(saleAuctionERC20 != address(0));
-	if(! saleAuctionERC20.withdrawERC20Balance(_erc20Address, _to)){
-	throw;}
+	saleAuctionERC20.withdrawERC20Balance(_erc20Address, _to);
 	}
 
 }contract PandaMinting is PandaAuction {
@@ -882,8 +880,7 @@ contract ERC20 {
 	uint256 balance = this.balance;
 	uint256 subtractFees = (pregnantPandas + 1) * autoBirthFee;
 	if(balance > subtractFees){
-	if(! cfoAddress.send(balance - subtractFees)){
-	throw;}
+	cfoAddress.transfer(balance - subtractFees);
 	}
 	}
 

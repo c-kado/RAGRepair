@@ -1,33 +1,38 @@
-pragma solidity ^0.4.25;
 
-contract Wallet {
-    uint[] private bonusCodes;
-    address private owner;
 
-    constructor() public {
-        bonusCodes = new uint[](0);
-        owner = msg.sender;
-    }
+ pragma solidity ^0.4.25;
 
-    function () public payable {
-    }
+ contract Wallet {
+     uint[] private bonusCodes;
+     address private owner;
 
-    function PushBonusCode(uint c) public {
-        bonusCodes.push(c);
-    }
+     constructor() public {
+         bonusCodes = new uint[](0);
+         owner = msg.sender;
+     }
 
-    function PopBonusCode() public {
-        require(bonusCodes.length > 0); 
-        bonusCodes.length--; 
-    }
+     function () public payable {
+     }
 
-    function UpdateBonusCodeAt(uint idx, uint c) public {
-        require(idx < bonusCodes.length);
-        bonusCodes[idx] = c; 
-    }
+     function PushBonusCode(uint c) public {
+         bonusCodes.push(c);
+     }
 
-    function Destroy() public {
-        require(msg.sender == owner);
-        selfdestruct(msg.sender);
-    }
-}
+     function PopBonusCode() public {
+
+         require(0 <= bonusCodes.length); 
+         require((bonusCodes.length >= 1)); 
+
+         bonusCodes.length--; 
+     }
+
+     function UpdateBonusCodeAt(uint idx, uint c) public {
+         require(idx < bonusCodes.length);
+         bonusCodes[idx] = c; 
+     }
+
+     function Destroy() public {
+         require(msg.sender == owner);
+         selfdestruct(msg.sender);
+     }
+ }

@@ -7,19 +7,17 @@ from LLMInterface import GPT
 from retriever import Retriever
 
 
-def get_prompt(rtrv, category, contract):
-    with open(f'../dataset/mitigate_patches/{category}/{contract}/{contract}.sol', 'r') as f:
-        vul_code = f.read()
+def get_prompt(category, contract_code, do_rag=True):
+    rag_inst = 'Reference: Use the repair pattern of VUL_EX and FIX_EX as guide.\n' if do_rag else ''
 
-    system_prompt = textwrap.dedent("""
+    system_prompt = textwrap.dedent(f"""
     You are an expert secure software engineer.
     Task: Fix vulnerability in TARGET.
-    Reference: Use the repair pattern of VUL_EX and FIX_EX as guide.
-    Output: Return only the fixed source code.
+    {rag_inst}Output: Return only the fixed source code.
     """)[1:]
-    user_prompt = f'Fix the {category} vulnerability in TARGET code. [TARGET]{vul_code}'
+    user_prompt = f'Fix the {category} vulnerability in TARGET code. [TARGET]{contract_code}'
 
-    return system_prompt, augumented_prompt
+    return system_prompt, user_prompt 
    
 
 
@@ -55,16 +53,20 @@ def argument_processing(args):
     else:
         raise 
 
-    return model
+    return model, args.category, args.contract
 
 
-def repair(model, category, contract, save_dir='tmp'):
-    
-    rtrv = Retriever()
-    sys_prmpt, usr_prmpt = get_prompt(category, contract)
+def repair(model, category, contract, save_dir='tmp', do_rag=True):
+    with open(f'../dataset/mitigate_patches/{category}/{contract}/{contract}.sol', 'r') as f:
+        vul_code = f.read()
 
-    rtrv.retrieve(args.category, args.contract)
-    usr_prmpt += rtrv.aug_prompt
+    sys_prmpt, usr_prmpt = get_prompt(category, vul_code, do_rag)
+
+    if do_rag:
+        # do_rag == True -> augument prompt
+        rtrv = Retriever()
+        rtrv.retrieve(category, contract)
+        usr_prmpt += rtrv.aug_prompt
 
     with open(f'{save_dir}/prompt.txt', 'w') as f:
         json.dump({'system_prompt': sys_prmpt, 'user_prompt': usr_prmpt}, f, indent=2)
@@ -72,18 +74,18 @@ def repair(model, category, contract, save_dir='tmp'):
 
 
     model.run_inference(sys_prmpt, usr_prmpt) 
-    model.save_output(f'{save_dir}/repair_output.txt')
+    if not os.path.exists(save_dir):
+       os.makedirs(save_dir) 
+    model.save_output(f'{save_dir}/{contract}.sol')
     with open(f'{save_dir}/repair_info.txt', 'w') as f:
         f.write(f'Model: {model.model_id}\n')
         f.write(f'Category: {category}\n')
         f.write(f'Contract: {contract}\n')
-        f.write(f'Nearest: {rtrv.nearest_contract['contract']}\n')
-        f.write(f'Nearest Similarity: {rtrv.nearest_sim}\n')
+        if do_rag:
+            f.write(f'Nearest: {rtrv.nearest_contract['contract']}\n')
+            f.write(f'Nearest Similarity: {rtrv.nearest_sim}\n')
 
 
 if __name__ == '__main__':
-    args = parse_args()
-
-    model = argument_processing(args)
-    repair(model, args.category, args.contract)
+    repair(*argument_processing(parse_args()))
 

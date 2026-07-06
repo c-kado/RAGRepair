@@ -1,0 +1,617 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "redeem",
+            "source_mapping": {
+              "start": 209,
+              "length": 5661,
+              "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+              "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+              "is_dependency": false,
+              "lines": [
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "WhaleGiveaway2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 9252,
+                  "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                  "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "redeem()"
+            }
+          },
+          {
+            "type": "node",
+            "name": "msg.sender.transfer(this.balance)",
+            "source_mapping": {
+              "start": 5708,
+              "length": 33,
+              "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+              "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+              "is_dependency": false,
+              "lines": [
+                23
+              ],
+              "starting_column": 13,
+              "ending_column": 46
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "redeem",
+                "source_mapping": {
+                  "start": 209,
+                  "length": 5661,
+                  "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                  "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "WhaleGiveaway2",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 9252,
+                      "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                      "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        36,
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "redeem()"
+                }
+              }
+            }
+          }
+        ],
+        "description": "WhaleGiveaway2.redeem() (../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol#17-25) sends eth to arbitrary user\n\tDangerous calls:\n\t- msg.sender.transfer(this.balance) (../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol#23)\n",
+        "markdown": "[WhaleGiveaway2.redeem()](../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol#L17-L25) sends eth to arbitrary user\n\tDangerous calls:\n\t- [msg.sender.transfer(this.balance)](../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol#L23)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol#L17-L25",
+        "id": "254e2753bb60455dc25558f9f75d845306fedd89c3e25bfd86236547c6e812db",
+        "check": "arbitrary-send-eth",
+        "impact": "High",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "Command",
+            "source_mapping": {
+              "start": 9123,
+              "length": 155,
+              "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+              "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+              "is_dependency": false,
+              "lines": [
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "WhaleGiveaway2",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 9252,
+                  "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                  "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "Command(address,bytes)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "adr.call.value(msg.value)(data)",
+            "source_mapping": {
+              "start": 9240,
+              "length": 31,
+              "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+              "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+              "is_dependency": false,
+              "lines": [
+                41
+              ],
+              "starting_column": 9,
+              "ending_column": 40
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "Command",
+                "source_mapping": {
+                  "start": 9123,
+                  "length": 155,
+                  "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                  "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "WhaleGiveaway2",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 9252,
+                      "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                      "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        36,
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "Command(address,bytes)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "WhaleGiveaway2.Command(address,bytes) (../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol#35-42) ignores return value by adr.call.value(msg.value)(data) (../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol#41)\n",
+        "markdown": "[WhaleGiveaway2.Command(address,bytes)](../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol#L35-L42) ignores return value by [adr.call.value(msg.value)(data)](../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol#L41)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol#L35-L42",
+        "id": "a8a47897d9ed4b03393c82e641b82393ddadce1109a9abc912f5ba4ba06dbe89",
+        "check": "unchecked-lowlevel",
+        "impact": "Medium",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "adr",
+            "source_mapping": {
+              "start": 9140,
+              "length": 11,
+              "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+              "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+              "is_dependency": false,
+              "lines": [
+                35
+              ],
+              "starting_column": 22,
+              "ending_column": 33
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "Command",
+                "source_mapping": {
+                  "start": 9123,
+                  "length": 155,
+                  "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                  "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "WhaleGiveaway2",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 9252,
+                      "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                      "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        36,
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "Command(address,bytes)"
+                }
+              }
+            }
+          },
+          {
+            "type": "node",
+            "name": "adr.call.value(msg.value)(data)",
+            "source_mapping": {
+              "start": 9240,
+              "length": 31,
+              "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+              "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+              "is_dependency": false,
+              "lines": [
+                41
+              ],
+              "starting_column": 9,
+              "ending_column": 40
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "Command",
+                "source_mapping": {
+                  "start": 9123,
+                  "length": 155,
+                  "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                  "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "WhaleGiveaway2",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 9252,
+                      "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                      "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        36,
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "Command(address,bytes)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "WhaleGiveaway2.Command(address,bytes).adr (../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol#35) lacks a zero-check on :\n\t\t- adr.call.value(msg.value)(data) (../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol#41)\n",
+        "markdown": "[WhaleGiveaway2.Command(address,bytes).adr](../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol#L35) lacks a zero-check on :\n\t\t- [adr.call.value(msg.value)(data)](../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol#L41)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol#L35",
+        "id": "7a222b56a904034c58402ddd5829c30b243b6f37aedc6454643aa5dbc55c8ad5",
+        "check": "missing-zero-check",
+        "impact": "Low",
+        "confidence": "Medium"
+      }
+    ]
+  }
+}

@@ -1,21 +1,28 @@
+contract SmartFix {
+  bool public _locked = false;
+
+  modifier _nonReentrant() {
+    require(!_locked);
+    _locked = true;
+    _;
+    _locked = false;
+  }
+}
+
 pragma solidity ^0.4.24;
 
-contract Reentrancy_bonus{
+contract Reentrancy_bonus is SmartFix {
 
     mapping (address => uint) private userBalances;
     mapping (address => bool) private claimedBonus;
     mapping (address => uint) private rewardsForA;
-    mapping (address => bool) private isWithdrawing;
 
-    function withdrawReward(address recipient) public {
-        require(!isWithdrawing[recipient]);
-        isWithdrawing[recipient] = true;
-
+    function withdrawReward(address recipient) _nonReentrant 
+ public {
         uint amountToWithdraw = rewardsForA[recipient];
         rewardsForA[recipient] = 0;
-        recipient.transfer(amountToWithdraw);
-
-        isWithdrawing[recipient] = false;
+        (bool success, ) = recipient.call.value(amountToWithdraw)("");
+        require(success);
     }
 
     function getFirstWithdrawalBonus(address recipient) public {

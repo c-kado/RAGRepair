@@ -53,7 +53,7 @@ class CodeLlama:
         # self.tokenizer = AutoTOkenizer.from_pretrained(save_directory)
 
 
-    def run_inference(self, system_prompt, task_prompt):
+    def run_inference(self, system_prompt, task_prompt, contract_code):
         prompt = f'<s>[INST] <<SYS>>\n{system_prompt}\n<</SYS>>\n\n{task_prompt}[/INST]'
 
         pipeline = transformers.pipeline(
@@ -76,7 +76,7 @@ class CodeLlama:
             top_p=0.95,
             eos_token_id=self.tokenizer.eos_token_id,
             truncation=True,
-            max_new_tokens=len(self.tokenizer(prompt)['input_ids'])*1.1
+            max_new_tokens=len(self.tokenizer(contract_code)['input_ids'])*1.1
         )
 
         end_dt = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9)))
@@ -134,7 +134,7 @@ class CodeT5p:
         # self.tokenizer = AutoTOkenizer.from_pretrained(save_directory)
 
 
-    def run_inference(self, system_prompt, task_prompt, vul, file, target_version):
+    def run_inference(self, system_prompt, task_prompt, contract_code, vul, file, target_version):
 
         prompt = f'{task_prompt}'
         inputs = tokenizer.encode(prompt, return_tensors="pt").to(device)
@@ -191,7 +191,7 @@ class GPT:
         return
 
 
-    def run_inference(self, system_prompt, task_prompt):
+    def run_inference(self, system_prompt, task_prompt, contract_code=None):
         print(f'Run GPT')
         # self.save_log(f'repair: {vul}/{file}\t{target_version}')
         start_dt = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9)))

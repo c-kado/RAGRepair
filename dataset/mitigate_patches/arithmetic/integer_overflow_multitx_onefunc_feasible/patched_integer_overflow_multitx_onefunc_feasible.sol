@@ -1,3 +1,5 @@
+
+
 pragma solidity ^0.4.23;
 
 contract IntegerOverflowMultiTxOneFuncFeasible {
@@ -10,7 +12,8 @@ contract IntegerOverflowMultiTxOneFuncFeasible {
             return;
         }
 
-        require(input <= count, "Input value exceeds current count");
+        require((count >= input)); 
+
         count -= input;
     }
 }

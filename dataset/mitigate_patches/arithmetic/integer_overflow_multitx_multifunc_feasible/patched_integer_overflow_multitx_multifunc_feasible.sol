@@ -1,3 +1,5 @@
+
+
 pragma solidity ^0.4.23;
 
 contract IntegerOverflowMultiTxMultiFuncFeasible {
@@ -8,9 +10,12 @@ contract IntegerOverflowMultiTxMultiFuncFeasible {
         initialized = 1;
     }
 
-    function run(uint256 input) public {
-        require(initialized == 1, "Contract not initialized");
-        require(count >= input, "Integer underflow");
+    function run(uint256 input) {
+        if (initialized == 0) {
+            return;
+        }
+
+        require((count >= input)); 
 
         count -= input;
     }

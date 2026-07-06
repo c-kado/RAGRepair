@@ -1,6 +1,8 @@
-pragma solidity ^0.4.22;
 
-contract Phishable {
+
+ pragma solidity ^0.4.22;
+
+ contract Phishable {
     address public owner;
 
     constructor (address _owner) {
@@ -10,7 +12,9 @@ contract Phishable {
     function () public payable {} 
 
     function withdrawAll(address _recipient) public {
-        require(msg.sender == owner);
+
+        require(msg.sender == owner); 
+
         _recipient.transfer(this.balance);
     }
 }

@@ -1,0 +1,140 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "solve",
+            "source_mapping": {
+              "start": 198,
+              "length": 129,
+              "filename_relative": "../dataset/mitigate_patches/front_running/FindThisHash/FindThisHash.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/front_running/FindThisHash/FindThisHash.sol",
+              "filename_short": "../dataset/mitigate_patches/front_running/FindThisHash/FindThisHash.sol",
+              "is_dependency": false,
+              "lines": [
+                10,
+                11,
+                12,
+                13,
+                14
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "FindThisHash",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 301,
+                  "filename_relative": "../dataset/mitigate_patches/front_running/FindThisHash/FindThisHash.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/front_running/FindThisHash/FindThisHash.sol",
+                  "filename_short": "../dataset/mitigate_patches/front_running/FindThisHash/FindThisHash.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "solve(string)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "msg.sender.transfer(1000000000000000000000)",
+            "source_mapping": {
+              "start": 289,
+              "length": 31,
+              "filename_relative": "../dataset/mitigate_patches/front_running/FindThisHash/FindThisHash.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/front_running/FindThisHash/FindThisHash.sol",
+              "filename_short": "../dataset/mitigate_patches/front_running/FindThisHash/FindThisHash.sol",
+              "is_dependency": false,
+              "lines": [
+                13
+              ],
+              "starting_column": 9,
+              "ending_column": 40
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "solve",
+                "source_mapping": {
+                  "start": 198,
+                  "length": 129,
+                  "filename_relative": "../dataset/mitigate_patches/front_running/FindThisHash/FindThisHash.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/front_running/FindThisHash/FindThisHash.sol",
+                  "filename_short": "../dataset/mitigate_patches/front_running/FindThisHash/FindThisHash.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    10,
+                    11,
+                    12,
+                    13,
+                    14
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "FindThisHash",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 301,
+                      "filename_relative": "../dataset/mitigate_patches/front_running/FindThisHash/FindThisHash.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/front_running/FindThisHash/FindThisHash.sol",
+                      "filename_short": "../dataset/mitigate_patches/front_running/FindThisHash/FindThisHash.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "solve(string)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "FindThisHash.solve(string) (../dataset/mitigate_patches/front_running/FindThisHash/FindThisHash.sol#10-14) sends eth to arbitrary user\n\tDangerous calls:\n\t- msg.sender.transfer(1000000000000000000000) (../dataset/mitigate_patches/front_running/FindThisHash/FindThisHash.sol#13)\n",
+        "markdown": "[FindThisHash.solve(string)](../dataset/mitigate_patches/front_running/FindThisHash/FindThisHash.sol#L10-L14) sends eth to arbitrary user\n\tDangerous calls:\n\t- [msg.sender.transfer(1000000000000000000000)](../dataset/mitigate_patches/front_running/FindThisHash/FindThisHash.sol#L13)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/front_running/FindThisHash/FindThisHash.sol#L10-L14",
+        "id": "fcf8e03316db2e4603577f01f8c7a17399fb087c5cad2ca4bff8480cb6a32a6f",
+        "check": "arbitrary-send-eth",
+        "impact": "High",
+        "confidence": "Medium"
+      }
+    ]
+  }
+}

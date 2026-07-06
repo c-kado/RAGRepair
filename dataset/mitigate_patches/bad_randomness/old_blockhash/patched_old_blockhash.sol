@@ -2,12 +2,12 @@ pragma solidity ^0.4.24;
 
 contract PredictTheBlockHashChallenge {
 
-    struct Guess {
+    struct guess {
         uint block;
         bytes32 guess;
     }
 
-    mapping(address => Guess) guesses;
+    mapping(address => guess) guesses;
 
     constructor() public payable {
         require(msg.value == 1 ether);
@@ -25,10 +25,10 @@ contract PredictTheBlockHashChallenge {
         require(guesses[msg.sender].block != 0);
         require(block.number > guesses[msg.sender].block);
 
-        bytes32 answer = keccak256(abi.encodePacked(blockhash(guesses[msg.sender].block)));
+        bytes32 answer = blockhash(guesses[msg.sender].block);
 
         guesses[msg.sender].block = 0;
-        if (guesses[msg.sender].guess == answer) {
+        if (answer != 0 && guesses[msg.sender].guess == answer) {
             msg.sender.transfer(2 ether);
         }
     }

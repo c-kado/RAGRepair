@@ -1,0 +1,4738 @@
+{
+	"children" : 
+	[
+		{
+			"attributes" : 
+			{
+				"literals" : 
+				[
+					"solidity",
+					"^",
+					"0.4",
+					".0"
+				]
+			},
+			"id" : 105553144070168,
+			"name" : "PragmaDirective",
+			"src" : "2:23:-1"
+		},
+		{
+			"attributes" : 
+			{
+				"fullyImplemented" : true,
+				"isLibrary" : false,
+				"linearizedBaseContracts" : 
+				[
+					140698908117400
+				],
+				"name" : "Lotto"
+			},
+			"children" : 
+			[
+				{
+					"attributes" : 
+					{
+						"name" : "blocksPerRound",
+						"type" : "uint256"
+					},
+					"children" : 
+					[
+						{
+							"attributes" : 
+							{
+								"name" : "uint"
+							},
+							"id" : 105553135681720,
+							"name" : "ElementaryTypeName",
+							"src" : "51:4:-1"
+						},
+						{
+							"attributes" : 
+							{
+								"hexvalue" : "36383030",
+								"subdenomination" : null,
+								"token" : null,
+								"type" : "int_const 6800",
+								"value" : "6800"
+							},
+							"id" : 105553138840440,
+							"name" : "Literal",
+							"src" : "89:4:-1"
+						}
+					],
+					"id" : 105553119952920,
+					"name" : "VariableDeclaration",
+					"src" : "51:42:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"name" : "ticketPrice",
+						"type" : "uint256"
+					},
+					"children" : 
+					[
+						{
+							"attributes" : 
+							{
+								"name" : "uint"
+							},
+							"id" : 105553135681800,
+							"name" : "ElementaryTypeName",
+							"src" : "101:4:-1"
+						},
+						{
+							"attributes" : 
+							{
+								"hexvalue" : "313030303030303030303030303030303030",
+								"subdenomination" : null,
+								"token" : null,
+								"type" : "int_const 100000000000000000",
+								"value" : "100000000000000000"
+							},
+							"id" : 105553138840632,
+							"name" : "Literal",
+							"src" : "136:18:-1"
+						}
+					],
+					"id" : 105553119953064,
+					"name" : "VariableDeclaration",
+					"src" : "101:53:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"name" : "blockReward",
+						"type" : "uint256"
+					},
+					"children" : 
+					[
+						{
+							"attributes" : 
+							{
+								"name" : "uint"
+							},
+							"id" : 105553135681960,
+							"name" : "ElementaryTypeName",
+							"src" : "162:4:-1"
+						},
+						{
+							"attributes" : 
+							{
+								"hexvalue" : "35303030303030303030303030303030303030",
+								"subdenomination" : null,
+								"token" : null,
+								"type" : "int_const 5000000000000000000",
+								"value" : "5000000000000000000"
+							},
+							"id" : 105553138840920,
+							"name" : "Literal",
+							"src" : "197:19:-1"
+						}
+					],
+					"id" : 105553119953208,
+					"name" : "VariableDeclaration",
+					"src" : "162:54:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : true,
+						"name" : "getBlocksPerRound",
+						"public" : true
+					},
+					"children" : 
+					[
+						{
+							"children" : [],
+							"id" : 105553138840824,
+							"name" : "ParameterList",
+							"src" : "250:2:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "",
+										"type" : "uint256"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint"
+											},
+											"id" : 105553135682040,
+											"name" : "ElementaryTypeName",
+											"src" : "270:4:-1"
+										}
+									],
+									"id" : 105553119953352,
+									"name" : "VariableDeclaration",
+									"src" : "270:4:-1"
+								}
+							],
+							"id" : 105553138841016,
+							"name" : "ParameterList",
+							"src" : "269:6:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"type" : "uint256",
+												"value" : "blocksPerRound"
+											},
+											"id" : 105553135682120,
+											"name" : "Identifier",
+											"src" : "284:14:-1"
+										}
+									],
+									"id" : 105553138841112,
+									"name" : "Return",
+									"src" : "277:21:-1"
+								}
+							],
+							"id" : 105553144070280,
+							"name" : "Block",
+							"src" : "275:26:-1"
+						}
+					],
+					"id" : 105553125196024,
+					"name" : "FunctionDefinition",
+					"src" : "224:77:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : true,
+						"name" : "getTicketPrice",
+						"public" : true
+					},
+					"children" : 
+					[
+						{
+							"children" : [],
+							"id" : 105553138841208,
+							"name" : "ParameterList",
+							"src" : "330:2:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "",
+										"type" : "uint256"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint"
+											},
+											"id" : 105553135682200,
+											"name" : "ElementaryTypeName",
+											"src" : "350:4:-1"
+										}
+									],
+									"id" : 105553119953496,
+									"name" : "VariableDeclaration",
+									"src" : "350:4:-1"
+								}
+							],
+							"id" : 105553138840728,
+							"name" : "ParameterList",
+							"src" : "349:6:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"type" : "uint256",
+												"value" : "ticketPrice"
+											},
+											"id" : 105553135682280,
+											"name" : "Identifier",
+											"src" : "364:11:-1"
+										}
+									],
+									"id" : 105553138841304,
+									"name" : "Return",
+									"src" : "357:18:-1"
+								}
+							],
+							"id" : 105553144070392,
+							"name" : "Block",
+							"src" : "355:23:-1"
+						}
+					],
+					"id" : 105553125196248,
+					"name" : "FunctionDefinition",
+					"src" : "307:71:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"name" : "Round"
+					},
+					"children" : 
+					[
+						{
+							"attributes" : 
+							{
+								"name" : "buyers",
+								"type" : "address[] storage pointer"
+							},
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "address"
+											},
+											"id" : 105553135682360,
+											"name" : "ElementaryTypeName",
+											"src" : "409:7:-1"
+										}
+									],
+									"id" : 105553138841400,
+									"name" : "ArrayTypeName",
+									"src" : "409:9:-1"
+								}
+							],
+							"id" : 105553119953640,
+							"name" : "VariableDeclaration",
+							"src" : "409:16:-1"
+						},
+						{
+							"attributes" : 
+							{
+								"name" : "pot",
+								"type" : "uint256"
+							},
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "uint"
+									},
+									"id" : 105553135682440,
+									"name" : "ElementaryTypeName",
+									"src" : "436:4:-1"
+								}
+							],
+							"id" : 105553119953784,
+							"name" : "VariableDeclaration",
+							"src" : "436:8:-1"
+						},
+						{
+							"attributes" : 
+							{
+								"name" : "ticketsCount",
+								"type" : "uint256"
+							},
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "uint"
+									},
+									"id" : 105553135682520,
+									"name" : "ElementaryTypeName",
+									"src" : "455:4:-1"
+								}
+							],
+							"id" : 105553119953928,
+							"name" : "VariableDeclaration",
+							"src" : "455:17:-1"
+						},
+						{
+							"attributes" : 
+							{
+								"name" : "isCashed",
+								"type" : "mapping(uint256 => bool)"
+							},
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint"
+											},
+											"id" : 105553135682600,
+											"name" : "ElementaryTypeName",
+											"src" : "491:4:-1"
+										},
+										{
+											"attributes" : 
+											{
+												"name" : "bool"
+											},
+											"id" : 105553135682680,
+											"name" : "ElementaryTypeName",
+											"src" : "497:4:-1"
+										}
+									],
+									"id" : 105553138841496,
+									"name" : "Mapping",
+									"src" : "483:19:-1"
+								}
+							],
+							"id" : 105553119954072,
+							"name" : "VariableDeclaration",
+							"src" : "483:28:-1"
+						},
+						{
+							"attributes" : 
+							{
+								"name" : "ticketsCountByBuyer",
+								"type" : "mapping(address => uint256)"
+							},
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "address"
+											},
+											"id" : 105553135682760,
+											"name" : "ElementaryTypeName",
+											"src" : "530:7:-1"
+										},
+										{
+											"attributes" : 
+											{
+												"name" : "uint"
+											},
+											"id" : 105553135682840,
+											"name" : "ElementaryTypeName",
+											"src" : "539:4:-1"
+										}
+									],
+									"id" : 105553138841592,
+									"name" : "Mapping",
+									"src" : "522:22:-1"
+								}
+							],
+							"id" : 105553119954216,
+							"name" : "VariableDeclaration",
+							"src" : "522:42:-1"
+						}
+					],
+					"id" : 105553149313560,
+					"name" : "StructDefinition",
+					"src" : "385:187:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"name" : "rounds",
+						"type" : "mapping(uint256 => struct Round storage ref)"
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "uint"
+									},
+									"id" : 105553135683000,
+									"name" : "ElementaryTypeName",
+									"src" : "586:4:-1"
+								},
+								{
+									"attributes" : 
+									{
+										"name" : "Round"
+									},
+									"id" : 105553138841688,
+									"name" : "UserDefinedTypeName",
+									"src" : "594:5:-1"
+								}
+							],
+							"id" : 105553138841784,
+							"name" : "Mapping",
+							"src" : "578:22:-1"
+						}
+					],
+					"id" : 105553119954360,
+					"name" : "VariableDeclaration",
+					"src" : "578:29:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : true,
+						"name" : "getRoundIndex",
+						"public" : true
+					},
+					"children" : 
+					[
+						{
+							"children" : [],
+							"id" : 105553138841880,
+							"name" : "ParameterList",
+							"src" : "637:2:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "",
+										"type" : "uint256"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint"
+											},
+											"id" : 105553135683080,
+											"name" : "ElementaryTypeName",
+											"src" : "658:4:-1"
+										}
+									],
+									"id" : 105553119954504,
+									"name" : "VariableDeclaration",
+									"src" : "658:4:-1"
+								}
+							],
+							"id" : 105553138841976,
+							"name" : "ParameterList",
+							"src" : "657:6:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"operator" : "/",
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"member_name" : "number",
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "block",
+																"value" : "block"
+															},
+															"id" : 105553135683160,
+															"name" : "Identifier",
+															"src" : "682:5:-1"
+														}
+													],
+													"id" : 105553138842072,
+													"name" : "MemberAccess",
+													"src" : "682:12:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "blocksPerRound"
+													},
+													"id" : 105553135683240,
+													"name" : "Identifier",
+													"src" : "695:14:-1"
+												}
+											],
+											"id" : 105553144070504,
+											"name" : "BinaryOperation",
+											"src" : "682:27:-1"
+										}
+									],
+									"id" : 105553138842168,
+									"name" : "Return",
+									"src" : "675:34:-1"
+								}
+							],
+							"id" : 105553144070616,
+							"name" : "Block",
+							"src" : "663:54:-1"
+						}
+					],
+					"id" : 105553125196472,
+					"name" : "FunctionDefinition",
+					"src" : "615:102:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : true,
+						"name" : "getIsCashed",
+						"public" : true
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "roundIndex",
+										"type" : "uint256"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint"
+											},
+											"id" : 105553135683320,
+											"name" : "ElementaryTypeName",
+											"src" : "745:4:-1"
+										}
+									],
+									"id" : 105553119954648,
+									"name" : "VariableDeclaration",
+									"src" : "745:15:-1"
+								},
+								{
+									"attributes" : 
+									{
+										"name" : "subpotIndex",
+										"type" : "uint256"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint"
+											},
+											"id" : 105553135683400,
+											"name" : "ElementaryTypeName",
+											"src" : "761:4:-1"
+										}
+									],
+									"id" : 105553119954792,
+									"name" : "VariableDeclaration",
+									"src" : "761:16:-1"
+								}
+							],
+							"id" : 105553138842264,
+							"name" : "ParameterList",
+							"src" : "744:34:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "",
+										"type" : "bool"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "bool"
+											},
+											"id" : 105553135683480,
+											"name" : "ElementaryTypeName",
+											"src" : "797:4:-1"
+										}
+									],
+									"id" : 105553119954936,
+									"name" : "VariableDeclaration",
+									"src" : "797:4:-1"
+								}
+							],
+							"id" : 105553138842360,
+							"name" : "ParameterList",
+							"src" : "796:6:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"type" : "bool"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"member_name" : "isCashed",
+														"type" : "mapping(uint256 => bool)"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "struct Round storage ref"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"type" : "mapping(uint256 => struct Round storage ref)",
+																		"value" : "rounds"
+																	},
+																	"id" : 105553135683560,
+																	"name" : "Identifier",
+																	"src" : "821:6:-1"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"type" : "uint256",
+																		"value" : "roundIndex"
+																	},
+																	"id" : 105553135683640,
+																	"name" : "Identifier",
+																	"src" : "828:10:-1"
+																}
+															],
+															"id" : 105553138842456,
+															"name" : "IndexAccess",
+															"src" : "821:18:-1"
+														}
+													],
+													"id" : 105553138842936,
+													"name" : "MemberAccess",
+													"src" : "821:27:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "subpotIndex"
+													},
+													"id" : 105553135683720,
+													"name" : "Identifier",
+													"src" : "849:11:-1"
+												}
+											],
+											"id" : 105553138843032,
+											"name" : "IndexAccess",
+											"src" : "821:40:-1"
+										}
+									],
+									"id" : 105553138842648,
+									"name" : "Return",
+									"src" : "814:47:-1"
+								}
+							],
+							"id" : 105553144070728,
+							"name" : "Block",
+							"src" : "802:67:-1"
+						}
+					],
+					"id" : 105553125196696,
+					"name" : "FunctionDefinition",
+					"src" : "724:145:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : true,
+						"name" : "calculateWinner",
+						"public" : true
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "roundIndex",
+										"type" : "uint256"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint"
+											},
+											"id" : 105553135683800,
+											"name" : "ElementaryTypeName",
+											"src" : "901:4:-1"
+										}
+									],
+									"id" : 105553119955080,
+									"name" : "VariableDeclaration",
+									"src" : "901:15:-1"
+								},
+								{
+									"attributes" : 
+									{
+										"name" : "subpotIndex",
+										"type" : "uint256"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint"
+											},
+											"id" : 105553135683880,
+											"name" : "ElementaryTypeName",
+											"src" : "918:4:-1"
+										}
+									],
+									"id" : 105553119955224,
+									"name" : "VariableDeclaration",
+									"src" : "918:16:-1"
+								}
+							],
+							"id" : 105553138843320,
+							"name" : "ParameterList",
+							"src" : "900:35:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "",
+										"type" : "address"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "address"
+											},
+											"id" : 105553135683960,
+											"name" : "ElementaryTypeName",
+											"src" : "953:7:-1"
+										}
+									],
+									"id" : 105553119955368,
+									"name" : "VariableDeclaration",
+									"src" : "953:7:-1"
+								}
+							],
+							"id" : 105553138843416,
+							"name" : "ParameterList",
+							"src" : "952:9:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "decisionBlockNumber",
+												"type" : "uint256"
+											},
+											"children" : [],
+											"id" : 105553119955512,
+											"name" : "VariableDeclaration",
+											"src" : "973:23:-1"
+										},
+										{
+											"attributes" : 
+											{
+												"type" : "uint256",
+												"type_conversion" : false
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "function (uint256,uint256) returns (uint256)",
+														"value" : "getDecisionBlockNumber"
+													},
+													"id" : 105553135684040,
+													"name" : "Identifier",
+													"src" : "999:22:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "roundIndex"
+													},
+													"id" : 105553135684120,
+													"name" : "Identifier",
+													"src" : "1022:10:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "subpotIndex"
+													},
+													"id" : 105553135684200,
+													"name" : "Identifier",
+													"src" : "1033:11:-1"
+												}
+											],
+											"id" : 105553149313304,
+											"name" : "FunctionCall",
+											"src" : "999:46:-1"
+										}
+									],
+									"id" : 105553149313432,
+									"name" : "VariableDefinitionStatement",
+									"src" : "973:72:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"operator" : ">",
+												"type" : "bool"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "decisionBlockNumber"
+													},
+													"id" : 105553135684280,
+													"name" : "Identifier",
+													"src" : "1060:19:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"member_name" : "number",
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "block",
+																"value" : "block"
+															},
+															"id" : 105553135684360,
+															"name" : "Identifier",
+															"src" : "1080:5:-1"
+														}
+													],
+													"id" : 105553138843512,
+													"name" : "MemberAccess",
+													"src" : "1080:12:-1"
+												}
+											],
+											"id" : 105553144070840,
+											"name" : "BinaryOperation",
+											"src" : "1060:32:-1"
+										},
+										{
+											"children" : [],
+											"id" : 105553138810904,
+											"name" : "Return",
+											"src" : "1107:7:-1"
+										}
+									],
+									"id" : 105553149313688,
+									"name" : "IfStatement",
+									"src" : "1057:57:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "decisionBlockHash",
+												"type" : "uint256"
+											},
+											"children" : [],
+											"id" : 105553119955656,
+											"name" : "VariableDeclaration",
+											"src" : "1125:21:-1"
+										},
+										{
+											"attributes" : 
+											{
+												"type" : "uint256",
+												"type_conversion" : false
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "function (uint256) returns (uint256)",
+														"value" : "getHashOfBlock"
+													},
+													"id" : 105553135684440,
+													"name" : "Identifier",
+													"src" : "1149:14:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "decisionBlockNumber"
+													},
+													"id" : 105553135684520,
+													"name" : "Identifier",
+													"src" : "1164:19:-1"
+												}
+											],
+											"id" : 105553149313816,
+											"name" : "FunctionCall",
+											"src" : "1149:35:-1"
+										}
+									],
+									"id" : 105553149313944,
+									"name" : "VariableDefinitionStatement",
+									"src" : "1125:59:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "winningTicketIndex",
+												"type" : "uint256"
+											},
+											"children" : [],
+											"id" : 105553119955800,
+											"name" : "VariableDeclaration",
+											"src" : "1195:22:-1"
+										},
+										{
+											"attributes" : 
+											{
+												"operator" : "%",
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "decisionBlockHash"
+													},
+													"id" : 105553135684600,
+													"name" : "Identifier",
+													"src" : "1220:17:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"member_name" : "ticketsCount",
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "struct Round storage ref"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"type" : "mapping(uint256 => struct Round storage ref)",
+																		"value" : "rounds"
+																	},
+																	"id" : 105553135684680,
+																	"name" : "Identifier",
+																	"src" : "1238:6:-1"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"type" : "uint256",
+																		"value" : "roundIndex"
+																	},
+																	"id" : 105553135684760,
+																	"name" : "Identifier",
+																	"src" : "1245:10:-1"
+																}
+															],
+															"id" : 105553138811000,
+															"name" : "IndexAccess",
+															"src" : "1238:18:-1"
+														}
+													],
+													"id" : 105553138811096,
+													"name" : "MemberAccess",
+													"src" : "1238:31:-1"
+												}
+											],
+											"id" : 105553144070952,
+											"name" : "BinaryOperation",
+											"src" : "1220:49:-1"
+										}
+									],
+									"id" : 105553149314072,
+									"name" : "VariableDefinitionStatement",
+									"src" : "1195:74:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "ticketIndex",
+												"type" : "uint256"
+											},
+											"children" : [],
+											"id" : 105553119955944,
+											"name" : "VariableDeclaration",
+											"src" : "1281:15:-1"
+										},
+										{
+											"attributes" : 
+											{
+												"type" : "uint256",
+												"type_conversion" : true
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "type(uint256)",
+														"value" : "uint256"
+													},
+													"id" : 105553135684840,
+													"name" : "ElementaryTypenameExpression",
+													"src" : "1299:7:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"hexvalue" : "30",
+														"subdenomination" : null,
+														"token" : null,
+														"type" : "int_const 0",
+														"value" : "0"
+													},
+													"id" : 105553138811192,
+													"name" : "Literal",
+													"src" : "1307:1:-1"
+												}
+											],
+											"id" : 105553149314200,
+											"name" : "FunctionCall",
+											"src" : "1299:10:-1"
+										}
+									],
+									"id" : 105553149314328,
+									"name" : "VariableDefinitionStatement",
+									"src" : "1281:28:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"name" : "buyerIndex",
+														"type" : "uint8"
+													},
+													"children" : [],
+													"id" : 105553119956088,
+													"name" : "VariableDeclaration",
+													"src" : "1325:14:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"hexvalue" : "30",
+														"subdenomination" : null,
+														"token" : null,
+														"type" : "int_const 0",
+														"value" : "0"
+													},
+													"id" : 105553138811288,
+													"name" : "Literal",
+													"src" : "1342:1:-1"
+												}
+											],
+											"id" : 105553149314584,
+											"name" : "VariableDefinitionStatement",
+											"src" : "1325:18:-1"
+										},
+										{
+											"attributes" : 
+											{
+												"operator" : "<",
+												"type" : "bool"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "uint8",
+														"value" : "buyerIndex"
+													},
+													"id" : 105553135684920,
+													"name" : "Identifier",
+													"src" : "1345:10:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"member_name" : "length",
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"member_name" : "buyers",
+																"type" : "address[] storage ref"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"type" : "struct Round storage ref"
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"type" : "mapping(uint256 => struct Round storage ref)",
+																				"value" : "rounds"
+																			},
+																			"id" : 105553135685000,
+																			"name" : "Identifier",
+																			"src" : "1356:6:-1"
+																		},
+																		{
+																			"attributes" : 
+																			{
+																				"type" : "uint256",
+																				"value" : "roundIndex"
+																			},
+																			"id" : 105553135685080,
+																			"name" : "Identifier",
+																			"src" : "1363:10:-1"
+																		}
+																	],
+																	"id" : 105553138811384,
+																	"name" : "IndexAccess",
+																	"src" : "1356:18:-1"
+																}
+															],
+															"id" : 105553138811480,
+															"name" : "MemberAccess",
+															"src" : "1356:25:-1"
+														}
+													],
+													"id" : 105553138811576,
+													"name" : "MemberAccess",
+													"src" : "1356:32:-1"
+												}
+											],
+											"id" : 105553144071064,
+											"name" : "BinaryOperation",
+											"src" : "1345:43:-1"
+										},
+										{
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"operator" : "++",
+														"prefix" : false,
+														"type" : "uint8"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "uint8",
+																"value" : "buyerIndex"
+															},
+															"id" : 105553135685160,
+															"name" : "Identifier",
+															"src" : "1390:10:-1"
+														}
+													],
+													"id" : 105553138811672,
+													"name" : "UnaryOperation",
+													"src" : "1390:12:-1"
+												}
+											],
+											"id" : 105553138811768,
+											"name" : "ExpressionStatement",
+											"src" : "1390:12:-1"
+										},
+										{
+											"children" : 
+											[
+												{
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"name" : "buyer",
+																"type" : "address"
+															},
+															"children" : [],
+															"id" : 105553119956232,
+															"name" : "VariableDeclaration",
+															"src" : "1418:9:-1"
+														},
+														{
+															"attributes" : 
+															{
+																"type" : "address"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"member_name" : "buyers",
+																		"type" : "address[] storage ref"
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"type" : "struct Round storage ref"
+																			},
+																			"children" : 
+																			[
+																				{
+																					"attributes" : 
+																					{
+																						"type" : "mapping(uint256 => struct Round storage ref)",
+																						"value" : "rounds"
+																					},
+																					"id" : 105553135685240,
+																					"name" : "Identifier",
+																					"src" : "1430:6:-1"
+																				},
+																				{
+																					"attributes" : 
+																					{
+																						"type" : "uint256",
+																						"value" : "roundIndex"
+																					},
+																					"id" : 105553135685320,
+																					"name" : "Identifier",
+																					"src" : "1437:10:-1"
+																				}
+																			],
+																			"id" : 105553138811864,
+																			"name" : "IndexAccess",
+																			"src" : "1430:18:-1"
+																		}
+																	],
+																	"id" : 105553138811960,
+																	"name" : "MemberAccess",
+																	"src" : "1430:25:-1"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"type" : "uint8",
+																		"value" : "buyerIndex"
+																	},
+																	"id" : 105553135685400,
+																	"name" : "Identifier",
+																	"src" : "1456:10:-1"
+																}
+															],
+															"id" : 105553138812056,
+															"name" : "IndexAccess",
+															"src" : "1430:37:-1"
+														}
+													],
+													"id" : 105553149314712,
+													"name" : "VariableDefinitionStatement",
+													"src" : "1418:49:-1"
+												},
+												{
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"operator" : "+=",
+																"type" : "uint256"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"type" : "uint256",
+																		"value" : "ticketIndex"
+																	},
+																	"id" : 105553135685480,
+																	"name" : "Identifier",
+																	"src" : "1482:11:-1"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"type" : "uint256"
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"member_name" : "ticketsCountByBuyer",
+																				"type" : "mapping(address => uint256)"
+																			},
+																			"children" : 
+																			[
+																				{
+																					"attributes" : 
+																					{
+																						"type" : "struct Round storage ref"
+																					},
+																					"children" : 
+																					[
+																						{
+																							"attributes" : 
+																							{
+																								"type" : "mapping(uint256 => struct Round storage ref)",
+																								"value" : "rounds"
+																							},
+																							"id" : 105553135685560,
+																							"name" : "Identifier",
+																							"src" : "1495:6:-1"
+																						},
+																						{
+																							"attributes" : 
+																							{
+																								"type" : "uint256",
+																								"value" : "roundIndex"
+																							},
+																							"id" : 105553135685640,
+																							"name" : "Identifier",
+																							"src" : "1502:10:-1"
+																						}
+																					],
+																					"id" : 105553138812152,
+																					"name" : "IndexAccess",
+																					"src" : "1495:18:-1"
+																				}
+																			],
+																			"id" : 105553138812248,
+																			"name" : "MemberAccess",
+																			"src" : "1495:38:-1"
+																		},
+																		{
+																			"attributes" : 
+																			{
+																				"type" : "address",
+																				"value" : "buyer"
+																			},
+																			"id" : 105553135685720,
+																			"name" : "Identifier",
+																			"src" : "1534:5:-1"
+																		}
+																	],
+																	"id" : 105553138812344,
+																	"name" : "IndexAccess",
+																	"src" : "1495:45:-1"
+																}
+															],
+															"id" : 105553144071176,
+															"name" : "Assignment",
+															"src" : "1482:58:-1"
+														}
+													],
+													"id" : 105553138812440,
+													"name" : "ExpressionStatement",
+													"src" : "1482:58:-1"
+												},
+												{
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"operator" : ">",
+																"type" : "bool"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"type" : "uint256",
+																		"value" : "ticketIndex"
+																	},
+																	"id" : 105553135685800,
+																	"name" : "Identifier",
+																	"src" : "1559:11:-1"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"type" : "uint256",
+																		"value" : "winningTicketIndex"
+																	},
+																	"id" : 105553135685880,
+																	"name" : "Identifier",
+																	"src" : "1571:18:-1"
+																}
+															],
+															"id" : 105553144071288,
+															"name" : "BinaryOperation",
+															"src" : "1559:30:-1"
+														},
+														{
+															"children" : 
+															[
+																{
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"type" : "address",
+																				"value" : "buyer"
+																			},
+																			"id" : 105553135685960,
+																			"name" : "Identifier",
+																			"src" : "1616:5:-1"
+																		}
+																	],
+																	"id" : 105553138812536,
+																	"name" : "Return",
+																	"src" : "1609:12:-1"
+																}
+															],
+															"id" : 105553144071400,
+															"name" : "Block",
+															"src" : "1590:47:-1"
+														}
+													],
+													"id" : 105553149314840,
+													"name" : "IfStatement",
+													"src" : "1556:81:-1"
+												}
+											],
+											"id" : 105553144071512,
+											"name" : "Block",
+											"src" : "1403:245:-1"
+										}
+									],
+									"id" : 105553119956376,
+									"name" : "ForStatement",
+									"src" : "1321:327:-1"
+								}
+							],
+							"id" : 105553144071624,
+							"name" : "Block",
+							"src" : "961:694:-1"
+						}
+					],
+					"id" : 105553125196920,
+					"name" : "FunctionDefinition",
+					"src" : "876:779:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : true,
+						"name" : "getDecisionBlockNumber",
+						"public" : true
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "roundIndex",
+										"type" : "uint256"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint"
+											},
+											"id" : 105553135686040,
+											"name" : "ElementaryTypeName",
+											"src" : "1694:4:-1"
+										}
+									],
+									"id" : 105553119956520,
+									"name" : "VariableDeclaration",
+									"src" : "1694:15:-1"
+								},
+								{
+									"attributes" : 
+									{
+										"name" : "subpotIndex",
+										"type" : "uint256"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint"
+											},
+											"id" : 105553135686120,
+											"name" : "ElementaryTypeName",
+											"src" : "1710:4:-1"
+										}
+									],
+									"id" : 105553119956664,
+									"name" : "VariableDeclaration",
+									"src" : "1710:16:-1"
+								}
+							],
+							"id" : 105553138812728,
+							"name" : "ParameterList",
+							"src" : "1693:34:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "",
+										"type" : "uint256"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint"
+											},
+											"id" : 105553135686200,
+											"name" : "ElementaryTypeName",
+											"src" : "1746:4:-1"
+										}
+									],
+									"id" : 105553119956808,
+									"name" : "VariableDeclaration",
+									"src" : "1746:4:-1"
+								}
+							],
+							"id" : 105553138812824,
+							"name" : "ParameterList",
+							"src" : "1745:6:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"operator" : "+",
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"operator" : "*",
+																"type" : "uint256"
+															},
+															"children" : 
+															[
+																{
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"operator" : "+",
+																				"type" : "uint256"
+																			},
+																			"children" : 
+																			[
+																				{
+																					"attributes" : 
+																					{
+																						"type" : "uint256",
+																						"value" : "roundIndex"
+																					},
+																					"id" : 105553135686280,
+																					"name" : "Identifier",
+																					"src" : "1771:10:-1"
+																				},
+																				{
+																					"attributes" : 
+																					{
+																						"hexvalue" : "31",
+																						"subdenomination" : null,
+																						"token" : null,
+																						"type" : "int_const 1",
+																						"value" : "1"
+																					},
+																					"id" : 105553138812920,
+																					"name" : "Literal",
+																					"src" : "1782:1:-1"
+																				}
+																			],
+																			"id" : 105553144071736,
+																			"name" : "BinaryOperation",
+																			"src" : "1771:12:-1"
+																		}
+																	],
+																	"id" : 105553138813016,
+																	"name" : "TupleExpression",
+																	"src" : "1770:14:-1"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"type" : "uint256",
+																		"value" : "blocksPerRound"
+																	},
+																	"id" : 105553135686360,
+																	"name" : "Identifier",
+																	"src" : "1785:14:-1"
+																}
+															],
+															"id" : 105553144071848,
+															"name" : "BinaryOperation",
+															"src" : "1770:29:-1"
+														}
+													],
+													"id" : 105553138813112,
+													"name" : "TupleExpression",
+													"src" : "1769:31:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "subpotIndex"
+													},
+													"id" : 105553135686440,
+													"name" : "Identifier",
+													"src" : "1801:11:-1"
+												}
+											],
+											"id" : 105553144071960,
+											"name" : "BinaryOperation",
+											"src" : "1769:43:-1"
+										}
+									],
+									"id" : 105553138813208,
+									"name" : "Return",
+									"src" : "1762:50:-1"
+								}
+							],
+							"id" : 105553144072072,
+							"name" : "Block",
+							"src" : "1751:69:-1"
+						}
+					],
+					"id" : 105553125197144,
+					"name" : "FunctionDefinition",
+					"src" : "1662:158:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : true,
+						"name" : "getSubpotsCount",
+						"public" : true
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "roundIndex",
+										"type" : "uint256"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint"
+											},
+											"id" : 105553135686520,
+											"name" : "ElementaryTypeName",
+											"src" : "1852:4:-1"
+										}
+									],
+									"id" : 105553119956952,
+									"name" : "VariableDeclaration",
+									"src" : "1852:15:-1"
+								}
+							],
+							"id" : 105553138813304,
+							"name" : "ParameterList",
+							"src" : "1851:17:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "",
+										"type" : "uint256"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint"
+											},
+											"id" : 105553135686600,
+											"name" : "ElementaryTypeName",
+											"src" : "1886:4:-1"
+										}
+									],
+									"id" : 105553119957096,
+									"name" : "VariableDeclaration",
+									"src" : "1886:4:-1"
+								}
+							],
+							"id" : 105553138813400,
+							"name" : "ParameterList",
+							"src" : "1885:6:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "subpotsCount",
+												"type" : "uint256"
+											},
+											"children" : [],
+											"id" : 105553119957240,
+											"name" : "VariableDeclaration",
+											"src" : "1902:16:-1"
+										},
+										{
+											"attributes" : 
+											{
+												"operator" : "/",
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"member_name" : "pot",
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "struct Round storage ref"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"type" : "mapping(uint256 => struct Round storage ref)",
+																		"value" : "rounds"
+																	},
+																	"id" : 105553135686680,
+																	"name" : "Identifier",
+																	"src" : "1921:6:-1"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"type" : "uint256",
+																		"value" : "roundIndex"
+																	},
+																	"id" : 105553135686760,
+																	"name" : "Identifier",
+																	"src" : "1928:10:-1"
+																}
+															],
+															"id" : 105553138813496,
+															"name" : "IndexAccess",
+															"src" : "1921:18:-1"
+														}
+													],
+													"id" : 105553138813592,
+													"name" : "MemberAccess",
+													"src" : "1921:22:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "blockReward"
+													},
+													"id" : 105553135686840,
+													"name" : "Identifier",
+													"src" : "1944:11:-1"
+												}
+											],
+											"id" : 105553144072184,
+											"name" : "BinaryOperation",
+											"src" : "1921:34:-1"
+										}
+									],
+									"id" : 105553149314456,
+									"name" : "VariableDefinitionStatement",
+									"src" : "1902:53:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"operator" : ">",
+												"type" : "bool"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"operator" : "%",
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"member_name" : "pot",
+																"type" : "uint256"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"type" : "struct Round storage ref"
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"type" : "mapping(uint256 => struct Round storage ref)",
+																				"value" : "rounds"
+																			},
+																			"id" : 105553135686920,
+																			"name" : "Identifier",
+																			"src" : "1970:6:-1"
+																		},
+																		{
+																			"attributes" : 
+																			{
+																				"type" : "uint256",
+																				"value" : "roundIndex"
+																			},
+																			"id" : 105553135687000,
+																			"name" : "Identifier",
+																			"src" : "1977:10:-1"
+																		}
+																	],
+																	"id" : 105553138813688,
+																	"name" : "IndexAccess",
+																	"src" : "1970:18:-1"
+																}
+															],
+															"id" : 105553138813784,
+															"name" : "MemberAccess",
+															"src" : "1970:22:-1"
+														},
+														{
+															"attributes" : 
+															{
+																"type" : "uint256",
+																"value" : "blockReward"
+															},
+															"id" : 105553135687080,
+															"name" : "Identifier",
+															"src" : "1993:11:-1"
+														}
+													],
+													"id" : 105553144072296,
+													"name" : "BinaryOperation",
+													"src" : "1970:34:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"hexvalue" : "30",
+														"subdenomination" : null,
+														"token" : null,
+														"type" : "int_const 0",
+														"value" : "0"
+													},
+													"id" : 105553138813880,
+													"name" : "Literal",
+													"src" : "2005:1:-1"
+												}
+											],
+											"id" : 105553144072408,
+											"name" : "BinaryOperation",
+											"src" : "1970:36:-1"
+										},
+										{
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"operator" : "++",
+														"prefix" : false,
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "uint256",
+																"value" : "subpotsCount"
+															},
+															"id" : 105553135687160,
+															"name" : "Identifier",
+															"src" : "2021:12:-1"
+														}
+													],
+													"id" : 105553138813976,
+													"name" : "UnaryOperation",
+													"src" : "2021:14:-1"
+												}
+											],
+											"id" : 105553138814072,
+											"name" : "ExpressionStatement",
+											"src" : "2021:14:-1"
+										}
+									],
+									"id" : 105553149314968,
+									"name" : "IfStatement",
+									"src" : "1967:68:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"type" : "uint256",
+												"value" : "subpotsCount"
+											},
+											"id" : 105553135687240,
+											"name" : "Identifier",
+											"src" : "2054:12:-1"
+										}
+									],
+									"id" : 105553138814168,
+									"name" : "Return",
+									"src" : "2047:19:-1"
+								}
+							],
+							"id" : 105553144072520,
+							"name" : "Block",
+							"src" : "1891:183:-1"
+						}
+					],
+					"id" : 105553125197368,
+					"name" : "FunctionDefinition",
+					"src" : "1827:247:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : true,
+						"name" : "getSubpot",
+						"public" : true
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "roundIndex",
+										"type" : "uint256"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint"
+											},
+											"id" : 105553135687320,
+											"name" : "ElementaryTypeName",
+											"src" : "2100:4:-1"
+										}
+									],
+									"id" : 105553119957384,
+									"name" : "VariableDeclaration",
+									"src" : "2100:15:-1"
+								}
+							],
+							"id" : 105553138814264,
+							"name" : "ParameterList",
+							"src" : "2099:17:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "",
+										"type" : "uint256"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint"
+											},
+											"id" : 105553135687400,
+											"name" : "ElementaryTypeName",
+											"src" : "2134:4:-1"
+										}
+									],
+									"id" : 105553119957528,
+									"name" : "VariableDeclaration",
+									"src" : "2134:4:-1"
+								}
+							],
+							"id" : 105553138814360,
+							"name" : "ParameterList",
+							"src" : "2133:6:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"operator" : "/",
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"member_name" : "pot",
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "struct Round storage ref"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"type" : "mapping(uint256 => struct Round storage ref)",
+																		"value" : "rounds"
+																	},
+																	"id" : 105553135687480,
+																	"name" : "Identifier",
+																	"src" : "2157:6:-1"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"type" : "uint256",
+																		"value" : "roundIndex"
+																	},
+																	"id" : 105553135687560,
+																	"name" : "Identifier",
+																	"src" : "2164:10:-1"
+																}
+															],
+															"id" : 105553138814456,
+															"name" : "IndexAccess",
+															"src" : "2157:18:-1"
+														}
+													],
+													"id" : 105553138814552,
+													"name" : "MemberAccess",
+													"src" : "2157:22:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"type_conversion" : false
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "function (uint256) returns (uint256)",
+																"value" : "getSubpotsCount"
+															},
+															"id" : 105553135687640,
+															"name" : "Identifier",
+															"src" : "2180:15:-1"
+														},
+														{
+															"attributes" : 
+															{
+																"type" : "uint256",
+																"value" : "roundIndex"
+															},
+															"id" : 105553135687720,
+															"name" : "Identifier",
+															"src" : "2196:10:-1"
+														}
+													],
+													"id" : 105553149315096,
+													"name" : "FunctionCall",
+													"src" : "2180:27:-1"
+												}
+											],
+											"id" : 105553144072632,
+											"name" : "BinaryOperation",
+											"src" : "2157:50:-1"
+										}
+									],
+									"id" : 105553138814648,
+									"name" : "Return",
+									"src" : "2150:57:-1"
+								}
+							],
+							"id" : 105553144072744,
+							"name" : "Block",
+							"src" : "2139:76:-1"
+						}
+					],
+					"id" : 105553125197592,
+					"name" : "FunctionDefinition",
+					"src" : "2081:134:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : false,
+						"name" : "cash",
+						"public" : true
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "roundIndex",
+										"type" : "uint256"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint"
+											},
+											"id" : 105553135687800,
+											"name" : "ElementaryTypeName",
+											"src" : "2236:4:-1"
+										}
+									],
+									"id" : 105553119957672,
+									"name" : "VariableDeclaration",
+									"src" : "2236:15:-1"
+								},
+								{
+									"attributes" : 
+									{
+										"name" : "subpotIndex",
+										"type" : "uint256"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint"
+											},
+											"id" : 105553135687880,
+											"name" : "ElementaryTypeName",
+											"src" : "2253:4:-1"
+										}
+									],
+									"id" : 105553119957816,
+									"name" : "VariableDeclaration",
+									"src" : "2253:16:-1"
+								}
+							],
+							"id" : 105553138814744,
+							"name" : "ParameterList",
+							"src" : "2235:35:-1"
+						},
+						{
+							"children" : [],
+							"id" : 105553138814840,
+							"name" : "ParameterList",
+							"src" : "2270:0:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "subpotsCount",
+												"type" : "uint256"
+											},
+											"children" : [],
+											"id" : 105553119957960,
+											"name" : "VariableDeclaration",
+											"src" : "2282:16:-1"
+										},
+										{
+											"attributes" : 
+											{
+												"type" : "uint256",
+												"type_conversion" : false
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "function (uint256) returns (uint256)",
+														"value" : "getSubpotsCount"
+													},
+													"id" : 105553135687960,
+													"name" : "Identifier",
+													"src" : "2301:15:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "roundIndex"
+													},
+													"id" : 105553135688040,
+													"name" : "Identifier",
+													"src" : "2317:10:-1"
+												}
+											],
+											"id" : 105553149315224,
+											"name" : "FunctionCall",
+											"src" : "2301:27:-1"
+										}
+									],
+									"id" : 105553149315352,
+									"name" : "VariableDefinitionStatement",
+									"src" : "2282:46:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"operator" : ">=",
+												"type" : "bool"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "subpotIndex"
+													},
+													"id" : 105553135688120,
+													"name" : "Identifier",
+													"src" : "2343:11:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "subpotsCount"
+													},
+													"id" : 105553135688200,
+													"name" : "Identifier",
+													"src" : "2356:12:-1"
+												}
+											],
+											"id" : 105553144072856,
+											"name" : "BinaryOperation",
+											"src" : "2343:25:-1"
+										},
+										{
+											"children" : [],
+											"id" : 105553138814936,
+											"name" : "Return",
+											"src" : "2383:7:-1"
+										}
+									],
+									"id" : 105553149315480,
+									"name" : "IfStatement",
+									"src" : "2340:50:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "decisionBlockNumber",
+												"type" : "uint256"
+											},
+											"children" : [],
+											"id" : 105553119958104,
+											"name" : "VariableDeclaration",
+											"src" : "2401:23:-1"
+										},
+										{
+											"attributes" : 
+											{
+												"type" : "uint256",
+												"type_conversion" : false
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "function (uint256,uint256) returns (uint256)",
+														"value" : "getDecisionBlockNumber"
+													},
+													"id" : 105553135688280,
+													"name" : "Identifier",
+													"src" : "2427:22:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "roundIndex"
+													},
+													"id" : 105553135688360,
+													"name" : "Identifier",
+													"src" : "2450:10:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "subpotIndex"
+													},
+													"id" : 105553135688440,
+													"name" : "Identifier",
+													"src" : "2461:11:-1"
+												}
+											],
+											"id" : 105553149315608,
+											"name" : "FunctionCall",
+											"src" : "2427:46:-1"
+										}
+									],
+									"id" : 105553149315736,
+									"name" : "VariableDefinitionStatement",
+									"src" : "2401:72:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"operator" : ">",
+												"type" : "bool"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "decisionBlockNumber"
+													},
+													"id" : 105553135688520,
+													"name" : "Identifier",
+													"src" : "2488:19:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"member_name" : "number",
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "block",
+																"value" : "block"
+															},
+															"id" : 105553135688600,
+															"name" : "Identifier",
+															"src" : "2508:5:-1"
+														}
+													],
+													"id" : 105553138815032,
+													"name" : "MemberAccess",
+													"src" : "2508:12:-1"
+												}
+											],
+											"id" : 105553144072968,
+											"name" : "BinaryOperation",
+											"src" : "2488:32:-1"
+										},
+										{
+											"children" : [],
+											"id" : 105553138815128,
+											"name" : "Return",
+											"src" : "2535:7:-1"
+										}
+									],
+									"id" : 105553149315864,
+									"name" : "IfStatement",
+									"src" : "2485:57:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"type" : "bool"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"member_name" : "isCashed",
+														"type" : "mapping(uint256 => bool)"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "struct Round storage ref"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"type" : "mapping(uint256 => struct Round storage ref)",
+																		"value" : "rounds"
+																	},
+																	"id" : 105553135688680,
+																	"name" : "Identifier",
+																	"src" : "2556:6:-1"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"type" : "uint256",
+																		"value" : "roundIndex"
+																	},
+																	"id" : 105553135688760,
+																	"name" : "Identifier",
+																	"src" : "2563:10:-1"
+																}
+															],
+															"id" : 105553138815224,
+															"name" : "IndexAccess",
+															"src" : "2556:18:-1"
+														}
+													],
+													"id" : 105553138815320,
+													"name" : "MemberAccess",
+													"src" : "2556:27:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "subpotIndex"
+													},
+													"id" : 105553135688840,
+													"name" : "Identifier",
+													"src" : "2584:11:-1"
+												}
+											],
+											"id" : 105553138815416,
+											"name" : "IndexAccess",
+											"src" : "2556:40:-1"
+										},
+										{
+											"children" : [],
+											"id" : 105553138815512,
+											"name" : "Return",
+											"src" : "2611:7:-1"
+										}
+									],
+									"id" : 105553149315992,
+									"name" : "IfStatement",
+									"src" : "2553:65:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "winner",
+												"type" : "address"
+											},
+											"children" : [],
+											"id" : 105553119958248,
+											"name" : "VariableDeclaration",
+											"src" : "2629:10:-1"
+										},
+										{
+											"attributes" : 
+											{
+												"type" : "address",
+												"type_conversion" : false
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "function (uint256,uint256) returns (address)",
+														"value" : "calculateWinner"
+													},
+													"id" : 105553135688920,
+													"name" : "Identifier",
+													"src" : "2642:15:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "roundIndex"
+													},
+													"id" : 105553135689000,
+													"name" : "Identifier",
+													"src" : "2658:10:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "subpotIndex"
+													},
+													"id" : 105553135689080,
+													"name" : "Identifier",
+													"src" : "2669:11:-1"
+												}
+											],
+											"id" : 105553149316248,
+											"name" : "FunctionCall",
+											"src" : "2642:39:-1"
+										}
+									],
+									"id" : 105553149316376,
+									"name" : "VariableDefinitionStatement",
+									"src" : "2629:52:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "subpot",
+												"type" : "uint256"
+											},
+											"children" : [],
+											"id" : 105553119958392,
+											"name" : "VariableDeclaration",
+											"src" : "2692:10:-1"
+										},
+										{
+											"attributes" : 
+											{
+												"type" : "uint256",
+												"type_conversion" : false
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "function (uint256) returns (uint256)",
+														"value" : "getSubpot"
+													},
+													"id" : 105553135689160,
+													"name" : "Identifier",
+													"src" : "2705:9:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "roundIndex"
+													},
+													"id" : 105553135689240,
+													"name" : "Identifier",
+													"src" : "2715:10:-1"
+												}
+											],
+											"id" : 105553149316504,
+											"name" : "FunctionCall",
+											"src" : "2705:21:-1"
+										}
+									],
+									"id" : 105553149316632,
+									"name" : "VariableDefinitionStatement",
+									"src" : "2692:34:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"type" : "bool",
+												"type_conversion" : false
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"member_name" : "send",
+														"type" : "function (uint256) returns (bool)"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "address",
+																"value" : "winner"
+															},
+															"id" : 105553135689320,
+															"name" : "Identifier",
+															"src" : "2738:6:-1"
+														}
+													],
+													"id" : 105553138815608,
+													"name" : "MemberAccess",
+													"src" : "2738:11:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "subpot"
+													},
+													"id" : 105553135689480,
+													"name" : "Identifier",
+													"src" : "2750:6:-1"
+												}
+											],
+											"id" : 105553149316760,
+											"name" : "FunctionCall",
+											"src" : "2738:19:-1"
+										}
+									],
+									"id" : 105553138815704,
+									"name" : "ExpressionStatement",
+									"src" : "2738:19:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"operator" : "=",
+												"type" : "bool"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "bool"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"member_name" : "isCashed",
+																"type" : "mapping(uint256 => bool)"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"type" : "struct Round storage ref"
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"type" : "mapping(uint256 => struct Round storage ref)",
+																				"value" : "rounds"
+																			},
+																			"id" : 105553135689400,
+																			"name" : "Identifier",
+																			"src" : "2769:6:-1"
+																		},
+																		{
+																			"attributes" : 
+																			{
+																				"type" : "uint256",
+																				"value" : "roundIndex"
+																			},
+																			"id" : 105553135689560,
+																			"name" : "Identifier",
+																			"src" : "2776:10:-1"
+																		}
+																	],
+																	"id" : 105553138815800,
+																	"name" : "IndexAccess",
+																	"src" : "2769:18:-1"
+																}
+															],
+															"id" : 105553138815896,
+															"name" : "MemberAccess",
+															"src" : "2769:27:-1"
+														},
+														{
+															"attributes" : 
+															{
+																"type" : "uint256",
+																"value" : "subpotIndex"
+															},
+															"id" : 105553135689640,
+															"name" : "Identifier",
+															"src" : "2797:11:-1"
+														}
+													],
+													"id" : 105553138815992,
+													"name" : "IndexAccess",
+													"src" : "2769:40:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"hexvalue" : "74727565",
+														"subdenomination" : null,
+														"token" : "true",
+														"type" : "bool",
+														"value" : "true"
+													},
+													"id" : 105553138816088,
+													"name" : "Literal",
+													"src" : "2812:4:-1"
+												}
+											],
+											"id" : 105553144073080,
+											"name" : "Assignment",
+											"src" : "2769:47:-1"
+										}
+									],
+									"id" : 105553138816184,
+									"name" : "ExpressionStatement",
+									"src" : "2769:47:-1"
+								}
+							],
+							"id" : 105553144073192,
+							"name" : "Block",
+							"src" : "2270:555:-1"
+						}
+					],
+					"id" : 105553125197816,
+					"name" : "FunctionDefinition",
+					"src" : "2222:603:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : true,
+						"name" : "getHashOfBlock",
+						"public" : true
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "blockIndex",
+										"type" : "uint256"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint"
+											},
+											"id" : 105553135689720,
+											"name" : "ElementaryTypeName",
+											"src" : "2856:4:-1"
+										}
+									],
+									"id" : 105553119958680,
+									"name" : "VariableDeclaration",
+									"src" : "2856:15:-1"
+								}
+							],
+							"id" : 105553138816280,
+							"name" : "ParameterList",
+							"src" : "2855:17:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "",
+										"type" : "uint256"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint"
+											},
+											"id" : 105553135689800,
+											"name" : "ElementaryTypeName",
+											"src" : "2890:4:-1"
+										}
+									],
+									"id" : 105553119958824,
+									"name" : "VariableDeclaration",
+									"src" : "2890:4:-1"
+								}
+							],
+							"id" : 105553138816376,
+							"name" : "ParameterList",
+							"src" : "2889:6:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"type" : "uint256",
+												"type_conversion" : true
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "type(uint256)",
+														"value" : "uint"
+													},
+													"id" : 105553135689880,
+													"name" : "ElementaryTypenameExpression",
+													"src" : "2913:4:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "bytes32",
+														"type_conversion" : false
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"member_name" : "blockhash",
+																"type" : "function (uint256) returns (bytes32)"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"type" : "block",
+																		"value" : "block"
+																	},
+																	"id" : 105553135689960,
+																	"name" : "Identifier",
+																	"src" : "2918:5:-1"
+																}
+															],
+															"id" : 105553138816472,
+															"name" : "MemberAccess",
+															"src" : "2918:15:-1"
+														},
+														{
+															"attributes" : 
+															{
+																"type" : "uint256",
+																"value" : "blockIndex"
+															},
+															"id" : 105553135690040,
+															"name" : "Identifier",
+															"src" : "2934:10:-1"
+														}
+													],
+													"id" : 105553149316120,
+													"name" : "FunctionCall",
+													"src" : "2918:27:-1"
+												}
+											],
+											"id" : 105553149316888,
+											"name" : "FunctionCall",
+											"src" : "2913:33:-1"
+										}
+									],
+									"id" : 105553138816568,
+									"name" : "Return",
+									"src" : "2906:40:-1"
+								}
+							],
+							"id" : 105553144073304,
+							"name" : "Block",
+							"src" : "2895:59:-1"
+						}
+					],
+					"id" : 105553125198040,
+					"name" : "FunctionDefinition",
+					"src" : "2832:122:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : true,
+						"name" : "getBuyers",
+						"public" : true
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "roundIndex",
+										"type" : "uint256"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint"
+											},
+											"id" : 105553135690120,
+											"name" : "ElementaryTypeName",
+											"src" : "2980:4:-1"
+										}
+									],
+									"id" : 105553119958968,
+									"name" : "VariableDeclaration",
+									"src" : "2980:15:-1"
+								},
+								{
+									"attributes" : 
+									{
+										"name" : "buyer",
+										"type" : "address"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "address"
+											},
+											"id" : 105553135690200,
+											"name" : "ElementaryTypeName",
+											"src" : "2996:7:-1"
+										}
+									],
+									"id" : 105553119959112,
+									"name" : "VariableDeclaration",
+									"src" : "2996:13:-1"
+								}
+							],
+							"id" : 105553138816664,
+							"name" : "ParameterList",
+							"src" : "2979:31:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "",
+										"type" : "address[] memory"
+									},
+									"children" : 
+									[
+										{
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"name" : "address"
+													},
+													"id" : 105553135690280,
+													"name" : "ElementaryTypeName",
+													"src" : "3029:7:-1"
+												}
+											],
+											"id" : 105553138816760,
+											"name" : "ArrayTypeName",
+											"src" : "3029:9:-1"
+										}
+									],
+									"id" : 105553119959256,
+									"name" : "VariableDeclaration",
+									"src" : "3029:9:-1"
+								}
+							],
+							"id" : 105553138816856,
+							"name" : "ParameterList",
+							"src" : "3028:11:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"member_name" : "buyers",
+												"type" : "address[] storage ref"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "struct Round storage ref"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "mapping(uint256 => struct Round storage ref)",
+																"value" : "rounds"
+															},
+															"id" : 105553135690360,
+															"name" : "Identifier",
+															"src" : "3057:6:-1"
+														},
+														{
+															"attributes" : 
+															{
+																"type" : "uint256",
+																"value" : "roundIndex"
+															},
+															"id" : 105553135690440,
+															"name" : "Identifier",
+															"src" : "3064:10:-1"
+														}
+													],
+													"id" : 105553138816952,
+													"name" : "IndexAccess",
+													"src" : "3057:18:-1"
+												}
+											],
+											"id" : 105553138817048,
+											"name" : "MemberAccess",
+											"src" : "3057:25:-1"
+										}
+									],
+									"id" : 105553138817144,
+									"name" : "Return",
+									"src" : "3050:32:-1"
+								}
+							],
+							"id" : 105553144073416,
+							"name" : "Block",
+							"src" : "3039:51:-1"
+						}
+					],
+					"id" : 105553125198264,
+					"name" : "FunctionDefinition",
+					"src" : "2961:129:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : true,
+						"name" : "getTicketsCountByBuyer",
+						"public" : true
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "roundIndex",
+										"type" : "uint256"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint"
+											},
+											"id" : 105553135690520,
+											"name" : "ElementaryTypeName",
+											"src" : "3129:4:-1"
+										}
+									],
+									"id" : 105553119959400,
+									"name" : "VariableDeclaration",
+									"src" : "3129:15:-1"
+								},
+								{
+									"attributes" : 
+									{
+										"name" : "buyer",
+										"type" : "address"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "address"
+											},
+											"id" : 105553135690600,
+											"name" : "ElementaryTypeName",
+											"src" : "3145:7:-1"
+										}
+									],
+									"id" : 105553119959544,
+									"name" : "VariableDeclaration",
+									"src" : "3145:13:-1"
+								}
+							],
+							"id" : 105553138817240,
+							"name" : "ParameterList",
+							"src" : "3128:31:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "",
+										"type" : "uint256"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint"
+											},
+											"id" : 105553135690680,
+											"name" : "ElementaryTypeName",
+											"src" : "3178:4:-1"
+										}
+									],
+									"id" : 105553119959688,
+									"name" : "VariableDeclaration",
+									"src" : "3178:4:-1"
+								}
+							],
+							"id" : 105553138817336,
+							"name" : "ParameterList",
+							"src" : "3177:6:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"member_name" : "ticketsCountByBuyer",
+														"type" : "mapping(address => uint256)"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "struct Round storage ref"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"type" : "mapping(uint256 => struct Round storage ref)",
+																		"value" : "rounds"
+																	},
+																	"id" : 105553135690760,
+																	"name" : "Identifier",
+																	"src" : "3201:6:-1"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"type" : "uint256",
+																		"value" : "roundIndex"
+																	},
+																	"id" : 105553135690840,
+																	"name" : "Identifier",
+																	"src" : "3208:10:-1"
+																}
+															],
+															"id" : 105553138817432,
+															"name" : "IndexAccess",
+															"src" : "3201:18:-1"
+														}
+													],
+													"id" : 105553138817528,
+													"name" : "MemberAccess",
+													"src" : "3201:38:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "address",
+														"value" : "buyer"
+													},
+													"id" : 105553135690920,
+													"name" : "Identifier",
+													"src" : "3240:5:-1"
+												}
+											],
+											"id" : 105553138817624,
+											"name" : "IndexAccess",
+											"src" : "3201:45:-1"
+										}
+									],
+									"id" : 105553138817720,
+									"name" : "Return",
+									"src" : "3194:52:-1"
+								}
+							],
+							"id" : 105553144073528,
+							"name" : "Block",
+							"src" : "3183:71:-1"
+						}
+					],
+					"id" : 105553125198488,
+					"name" : "FunctionDefinition",
+					"src" : "3097:157:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : true,
+						"name" : "getPot",
+						"public" : true
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "roundIndex",
+										"type" : "uint256"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint"
+											},
+											"id" : 105553135691000,
+											"name" : "ElementaryTypeName",
+											"src" : "3277:4:-1"
+										}
+									],
+									"id" : 105553119959832,
+									"name" : "VariableDeclaration",
+									"src" : "3277:15:-1"
+								}
+							],
+							"id" : 105553138817816,
+							"name" : "ParameterList",
+							"src" : "3276:17:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "",
+										"type" : "uint256"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint"
+											},
+											"id" : 105553135691080,
+											"name" : "ElementaryTypeName",
+											"src" : "3311:4:-1"
+										}
+									],
+									"id" : 105553119959976,
+									"name" : "VariableDeclaration",
+									"src" : "3311:4:-1"
+								}
+							],
+							"id" : 105553138817912,
+							"name" : "ParameterList",
+							"src" : "3310:6:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"member_name" : "pot",
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "struct Round storage ref"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "mapping(uint256 => struct Round storage ref)",
+																"value" : "rounds"
+															},
+															"id" : 105553135691160,
+															"name" : "Identifier",
+															"src" : "3334:6:-1"
+														},
+														{
+															"attributes" : 
+															{
+																"type" : "uint256",
+																"value" : "roundIndex"
+															},
+															"id" : 105553135691240,
+															"name" : "Identifier",
+															"src" : "3341:10:-1"
+														}
+													],
+													"id" : 105553138818008,
+													"name" : "IndexAccess",
+													"src" : "3334:18:-1"
+												}
+											],
+											"id" : 105553138818104,
+											"name" : "MemberAccess",
+											"src" : "3334:22:-1"
+										}
+									],
+									"id" : 105553138818200,
+									"name" : "Return",
+									"src" : "3327:29:-1"
+								}
+							],
+							"id" : 105553144073640,
+							"name" : "Block",
+							"src" : "3316:48:-1"
+						}
+					],
+					"id" : 105553125198712,
+					"name" : "FunctionDefinition",
+					"src" : "3261:103:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : false,
+						"name" : "",
+						"public" : true
+					},
+					"children" : 
+					[
+						{
+							"children" : [],
+							"id" : 105553138818296,
+							"name" : "ParameterList",
+							"src" : "3379:2:-1"
+						},
+						{
+							"children" : [],
+							"id" : 105553138818392,
+							"name" : "ParameterList",
+							"src" : "3382:0:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "roundIndex",
+												"type" : "uint256"
+											},
+											"children" : [],
+											"id" : 105553119960120,
+											"name" : "VariableDeclaration",
+											"src" : "3394:14:-1"
+										},
+										{
+											"attributes" : 
+											{
+												"type" : "uint256",
+												"type_conversion" : false
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "function () returns (uint256)",
+														"value" : "getRoundIndex"
+													},
+													"id" : 105553135691320,
+													"name" : "Identifier",
+													"src" : "3411:13:-1"
+												}
+											],
+											"id" : 105553149317016,
+											"name" : "FunctionCall",
+											"src" : "3411:15:-1"
+										}
+									],
+									"id" : 105553149317144,
+									"name" : "VariableDefinitionStatement",
+									"src" : "3394:32:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "value",
+												"type" : "uint256"
+											},
+											"children" : [],
+											"id" : 105553119960264,
+											"name" : "VariableDeclaration",
+											"src" : "3437:9:-1"
+										},
+										{
+											"attributes" : 
+											{
+												"operator" : "-",
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"member_name" : "value",
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "msg",
+																"value" : "msg"
+															},
+															"id" : 105553135691400,
+															"name" : "Identifier",
+															"src" : "3449:3:-1"
+														}
+													],
+													"id" : 105553138818488,
+													"name" : "MemberAccess",
+													"src" : "3449:9:-1"
+												},
+												{
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"operator" : "%",
+																"type" : "uint256"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"member_name" : "value",
+																		"type" : "uint256"
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"type" : "msg",
+																				"value" : "msg"
+																			},
+																			"id" : 105553135691480,
+																			"name" : "Identifier",
+																			"src" : "3460:3:-1"
+																		}
+																	],
+																	"id" : 105553138818584,
+																	"name" : "MemberAccess",
+																	"src" : "3460:9:-1"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"type" : "uint256",
+																		"value" : "ticketPrice"
+																	},
+																	"id" : 105553135691560,
+																	"name" : "Identifier",
+																	"src" : "3470:11:-1"
+																}
+															],
+															"id" : 105553144073752,
+															"name" : "BinaryOperation",
+															"src" : "3460:21:-1"
+														}
+													],
+													"id" : 105553138818680,
+													"name" : "TupleExpression",
+													"src" : "3459:23:-1"
+												}
+											],
+											"id" : 105553144073864,
+											"name" : "BinaryOperation",
+											"src" : "3449:33:-1"
+										}
+									],
+									"id" : 105553149317272,
+									"name" : "VariableDefinitionStatement",
+									"src" : "3437:45:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"operator" : "==",
+												"type" : "bool"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "value"
+													},
+													"id" : 105553135691640,
+													"name" : "Identifier",
+													"src" : "3497:5:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"hexvalue" : "30",
+														"subdenomination" : null,
+														"token" : null,
+														"type" : "int_const 0",
+														"value" : "0"
+													},
+													"id" : 105553138818776,
+													"name" : "Literal",
+													"src" : "3504:1:-1"
+												}
+											],
+											"id" : 105553144073976,
+											"name" : "BinaryOperation",
+											"src" : "3497:8:-1"
+										},
+										{
+											"children" : [],
+											"id" : 105553138818872,
+											"name" : "Return",
+											"src" : "3507:7:-1"
+										}
+									],
+									"id" : 105553149317400,
+									"name" : "IfStatement",
+									"src" : "3494:20:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"operator" : "<",
+												"type" : "bool"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "value"
+													},
+													"id" : 105553135691720,
+													"name" : "Identifier",
+													"src" : "3528:5:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"member_name" : "value",
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "msg",
+																"value" : "msg"
+															},
+															"id" : 105553135691800,
+															"name" : "Identifier",
+															"src" : "3534:3:-1"
+														}
+													],
+													"id" : 105553138818968,
+													"name" : "MemberAccess",
+													"src" : "3534:9:-1"
+												}
+											],
+											"id" : 105553144074088,
+											"name" : "BinaryOperation",
+											"src" : "3528:15:-1"
+										},
+										{
+											"children" : 
+											[
+												{
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "bool",
+																"type_conversion" : false
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"member_name" : "send",
+																		"type" : "function (uint256) returns (bool)"
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"member_name" : "sender",
+																				"type" : "address"
+																			},
+																			"children" : 
+																			[
+																				{
+																					"attributes" : 
+																					{
+																						"type" : "msg",
+																						"value" : "msg"
+																					},
+																					"id" : 105553135691880,
+																					"name" : "Identifier",
+																					"src" : "3560:3:-1"
+																				}
+																			],
+																			"id" : 105553138819064,
+																			"name" : "MemberAccess",
+																			"src" : "3560:10:-1"
+																		}
+																	],
+																	"id" : 105553138819160,
+																	"name" : "MemberAccess",
+																	"src" : "3560:15:-1"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"operator" : "-",
+																		"type" : "uint256"
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"member_name" : "value",
+																				"type" : "uint256"
+																			},
+																			"children" : 
+																			[
+																				{
+																					"attributes" : 
+																					{
+																						"type" : "msg",
+																						"value" : "msg"
+																					},
+																					"id" : 105553135692120,
+																					"name" : "Identifier",
+																					"src" : "3576:3:-1"
+																				}
+																			],
+																			"id" : 105553138819256,
+																			"name" : "MemberAccess",
+																			"src" : "3576:9:-1"
+																		},
+																		{
+																			"attributes" : 
+																			{
+																				"type" : "uint256",
+																				"value" : "value"
+																			},
+																			"id" : 105553135692200,
+																			"name" : "Identifier",
+																			"src" : "3586:5:-1"
+																		}
+																	],
+																	"id" : 105553144074200,
+																	"name" : "BinaryOperation",
+																	"src" : "3576:15:-1"
+																}
+															],
+															"id" : 105553149317528,
+															"name" : "FunctionCall",
+															"src" : "3560:32:-1"
+														}
+													],
+													"id" : 105553138819352,
+													"name" : "ExpressionStatement",
+													"src" : "3560:32:-1"
+												}
+											],
+											"id" : 105553144074312,
+											"name" : "Block",
+											"src" : "3544:60:-1"
+										}
+									],
+									"id" : 105553149317656,
+									"name" : "IfStatement",
+									"src" : "3525:79:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "ticketsCount",
+												"type" : "uint256"
+											},
+											"children" : [],
+											"id" : 105553119960408,
+											"name" : "VariableDeclaration",
+											"src" : "3615:16:-1"
+										},
+										{
+											"attributes" : 
+											{
+												"operator" : "/",
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "value"
+													},
+													"id" : 105553135691960,
+													"name" : "Identifier",
+													"src" : "3634:5:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "ticketPrice"
+													},
+													"id" : 105553135692040,
+													"name" : "Identifier",
+													"src" : "3640:11:-1"
+												}
+											],
+											"id" : 105553144074424,
+											"name" : "BinaryOperation",
+											"src" : "3634:17:-1"
+										}
+									],
+									"id" : 105553149317784,
+									"name" : "VariableDefinitionStatement",
+									"src" : "3615:36:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"operator" : "+=",
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"member_name" : "ticketsCount",
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "struct Round storage ref"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"type" : "mapping(uint256 => struct Round storage ref)",
+																		"value" : "rounds"
+																	},
+																	"id" : 105553135692280,
+																	"name" : "Identifier",
+																	"src" : "3662:6:-1"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"type" : "uint256",
+																		"value" : "roundIndex"
+																	},
+																	"id" : 105553135692360,
+																	"name" : "Identifier",
+																	"src" : "3669:10:-1"
+																}
+															],
+															"id" : 105553138819448,
+															"name" : "IndexAccess",
+															"src" : "3662:18:-1"
+														}
+													],
+													"id" : 105553138819544,
+													"name" : "MemberAccess",
+													"src" : "3662:31:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "ticketsCount"
+													},
+													"id" : 105553135692440,
+													"name" : "Identifier",
+													"src" : "3695:12:-1"
+												}
+											],
+											"id" : 105553144074536,
+											"name" : "Assignment",
+											"src" : "3662:45:-1"
+										}
+									],
+									"id" : 105553138819640,
+									"name" : "ExpressionStatement",
+									"src" : "3662:45:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"operator" : "==",
+												"type" : "bool"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"member_name" : "ticketsCountByBuyer",
+																"type" : "mapping(address => uint256)"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"type" : "struct Round storage ref"
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"type" : "mapping(uint256 => struct Round storage ref)",
+																				"value" : "rounds"
+																			},
+																			"id" : 105553135692520,
+																			"name" : "Identifier",
+																			"src" : "3722:6:-1"
+																		},
+																		{
+																			"attributes" : 
+																			{
+																				"type" : "uint256",
+																				"value" : "roundIndex"
+																			},
+																			"id" : 105553135692600,
+																			"name" : "Identifier",
+																			"src" : "3729:10:-1"
+																		}
+																	],
+																	"id" : 105553138819736,
+																	"name" : "IndexAccess",
+																	"src" : "3722:18:-1"
+																}
+															],
+															"id" : 105553138819832,
+															"name" : "MemberAccess",
+															"src" : "3722:38:-1"
+														},
+														{
+															"attributes" : 
+															{
+																"member_name" : "sender",
+																"type" : "address"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"type" : "msg",
+																		"value" : "msg"
+																	},
+																	"id" : 105553135692680,
+																	"name" : "Identifier",
+																	"src" : "3761:3:-1"
+																}
+															],
+															"id" : 105553138819928,
+															"name" : "MemberAccess",
+															"src" : "3761:10:-1"
+														}
+													],
+													"id" : 105553138820024,
+													"name" : "IndexAccess",
+													"src" : "3722:50:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"hexvalue" : "30",
+														"subdenomination" : null,
+														"token" : null,
+														"type" : "int_const 0",
+														"value" : "0"
+													},
+													"id" : 105553138820120,
+													"name" : "Literal",
+													"src" : "3774:1:-1"
+												}
+											],
+											"id" : 105553144074648,
+											"name" : "BinaryOperation",
+											"src" : "3722:53:-1"
+										},
+										{
+											"children" : 
+											[
+												{
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"name" : "buyersLength",
+																"type" : "uint256"
+															},
+															"children" : [],
+															"id" : 105553119960552,
+															"name" : "VariableDeclaration",
+															"src" : "3791:16:-1"
+														},
+														{
+															"attributes" : 
+															{
+																"operator" : "++",
+																"prefix" : false,
+																"type" : "uint256"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"member_name" : "length",
+																		"type" : "uint256"
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"member_name" : "buyers",
+																				"type" : "address[] storage ref"
+																			},
+																			"children" : 
+																			[
+																				{
+																					"attributes" : 
+																					{
+																						"type" : "struct Round storage ref"
+																					},
+																					"children" : 
+																					[
+																						{
+																							"attributes" : 
+																							{
+																								"type" : "mapping(uint256 => struct Round storage ref)",
+																								"value" : "rounds"
+																							},
+																							"id" : 105553135692760,
+																							"name" : "Identifier",
+																							"src" : "3810:6:-1"
+																						},
+																						{
+																							"attributes" : 
+																							{
+																								"type" : "uint256",
+																								"value" : "roundIndex"
+																							},
+																							"id" : 105553135692840,
+																							"name" : "Identifier",
+																							"src" : "3817:10:-1"
+																						}
+																					],
+																					"id" : 105553138820216,
+																					"name" : "IndexAccess",
+																					"src" : "3810:18:-1"
+																				}
+																			],
+																			"id" : 105553138820312,
+																			"name" : "MemberAccess",
+																			"src" : "3810:25:-1"
+																		}
+																	],
+																	"id" : 105553138820408,
+																	"name" : "MemberAccess",
+																	"src" : "3810:32:-1"
+																}
+															],
+															"id" : 105553138820504,
+															"name" : "UnaryOperation",
+															"src" : "3810:34:-1"
+														}
+													],
+													"id" : 105553149318040,
+													"name" : "VariableDefinitionStatement",
+													"src" : "3791:53:-1"
+												},
+												{
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"operator" : "=",
+																"type" : "address"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"type" : "address"
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"member_name" : "buyers",
+																				"type" : "address[] storage ref"
+																			},
+																			"children" : 
+																			[
+																				{
+																					"attributes" : 
+																					{
+																						"type" : "struct Round storage ref"
+																					},
+																					"children" : 
+																					[
+																						{
+																							"attributes" : 
+																							{
+																								"type" : "mapping(uint256 => struct Round storage ref)",
+																								"value" : "rounds"
+																							},
+																							"id" : 105553135692920,
+																							"name" : "Identifier",
+																							"src" : "3859:6:-1"
+																						},
+																						{
+																							"attributes" : 
+																							{
+																								"type" : "uint256",
+																								"value" : "roundIndex"
+																							},
+																							"id" : 105553135693000,
+																							"name" : "Identifier",
+																							"src" : "3866:10:-1"
+																						}
+																					],
+																					"id" : 105553138820600,
+																					"name" : "IndexAccess",
+																					"src" : "3859:18:-1"
+																				}
+																			],
+																			"id" : 105553138820696,
+																			"name" : "MemberAccess",
+																			"src" : "3859:25:-1"
+																		},
+																		{
+																			"attributes" : 
+																			{
+																				"type" : "uint256",
+																				"value" : "buyersLength"
+																			},
+																			"id" : 105553135693080,
+																			"name" : "Identifier",
+																			"src" : "3885:12:-1"
+																		}
+																	],
+																	"id" : 105553138820792,
+																	"name" : "IndexAccess",
+																	"src" : "3859:39:-1"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"member_name" : "sender",
+																		"type" : "address"
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"type" : "msg",
+																				"value" : "msg"
+																			},
+																			"id" : 105553135693160,
+																			"name" : "Identifier",
+																			"src" : "3901:3:-1"
+																		}
+																	],
+																	"id" : 105553138820888,
+																	"name" : "MemberAccess",
+																	"src" : "3901:10:-1"
+																}
+															],
+															"id" : 105553144074760,
+															"name" : "Assignment",
+															"src" : "3859:52:-1"
+														}
+													],
+													"id" : 105553138820984,
+													"name" : "ExpressionStatement",
+													"src" : "3859:52:-1"
+												}
+											],
+											"id" : 105553144074872,
+											"name" : "Block",
+											"src" : "3776:147:-1"
+										}
+									],
+									"id" : 105553149318168,
+									"name" : "IfStatement",
+									"src" : "3719:204:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"operator" : "+=",
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"member_name" : "ticketsCountByBuyer",
+																"type" : "mapping(address => uint256)"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"type" : "struct Round storage ref"
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"type" : "mapping(uint256 => struct Round storage ref)",
+																				"value" : "rounds"
+																			},
+																			"id" : 105553135693240,
+																			"name" : "Identifier",
+																			"src" : "3934:6:-1"
+																		},
+																		{
+																			"attributes" : 
+																			{
+																				"type" : "uint256",
+																				"value" : "roundIndex"
+																			},
+																			"id" : 105553135693320,
+																			"name" : "Identifier",
+																			"src" : "3941:10:-1"
+																		}
+																	],
+																	"id" : 105553138821080,
+																	"name" : "IndexAccess",
+																	"src" : "3934:18:-1"
+																}
+															],
+															"id" : 105553138821176,
+															"name" : "MemberAccess",
+															"src" : "3934:38:-1"
+														},
+														{
+															"attributes" : 
+															{
+																"member_name" : "sender",
+																"type" : "address"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"type" : "msg",
+																		"value" : "msg"
+																	},
+																	"id" : 105553135693400,
+																	"name" : "Identifier",
+																	"src" : "3973:3:-1"
+																}
+															],
+															"id" : 105553138821272,
+															"name" : "MemberAccess",
+															"src" : "3973:10:-1"
+														}
+													],
+													"id" : 105553138821368,
+													"name" : "IndexAccess",
+													"src" : "3934:50:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "ticketsCount"
+													},
+													"id" : 105553135693480,
+													"name" : "Identifier",
+													"src" : "3986:12:-1"
+												}
+											],
+											"id" : 105553144074984,
+											"name" : "Assignment",
+											"src" : "3934:64:-1"
+										}
+									],
+									"id" : 105553138821464,
+									"name" : "ExpressionStatement",
+									"src" : "3934:64:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"operator" : "+=",
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"member_name" : "ticketsCount",
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "struct Round storage ref"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"type" : "mapping(uint256 => struct Round storage ref)",
+																		"value" : "rounds"
+																	},
+																	"id" : 105553135693560,
+																	"name" : "Identifier",
+																	"src" : "4009:6:-1"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"type" : "uint256",
+																		"value" : "roundIndex"
+																	},
+																	"id" : 105553135693640,
+																	"name" : "Identifier",
+																	"src" : "4016:10:-1"
+																}
+															],
+															"id" : 105553138821560,
+															"name" : "IndexAccess",
+															"src" : "4009:18:-1"
+														}
+													],
+													"id" : 105553138821656,
+													"name" : "MemberAccess",
+													"src" : "4009:31:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "ticketsCount"
+													},
+													"id" : 105553135693720,
+													"name" : "Identifier",
+													"src" : "4042:12:-1"
+												}
+											],
+											"id" : 105553144075096,
+											"name" : "Assignment",
+											"src" : "4009:45:-1"
+										}
+									],
+									"id" : 105553138821752,
+									"name" : "ExpressionStatement",
+									"src" : "4009:45:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"operator" : "+=",
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"member_name" : "pot",
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "struct Round storage ref"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"type" : "mapping(uint256 => struct Round storage ref)",
+																		"value" : "rounds"
+																	},
+																	"id" : 105553135693800,
+																	"name" : "Identifier",
+																	"src" : "4066:6:-1"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"type" : "uint256",
+																		"value" : "roundIndex"
+																	},
+																	"id" : 105553135693880,
+																	"name" : "Identifier",
+																	"src" : "4073:10:-1"
+																}
+															],
+															"id" : 105553138821848,
+															"name" : "IndexAccess",
+															"src" : "4066:18:-1"
+														}
+													],
+													"id" : 105553138821944,
+													"name" : "MemberAccess",
+													"src" : "4066:22:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "value"
+													},
+													"id" : 105553135693960,
+													"name" : "Identifier",
+													"src" : "4090:5:-1"
+												}
+											],
+											"id" : 105553144075208,
+											"name" : "Assignment",
+											"src" : "4066:29:-1"
+										}
+									],
+									"id" : 105553138822040,
+									"name" : "ExpressionStatement",
+									"src" : "4066:29:-1"
+								}
+							],
+							"id" : 105553144075320,
+							"name" : "Block",
+							"src" : "3382:722:-1"
+						}
+					],
+					"id" : 105553125198936,
+					"name" : "FunctionDefinition",
+					"src" : "3371:733:-1"
+				}
+			],
+			"id" : 140698908117400,
+			"name" : "ContractDefinition",
+			"src" : "28:4080:-1"
+		}
+	],
+	"name" : "SourceUnit"
+}

@@ -13,6 +13,7 @@ contract NameRegistrar {
     mapping(bytes32 => address) public resolve; 
 
     function register(bytes32 _name, address _mappedAddress) public {
+
         NameRecord memory newRecord;
         newRecord.name = _name;
         newRecord.mappedAddress = _mappedAddress;

@@ -1,0 +1,333 @@
+{
+	"children" : 
+	[
+		{
+			"attributes" : 
+			{
+				"literals" : 
+				[
+					"solidity",
+					"^",
+					"0.4",
+					".0"
+				]
+			},
+			"id" : 105553179721752,
+			"name" : "PragmaDirective",
+			"src" : "2:23:-1"
+		},
+		{
+			"attributes" : 
+			{
+				"fullyImplemented" : true,
+				"isLibrary" : false,
+				"linearizedBaseContracts" : 
+				[
+					140195239315352
+				],
+				"name" : "SendBack"
+			},
+			"children" : 
+			[
+				{
+					"attributes" : 
+					{
+						"name" : "userBalances",
+						"type" : "mapping(address => uint256)"
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "address"
+									},
+									"id" : 105553171333784,
+									"name" : "ElementaryTypeName",
+									"src" : "59:7:-1"
+								},
+								{
+									"attributes" : 
+									{
+										"name" : "uint"
+									},
+									"id" : 105553171333704,
+									"name" : "ElementaryTypeName",
+									"src" : "70:4:-1"
+								}
+							],
+							"id" : 105553170297336,
+							"name" : "Mapping",
+							"src" : "50:25:-1"
+						}
+					],
+					"id" : 105553155604504,
+					"name" : "VariableDeclaration",
+					"src" : "50:38:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : false,
+						"name" : "withdrawBalance",
+						"public" : true
+					},
+					"children" : 
+					[
+						{
+							"children" : [],
+							"id" : 105553170297528,
+							"name" : "ParameterList",
+							"src" : "118:2:-1"
+						},
+						{
+							"children" : [],
+							"id" : 105553170297624,
+							"name" : "ParameterList",
+							"src" : "121:0:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "amountToWithdraw",
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"name" : "uint"
+													},
+													"id" : 105553171333464,
+													"name" : "ElementaryTypeName",
+													"src" : "127:4:-1"
+												}
+											],
+											"id" : 105553155604648,
+											"name" : "VariableDeclaration",
+											"src" : "127:21:-1"
+										},
+										{
+											"attributes" : 
+											{
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "mapping(address => uint256)",
+														"value" : "userBalances"
+													},
+													"id" : 105553171334024,
+													"name" : "Identifier",
+													"src" : "151:12:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"member_name" : "sender",
+														"type" : "address"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "msg",
+																"value" : "msg"
+															},
+															"id" : 105553171334104,
+															"name" : "Identifier",
+															"src" : "164:3:-1"
+														}
+													],
+													"id" : 105553170297720,
+													"name" : "MemberAccess",
+													"src" : "164:10:-1"
+												}
+											],
+											"id" : 105553170297816,
+											"name" : "IndexAccess",
+											"src" : "151:24:-1"
+										}
+									],
+									"id" : 105553176576280,
+									"name" : "VariableDefinitionStatement",
+									"src" : "127:48:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"operator" : "=",
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "mapping(address => uint256)",
+																"value" : "userBalances"
+															},
+															"id" : 105553171334184,
+															"name" : "Identifier",
+															"src" : "179:12:-1"
+														},
+														{
+															"attributes" : 
+															{
+																"member_name" : "sender",
+																"type" : "address"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"type" : "msg",
+																		"value" : "msg"
+																	},
+																	"id" : 105553171334264,
+																	"name" : "Identifier",
+																	"src" : "192:3:-1"
+																}
+															],
+															"id" : 105553170297912,
+															"name" : "MemberAccess",
+															"src" : "192:10:-1"
+														}
+													],
+													"id" : 105553170298200,
+													"name" : "IndexAccess",
+													"src" : "179:24:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"hexvalue" : "30",
+														"subdenomination" : null,
+														"token" : null,
+														"type" : "int_const 0",
+														"value" : "0"
+													},
+													"id" : 105553170298104,
+													"name" : "Literal",
+													"src" : "206:1:-1"
+												}
+											],
+											"id" : 105553179721864,
+											"name" : "Assignment",
+											"src" : "179:28:-1"
+										}
+									],
+									"id" : 105553170298296,
+									"name" : "ExpressionStatement",
+									"src" : "179:28:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"type" : "bool",
+												"type_conversion" : false
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"member_name" : "send",
+														"type" : "function (uint256) returns (bool)"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"member_name" : "sender",
+																"type" : "address"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"type" : "msg",
+																		"value" : "msg"
+																	},
+																	"id" : 105553171334344,
+																	"name" : "Identifier",
+																	"src" : "212:3:-1"
+																}
+															],
+															"id" : 105553170298392,
+															"name" : "MemberAccess",
+															"src" : "212:10:-1"
+														}
+													],
+													"id" : 105553170298488,
+													"name" : "MemberAccess",
+													"src" : "212:15:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "amountToWithdraw"
+													},
+													"id" : 105553171334584,
+													"name" : "Identifier",
+													"src" : "228:16:-1"
+												}
+											],
+											"id" : 105553176576408,
+											"name" : "FunctionCall",
+											"src" : "212:33:-1"
+										}
+									],
+									"id" : 105553170298008,
+									"name" : "ExpressionStatement",
+									"src" : "212:33:-1"
+								}
+							],
+							"id" : 105553179721976,
+							"name" : "Block",
+							"src" : "121:128:-1"
+						}
+					],
+					"id" : 105553165041912,
+					"name" : "FunctionDefinition",
+					"src" : "94:155:-1"
+				}
+			],
+			"id" : 140195239315352,
+			"name" : "ContractDefinition",
+			"src" : "26:225:-1"
+		}
+	],
+	"name" : "SourceUnit"
+}

@@ -1,60 +1,95 @@
+
+
 pragma solidity ^0.4.19;
 
-contract BANK_SAFE {
-    mapping (address => uint256) public balances;
-    uint public MinSum;
-    LogFile Log;
-    bool initialized;
+contract BANK_SAFE
+{
+    mapping (address=>uint256) public balances;   
 
-    function SetMinSum(uint _val) public {
-        require(!initialized);
+    uint public MinSum;
+
+    LogFile Log;
+
+    bool intitalized;
+
+    function SetMinSum(uint _val)
+    public
+    {
+        if(intitalized)throw;
         MinSum = _val;
     }
 
-    function SetLogFile(address _log) public {
-        require(!initialized);
+    function SetLogFile(address _log)
+    public
+    {
+        if(intitalized)throw;
         Log = LogFile(_log);
     }
 
-    function Initialized() public {
-        initialized = true;
+    function Initialized()
+    public
+    {
+        intitalized = true;
     }
 
-    function Deposit() public payable {
-        balances[msg.sender] += msg.value;
-        Log.AddMessage(msg.sender, msg.value, "Put");
+    function Deposit()
+    public
+    payable
+    {
+        require(((balances[msg.sender] + msg.value) >= balances[msg.sender])); 
+
+        balances[msg.sender]+= msg.value;
+        Log.AddMessage(msg.sender,msg.value,"Put");
     }
 
-    function Collect(uint _am) public {
-        require(balances[msg.sender] >= MinSum && balances[msg.sender] >= _am);
+    function Collect(uint _am)
+    public
+    payable
+    {
+        if(balances[msg.sender]>=MinSum && balances[msg.sender]>=_am)
+        {
 
-        balances[msg.sender] -= _am;
-        Log.AddMessage(msg.sender, _am, "Collect");
+            balances[msg.sender] = (balances[msg.sender] - _am); 
 
-        require(msg.sender.call.value(_am)());
+            if(msg.sender.call.value(_am)())
+            {
+
+                Log.AddMessage(msg.sender,_am,"Collect");
+            } else {revert (); } 
+
+        }
     }
 
-    function() public payable {
+    function() 
+    public 
+    payable
+    {
         Deposit();
     }
+
 }
 
-contract LogFile {
-    struct Message {
+contract LogFile
+{
+    struct Message
+    {
         address Sender;
-        string Data;
+        string  Data;
         uint Val;
-        uint Time;
+        uint  Time;
     }
 
     Message[] public History;
 
-    function AddMessage(address _adr, uint _val, string _data) public {
-        Message memory newMessage;
-        newMessage.Sender = _adr;
-        newMessage.Time = now;
-        newMessage.Val = _val;
-        newMessage.Data = _data;
-        History.push(newMessage);
+    Message LastMsg;
+
+    function AddMessage(address _adr,uint _val,string _data)
+    public
+    {
+        LastMsg.Sender = _adr;
+        LastMsg.Time = now;
+        LastMsg.Val = _val;
+        LastMsg.Data = _data;
+        History.push(LastMsg);
     }
 }

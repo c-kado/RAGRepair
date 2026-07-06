@@ -1,0 +1,160 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "getTokens",
+            "source_mapping": {
+              "start": 530,
+              "length": 145,
+              "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol",
+              "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol",
+              "is_dependency": false,
+              "lines": [
+                20,
+                21,
+                22,
+                23,
+                24,
+                25
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "EtherGet",
+                "source_mapping": {
+                  "start": 190,
+                  "length": 487,
+                  "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol",
+                  "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "getTokens(uint256,address)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "addr.call.value(0)()",
+            "source_mapping": {
+              "start": 634,
+              "length": 24,
+              "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol",
+              "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol",
+              "is_dependency": false,
+              "lines": [
+                23
+              ],
+              "starting_column": 13,
+              "ending_column": 37
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "getTokens",
+                "source_mapping": {
+                  "start": 530,
+                  "length": 145,
+                  "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol",
+                  "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "EtherGet",
+                    "source_mapping": {
+                      "start": 190,
+                      "length": 487,
+                      "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol",
+                      "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "getTokens(uint256,address)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "EtherGet.getTokens(uint256,address) (../dataset/mitigate_patches/unchecked_low_level_calls/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol#20-25) ignores return value by addr.call.value(0)() (../dataset/mitigate_patches/unchecked_low_level_calls/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol#23)\n",
+        "markdown": "[EtherGet.getTokens(uint256,address)](../dataset/mitigate_patches/unchecked_low_level_calls/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol#L20-L25) ignores return value by [addr.call.value(0)()](../dataset/mitigate_patches/unchecked_low_level_calls/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol#L23)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/unchecked_low_level_calls/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol#L20-L25",
+        "id": "35463457d3e5b2c86555ded0e241feab09121504b609cf63adc5cfa0c0c6ced3",
+        "check": "unchecked-lowlevel",
+        "impact": "Medium",
+        "confidence": "Medium"
+      }
+    ]
+  }
+}

@@ -1,0 +1,525 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "withdrawFunds",
+            "source_mapping": {
+              "start": 303,
+              "length": 388,
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+              "is_dependency": false,
+              "lines": [
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "EtherStore",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 666,
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 3
+                }
+              },
+              "signature": "withdrawFunds(uint256)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "require(bool)(msg.sender.call.value(_weiToWithdraw)())",
+            "source_mapping": {
+              "start": 544,
+              "length": 48,
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+              "is_dependency": false,
+              "lines": [
+                22
+              ],
+              "starting_column": 9,
+              "ending_column": 57
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "withdrawFunds",
+                "source_mapping": {
+                  "start": 303,
+                  "length": 388,
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "EtherStore",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 666,
+                      "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                      "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 3
+                    }
+                  },
+                  "signature": "withdrawFunds(uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "underlying_type": "external_calls"
+            }
+          },
+          {
+            "type": "node",
+            "name": "balances[msg.sender] -= _weiToWithdraw",
+            "source_mapping": {
+              "start": 602,
+              "length": 38,
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+              "is_dependency": false,
+              "lines": [
+                23
+              ],
+              "starting_column": 9,
+              "ending_column": 47
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "withdrawFunds",
+                "source_mapping": {
+                  "start": 303,
+                  "length": 388,
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "EtherStore",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 666,
+                      "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                      "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 3
+                    }
+                  },
+                  "signature": "withdrawFunds(uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "underlying_type": "variables_written",
+              "variable_name": "balances"
+            }
+          },
+          {
+            "type": "node",
+            "name": "lastWithdrawTime[msg.sender] = now",
+            "source_mapping": {
+              "start": 650,
+              "length": 34,
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+              "is_dependency": false,
+              "lines": [
+                24
+              ],
+              "starting_column": 9,
+              "ending_column": 43
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "withdrawFunds",
+                "source_mapping": {
+                  "start": 303,
+                  "length": 388,
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "EtherStore",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 666,
+                      "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                      "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 3
+                    }
+                  },
+                  "signature": "withdrawFunds(uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "underlying_type": "variables_written",
+              "variable_name": "lastWithdrawTime"
+            }
+          }
+        ],
+        "description": "Reentrancy in EtherStore.withdrawFunds(uint256) (../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol#15-25):\n\tExternal calls:\n\t- require(bool)(msg.sender.call.value(_weiToWithdraw)()) (../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol#22)\n\tState variables written after the call(s):\n\t- balances[msg.sender] -= _weiToWithdraw (../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol#23)\n\tEtherStore.balances (../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol#9) can be used in cross function reentrancies:\n\t- EtherStore.depositFunds() (../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol#11-13)\n\t- EtherStore.withdrawFunds(uint256) (../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol#15-25)\n\t- lastWithdrawTime[msg.sender] = now (../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol#24)\n\tEtherStore.lastWithdrawTime (../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol#8) can be used in cross function reentrancies:\n\t- EtherStore.withdrawFunds(uint256) (../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol#15-25)\n",
+        "markdown": "Reentrancy in [EtherStore.withdrawFunds(uint256)](../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol#L15-L25):\n\tExternal calls:\n\t- [require(bool)(msg.sender.call.value(_weiToWithdraw)())](../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol#L22)\n\tState variables written after the call(s):\n\t- [balances[msg.sender] -= _weiToWithdraw](../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol#L23)\n\t[EtherStore.balances](../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol#L9) can be used in cross function reentrancies:\n\t- [EtherStore.depositFunds()](../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol#L11-L13)\n\t- [EtherStore.withdrawFunds(uint256)](../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol#L15-L25)\n\t- [lastWithdrawTime[msg.sender] = now](../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol#L24)\n\t[EtherStore.lastWithdrawTime](../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol#L8) can be used in cross function reentrancies:\n\t- [EtherStore.withdrawFunds(uint256)](../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol#L15-L25)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol#L15-L25",
+        "id": "99158f3ade0f70dca5f97cb87fbad5bd7d436410fe5a02ff4a84e5a435c2fd0d",
+        "check": "reentrancy-eth",
+        "impact": "High",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "withdrawFunds",
+            "source_mapping": {
+              "start": 303,
+              "length": 388,
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+              "is_dependency": false,
+              "lines": [
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "EtherStore",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 666,
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 3
+                }
+              },
+              "signature": "withdrawFunds(uint256)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "require(bool)(now >= lastWithdrawTime[msg.sender] + 604800)",
+            "source_mapping": {
+              "start": 479,
+              "length": 54,
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+              "is_dependency": false,
+              "lines": [
+                20
+              ],
+              "starting_column": 9,
+              "ending_column": 63
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "withdrawFunds",
+                "source_mapping": {
+                  "start": 303,
+                  "length": 388,
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "EtherStore",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 666,
+                      "filename_relative": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                      "filename_short": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 3
+                    }
+                  },
+                  "signature": "withdrawFunds(uint256)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "EtherStore.withdrawFunds(uint256) (../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol#15-25) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool)(now >= lastWithdrawTime[msg.sender] + 604800) (../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol#20)\n",
+        "markdown": "[EtherStore.withdrawFunds(uint256)](../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol#L15-L25) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- [require(bool)(now >= lastWithdrawTime[msg.sender] + 604800)](../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol#L20)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/reentrancy/etherstore/etherstore.sol#L15-L25",
+        "id": "168dfb482843644ff078ddb1873f96bb8a2ef8a079c586edc508e2af83c74cfd",
+        "check": "timestamp",
+        "impact": "Low",
+        "confidence": "Medium"
+      }
+    ]
+  }
+}

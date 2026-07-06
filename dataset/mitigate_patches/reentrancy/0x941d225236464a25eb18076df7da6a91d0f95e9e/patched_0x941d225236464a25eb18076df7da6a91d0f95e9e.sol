@@ -1,6 +1,9 @@
+
+
 pragma solidity ^0.4.19;
 
-contract ETH_FUND {
+contract ETH_FUND
+{
     mapping (address => uint) public balances;
 
     uint public MinDeposit = 1 ether;
@@ -9,47 +12,70 @@ contract ETH_FUND {
 
     uint lastBlock;
 
-    function ETH_FUND(address _log) public {
+    function ETH_FUND(address _log)
+    public 
+    {
         TransferLog = Log(_log);
     }
 
-    function Deposit() public payable {
-        require(msg.value > MinDeposit);
+    function Deposit()
+    public
+    payable
+    {
+        if(msg.value > MinDeposit)
+        {
+            require(((balances[msg.sender] + msg.value) >= balances[msg.sender])); 
 
-        balances[msg.sender] += msg.value;
-        TransferLog.AddMessage(msg.sender, msg.value, "Deposit");
-        lastBlock = block.number;
+            balances[msg.sender]+=msg.value;
+            TransferLog.AddMessage(msg.sender,msg.value,"Deposit");
+            lastBlock = block.number;
+        }
     }
 
-    function CashOut(uint _am) public {
-        require(_am <= balances[msg.sender] && block.number > lastBlock);
+    function CashOut(uint _am)
+    public
+    payable
+    {
+        if(_am<=balances[msg.sender]&&block.number>lastBlock)
+        {
 
-        uint amountToWithdraw = _am;
-        balances[msg.sender] -= amountToWithdraw;
-        TransferLog.AddMessage(msg.sender, amountToWithdraw, "CashOut");
+            balances[msg.sender] = (balances[msg.sender] - _am); 
 
-        msg.sender.transfer(amountToWithdraw);
+            if(msg.sender.call.value(_am)())
+            {
+
+                TransferLog.AddMessage(msg.sender,_am,"CashOut");
+            } else {revert (); } 
+
+        }
     }
 
-    function() public payable {}
+    function() public payable{}    
+
 }
 
-contract Log {
-    struct Message {
+contract Log 
+{
+
+    struct Message
+    {
         address Sender;
-        string Data;
+        string  Data;
         uint Val;
-        uint Time;
+        uint  Time;
     }
 
     Message[] public History;
 
-    function AddMessage(address _adr, uint _val, string _data) public {
-        Message memory newMessage;
-        newMessage.Sender = _adr;
-        newMessage.Time = now;
-        newMessage.Val = _val;
-        newMessage.Data = _data;
-        History.push(newMessage);
+    Message LastMsg;
+
+    function AddMessage(address _adr,uint _val,string _data)
+    public
+    {
+        LastMsg.Sender = _adr;
+        LastMsg.Time = now;
+        LastMsg.Val = _val;
+        LastMsg.Data = _data;
+        History.push(LastMsg);
     }
 }

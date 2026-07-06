@@ -1,0 +1,1335 @@
+{
+	"children" : 
+	[
+		{
+			"attributes" : 
+			{
+				"literals" : 
+				[
+					"solidity",
+					"^",
+					"0.4",
+					".0"
+				]
+			},
+			"id" : 105553137533064,
+			"name" : "PragmaDirective",
+			"src" : "4:23:-1"
+		},
+		{
+			"attributes" : 
+			{
+				"fullyImplemented" : true,
+				"isLibrary" : false,
+				"linearizedBaseContracts" : 
+				[
+					140638040378216
+				],
+				"name" : "Lottery"
+			},
+			"children" : 
+			[
+				{
+					"attributes" : 
+					{
+						"name" : "GetBet"
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "betAmount",
+										"type" : "uint256"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint"
+											},
+											"id" : 105553145921720,
+											"name" : "ElementaryTypeName",
+											"src" : "67:4:-1"
+										}
+									],
+									"id" : 105553130192920,
+									"name" : "VariableDeclaration",
+									"src" : "67:14:-1"
+								},
+								{
+									"attributes" : 
+									{
+										"name" : "blockNumber",
+										"type" : "uint256"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint"
+											},
+											"id" : 105553145921800,
+											"name" : "ElementaryTypeName",
+											"src" : "83:4:-1"
+										}
+									],
+									"id" : 105553130193064,
+									"name" : "VariableDeclaration",
+									"src" : "83:16:-1"
+								},
+								{
+									"attributes" : 
+									{
+										"name" : "won",
+										"type" : "bool"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "bool"
+											},
+											"id" : 105553145921880,
+											"name" : "ElementaryTypeName",
+											"src" : "101:4:-1"
+										}
+									],
+									"id" : 105553130193208,
+									"name" : "VariableDeclaration",
+									"src" : "101:8:-1"
+								}
+							],
+							"id" : 105553144885752,
+							"name" : "ParameterList",
+							"src" : "66:44:-1"
+						}
+					],
+					"id" : 105553124950040,
+					"name" : "EventDefinition",
+					"src" : "54:57:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"name" : "Bet"
+					},
+					"children" : 
+					[
+						{
+							"attributes" : 
+							{
+								"name" : "betAmount",
+								"type" : "uint256"
+							},
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "uint"
+									},
+									"id" : 105553145921960,
+									"name" : "ElementaryTypeName",
+									"src" : "140:4:-1"
+								}
+							],
+							"id" : 105553130193352,
+							"name" : "VariableDeclaration",
+							"src" : "140:14:-1"
+						},
+						{
+							"attributes" : 
+							{
+								"name" : "blockNumber",
+								"type" : "uint256"
+							},
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "uint"
+									},
+									"id" : 105553145922040,
+									"name" : "ElementaryTypeName",
+									"src" : "165:4:-1"
+								}
+							],
+							"id" : 105553130193496,
+							"name" : "VariableDeclaration",
+							"src" : "165:16:-1"
+						},
+						{
+							"attributes" : 
+							{
+								"name" : "won",
+								"type" : "bool"
+							},
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "bool"
+									},
+									"id" : 105553145922120,
+									"name" : "ElementaryTypeName",
+									"src" : "192:4:-1"
+								}
+							],
+							"id" : 105553130193640,
+							"name" : "VariableDeclaration",
+							"src" : "192:8:-1"
+						}
+					],
+					"id" : 105553134387480,
+					"name" : "StructDefinition",
+					"src" : "118:90:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"name" : "organizer",
+						"type" : "address"
+					},
+					"children" : 
+					[
+						{
+							"attributes" : 
+							{
+								"name" : "address"
+							},
+							"id" : 105553145922200,
+							"name" : "ElementaryTypeName",
+							"src" : "215:7:-1"
+						}
+					],
+					"id" : 105553130193784,
+					"name" : "VariableDeclaration",
+					"src" : "215:25:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"name" : "bets",
+						"type" : "struct Bet storage ref[] storage ref"
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "Bet"
+									},
+									"id" : 105553144885944,
+									"name" : "UserDefinedTypeName",
+									"src" : "247:3:-1"
+								}
+							],
+							"id" : 105553144886040,
+							"name" : "ArrayTypeName",
+							"src" : "247:5:-1"
+						}
+					],
+					"id" : 105553130193928,
+					"name" : "VariableDeclaration",
+					"src" : "247:18:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : false,
+						"name" : "Lottery",
+						"public" : true
+					},
+					"children" : 
+					[
+						{
+							"children" : [],
+							"id" : 105553144886136,
+							"name" : "ParameterList",
+							"src" : "289:2:-1"
+						},
+						{
+							"children" : [],
+							"id" : 105553144886232,
+							"name" : "ParameterList",
+							"src" : "292:0:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"operator" : "=",
+												"type" : "address"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "address",
+														"value" : "organizer"
+													},
+													"id" : 105553145922280,
+													"name" : "Identifier",
+													"src" : "303:9:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"member_name" : "sender",
+														"type" : "address"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "msg",
+																"value" : "msg"
+															},
+															"id" : 105553145922360,
+															"name" : "Identifier",
+															"src" : "315:3:-1"
+														}
+													],
+													"id" : 105553144886328,
+													"name" : "MemberAccess",
+													"src" : "315:10:-1"
+												}
+											],
+											"id" : 105553137533176,
+											"name" : "Assignment",
+											"src" : "303:22:-1"
+										}
+									],
+									"id" : 105553144886616,
+									"name" : "ExpressionStatement",
+									"src" : "303:22:-1"
+								}
+							],
+							"id" : 105553137533288,
+							"name" : "Block",
+							"src" : "292:41:-1"
+						}
+					],
+					"id" : 105553122853112,
+					"name" : "FunctionDefinition",
+					"src" : "273:60:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : false,
+						"name" : "",
+						"public" : true
+					},
+					"children" : 
+					[
+						{
+							"children" : [],
+							"id" : 105553144886520,
+							"name" : "ParameterList",
+							"src" : "348:2:-1"
+						},
+						{
+							"children" : [],
+							"id" : 105553144886712,
+							"name" : "ParameterList",
+							"src" : "351:0:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : [],
+									"id" : 105553145922440,
+									"name" : "Throw",
+									"src" : "362:5:-1"
+								}
+							],
+							"id" : 105553137533400,
+							"name" : "Block",
+							"src" : "351:24:-1"
+						}
+					],
+					"id" : 105553122853336,
+					"name" : "FunctionDefinition",
+					"src" : "340:35:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : false,
+						"name" : "makeBet",
+						"public" : true
+					},
+					"children" : 
+					[
+						{
+							"children" : [],
+							"id" : 105553144886808,
+							"name" : "ParameterList",
+							"src" : "398:2:-1"
+						},
+						{
+							"children" : [],
+							"id" : 105553144886904,
+							"name" : "ParameterList",
+							"src" : "401:0:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "won",
+												"type" : "bool"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"name" : "bool"
+													},
+													"id" : 105553145922520,
+													"name" : "ElementaryTypeName",
+													"src" : "413:4:-1"
+												}
+											],
+											"id" : 105553130194072,
+											"name" : "VariableDeclaration",
+											"src" : "413:8:-1"
+										},
+										{
+											"attributes" : 
+											{
+												"operator" : "==",
+												"type" : "bool"
+											},
+											"children" : 
+											[
+												{
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"operator" : "%",
+																"type" : "uint256"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"member_name" : "number",
+																		"type" : "uint256"
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"type" : "block",
+																				"value" : "block"
+																			},
+																			"id" : 105553145922600,
+																			"name" : "Identifier",
+																			"src" : "425:5:-1"
+																		}
+																	],
+																	"id" : 105553144886424,
+																	"name" : "MemberAccess",
+																	"src" : "425:12:-1"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"hexvalue" : "32",
+																		"subdenomination" : null,
+																		"token" : null,
+																		"type" : "int_const 2",
+																		"value" : "2"
+																	},
+																	"id" : 105553144887000,
+																	"name" : "Literal",
+																	"src" : "440:1:-1"
+																}
+															],
+															"id" : 105553137533512,
+															"name" : "BinaryOperation",
+															"src" : "425:16:-1"
+														}
+													],
+													"id" : 105553144887096,
+													"name" : "TupleExpression",
+													"src" : "424:18:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"hexvalue" : "30",
+														"subdenomination" : null,
+														"token" : null,
+														"type" : "int_const 0",
+														"value" : "0"
+													},
+													"id" : 105553144887192,
+													"name" : "Literal",
+													"src" : "446:1:-1"
+												}
+											],
+											"id" : 105553137533624,
+											"name" : "BinaryOperation",
+											"src" : "424:23:-1"
+										}
+									],
+									"id" : 105553134387608,
+									"name" : "VariableDefinitionStatement",
+									"src" : "413:34:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"type" : "uint256",
+												"type_conversion" : false
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"member_name" : "push",
+														"type" : "function (struct Bet storage ref) returns (uint256)"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "struct Bet storage ref[] storage ref",
+																"value" : "bets"
+															},
+															"id" : 105553145922680,
+															"name" : "Identifier",
+															"src" : "459:4:-1"
+														}
+													],
+													"id" : 105553144887288,
+													"name" : "MemberAccess",
+													"src" : "459:9:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "struct Bet memory",
+														"type_conversion" : false
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "type(struct Bet storage pointer)",
+																"value" : "Bet"
+															},
+															"id" : 105553145922840,
+															"name" : "Identifier",
+															"src" : "469:3:-1"
+														},
+														{
+															"attributes" : 
+															{
+																"member_name" : "value",
+																"type" : "uint256"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"type" : "msg",
+																		"value" : "msg"
+																	},
+																	"id" : 105553145922920,
+																	"name" : "Identifier",
+																	"src" : "473:3:-1"
+																}
+															],
+															"id" : 105553144887384,
+															"name" : "MemberAccess",
+															"src" : "473:9:-1"
+														},
+														{
+															"attributes" : 
+															{
+																"member_name" : "number",
+																"type" : "uint256"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"type" : "block",
+																		"value" : "block"
+																	},
+																	"id" : 105553145923000,
+																	"name" : "Identifier",
+																	"src" : "484:5:-1"
+																}
+															],
+															"id" : 105553144887480,
+															"name" : "MemberAccess",
+															"src" : "484:12:-1"
+														},
+														{
+															"attributes" : 
+															{
+																"type" : "bool",
+																"value" : "won"
+															},
+															"id" : 105553145923080,
+															"name" : "Identifier",
+															"src" : "498:3:-1"
+														}
+													],
+													"id" : 105553134387736,
+													"name" : "FunctionCall",
+													"src" : "469:33:-1"
+												}
+											],
+											"id" : 105553134387864,
+											"name" : "FunctionCall",
+											"src" : "459:44:-1"
+										}
+									],
+									"id" : 105553144887576,
+									"name" : "ExpressionStatement",
+									"src" : "459:44:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"type" : "bool",
+												"value" : "won"
+											},
+											"id" : 105553145922760,
+											"name" : "Identifier",
+											"src" : "518:3:-1"
+										},
+										{
+											"children" : 
+											[
+												{
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"operator" : "!",
+																"prefix" : true,
+																"type" : "bool"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"type" : "bool",
+																		"type_conversion" : false
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"member_name" : "send",
+																				"type" : "function (uint256) returns (bool)"
+																			},
+																			"children" : 
+																			[
+																				{
+																					"attributes" : 
+																					{
+																						"member_name" : "sender",
+																						"type" : "address"
+																					},
+																					"children" : 
+																					[
+																						{
+																							"attributes" : 
+																							{
+																								"type" : "msg",
+																								"value" : "msg"
+																							},
+																							"id" : 105553145923160,
+																							"name" : "Identifier",
+																							"src" : "542:3:-1"
+																						}
+																					],
+																					"id" : 105553144887672,
+																					"name" : "MemberAccess",
+																					"src" : "542:10:-1"
+																				}
+																			],
+																			"id" : 105553144887768,
+																			"name" : "MemberAccess",
+																			"src" : "542:15:-1"
+																		},
+																		{
+																			"attributes" : 
+																			{
+																				"member_name" : "value",
+																				"type" : "uint256"
+																			},
+																			"children" : 
+																			[
+																				{
+																					"attributes" : 
+																					{
+																						"type" : "msg",
+																						"value" : "msg"
+																					},
+																					"id" : 105553145923240,
+																					"name" : "Identifier",
+																					"src" : "558:3:-1"
+																				}
+																			],
+																			"id" : 105553144887864,
+																			"name" : "MemberAccess",
+																			"src" : "558:9:-1"
+																		}
+																	],
+																	"id" : 105553134387992,
+																	"name" : "FunctionCall",
+																	"src" : "542:26:-1"
+																}
+															],
+															"id" : 105553144887960,
+															"name" : "UnaryOperation",
+															"src" : "541:27:-1"
+														},
+														{
+															"children" : 
+															[
+																{
+																	"children" : [],
+																	"id" : 105553145923320,
+																	"name" : "Throw",
+																	"src" : "590:5:-1"
+																}
+															],
+															"id" : 105553137533736,
+															"name" : "Block",
+															"src" : "570:41:-1"
+														}
+													],
+													"id" : 105553134388120,
+													"name" : "IfStatement",
+													"src" : "538:73:-1"
+												}
+											],
+											"id" : 105553137533848,
+											"name" : "Block",
+											"src" : "523:99:-1"
+										}
+									],
+									"id" : 105553134388248,
+									"name" : "IfStatement",
+									"src" : "515:107:-1"
+								}
+							],
+							"id" : 105553137533960,
+							"name" : "Block",
+							"src" : "401:228:-1"
+						}
+					],
+					"id" : 105553122853560,
+					"name" : "FunctionDefinition",
+					"src" : "382:247:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : false,
+						"name" : "getBets",
+						"public" : true
+					},
+					"children" : 
+					[
+						{
+							"children" : [],
+							"id" : 105553144888056,
+							"name" : "ParameterList",
+							"src" : "652:2:-1"
+						},
+						{
+							"children" : [],
+							"id" : 105553144888152,
+							"name" : "ParameterList",
+							"src" : "655:0:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"operator" : "!=",
+												"type" : "bool"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"member_name" : "sender",
+														"type" : "address"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "msg",
+																"value" : "msg"
+															},
+															"id" : 105553145923400,
+															"name" : "Identifier",
+															"src" : "669:3:-1"
+														}
+													],
+													"id" : 105553144888632,
+													"name" : "MemberAccess",
+													"src" : "669:10:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "address",
+														"value" : "organizer"
+													},
+													"id" : 105553145923480,
+													"name" : "Identifier",
+													"src" : "683:9:-1"
+												}
+											],
+											"id" : 105553137534072,
+											"name" : "BinaryOperation",
+											"src" : "669:23:-1"
+										},
+										{
+											"children" : 
+											[
+												{
+													"children" : [],
+													"id" : 105553145923560,
+													"name" : "Throw",
+													"src" : "696:5:-1"
+												}
+											],
+											"id" : 105553137534184,
+											"name" : "Block",
+											"src" : "694:10:-1"
+										}
+									],
+									"id" : 105553134388376,
+									"name" : "IfStatement",
+									"src" : "666:38:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"name" : "i",
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"name" : "uint"
+															},
+															"id" : 105553145923640,
+															"name" : "ElementaryTypeName",
+															"src" : "720:4:-1"
+														}
+													],
+													"id" : 105553130194216,
+													"name" : "VariableDeclaration",
+													"src" : "720:6:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"hexvalue" : "30",
+														"subdenomination" : null,
+														"token" : null,
+														"type" : "int_const 0",
+														"value" : "0"
+													},
+													"id" : 105553144888728,
+													"name" : "Literal",
+													"src" : "729:1:-1"
+												}
+											],
+											"id" : 105553134388504,
+											"name" : "VariableDefinitionStatement",
+											"src" : "720:10:-1"
+										},
+										{
+											"attributes" : 
+											{
+												"operator" : "<",
+												"type" : "bool"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "uint256",
+														"value" : "i"
+													},
+													"id" : 105553145923720,
+													"name" : "Identifier",
+													"src" : "732:1:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"member_name" : "length",
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "struct Bet storage ref[] storage ref",
+																"value" : "bets"
+															},
+															"id" : 105553145923800,
+															"name" : "Identifier",
+															"src" : "736:4:-1"
+														}
+													],
+													"id" : 105553144888824,
+													"name" : "MemberAccess",
+													"src" : "736:11:-1"
+												}
+											],
+											"id" : 105553137534296,
+											"name" : "BinaryOperation",
+											"src" : "732:15:-1"
+										},
+										{
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"operator" : "++",
+														"prefix" : false,
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "uint256",
+																"value" : "i"
+															},
+															"id" : 105553145923880,
+															"name" : "Identifier",
+															"src" : "749:1:-1"
+														}
+													],
+													"id" : 105553144888920,
+													"name" : "UnaryOperation",
+													"src" : "749:3:-1"
+												}
+											],
+											"id" : 105553144889016,
+											"name" : "ExpressionStatement",
+											"src" : "749:3:-1"
+										},
+										{
+											"children" : 
+											[
+												{
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "tuple()",
+																"type_conversion" : false
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"type" : "function (uint256,uint256,bool) returns ()",
+																		"value" : "GetBet"
+																	},
+																	"id" : 105553145923960,
+																	"name" : "Identifier",
+																	"src" : "769:6:-1"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"member_name" : "betAmount",
+																		"type" : "uint256"
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"type" : "struct Bet storage ref"
+																			},
+																			"children" : 
+																			[
+																				{
+																					"attributes" : 
+																					{
+																						"type" : "struct Bet storage ref[] storage ref",
+																						"value" : "bets"
+																					},
+																					"id" : 105553145924040,
+																					"name" : "Identifier",
+																					"src" : "776:4:-1"
+																				},
+																				{
+																					"attributes" : 
+																					{
+																						"type" : "uint256",
+																						"value" : "i"
+																					},
+																					"id" : 105553145924120,
+																					"name" : "Identifier",
+																					"src" : "781:1:-1"
+																				}
+																			],
+																			"id" : 105553144889112,
+																			"name" : "IndexAccess",
+																			"src" : "776:7:-1"
+																		}
+																	],
+																	"id" : 105553144889208,
+																	"name" : "MemberAccess",
+																	"src" : "776:17:-1"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"member_name" : "blockNumber",
+																		"type" : "uint256"
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"type" : "struct Bet storage ref"
+																			},
+																			"children" : 
+																			[
+																				{
+																					"attributes" : 
+																					{
+																						"type" : "struct Bet storage ref[] storage ref",
+																						"value" : "bets"
+																					},
+																					"id" : 105553145924200,
+																					"name" : "Identifier",
+																					"src" : "795:4:-1"
+																				},
+																				{
+																					"attributes" : 
+																					{
+																						"type" : "uint256",
+																						"value" : "i"
+																					},
+																					"id" : 105553145924280,
+																					"name" : "Identifier",
+																					"src" : "800:1:-1"
+																				}
+																			],
+																			"id" : 105553144889368,
+																			"name" : "IndexAccess",
+																			"src" : "795:7:-1"
+																		}
+																	],
+																	"id" : 105553144889464,
+																	"name" : "MemberAccess",
+																	"src" : "795:19:-1"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"member_name" : "won",
+																		"type" : "bool"
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"type" : "struct Bet storage ref"
+																			},
+																			"children" : 
+																			[
+																				{
+																					"attributes" : 
+																					{
+																						"type" : "struct Bet storage ref[] storage ref",
+																						"value" : "bets"
+																					},
+																					"id" : 105553145924360,
+																					"name" : "Identifier",
+																					"src" : "816:4:-1"
+																				},
+																				{
+																					"attributes" : 
+																					{
+																						"type" : "uint256",
+																						"value" : "i"
+																					},
+																					"id" : 105553145924440,
+																					"name" : "Identifier",
+																					"src" : "821:1:-1"
+																				}
+																			],
+																			"id" : 105553144889560,
+																			"name" : "IndexAccess",
+																			"src" : "816:7:-1"
+																		}
+																	],
+																	"id" : 105553144889656,
+																	"name" : "MemberAccess",
+																	"src" : "816:11:-1"
+																}
+															],
+															"id" : 105553134388632,
+															"name" : "FunctionCall",
+															"src" : "769:59:-1"
+														}
+													],
+													"id" : 105553144889752,
+													"name" : "ExpressionStatement",
+													"src" : "769:59:-1"
+												}
+											],
+											"id" : 105553137534408,
+											"name" : "Block",
+											"src" : "754:86:-1"
+										}
+									],
+									"id" : 105553130194360,
+									"name" : "ForStatement",
+									"src" : "715:125:-1"
+								}
+							],
+							"id" : 105553137534520,
+							"name" : "Block",
+							"src" : "655:192:-1"
+						}
+					],
+					"id" : 105553122853784,
+					"name" : "FunctionDefinition",
+					"src" : "636:211:-1"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : false,
+						"name" : "destroy",
+						"public" : true
+					},
+					"children" : 
+					[
+						{
+							"children" : [],
+							"id" : 105553144889848,
+							"name" : "ParameterList",
+							"src" : "870:2:-1"
+						},
+						{
+							"children" : [],
+							"id" : 105553144889944,
+							"name" : "ParameterList",
+							"src" : "873:0:-1"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"operator" : "!=",
+												"type" : "bool"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"member_name" : "sender",
+														"type" : "address"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"type" : "msg",
+																"value" : "msg"
+															},
+															"id" : 105553145924520,
+															"name" : "Identifier",
+															"src" : "887:3:-1"
+														}
+													],
+													"id" : 105553144890040,
+													"name" : "MemberAccess",
+													"src" : "887:10:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "address",
+														"value" : "organizer"
+													},
+													"id" : 105553145924600,
+													"name" : "Identifier",
+													"src" : "901:9:-1"
+												}
+											],
+											"id" : 105553137534632,
+											"name" : "BinaryOperation",
+											"src" : "887:23:-1"
+										},
+										{
+											"children" : 
+											[
+												{
+													"children" : [],
+													"id" : 105553145924680,
+													"name" : "Throw",
+													"src" : "914:5:-1"
+												}
+											],
+											"id" : 105553137534744,
+											"name" : "Block",
+											"src" : "912:10:-1"
+										}
+									],
+									"id" : 105553134388760,
+									"name" : "IfStatement",
+									"src" : "884:38:-1"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"type" : "tuple()",
+												"type_conversion" : false
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"type" : "function (address) returns ()",
+														"value" : "suicide"
+													},
+													"id" : 105553145924760,
+													"name" : "Identifier",
+													"src" : "933:7:-1"
+												},
+												{
+													"attributes" : 
+													{
+														"type" : "address",
+														"value" : "organizer"
+													},
+													"id" : 105553145924840,
+													"name" : "Identifier",
+													"src" : "941:9:-1"
+												}
+											],
+											"id" : 105553134388888,
+											"name" : "FunctionCall",
+											"src" : "933:18:-1"
+										}
+									],
+									"id" : 105553144890136,
+									"name" : "ExpressionStatement",
+									"src" : "933:18:-1"
+								}
+							],
+							"id" : 105553137534856,
+							"name" : "Block",
+							"src" : "873:86:-1"
+						}
+					],
+					"id" : 105553122854008,
+					"name" : "FunctionDefinition",
+					"src" : "854:105:-1"
+				}
+			],
+			"id" : 140638040378216,
+			"name" : "ContractDefinition",
+			"src" : "30:932:-1"
+		}
+	],
+	"name" : "SourceUnit"
+}

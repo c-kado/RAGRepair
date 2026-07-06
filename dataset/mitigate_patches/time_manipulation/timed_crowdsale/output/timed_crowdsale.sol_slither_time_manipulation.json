@@ -1,0 +1,130 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "isSaleFinished",
+            "source_mapping": {
+              "start": 57,
+              "length": 101,
+              "filename_relative": "../dataset/mitigate_patches/time_manipulation/timed_crowdsale/timed_crowdsale.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/timed_crowdsale/timed_crowdsale.sol",
+              "filename_short": "../dataset/mitigate_patches/time_manipulation/timed_crowdsale/timed_crowdsale.sol",
+              "is_dependency": false,
+              "lines": [
+                7,
+                8,
+                9,
+                10
+              ],
+              "starting_column": 3,
+              "ending_column": 4
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "TimedCrowdsale",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 132,
+                  "filename_relative": "../dataset/mitigate_patches/time_manipulation/timed_crowdsale/timed_crowdsale.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/timed_crowdsale/timed_crowdsale.sol",
+                  "filename_short": "../dataset/mitigate_patches/time_manipulation/timed_crowdsale/timed_crowdsale.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "isSaleFinished()"
+            }
+          },
+          {
+            "type": "node",
+            "name": "block.timestamp >= 1546300800",
+            "source_mapping": {
+              "start": 117,
+              "length": 36,
+              "filename_relative": "../dataset/mitigate_patches/time_manipulation/timed_crowdsale/timed_crowdsale.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/timed_crowdsale/timed_crowdsale.sol",
+              "filename_short": "../dataset/mitigate_patches/time_manipulation/timed_crowdsale/timed_crowdsale.sol",
+              "is_dependency": false,
+              "lines": [
+                9
+              ],
+              "starting_column": 5,
+              "ending_column": 41
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "isSaleFinished",
+                "source_mapping": {
+                  "start": 57,
+                  "length": 101,
+                  "filename_relative": "../dataset/mitigate_patches/time_manipulation/timed_crowdsale/timed_crowdsale.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/timed_crowdsale/timed_crowdsale.sol",
+                  "filename_short": "../dataset/mitigate_patches/time_manipulation/timed_crowdsale/timed_crowdsale.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    7,
+                    8,
+                    9,
+                    10
+                  ],
+                  "starting_column": 3,
+                  "ending_column": 4
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "TimedCrowdsale",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 132,
+                      "filename_relative": "../dataset/mitigate_patches/time_manipulation/timed_crowdsale/timed_crowdsale.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/time_manipulation/timed_crowdsale/timed_crowdsale.sol",
+                      "filename_short": "../dataset/mitigate_patches/time_manipulation/timed_crowdsale/timed_crowdsale.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "isSaleFinished()"
+                }
+              }
+            }
+          }
+        ],
+        "description": "TimedCrowdsale.isSaleFinished() (../dataset/mitigate_patches/time_manipulation/timed_crowdsale/timed_crowdsale.sol#7-10) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- block.timestamp >= 1546300800 (../dataset/mitigate_patches/time_manipulation/timed_crowdsale/timed_crowdsale.sol#9)\n",
+        "markdown": "[TimedCrowdsale.isSaleFinished()](../dataset/mitigate_patches/time_manipulation/timed_crowdsale/timed_crowdsale.sol#L7-L10) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- [block.timestamp >= 1546300800](../dataset/mitigate_patches/time_manipulation/timed_crowdsale/timed_crowdsale.sol#L9)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/time_manipulation/timed_crowdsale/timed_crowdsale.sol#L7-L10",
+        "id": "0f91426af39b54125749e5395b381bbe308f38b22cfff14c60427461bc1dbf56",
+        "check": "timestamp",
+        "impact": "Low",
+        "confidence": "Medium"
+      }
+    ]
+  }
+}

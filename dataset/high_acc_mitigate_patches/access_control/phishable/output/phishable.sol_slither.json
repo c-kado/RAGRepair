@@ -1,0 +1,602 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "withdrawAll",
+            "source_mapping": {
+              "start": 184,
+              "length": 136,
+              "filename_relative": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/phishable/phishable.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+              "is_dependency": false,
+              "lines": [
+                14,
+                15,
+                16,
+                17,
+                18
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "Phishable",
+                "source_mapping": {
+                  "start": 30,
+                  "length": 292,
+                  "filename_relative": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19
+                  ],
+                  "starting_column": 2,
+                  "ending_column": 2
+                }
+              },
+              "signature": "withdrawAll(address)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "_recipient.transfer(this.balance)",
+            "source_mapping": {
+              "start": 280,
+              "length": 33,
+              "filename_relative": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/phishable/phishable.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+              "is_dependency": false,
+              "lines": [
+                17
+              ],
+              "starting_column": 9,
+              "ending_column": 42
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "withdrawAll",
+                "source_mapping": {
+                  "start": 184,
+                  "length": 136,
+                  "filename_relative": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    14,
+                    15,
+                    16,
+                    17,
+                    18
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "Phishable",
+                    "source_mapping": {
+                      "start": 30,
+                      "length": 292,
+                      "filename_relative": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                      "filename_short": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19
+                      ],
+                      "starting_column": 2,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "withdrawAll(address)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "Phishable.withdrawAll(address) (../dataset/mitigate_patches/access_control/phishable/phishable.sol#14-18) sends eth to arbitrary user\n\tDangerous calls:\n\t- _recipient.transfer(this.balance) (../dataset/mitigate_patches/access_control/phishable/phishable.sol#17)\n",
+        "markdown": "[Phishable.withdrawAll(address)](../dataset/mitigate_patches/access_control/phishable/phishable.sol#L14-L18) sends eth to arbitrary user\n\tDangerous calls:\n\t- [_recipient.transfer(this.balance)](../dataset/mitigate_patches/access_control/phishable/phishable.sol#L17)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/access_control/phishable/phishable.sol#L14-L18",
+        "id": "008fee59a9acaafb7944eb970ee653b947ed7d5c4f1da41af2ecd6c1114b76b3",
+        "check": "arbitrary-send-eth",
+        "impact": "High",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "withdrawAll",
+            "source_mapping": {
+              "start": 184,
+              "length": 136,
+              "filename_relative": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/phishable/phishable.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+              "is_dependency": false,
+              "lines": [
+                14,
+                15,
+                16,
+                17,
+                18
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "Phishable",
+                "source_mapping": {
+                  "start": 30,
+                  "length": 292,
+                  "filename_relative": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19
+                  ],
+                  "starting_column": 2,
+                  "ending_column": 2
+                }
+              },
+              "signature": "withdrawAll(address)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "require(bool)(tx.origin == owner)",
+            "source_mapping": {
+              "start": 243,
+              "length": 27,
+              "filename_relative": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/phishable/phishable.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+              "is_dependency": false,
+              "lines": [
+                16
+              ],
+              "starting_column": 9,
+              "ending_column": 36
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "withdrawAll",
+                "source_mapping": {
+                  "start": 184,
+                  "length": 136,
+                  "filename_relative": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    14,
+                    15,
+                    16,
+                    17,
+                    18
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "Phishable",
+                    "source_mapping": {
+                      "start": 30,
+                      "length": 292,
+                      "filename_relative": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                      "filename_short": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19
+                      ],
+                      "starting_column": 2,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "withdrawAll(address)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "Phishable.withdrawAll(address) (../dataset/mitigate_patches/access_control/phishable/phishable.sol#14-18) uses tx.origin for authorization: require(bool)(tx.origin == owner) (../dataset/mitigate_patches/access_control/phishable/phishable.sol#16)\n",
+        "markdown": "[Phishable.withdrawAll(address)](../dataset/mitigate_patches/access_control/phishable/phishable.sol#L14-L18) uses tx.origin for authorization: [require(bool)(tx.origin == owner)](../dataset/mitigate_patches/access_control/phishable/phishable.sol#L16)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/access_control/phishable/phishable.sol#L14-L18",
+        "id": "66fc84c48046b0cc4b928143a024928f3a2384f547341d70971736b123f54465",
+        "check": "tx-origin",
+        "impact": "Medium",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_recipient",
+            "source_mapping": {
+              "start": 205,
+              "length": 18,
+              "filename_relative": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/phishable/phishable.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+              "is_dependency": false,
+              "lines": [
+                14
+              ],
+              "starting_column": 26,
+              "ending_column": 44
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "withdrawAll",
+                "source_mapping": {
+                  "start": 184,
+                  "length": 136,
+                  "filename_relative": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    14,
+                    15,
+                    16,
+                    17,
+                    18
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "Phishable",
+                    "source_mapping": {
+                      "start": 30,
+                      "length": 292,
+                      "filename_relative": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                      "filename_short": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19
+                      ],
+                      "starting_column": 2,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "withdrawAll(address)"
+                }
+              }
+            }
+          },
+          {
+            "type": "node",
+            "name": "_recipient.transfer(this.balance)",
+            "source_mapping": {
+              "start": 280,
+              "length": 33,
+              "filename_relative": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/phishable/phishable.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+              "is_dependency": false,
+              "lines": [
+                17
+              ],
+              "starting_column": 9,
+              "ending_column": 42
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "withdrawAll",
+                "source_mapping": {
+                  "start": 184,
+                  "length": 136,
+                  "filename_relative": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    14,
+                    15,
+                    16,
+                    17,
+                    18
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "Phishable",
+                    "source_mapping": {
+                      "start": 30,
+                      "length": 292,
+                      "filename_relative": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                      "filename_short": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19
+                      ],
+                      "starting_column": 2,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "withdrawAll(address)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "Phishable.withdrawAll(address)._recipient (../dataset/mitigate_patches/access_control/phishable/phishable.sol#14) lacks a zero-check on :\n\t\t- _recipient.transfer(this.balance) (../dataset/mitigate_patches/access_control/phishable/phishable.sol#17)\n",
+        "markdown": "[Phishable.withdrawAll(address)._recipient](../dataset/mitigate_patches/access_control/phishable/phishable.sol#L14) lacks a zero-check on :\n\t\t- [_recipient.transfer(this.balance)](../dataset/mitigate_patches/access_control/phishable/phishable.sol#L17)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/access_control/phishable/phishable.sol#L14",
+        "id": "19415e1045d5f43837b4201cc7bb4f66ca7dff8f6aeb5016ad38ed2eecbb932a",
+        "check": "missing-zero-check",
+        "impact": "Low",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_owner",
+            "source_mapping": {
+              "start": 95,
+              "length": 14,
+              "filename_relative": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/phishable/phishable.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+              "is_dependency": false,
+              "lines": [
+                8
+              ],
+              "starting_column": 18,
+              "ending_column": 32
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "constructor",
+                "source_mapping": {
+                  "start": 82,
+                  "length": 60,
+                  "filename_relative": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    8,
+                    9,
+                    10
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "Phishable",
+                    "source_mapping": {
+                      "start": 30,
+                      "length": 292,
+                      "filename_relative": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                      "filename_short": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19
+                      ],
+                      "starting_column": 2,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "constructor(address)"
+                }
+              }
+            }
+          },
+          {
+            "type": "node",
+            "name": "owner = _owner",
+            "source_mapping": {
+              "start": 121,
+              "length": 14,
+              "filename_relative": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/phishable/phishable.sol",
+              "filename_short": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+              "is_dependency": false,
+              "lines": [
+                9
+              ],
+              "starting_column": 9,
+              "ending_column": 23
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "constructor",
+                "source_mapping": {
+                  "start": 82,
+                  "length": 60,
+                  "filename_relative": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                  "filename_short": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    8,
+                    9,
+                    10
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "Phishable",
+                    "source_mapping": {
+                      "start": 30,
+                      "length": 292,
+                      "filename_relative": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                      "filename_short": "../dataset/mitigate_patches/access_control/phishable/phishable.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19
+                      ],
+                      "starting_column": 2,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "constructor(address)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "Phishable.constructor(address)._owner (../dataset/mitigate_patches/access_control/phishable/phishable.sol#8) lacks a zero-check on :\n\t\t- owner = _owner (../dataset/mitigate_patches/access_control/phishable/phishable.sol#9)\n",
+        "markdown": "[Phishable.constructor(address)._owner](../dataset/mitigate_patches/access_control/phishable/phishable.sol#L8) lacks a zero-check on :\n\t\t- [owner = _owner](../dataset/mitigate_patches/access_control/phishable/phishable.sol#L9)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/access_control/phishable/phishable.sol#L8",
+        "id": "aea66b206fbce183c2618f0ae0ab1ca18a7cc74b88eab03f57add9b115b2b4db",
+        "check": "missing-zero-check",
+        "impact": "Low",
+        "confidence": "Medium"
+      }
+    ]
+  }
+}

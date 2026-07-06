@@ -46,6 +46,7 @@
 #       |
 #       - patched_CONTRACT.sol
 
+from difflib import SequenceMatcher
 import json
 import os
 import pandas as pd
@@ -68,56 +69,82 @@ vul_mapping = {'access_control': ['tx-origin', 'controlled-delegatecall', 'suici
 dataset_dir = '../dataset'
 
 
-def extract_dataset(repcomp_file):
-    # 論文参考に，精度の良いツールの結果を優先度高く採用
-    # SolGPT    (74%)
-    # SmartFix  (53%)
-    # TIPS      (49%)
-    # sGuard+   (48%)
-    # sGuard    (33%)
-    high_acc_tool = ['SolGPT', 'SmartFix', 'TIPS', 'sGuard+', 'sGuard']
 
+
+
+
+
+def extract_dataset(repcomp_file):
+    # 元のコードとの差分が一番小さい結果を優先的に採用
     df = pd.read_csv(repcomp_file)
 
-    # 修正できていないものをテストとして使ってみる？
     sol_fix_pair_df = get_solfix_pair(df)
     mitigate_patches_df = get_mitigate_patches(sol_fix_pair_df)
-    mitigate_patches_df = mitigate_patches_df.sort_values('Tool', key=lambda s: s.map({v: i for i, v in enumerate(high_acc_tool)}))
-    mitigate_patches_df = mitigate_patches_df.sort_values('Original', kind='stable').sort_values('Category', kind='stable')
 
-    mitigate_patches_df.to_csv(f'{dataset_dir}/mitigate_patches/mitigate_patches.csv', index=False)
-    mitigate_patches_nodup_df = mitigate_patches_df.drop_duplicates(subset='Original', keep='first')
+    mitigate_patches_df.to_csv(f'{dataset_dir}/mitigate_patches/first_mitigate_patches.csv', index=False)
+    min_diff_mitigate_patches_df = pd.DataFrame(columns=mitigate_patches_df.columns)
 
-
-    # まず，1個目をvul/fix pairとしてソース取得
     original_path = '../tools/sb-heists/smartbugs-curated/0.4.x/contracts/dataset'
     patch_path = '../tools/RepairComp/results/smartbugs'
-    for idx, row in mitigate_patches_nodup_df.iterrows():
-        contract_path = f'{dataset_dir}/mitigate_patches/{row['Category']}/{row['Original'][:-4]}'
+
+    for original, group in mitigate_patches_df.groupby('Original'):
+        category = group['Category'].iat[0]
+        with open(f'{original_path}/{category}/{original}', 'r') as f:
+            code = remove_comment(f.read())
+
+        min_diff = len(code.splitlines())
+        min_diff_patch = group.iloc[0]
+        # 空白(インデントやスペース）をなくす
+        code = [re.sub(r"\s+", "", line) for line in code.splitlines()]
+
+        # originalごと
+        for idx, row in group.iterrows():
+            # no_com_oricode = 元ファイルのコメント削除
+
+            with open(f'{patch_path}/{row['Tool']}/{category}/{original[:-4]}/{row['Patch']}', 'r') as f:
+                patched_code = remove_comment(f.read()) 
+                # 空白(インデントやスペース）をなくす
+                patched_code = [re.sub(r"\s+", "", line) for line in patched_code.splitlines()]
+
+            # no_com_oricodeとno_com_patchの行の差分の数を取得
+            matcher = SequenceMatcher(None, code, patched_code) 
+            count = sum(
+                tag != "equal"
+                for tag, *_ in matcher.get_opcodes()
+            )
+
+            if count < min_diff:
+               min_diff = count 
+               min_diff_patch = group.loc[idx]
+ 
+        print(min_diff_patch)
+        contract_path = f'{dataset_dir}/mitigate_patches/{category}/{original[:-4]}'
         os.makedirs(contract_path, exist_ok=True)
 
-        # Originalのsolファイルを記録
-        with open(f'{original_path}/{row['Category']}/{row['Original']}', 'r') as f:
-            # re.sub('/\*.*?\*/','', code, re.DOTALL)
-            # /*(改行含む任意の文字列)*/
-            # or
-            # //(改行含まない任意の文字列)'\n'
-            # を削除
-            code = re.sub(r'/\*.*?\*/','\n', f.read(), flags=re.DOTALL)
-            code = re.sub(r'//.*', '', code) 
-            code = re.sub(r'\n\s*\n+', '\n\n', code)
-        with open(f'{contract_path}/{row['Original']}', 'w') as f:
-            f.write(code)
+        copy_code_wot_comment(f'{original_path}/{category}/{original}', f'{contract_path}/{original}')
+        copy_code_wot_comment(f'{patch_path}/{min_diff_patch['Tool']}/{category}/{original[:-4]}/{min_diff_patch['Patch']}', f'{contract_path}/patched_{original}')
+        min_diff_mitigate_patches_df.loc[len(min_diff_mitigate_patches_df)] = min_diff_patch
 
-        # Patchのsolファイルを記録
-        with open(f'{patch_path}/{row['Tool']}/{row['Category']}/{row['Original'][:-4]}/{row['Patch']}', 'r') as f:
-            code = re.sub(r'/\*.*?\*/','\n', f.read(), flags=re.DOTALL)
-            code = re.sub(r'//.*', '', code) 
-            code = re.sub(r'\n\s*\n+', '\n\n', code)
-        with open(f'{contract_path}/patched_{row['Original']}', 'w') as f:
-            f.write(code)
+    return min_diff_mitigate_patches_df
 
-    return mitigate_patches_nodup_df
+
+def remove_comment(code):
+    code = re.sub(r'/\*.*?\*/','\n', code, flags=re.DOTALL)
+    code = re.sub(r'//.*', '', code) 
+    code = re.sub(r'\n\s*\n+', '\n\n', code)
+
+    return code
+
+
+def copy_code_wot_comment(ori_file, cp_file):
+    with open(ori_file, 'r') as f: 
+        # remove comment
+        code = remove_comment(f.read())
+
+    with open(cp_file, 'w') as cp_f:     
+        cp_f.write(code)
+
+
 
 
 
@@ -269,6 +296,7 @@ for idx, contract_info in mitigate_patches[mitigate_patches['retriever_dataset']
     # 各vul/fixのペアに対して，vulのファイルをslitherで解析, solcによるast出力
     # 解析情報を記録
     
+    print(contract_info)
     os.makedirs(f'{dataset_dir}/mitigate_patches/{contract_info['Category']}/{contract_info['Original'][:-4]}/output', exist_ok=True)
     if not record_contract_info(contract_info):
         # not match for retrieved dataset

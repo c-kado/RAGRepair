@@ -1,0 +1,581 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "GetFreebie",
+            "source_mapping": {
+              "start": 124,
+              "length": 1161,
+              "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+              "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+              "is_dependency": false,
+              "lines": [
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "FreeEth",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 2875,
+                  "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                  "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "GetFreebie()"
+            }
+          },
+          {
+            "type": "node",
+            "name": "msg.sender.transfer(this.balance)",
+            "source_mapping": {
+              "start": 1123,
+              "length": 33,
+              "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+              "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+              "is_dependency": false,
+              "lines": [
+                17
+              ],
+              "starting_column": 13,
+              "ending_column": 46
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "GetFreebie",
+                "source_mapping": {
+                  "start": 124,
+                  "length": 1161,
+                  "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                  "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "FreeEth",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 2875,
+                      "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                      "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        36,
+                        37,
+                        38
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "GetFreebie()"
+                }
+              }
+            }
+          }
+        ],
+        "description": "FreeEth.GetFreebie() (../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol#11-19) sends eth to arbitrary user\n\tDangerous calls:\n\t- msg.sender.transfer(this.balance) (../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol#17)\n",
+        "markdown": "[FreeEth.GetFreebie()](../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol#L11-L19) sends eth to arbitrary user\n\tDangerous calls:\n\t- [msg.sender.transfer(this.balance)](../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol#L17)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol#L11-L19",
+        "id": "5c5457d8dd56835e649eda7261e39a6663bd198b258724d3d2388666eb6a9cb3",
+        "check": "arbitrary-send-eth",
+        "impact": "High",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "Command",
+            "source_mapping": {
+              "start": 2746,
+              "length": 155,
+              "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+              "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+              "is_dependency": false,
+              "lines": [
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "FreeEth",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 2875,
+                  "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                  "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "Command(address,bytes)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "adr.call.value(msg.value)(data)",
+            "source_mapping": {
+              "start": 2863,
+              "length": 31,
+              "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+              "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+              "is_dependency": false,
+              "lines": [
+                35
+              ],
+              "starting_column": 9,
+              "ending_column": 40
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "Command",
+                "source_mapping": {
+                  "start": 2746,
+                  "length": 155,
+                  "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                  "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "FreeEth",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 2875,
+                      "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                      "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        36,
+                        37,
+                        38
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "Command(address,bytes)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "FreeEth.Command(address,bytes) (../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol#29-36) ignores return value by adr.call.value(msg.value)(data) (../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol#35)\n",
+        "markdown": "[FreeEth.Command(address,bytes)](../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol#L29-L36) ignores return value by [adr.call.value(msg.value)(data)](../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol#L35)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol#L29-L36",
+        "id": "0867a493ac0799e96d2332f6d0cc27d431560c97965a8229f001a4ccc0c06325",
+        "check": "unchecked-lowlevel",
+        "impact": "Medium",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "adr",
+            "source_mapping": {
+              "start": 2763,
+              "length": 11,
+              "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+              "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+              "is_dependency": false,
+              "lines": [
+                29
+              ],
+              "starting_column": 22,
+              "ending_column": 33
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "Command",
+                "source_mapping": {
+                  "start": 2746,
+                  "length": 155,
+                  "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                  "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "FreeEth",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 2875,
+                      "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                      "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        36,
+                        37,
+                        38
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "Command(address,bytes)"
+                }
+              }
+            }
+          },
+          {
+            "type": "node",
+            "name": "adr.call.value(msg.value)(data)",
+            "source_mapping": {
+              "start": 2863,
+              "length": 31,
+              "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+              "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+              "is_dependency": false,
+              "lines": [
+                35
+              ],
+              "starting_column": 9,
+              "ending_column": 40
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "Command",
+                "source_mapping": {
+                  "start": 2746,
+                  "length": 155,
+                  "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                  "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "FreeEth",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 2875,
+                      "filename_relative": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                      "filename_short": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        36,
+                        37,
+                        38
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "Command(address,bytes)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "FreeEth.Command(address,bytes).adr (../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol#29) lacks a zero-check on :\n\t\t- adr.call.value(msg.value)(data) (../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol#35)\n",
+        "markdown": "[FreeEth.Command(address,bytes).adr](../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol#L29) lacks a zero-check on :\n\t\t- [adr.call.value(msg.value)(data)](../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol#L35)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol#L29",
+        "id": "8a9e4ecc40e16fa899419d12a305b6ec5a9fb81b31520e2e4efc05cf289f09ae",
+        "check": "missing-zero-check",
+        "impact": "Low",
+        "confidence": "Medium"
+      }
+    ]
+  }
+}

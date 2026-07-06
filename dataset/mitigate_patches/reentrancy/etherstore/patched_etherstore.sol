@@ -1,3 +1,5 @@
+
+
 pragma solidity ^0.4.10;
 
 contract EtherStore {
@@ -5,22 +7,27 @@ contract EtherStore {
     uint256 public withdrawalLimit = 1 ether;
     mapping(address => uint256) public lastWithdrawTime;
     mapping(address => uint256) public balances;
-    mapping(address => bool) locked;
 
     function depositFunds() public payable {
+        require(((balances[msg.sender] + msg.value) >= balances[msg.sender])); 
+
         balances[msg.sender] += msg.value;
     }
 
     function withdrawFunds (uint256 _weiToWithdraw) public {
-        require(!locked[msg.sender]);
         require(balances[msg.sender] >= _weiToWithdraw);
+
         require(_weiToWithdraw <= withdrawalLimit);
+
+        require(((lastWithdrawTime[msg.sender] + 604800) >= lastWithdrawTime[msg.sender])); 
+
         require(now >= lastWithdrawTime[msg.sender] + 1 weeks);
 
-        locked[msg.sender] = true;
+        balances[msg.sender] = (balances[msg.sender] - _weiToWithdraw); 
+
+        lastWithdrawTime[msg.sender] = now; 
+
         require(msg.sender.call.value(_weiToWithdraw)());
-        balances[msg.sender] -= _weiToWithdraw;
-        lastWithdrawTime[msg.sender] = now;
-        locked[msg.sender] = false;
+
     }
-}
+ }

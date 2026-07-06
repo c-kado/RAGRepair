@@ -1,21 +1,28 @@
+
+
 pragma solidity ^0.4.2;
 
 contract SimpleDAO {
-    mapping (address => uint) public credit;
+  mapping (address => uint) public credit;
 
-    function donate(address to) payable {
-        credit[to] += msg.value;
-    }
+  function donate(address to) payable {
+    require(((credit[to] + msg.value) >= credit[to])); 
 
-    function withdraw(uint amount) {
-        if (credit[msg.sender] >= amount) {
-            credit[msg.sender] -= amount;
-            bool res = msg.sender.call.value(amount)();
-            require(res, "Withdrawal failed");
-        }
-    }
+    credit[to] += msg.value;
+  }
 
-    function queryCredit(address to) view returns (uint) {
-        return credit[to];
+  function withdraw(uint amount) {
+    if (credit[msg.sender]>= amount) {
+
+      credit[msg.sender] = (credit[msg.sender] - amount); 
+
+      bool res = msg.sender.call.value(amount)();
+      require(res); 
+
     }
+  }
+
+  function queryCredit(address to) returns (uint){
+    return credit[to];
+  }
 }

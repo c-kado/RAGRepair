@@ -1,0 +1,624 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "guess",
+            "source_mapping": {
+              "start": 381,
+              "length": 165,
+              "filename_relative": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+              "filename_short": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+              "is_dependency": false,
+              "lines": [
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GuessTheRandomNumberChallenge",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 520,
+                  "filename_relative": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                  "filename_short": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "guess(uint8)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "msg.sender.transfer(2000000000000000000)",
+            "source_mapping": {
+              "start": 501,
+              "length": 28,
+              "filename_relative": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+              "filename_short": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+              "is_dependency": false,
+              "lines": [
+                22
+              ],
+              "starting_column": 13,
+              "ending_column": 41
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "guess",
+                "source_mapping": {
+                  "start": 381,
+                  "length": 165,
+                  "filename_relative": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                  "filename_short": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "GuessTheRandomNumberChallenge",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 520,
+                      "filename_relative": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                      "filename_short": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "guess(uint8)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "GuessTheRandomNumberChallenge.guess(uint8) (../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol#18-24) sends eth to arbitrary user\n\tDangerous calls:\n\t- msg.sender.transfer(2000000000000000000) (../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol#22)\n",
+        "markdown": "[GuessTheRandomNumberChallenge.guess(uint8)](../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol#L18-L24) sends eth to arbitrary user\n\tDangerous calls:\n\t- [msg.sender.transfer(2000000000000000000)](../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol#L22)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol#L18-L24",
+        "id": "529d99b4f6026eb00672a21723ff772509209b7b50b363357f6e86424c5c81ed",
+        "check": "arbitrary-send-eth",
+        "impact": "High",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "guess",
+            "source_mapping": {
+              "start": 381,
+              "length": 165,
+              "filename_relative": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+              "filename_short": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+              "is_dependency": false,
+              "lines": [
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GuessTheRandomNumberChallenge",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 520,
+                  "filename_relative": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                  "filename_short": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "guess(uint8)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "n == answer",
+            "source_mapping": {
+              "start": 474,
+              "length": 11,
+              "filename_relative": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+              "filename_short": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+              "is_dependency": false,
+              "lines": [
+                21
+              ],
+              "starting_column": 13,
+              "ending_column": 24
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "guess",
+                "source_mapping": {
+                  "start": 381,
+                  "length": 165,
+                  "filename_relative": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                  "filename_short": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "GuessTheRandomNumberChallenge",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 520,
+                      "filename_relative": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                      "filename_short": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "guess(uint8)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "GuessTheRandomNumberChallenge.guess(uint8) (../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol#18-24) uses a dangerous strict equality:\n\t- n == answer (../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol#21)\n",
+        "markdown": "[GuessTheRandomNumberChallenge.guess(uint8)](../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol#L18-L24) uses a dangerous strict equality:\n\t- [n == answer](../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol#L21)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol#L18-L24",
+        "id": "73d7f4267ea7a2af2f5f91bd544f95875f3ab4a19a7c8c5dd63d59b3f346779b",
+        "check": "incorrect-equality",
+        "impact": "Medium",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "isComplete",
+            "source_mapping": {
+              "start": 276,
+              "length": 99,
+              "filename_relative": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+              "filename_short": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+              "is_dependency": false,
+              "lines": [
+                14,
+                15,
+                16
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GuessTheRandomNumberChallenge",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 520,
+                  "filename_relative": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                  "filename_short": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "isComplete()"
+            }
+          },
+          {
+            "type": "node",
+            "name": "address(this).balance == 0",
+            "source_mapping": {
+              "start": 335,
+              "length": 33,
+              "filename_relative": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+              "filename_short": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+              "is_dependency": false,
+              "lines": [
+                15
+              ],
+              "starting_column": 9,
+              "ending_column": 42
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "isComplete",
+                "source_mapping": {
+                  "start": 276,
+                  "length": 99,
+                  "filename_relative": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                  "filename_short": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    14,
+                    15,
+                    16
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "GuessTheRandomNumberChallenge",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 520,
+                      "filename_relative": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                      "filename_short": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "isComplete()"
+                }
+              }
+            }
+          }
+        ],
+        "description": "GuessTheRandomNumberChallenge.isComplete() (../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol#14-16) uses a dangerous strict equality:\n\t- address(this).balance == 0 (../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol#15)\n",
+        "markdown": "[GuessTheRandomNumberChallenge.isComplete()](../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol#L14-L16) uses a dangerous strict equality:\n\t- [address(this).balance == 0](../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol#L15)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol#L14-L16",
+        "id": "97439fd3530f42ce75cb9c97bbe17e4a2a2fc0b7b00c3b8e128eb52c88a70169",
+        "check": "incorrect-equality",
+        "impact": "Medium",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "guess",
+            "source_mapping": {
+              "start": 381,
+              "length": 165,
+              "filename_relative": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+              "filename_short": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+              "is_dependency": false,
+              "lines": [
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "GuessTheRandomNumberChallenge",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 520,
+                  "filename_relative": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                  "filename_short": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "guess(uint8)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "n == answer",
+            "source_mapping": {
+              "start": 474,
+              "length": 11,
+              "filename_relative": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+              "filename_short": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+              "is_dependency": false,
+              "lines": [
+                21
+              ],
+              "starting_column": 13,
+              "ending_column": 24
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "guess",
+                "source_mapping": {
+                  "start": 381,
+                  "length": 165,
+                  "filename_relative": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                  "filename_short": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "GuessTheRandomNumberChallenge",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 520,
+                      "filename_relative": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                      "filename_short": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "guess(uint8)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "GuessTheRandomNumberChallenge.guess(uint8) (../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol#18-24) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- n == answer (../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol#21)\n",
+        "markdown": "[GuessTheRandomNumberChallenge.guess(uint8)](../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol#L18-L24) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- [n == answer](../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol#L21)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/bad_randomness/guess_the_random_number/guess_the_random_number.sol#L18-L24",
+        "id": "13a383e8efdd231417ec2261b901c3bd081a6bca451737430caf8ce12731a7a4",
+        "check": "timestamp",
+        "impact": "Low",
+        "confidence": "Medium"
+      }
+    ]
+  }
+}

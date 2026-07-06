@@ -1,30 +1,49 @@
+
+
 pragma solidity ^0.4.25;
 
-contract WALLET {
-    function Put(uint _unlockTime) public payable {
-        Holder storage acc = Acc[msg.sender];
+contract WALLET
+{
+    function Put(uint _unlockTime)
+    public
+    payable
+    {
+        var acc = Acc[msg.sender];
+        require(((acc.balance + msg.value) >= acc.balance)); 
+
         acc.balance += msg.value;
-        acc.unlockTime = _unlockTime > now ? _unlockTime : now;
-        LogFile.AddMessage(msg.sender, msg.value, "Put");
+        acc.unlockTime = _unlockTime>now?_unlockTime:now;
+        LogFile.AddMessage(msg.sender,msg.value,"Put");
     }
 
-    function Collect(uint _am) public {
-        Holder storage acc = Acc[msg.sender];
-        require(acc.balance >= MinSum && acc.balance >= _am && now > acc.unlockTime, "Insufficient balance or unlock time not reached");
+    function Collect(uint _am)
+    public
+    payable
+    {
+        var acc = Acc[msg.sender];
+        if( acc.balance>=MinSum && acc.balance>=_am && now>acc.unlockTime)
+        {
 
-        acc.balance -= _am;
-        if (msg.sender.call.value(_am)()) {
-            LogFile.AddMessage(msg.sender, _am, "Collect");
-        } else {
-            acc.balance += _am; 
+            acc.balance = (acc.balance - _am); 
+
+            if(msg.sender.call.value(_am)())
+            {
+
+                LogFile.AddMessage(msg.sender,_am,"Collect");
+            } else {revert (); } 
+
         }
     }
 
-    function() public payable {
+    function() 
+    public 
+    payable
+    {
         Put(0);
     }
 
-    struct Holder {
+    struct Holder   
+    {
         uint unlockTime;
         uint balance;
     }
@@ -33,29 +52,34 @@ contract WALLET {
 
     Log LogFile;
 
-    uint public MinSum = 1 ether;
+    uint public MinSum = 1 ether;    
 
-    constructor(address log) public {
+    function WALLET(address log) public{
         LogFile = Log(log);
     }
 }
 
-contract Log {
-    struct Message {
+contract Log 
+{
+    struct Message
+    {
         address Sender;
-        string Data;
+        string  Data;
         uint Val;
-        uint Time;
+        uint  Time;
     }
 
     Message[] public History;
 
-    function AddMessage(address _adr, uint _val, string _data) public {
-        Message memory newMessage;
-        newMessage.Sender = _adr;
-        newMessage.Time = now;
-        newMessage.Val = _val;
-        newMessage.Data = _data;
-        History.push(newMessage);
+    Message LastMsg;
+
+    function AddMessage(address _adr,uint _val,string _data)
+    public
+    {
+        LastMsg.Sender = _adr;
+        LastMsg.Time = now;
+        LastMsg.Val = _val;
+        LastMsg.Data = _data;
+        History.push(LastMsg);
     }
 }

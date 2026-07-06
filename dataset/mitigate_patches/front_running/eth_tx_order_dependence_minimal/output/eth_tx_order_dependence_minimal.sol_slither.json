@@ -1,0 +1,176 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "setReward",
+            "source_mapping": {
+              "start": 234,
+              "length": 171,
+              "filename_relative": "../dataset/mitigate_patches/front_running/eth_tx_order_dependence_minimal/eth_tx_order_dependence_minimal.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/front_running/eth_tx_order_dependence_minimal/eth_tx_order_dependence_minimal.sol",
+              "filename_short": "../dataset/mitigate_patches/front_running/eth_tx_order_dependence_minimal/eth_tx_order_dependence_minimal.sol",
+              "is_dependency": false,
+              "lines": [
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "EthTxOrderDependenceMinimal",
+                "source_mapping": {
+                  "start": 28,
+                  "length": 557,
+                  "filename_relative": "../dataset/mitigate_patches/front_running/eth_tx_order_dependence_minimal/eth_tx_order_dependence_minimal.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/front_running/eth_tx_order_dependence_minimal/eth_tx_order_dependence_minimal.sol",
+                  "filename_short": "../dataset/mitigate_patches/front_running/eth_tx_order_dependence_minimal/eth_tx_order_dependence_minimal.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "setReward()"
+            }
+          },
+          {
+            "type": "node",
+            "name": "reward = msg.value",
+            "source_mapping": {
+              "start": 380,
+              "length": 18,
+              "filename_relative": "../dataset/mitigate_patches/front_running/eth_tx_order_dependence_minimal/eth_tx_order_dependence_minimal.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/front_running/eth_tx_order_dependence_minimal/eth_tx_order_dependence_minimal.sol",
+              "filename_short": "../dataset/mitigate_patches/front_running/eth_tx_order_dependence_minimal/eth_tx_order_dependence_minimal.sol",
+              "is_dependency": false,
+              "lines": [
+                20
+              ],
+              "starting_column": 9,
+              "ending_column": 27
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "setReward",
+                "source_mapping": {
+                  "start": 234,
+                  "length": 171,
+                  "filename_relative": "../dataset/mitigate_patches/front_running/eth_tx_order_dependence_minimal/eth_tx_order_dependence_minimal.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/front_running/eth_tx_order_dependence_minimal/eth_tx_order_dependence_minimal.sol",
+                  "filename_short": "../dataset/mitigate_patches/front_running/eth_tx_order_dependence_minimal/eth_tx_order_dependence_minimal.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "EthTxOrderDependenceMinimal",
+                    "source_mapping": {
+                      "start": 28,
+                      "length": 557,
+                      "filename_relative": "../dataset/mitigate_patches/front_running/eth_tx_order_dependence_minimal/eth_tx_order_dependence_minimal.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/front_running/eth_tx_order_dependence_minimal/eth_tx_order_dependence_minimal.sol",
+                      "filename_short": "../dataset/mitigate_patches/front_running/eth_tx_order_dependence_minimal/eth_tx_order_dependence_minimal.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "setReward()"
+                }
+              }
+            }
+          }
+        ],
+        "description": "EthTxOrderDependenceMinimal.setReward() (../dataset/mitigate_patches/front_running/eth_tx_order_dependence_minimal/eth_tx_order_dependence_minimal.sol#14-21) should emit an event for: \n\t- reward = msg.value (../dataset/mitigate_patches/front_running/eth_tx_order_dependence_minimal/eth_tx_order_dependence_minimal.sol#20) \n",
+        "markdown": "[EthTxOrderDependenceMinimal.setReward()](../dataset/mitigate_patches/front_running/eth_tx_order_dependence_minimal/eth_tx_order_dependence_minimal.sol#L14-L21) should emit an event for: \n\t- [reward = msg.value](../dataset/mitigate_patches/front_running/eth_tx_order_dependence_minimal/eth_tx_order_dependence_minimal.sol#L20) \n",
+        "first_markdown_element": "../dataset/mitigate_patches/front_running/eth_tx_order_dependence_minimal/eth_tx_order_dependence_minimal.sol#L14-L21",
+        "id": "28c914b6c4f54efe176de9ae3f22e3db7558788d2671a4bcf7fb1944a43a0294",
+        "check": "events-maths",
+        "impact": "Low",
+        "confidence": "Medium"
+      }
+    ]
+  }
+}

@@ -1,0 +1,241 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "withdrawBalance",
+            "source_mapping": {
+              "start": 263,
+              "length": 181,
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol",
+              "is_dependency": false,
+              "lines": [
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+              ],
+              "starting_column": 2,
+              "ending_column": 3
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "EtherBank",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 424,
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "withdrawBalance()"
+            }
+          },
+          {
+            "type": "node",
+            "name": "! (msg.sender.call.value(amountToWithdraw)())",
+            "source_mapping": {
+              "start": 353,
+              "length": 44,
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol",
+              "is_dependency": false,
+              "lines": [
+                17
+              ],
+              "starting_column": 7,
+              "ending_column": 51
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "withdrawBalance",
+                "source_mapping": {
+                  "start": 263,
+                  "length": 181,
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19
+                  ],
+                  "starting_column": 2,
+                  "ending_column": 3
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "EtherBank",
+                    "source_mapping": {
+                      "start": 26,
+                      "length": 424,
+                      "filename_relative": "../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol",
+                      "filename_short": "../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "withdrawBalance()"
+                }
+              }
+            },
+            "additional_fields": {
+              "underlying_type": "external_calls"
+            }
+          },
+          {
+            "type": "node",
+            "name": "userBalances[msg.sender] = 0",
+            "source_mapping": {
+              "start": 412,
+              "length": 28,
+              "filename_relative": "../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol",
+              "filename_short": "../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol",
+              "is_dependency": false,
+              "lines": [
+                18
+              ],
+              "starting_column": 3,
+              "ending_column": 31
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "withdrawBalance",
+                "source_mapping": {
+                  "start": 263,
+                  "length": 181,
+                  "filename_relative": "../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol",
+                  "filename_short": "../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19
+                  ],
+                  "starting_column": 2,
+                  "ending_column": 3
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "EtherBank",
+                    "source_mapping": {
+                      "start": 26,
+                      "length": 424,
+                      "filename_relative": "../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol",
+                      "filename_short": "../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "withdrawBalance()"
+                }
+              }
+            },
+            "additional_fields": {
+              "underlying_type": "variables_written",
+              "variable_name": "userBalances"
+            }
+          }
+        ],
+        "description": "Reentrancy in EtherBank.withdrawBalance() (../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol#14-19):\n\tExternal calls:\n\t- ! (msg.sender.call.value(amountToWithdraw)()) (../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol#17)\n\tState variables written after the call(s):\n\t- userBalances[msg.sender] = 0 (../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol#18)\n\tEtherBank.userBalances (../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol#5) can be used in cross function reentrancies:\n\t- EtherBank.addToBalance() (../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol#10-12)\n\t- EtherBank.getBalance(address) (../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol#6-8)\n\t- EtherBank.withdrawBalance() (../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol#14-19)\n",
+        "markdown": "Reentrancy in [EtherBank.withdrawBalance()](../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol#L14-L19):\n\tExternal calls:\n\t- [! (msg.sender.call.value(amountToWithdraw)())](../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol#L17)\n\tState variables written after the call(s):\n\t- [userBalances[msg.sender] = 0](../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol#L18)\n\t[EtherBank.userBalances](../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol#L5) can be used in cross function reentrancies:\n\t- [EtherBank.addToBalance()](../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol#L10-L12)\n\t- [EtherBank.getBalance(address)](../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol#L6-L8)\n\t- [EtherBank.withdrawBalance()](../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol#L14-L19)\n",
+        "first_markdown_element": "../dataset/mitigate_patches/reentrancy/etherbank/etherbank.sol#L14-L19",
+        "id": "7f81074876824beb7c571fcba831b4eae9ffab88e211aa0612aa03eba49994c6",
+        "check": "reentrancy-eth",
+        "impact": "High",
+        "confidence": "Medium"
+      }
+    ]
+  }
+}

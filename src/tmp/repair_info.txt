@@ -1,6 +1,5 @@
-Model: gpt-5Category: unchecked_low_level_callsContract: 0xe894d54dca59cb53fe9cbc5155093605c7068220Nearest: Category                                unchecked_low_level_calls
-contract               0xd5967fed03e85d1cce44cab284695b41bc675b5c
-subtree_root                                                   50
-node_num                                                        9
-wl_counter      {"f0cac0646937350713c582f106d13b9a": 1, "75efa...
-Name: 23, dtype: objectNearest Similarity: 0.9999999999999998
+Model: gpt-5
+Category: unchecked_low_level_calls
+Contract: 0x663e4229142a27f00bafb5d087e1e730648314c3
+Nearest: 0xbaa3de6504690efb064420d89e871c27065cdd52
+Nearest Similarity: 0.23570226039551587

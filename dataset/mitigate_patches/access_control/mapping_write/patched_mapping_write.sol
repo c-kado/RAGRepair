@@ -16,6 +16,7 @@ contract Map {
             }
             map = newMap;
         }
+
         map[key] = value;
     }
 
