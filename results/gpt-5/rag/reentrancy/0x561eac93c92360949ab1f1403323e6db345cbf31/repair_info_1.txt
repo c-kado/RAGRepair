@@ -1,0 +1,6 @@
+Model: gpt-5
+Exe time: 0:00:30
+Category: reentrancy
+Contract: 0x561eac93c92360949ab1f1403323e6db345cbf31
+Nearest: 0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f
+Nearest Similarity: 1.0

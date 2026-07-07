@@ -77,11 +77,12 @@ dataset_dir = '../dataset'
 def extract_dataset(repcomp_file):
     # 元のコードとの差分が一番小さい結果を優先的に採用
     df = pd.read_csv(repcomp_file)
+    df = df[df['Category']!='arithmetic']
 
     sol_fix_pair_df = get_solfix_pair(df)
     mitigate_patches_df = get_mitigate_patches(sol_fix_pair_df)
 
-    mitigate_patches_df.to_csv(f'{dataset_dir}/mitigate_patches/first_mitigate_patches.csv', index=False)
+    mitigate_patches_df.to_csv(f'{dataset_dir}/mitigate_patches/mitigate_patches.csv', index=False)
     min_diff_mitigate_patches_df = pd.DataFrame(columns=mitigate_patches_df.columns)
 
     original_path = '../tools/sb-heists/smartbugs-curated/0.4.x/contracts/dataset'
@@ -117,7 +118,6 @@ def extract_dataset(repcomp_file):
                min_diff = count 
                min_diff_patch = group.loc[idx]
  
-        print(min_diff_patch)
         contract_path = f'{dataset_dir}/mitigate_patches/{category}/{original[:-4]}'
         os.makedirs(contract_path, exist_ok=True)
 
@@ -289,7 +289,7 @@ if not os.path.exists(f'{dataset_dir}/mitigate_patches/'):
 
 mitigate_patches = extract_dataset('../tools/RepairComp/results/smartbugs/data_analysis/all_patches_stats.csv')
 mitigate_patches['retriever_dataset'] = True
-mitigate_patches.loc[mitigate_patches['Category'] == 'arithmetic', 'retriever_dataset'] = False
+# mitigate_patches.loc[mitigate_patches['Category'] == 'arithmetic', 'retriever_dataset'] = False
 
 
 for idx, contract_info in mitigate_patches[mitigate_patches['retriever_dataset']==True].iterrows():
@@ -300,7 +300,7 @@ for idx, contract_info in mitigate_patches[mitigate_patches['retriever_dataset']
     os.makedirs(f'{dataset_dir}/mitigate_patches/{contract_info['Category']}/{contract_info['Original'][:-4]}/output', exist_ok=True)
     if not record_contract_info(contract_info):
         # not match for retrieved dataset
-        # shutil.rmtree(f'mitigate_patches/{contract_info['Category']}/{contract_info['Original'][:-4]}/')
+        shutil.rmtree(f'{dataset_dir}/mitigate_patches/{contract_info['Category']}/{contract_info['Original'][:-4]}/')
         mitigate_patches.at[idx, 'retriever_dataset'] = False
         print(f'{contract_info['Category']}/{contract_info['Original']}: not match dataset')
 

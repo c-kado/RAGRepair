@@ -1,0 +1,4 @@
+Model: gpt-5
+Exe time: 0:00:17
+Category: unchecked_low_level_calls
+Contract: 0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7

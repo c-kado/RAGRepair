@@ -1,0 +1,4 @@
+{
+  "system_prompt": "You are an expert secure software engineer.\nTask: Fix the vulnerability in TARGET code.\nOutput: Return only the entire fixed source code.",
+  "user_prompt": "Fix the unchecked_low_level_calls vulnerability in TARGET. \n[TARGET]\n\n\npragma solidity ^0.4.24;\n\ncontract airDrop{\n\n    function transfer(address from,address caddress,address[] _tos,uint v, uint _decimals)public returns (bool){\n        require(_tos.length > 0);\n        bytes4 id=bytes4(keccak256(\"transferFrom(address,address,uint256)\"));\n        uint _value = v * 10 ** _decimals;\n        for(uint i=0;i<_tos.length;i++){\n\n            caddress.call(id,from,_tos[i],_value);\n        }\n        return true;\n    }\n}"
+}

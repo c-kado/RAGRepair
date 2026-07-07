@@ -54,7 +54,7 @@ class Retriever:
         if proc.stderr != '':
             print(version)
             print('ERROR: ' + proc.stderr)
-        print('solc-select use >> ' + proc.stdout)
+        print('solc-select use >> ' + proc.stdout, end='')
 
 
     def solc_compile(self, sol_file, output_dir):
@@ -107,7 +107,7 @@ class Retriever:
                 nearest = idx
                 max_sim = sim
 
-        self.nearest_contract = counter_db.iloc[nearest]
+        self.nearest_contract = counter_db.loc[nearest]
         self.nearest_sim = max_sim
 
 
@@ -158,7 +158,7 @@ class Retriever:
         with open(f'{contract_path}/patched_{contract}.sol', 'r') as f:
             fix_code = f.read()
 
-        self.aug_prompt = f'[VUL_EX]{code}[FIX_EX]{fix_code}'
+        self.aug_prompt = f'\n[VUL_EX]\n{code}\n[FIX_EX]\n{fix_code}'
 
 
 def parse_args():

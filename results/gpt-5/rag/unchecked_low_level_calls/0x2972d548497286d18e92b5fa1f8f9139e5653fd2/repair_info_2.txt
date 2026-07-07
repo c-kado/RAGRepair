@@ -1,0 +1,6 @@
+Model: gpt-5
+Exe time: 0:00:15
+Category: unchecked_low_level_calls
+Contract: 0x2972d548497286d18e92b5fa1f8f9139e5653fd2
+Nearest: 0xb11b2fed6c9354f7aa2f658d3b4d7b31d8a13b77
+Nearest Similarity: 0.9999999999999999

@@ -1,0 +1,40 @@
+pragma solidity ^0.4.18;
+
+interface ERC20 {
+    function transferFrom(address from, address to, uint256 value) external returns (bool);
+}
+
+contract AirDropContract {
+
+    function AirDropContract() public {
+    }
+
+    modifier validAddress(address addr) {
+        require(addr != address(0x0));
+        require(addr != address(this));
+        _;
+    }
+
+    function isContract(address _addr) internal view returns (bool) {
+        uint size;
+        assembly { size := extcodesize(_addr) }
+        return size > 0;
+    }
+
+    function transfer(address contract_address, address[] tos, uint[] vs)
+        public
+        validAddress(contract_address)
+        returns (bool)
+    {
+        require(isContract(contract_address));
+        require(tos.length > 0);
+        require(vs.length > 0);
+        require(tos.length == vs.length);
+
+        ERC20 token = ERC20(contract_address);
+        for (uint i = 0; i < tos.length; i++) {
+            require(token.transferFrom(msg.sender, tos[i], vs[i]));
+        }
+        return true;
+    }
+}

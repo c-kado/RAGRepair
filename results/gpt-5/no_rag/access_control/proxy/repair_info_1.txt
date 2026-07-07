@@ -1,0 +1,4 @@
+Model: gpt-5
+Exe time: 0:00:15
+Category: access_control
+Contract: proxy

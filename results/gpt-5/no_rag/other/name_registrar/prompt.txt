@@ -1,0 +1,4 @@
+{
+  "system_prompt": "You are an expert secure software engineer.\nTask: Fix the vulnerability in TARGET code.\nOutput: Return only the entire fixed source code.",
+  "user_prompt": "Fix the other vulnerability in TARGET. \n[TARGET]\n\n\npragma solidity ^0.4.15;\ncontract NameRegistrar {\n\n    bool public unlocked = false;  \n\n    struct NameRecord { \n        bytes32 name;\n        address mappedAddress;\n    }\n\n    mapping(address => NameRecord) public registeredNameRecord; \n    mapping(bytes32 => address) public resolve; \n\n    function register(bytes32 _name, address _mappedAddress) public {\n\n        NameRecord newRecord;\n        newRecord.name = _name;\n        newRecord.mappedAddress = _mappedAddress;\n\n        resolve[_name] = _mappedAddress;\n        registeredNameRecord[msg.sender] = newRecord;\n\n        require(unlocked); \n    }\n}\n"
+}

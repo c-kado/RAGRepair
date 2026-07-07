@@ -1,0 +1,6 @@
+Model: gpt-5
+Exe time: 0:00:26
+Category: other
+Contract: crypto_roulette
+Nearest: name_registrar
+Nearest Similarity: 0.20412414523193154

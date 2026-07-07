@@ -1,0 +1,4 @@
+{
+  "system_prompt": "You are an expert secure software engineer.\nTask: Fix the vulnerability in TARGET code.\nOutput: Return only the entire fixed source code.",
+  "user_prompt": "Fix the reentrancy vulnerability in TARGET. \n[TARGET]\n\n\npragma solidity ^0.4.10;\n\ncontract EtherStore {\n\n    uint256 public withdrawalLimit = 1 ether;\n    mapping(address => uint256) public lastWithdrawTime;\n    mapping(address => uint256) public balances;\n\n    function depositFunds() public payable {\n        balances[msg.sender] += msg.value;\n    }\n\n    function withdrawFunds (uint256 _weiToWithdraw) public {\n        require(balances[msg.sender] >= _weiToWithdraw);\n\n        require(_weiToWithdraw <= withdrawalLimit);\n\n        require(now >= lastWithdrawTime[msg.sender] + 1 weeks);\n\n        require(msg.sender.call.value(_weiToWithdraw)());\n        balances[msg.sender] -= _weiToWithdraw;\n        lastWithdrawTime[msg.sender] = now;\n    }\n }\n"
+}

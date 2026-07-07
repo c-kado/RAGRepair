@@ -87,6 +87,9 @@ def mapping_ast2graph(ast_file):
     if 'children' in ast:
         ast['children'] = add_children_node(ast_graph, ast['children'], node_id, no_id_node) 
 
+    with open(ast_file, 'w') as f:
+        json.dump(ast, f)
+
     return ast_graph
 
 
@@ -155,7 +158,7 @@ def get_vul_root(detection_file, ast_file):
     for element in elements:
         if check_element(element, vul_trigger_element[vul_info['check']]):
             vul_element = element
-            print('vul_element: '+element['name']+'\n')
+            print('vul_element: '+element['name'])
             break
 
     # elementの行を抜き出す（該当行のスタートからエンドまでの文字位置）
@@ -220,29 +223,35 @@ def main():
     wl_counter_df = pd.DataFrame(columns=['Category', 'contract', 'subtree_root', 'node_num', 'wl_counter'])
     patch_list = pd.read_csv(f'{dataset_dir}/mitigate_patches/mitigate_patches.csv')
 
-    for category in os.listdir(f'{dataset_dir}/mitigate_patches'):
-        if not os.path.isdir(f'{dataset_dir}/mitigate_patches/{category}'):
-            continue
+    # for category in os.listdir(f'{dataset_dir}/mitigate_patches'):
+    for category in patch_list['Category'].unique().tolist():
+        # if not os.path.isdir(f'{dataset_dir}/mitigate_patches/{category}'):
+        #     continue
 
-        for contract in os.listdir(f'{dataset_dir}/mitigate_patches/{category}'):
-            if not os.path.isdir(f'{dataset_dir}/mitigate_patches/{category}/{contract}'):
-               continue
+        # for contract in os.listdir(f'{dataset_dir}/mitigate_patches/{category}'):
+        for idx, patch_info in patch_list[patch_list['Category']==category].iterrows():
+            # if not os.path.isdir(f'{dataset_dir}/mitigate_patches/{category}/{contract}'):
+            #    continue
 
-            if not patch_list.loc[(patch_list['Original'] == f'{contract}.sol'), 'retriever_dataset'].iloc[0]:
+            # if not patch_list.loc[(patch_list['Original'] == f'{contract}.sol'), 'retriever_dataset'].iloc[0]:
+            #     continue
+
+            if not patch_info['retriever_dataset']:
                 continue
      
-            print(f'{category}/{contract}')
-            contract_dir = f'{dataset_dir}/mitigate_patches/{category}/{contract}'
+            original = patch_info['Original']
+            print(f'{category}/{original}')
+            contract_dir = f'{dataset_dir}/mitigate_patches/{category}/{original[:-4]}'
 
             # Build ast graph
-            # ast = get_ast(f'{contract_dir}/output/{contract}.sol_json.ast')
-            ast_graph = mapping_ast2graph(f'{contract_dir}/output/{contract}.sol_json.ast')
+            # ast = get_ast(f'{contract_dir}/output/{original}_json.ast')
+            ast_graph = mapping_ast2graph(f'{contract_dir}/output/{original}_json.ast')
 
             # Get wl subgraph hashes
             # compute wlhash of vulnerable position 
             vul_root = get_vul_root(
-                f'{contract_dir}/output/{contract}.sol_slither_{category}.json',
-                f'{contract_dir}/output/{contract}.sol_json.ast')
+                f'{contract_dir}/output/{original}_slither_{category}.json',
+                f'{contract_dir}/output/{original}_json.ast')
             vul_sub_tree = {vul_root} | nx.descendants(nx.DiGraph(ast_graph), vul_root)
             # TODO: iterationの値は要検討．kernelで計算するグラフのサイズ(行単位/関数単位/etc.)によって変える？適切な値を検討(empiricalに？？？)
             vul_hashes = nx.weisfeiler_lehman_subgraph_hashes(ast_graph.subgraph(vul_sub_tree), node_attr='node_type', iterations=2)
@@ -250,10 +259,10 @@ def main():
 
             # save the graph info
             ast_graph_info = {'graph': json_graph.node_link_data(ast_graph), 'vul_root': vul_root, 'vul_node_num': len(vul_sub_tree), 'vul_subgraph_hashes': vul_hashes, 'wl_counter': json.dumps(vul_wl_counter)}
-            with open(f'{contract_dir}/output/{contract}.sol_ast_graph.json', 'w') as f:
+            with open(f'{contract_dir}/output/{original}_ast_graph.json', 'w') as f:
                 json.dump(ast_graph_info, f, indent=2)
 
-            wl_counter_df.loc[len(wl_counter_df)] = {'Category': category, 'contract': contract, 'subtree_root': vul_root, 'node_num': len(vul_sub_tree), 'wl_counter': json.dumps(vul_wl_counter)}
+            wl_counter_df.loc[len(wl_counter_df)] = {'Category': category, 'contract': original[:-4], 'subtree_root': vul_root, 'node_num': len(vul_sub_tree), 'wl_counter': json.dumps(vul_wl_counter)}
 
     wl_counter_df.to_csv(f'{dataset_dir}/wl_counter.csv', index=False)
 

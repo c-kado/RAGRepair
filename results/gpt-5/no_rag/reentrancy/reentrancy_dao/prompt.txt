@@ -1,0 +1,4 @@
+{
+  "system_prompt": "You are an expert secure software engineer.\nTask: Fix the vulnerability in TARGET code.\nOutput: Return only the entire fixed source code.",
+  "user_prompt": "Fix the reentrancy vulnerability in TARGET. \n[TARGET]\n\n\npragma solidity ^0.4.19;\n\ncontract ReentrancyDAO {\n    mapping (address => uint) credit;\n    uint balance;\n\n    function withdrawAll() public {\n        uint oCredit = credit[msg.sender];\n        if (oCredit > 0) {\n            balance -= oCredit;\n\n            bool callResult = msg.sender.call.value(oCredit)();\n            require (callResult);\n            credit[msg.sender] = 0;\n        }\n    }\n\n    function deposit() public payable {\n        credit[msg.sender] += msg.value;\n        balance += msg.value;\n    }\n}\n"
+}

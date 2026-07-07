@@ -1,0 +1,1100 @@
+{
+  "graph": {
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+      {
+        "node_type": "SourceUnit",
+        "id": 140
+      },
+      {
+        "node_type": "PragmaDirective",
+        "id": 1
+      },
+      {
+        "node_type": "ContractDefinition",
+        "id": 139
+      },
+      {
+        "node_type": "VariableDeclaration",
+        "id": 3
+      },
+      {
+        "node_type": "ElementaryTypeName",
+        "id": 2
+      },
+      {
+        "node_type": "VariableDeclaration",
+        "id": 5
+      },
+      {
+        "node_type": "ElementaryTypeName",
+        "id": 4
+      },
+      {
+        "node_type": "VariableDeclaration",
+        "id": 8
+      },
+      {
+        "node_type": "ElementaryTypeName",
+        "id": 6
+      },
+      {
+        "node_type": "Literal",
+        "id": 7
+      },
+      {
+        "node_type": "VariableDeclaration",
+        "id": 10
+      },
+      {
+        "node_type": "ElementaryTypeName",
+        "id": 9
+      },
+      {
+        "node_type": "StructDefinition",
+        "id": 15
+      },
+      {
+        "node_type": "VariableDeclaration",
+        "id": 12
+      },
+      {
+        "node_type": "ElementaryTypeName",
+        "id": 11
+      },
+      {
+        "node_type": "VariableDeclaration",
+        "id": 14
+      },
+      {
+        "node_type": "ElementaryTypeName",
+        "id": 13
+      },
+      {
+        "node_type": "VariableDeclaration",
+        "id": 18
+      },
+      {
+        "node_type": "ArrayTypeName",
+        "id": 17
+      },
+      {
+        "node_type": "UserDefinedTypeName",
+        "id": 16
+      },
+      {
+        "node_type": "FunctionDefinition",
+        "id": 30
+      },
+      {
+        "node_type": "ParameterList",
+        "id": 19
+      },
+      {
+        "node_type": "ParameterList",
+        "id": 20
+      },
+      {
+        "node_type": "Block",
+        "id": 29
+      },
+      {
+        "node_type": "ExpressionStatement",
+        "id": 25
+      },
+      {
+        "node_type": "Assignment",
+        "id": 24
+      },
+      {
+        "node_type": "Identifier",
+        "id": 21
+      },
+      {
+        "node_type": "MemberAccess",
+        "id": 23
+      },
+      {
+        "node_type": "Identifier",
+        "id": 22
+      },
+      {
+        "node_type": "ExpressionStatement",
+        "id": 28
+      },
+      {
+        "node_type": "FunctionCall",
+        "id": 27
+      },
+      {
+        "node_type": "Identifier",
+        "id": 26
+      },
+      {
+        "node_type": "FunctionDefinition",
+        "id": 53
+      },
+      {
+        "node_type": "ParameterList",
+        "id": 31
+      },
+      {
+        "node_type": "ParameterList",
+        "id": 32
+      },
+      {
+        "node_type": "Block",
+        "id": 52
+      },
+      {
+        "node_type": "ExpressionStatement",
+        "id": 51
+      },
+      {
+        "node_type": "Assignment",
+        "id": 50
+      },
+      {
+        "node_type": "Identifier",
+        "id": 33
+      },
+      {
+        "node_type": "BinaryOperation",
+        "id": 49
+      },
+      {
+        "node_type": "BinaryOperation",
+        "id": 47
+      },
+      {
+        "node_type": "FunctionCall",
+        "id": 45
+      },
+      {
+        "node_type": "ElementaryTypeNameExpression",
+        "id": 34
+      },
+      {
+        "node_type": "FunctionCall",
+        "id": 44
+      },
+      {
+        "node_type": "Identifier",
+        "id": 35
+      },
+      {
+        "node_type": "Identifier",
+        "id": 36
+      },
+      {
+        "node_type": "FunctionCall",
+        "id": 43
+      },
+      {
+        "node_type": "MemberAccess",
+        "id": 38
+      },
+      {
+        "node_type": "Identifier",
+        "id": 37
+      },
+      {
+        "node_type": "BinaryOperation",
+        "id": 42
+      },
+      {
+        "node_type": "MemberAccess",
+        "id": 40
+      },
+      {
+        "node_type": "Identifier",
+        "id": 39
+      },
+      {
+        "node_type": "Literal",
+        "id": 41
+      },
+      {
+        "node_type": "Literal",
+        "id": 46
+      },
+      {
+        "node_type": "Literal",
+        "id": 48
+      },
+      {
+        "node_type": "FunctionDefinition",
+        "id": 113
+      },
+      {
+        "node_type": "ParameterList",
+        "id": 56
+      },
+      {
+        "node_type": "VariableDeclaration",
+        "id": 55
+      },
+      {
+        "node_type": "ElementaryTypeName",
+        "id": 54
+      },
+      {
+        "node_type": "ParameterList",
+        "id": 57
+      },
+      {
+        "node_type": "Block",
+        "id": 112
+      },
+      {
+        "node_type": "ExpressionStatement",
+        "id": 68
+      },
+      {
+        "node_type": "FunctionCall",
+        "id": 67
+      },
+      {
+        "node_type": "Identifier",
+        "id": 58
+      },
+      {
+        "node_type": "BinaryOperation",
+        "id": 66
+      },
+      {
+        "node_type": "BinaryOperation",
+        "id": 62
+      },
+      {
+        "node_type": "MemberAccess",
+        "id": 60
+      },
+      {
+        "node_type": "Identifier",
+        "id": 59
+      },
+      {
+        "node_type": "Identifier",
+        "id": 61
+      },
+      {
+        "node_type": "BinaryOperation",
+        "id": 65
+      },
+      {
+        "node_type": "Identifier",
+        "id": 63
+      },
+      {
+        "node_type": "Literal",
+        "id": 64
+      },
+      {
+        "node_type": "VariableDeclarationStatement",
+        "id": 71
+      },
+      {
+        "node_type": "VariableDeclaration",
+        "id": 70
+      },
+      {
+        "node_type": "UserDefinedTypeName",
+        "id": 69
+      },
+      {
+        "node_type": "ExpressionStatement",
+        "id": 78
+      },
+      {
+        "node_type": "Assignment",
+        "id": 77
+      },
+      {
+        "node_type": "MemberAccess",
+        "id": 74
+      },
+      {
+        "node_type": "Identifier",
+        "id": 72
+      },
+      {
+        "node_type": "MemberAccess",
+        "id": 76
+      },
+      {
+        "node_type": "Identifier",
+        "id": 75
+      },
+      {
+        "node_type": "ExpressionStatement",
+        "id": 84
+      },
+      {
+        "node_type": "Assignment",
+        "id": 83
+      },
+      {
+        "node_type": "MemberAccess",
+        "id": 81
+      },
+      {
+        "node_type": "Identifier",
+        "id": 79
+      },
+      {
+        "node_type": "Identifier",
+        "id": 82
+      },
+      {
+        "node_type": "ExpressionStatement",
+        "id": 90
+      },
+      {
+        "node_type": "FunctionCall",
+        "id": 89
+      },
+      {
+        "node_type": "MemberAccess",
+        "id": 87
+      },
+      {
+        "node_type": "Identifier",
+        "id": 85
+      },
+      {
+        "node_type": "Identifier",
+        "id": 88
+      },
+      {
+        "node_type": "IfStatement",
+        "id": 104
+      },
+      {
+        "node_type": "BinaryOperation",
+        "id": 93
+      },
+      {
+        "node_type": "Identifier",
+        "id": 91
+      },
+      {
+        "node_type": "Identifier",
+        "id": 92
+      },
+      {
+        "node_type": "Block",
+        "id": 103
+      },
+      {
+        "node_type": "ExpressionStatement",
+        "id": 102
+      },
+      {
+        "node_type": "FunctionCall",
+        "id": 101
+      },
+      {
+        "node_type": "MemberAccess",
+        "id": 98
+      },
+      {
+        "node_type": "MemberAccess",
+        "id": 97
+      },
+      {
+        "node_type": "Identifier",
+        "id": 94
+      },
+      {
+        "node_type": "MemberAccess",
+        "id": 100
+      },
+      {
+        "node_type": "Identifier",
+        "id": 99
+      },
+      {
+        "node_type": "ExpressionStatement",
+        "id": 107
+      },
+      {
+        "node_type": "FunctionCall",
+        "id": 106
+      },
+      {
+        "node_type": "Identifier",
+        "id": 105
+      },
+      {
+        "node_type": "ExpressionStatement",
+        "id": 111
+      },
+      {
+        "node_type": "Assignment",
+        "id": 110
+      },
+      {
+        "node_type": "Identifier",
+        "id": 108
+      },
+      {
+        "node_type": "Identifier",
+        "id": 109
+      },
+      {
+        "node_type": "FunctionDefinition",
+        "id": 134
+      },
+      {
+        "node_type": "ParameterList",
+        "id": 114
+      },
+      {
+        "node_type": "ParameterList",
+        "id": 115
+      },
+      {
+        "node_type": "Block",
+        "id": 133
+      },
+      {
+        "node_type": "IfStatement",
+        "id": 132
+      },
+      {
+        "node_type": "BinaryOperation",
+        "id": 125
+      },
+      {
+        "node_type": "BinaryOperation",
+        "id": 119
+      },
+      {
+        "node_type": "MemberAccess",
+        "id": 117
+      },
+      {
+        "node_type": "Identifier",
+        "id": 116
+      },
+      {
+        "node_type": "Identifier",
+        "id": 118
+      },
+      {
+        "node_type": "BinaryOperation",
+        "id": 124
+      },
+      {
+        "node_type": "Identifier",
+        "id": 120
+      },
+      {
+        "node_type": "BinaryOperation",
+        "id": 123
+      },
+      {
+        "node_type": "Identifier",
+        "id": 121
+      },
+      {
+        "node_type": "Literal",
+        "id": 122
+      },
+      {
+        "node_type": "Block",
+        "id": 131
+      },
+      {
+        "node_type": "ExpressionStatement",
+        "id": 130
+      },
+      {
+        "node_type": "FunctionCall",
+        "id": 129
+      },
+      {
+        "node_type": "Identifier",
+        "id": 126
+      },
+      {
+        "node_type": "MemberAccess",
+        "id": 128
+      },
+      {
+        "node_type": "Identifier",
+        "id": 127
+      },
+      {
+        "node_type": "FunctionDefinition",
+        "id": 138
+      },
+      {
+        "node_type": "ParameterList",
+        "id": 135
+      },
+      {
+        "node_type": "ParameterList",
+        "id": 136
+      },
+      {
+        "node_type": "Block",
+        "id": 137
+      }
+    ],
+    "edges": [
+      {
+        "source": 140,
+        "target": 1
+      },
+      {
+        "source": 140,
+        "target": 139
+      },
+      {
+        "source": 139,
+        "target": 3
+      },
+      {
+        "source": 139,
+        "target": 5
+      },
+      {
+        "source": 139,
+        "target": 8
+      },
+      {
+        "source": 139,
+        "target": 10
+      },
+      {
+        "source": 139,
+        "target": 15
+      },
+      {
+        "source": 139,
+        "target": 18
+      },
+      {
+        "source": 139,
+        "target": 30
+      },
+      {
+        "source": 139,
+        "target": 53
+      },
+      {
+        "source": 139,
+        "target": 113
+      },
+      {
+        "source": 139,
+        "target": 134
+      },
+      {
+        "source": 139,
+        "target": 138
+      },
+      {
+        "source": 3,
+        "target": 2
+      },
+      {
+        "source": 5,
+        "target": 4
+      },
+      {
+        "source": 8,
+        "target": 6
+      },
+      {
+        "source": 8,
+        "target": 7
+      },
+      {
+        "source": 10,
+        "target": 9
+      },
+      {
+        "source": 15,
+        "target": 12
+      },
+      {
+        "source": 15,
+        "target": 14
+      },
+      {
+        "source": 12,
+        "target": 11
+      },
+      {
+        "source": 14,
+        "target": 13
+      },
+      {
+        "source": 18,
+        "target": 17
+      },
+      {
+        "source": 17,
+        "target": 16
+      },
+      {
+        "source": 30,
+        "target": 19
+      },
+      {
+        "source": 30,
+        "target": 20
+      },
+      {
+        "source": 30,
+        "target": 29
+      },
+      {
+        "source": 29,
+        "target": 25
+      },
+      {
+        "source": 29,
+        "target": 28
+      },
+      {
+        "source": 25,
+        "target": 24
+      },
+      {
+        "source": 24,
+        "target": 21
+      },
+      {
+        "source": 24,
+        "target": 23
+      },
+      {
+        "source": 23,
+        "target": 22
+      },
+      {
+        "source": 28,
+        "target": 27
+      },
+      {
+        "source": 27,
+        "target": 26
+      },
+      {
+        "source": 53,
+        "target": 31
+      },
+      {
+        "source": 53,
+        "target": 32
+      },
+      {
+        "source": 53,
+        "target": 52
+      },
+      {
+        "source": 52,
+        "target": 51
+      },
+      {
+        "source": 51,
+        "target": 50
+      },
+      {
+        "source": 50,
+        "target": 33
+      },
+      {
+        "source": 50,
+        "target": 49
+      },
+      {
+        "source": 49,
+        "target": 47
+      },
+      {
+        "source": 49,
+        "target": 48
+      },
+      {
+        "source": 47,
+        "target": 45
+      },
+      {
+        "source": 47,
+        "target": 46
+      },
+      {
+        "source": 45,
+        "target": 34
+      },
+      {
+        "source": 45,
+        "target": 44
+      },
+      {
+        "source": 44,
+        "target": 35
+      },
+      {
+        "source": 44,
+        "target": 36
+      },
+      {
+        "source": 44,
+        "target": 43
+      },
+      {
+        "source": 43,
+        "target": 38
+      },
+      {
+        "source": 43,
+        "target": 42
+      },
+      {
+        "source": 38,
+        "target": 37
+      },
+      {
+        "source": 42,
+        "target": 40
+      },
+      {
+        "source": 42,
+        "target": 41
+      },
+      {
+        "source": 40,
+        "target": 39
+      },
+      {
+        "source": 113,
+        "target": 56
+      },
+      {
+        "source": 113,
+        "target": 57
+      },
+      {
+        "source": 113,
+        "target": 112
+      },
+      {
+        "source": 56,
+        "target": 55
+      },
+      {
+        "source": 55,
+        "target": 54
+      },
+      {
+        "source": 112,
+        "target": 68
+      },
+      {
+        "source": 112,
+        "target": 71
+      },
+      {
+        "source": 112,
+        "target": 78
+      },
+      {
+        "source": 112,
+        "target": 84
+      },
+      {
+        "source": 112,
+        "target": 90
+      },
+      {
+        "source": 112,
+        "target": 104
+      },
+      {
+        "source": 112,
+        "target": 107
+      },
+      {
+        "source": 112,
+        "target": 111
+      },
+      {
+        "source": 68,
+        "target": 67
+      },
+      {
+        "source": 67,
+        "target": 58
+      },
+      {
+        "source": 67,
+        "target": 66
+      },
+      {
+        "source": 66,
+        "target": 62
+      },
+      {
+        "source": 66,
+        "target": 65
+      },
+      {
+        "source": 62,
+        "target": 60
+      },
+      {
+        "source": 62,
+        "target": 61
+      },
+      {
+        "source": 60,
+        "target": 59
+      },
+      {
+        "source": 65,
+        "target": 63
+      },
+      {
+        "source": 65,
+        "target": 64
+      },
+      {
+        "source": 71,
+        "target": 70
+      },
+      {
+        "source": 70,
+        "target": 69
+      },
+      {
+        "source": 78,
+        "target": 77
+      },
+      {
+        "source": 77,
+        "target": 74
+      },
+      {
+        "source": 77,
+        "target": 76
+      },
+      {
+        "source": 74,
+        "target": 72
+      },
+      {
+        "source": 76,
+        "target": 75
+      },
+      {
+        "source": 84,
+        "target": 83
+      },
+      {
+        "source": 83,
+        "target": 81
+      },
+      {
+        "source": 83,
+        "target": 82
+      },
+      {
+        "source": 81,
+        "target": 79
+      },
+      {
+        "source": 90,
+        "target": 89
+      },
+      {
+        "source": 89,
+        "target": 87
+      },
+      {
+        "source": 89,
+        "target": 88
+      },
+      {
+        "source": 87,
+        "target": 85
+      },
+      {
+        "source": 104,
+        "target": 93
+      },
+      {
+        "source": 104,
+        "target": 103
+      },
+      {
+        "source": 93,
+        "target": 91
+      },
+      {
+        "source": 93,
+        "target": 92
+      },
+      {
+        "source": 103,
+        "target": 102
+      },
+      {
+        "source": 102,
+        "target": 101
+      },
+      {
+        "source": 101,
+        "target": 98
+      },
+      {
+        "source": 101,
+        "target": 100
+      },
+      {
+        "source": 98,
+        "target": 97
+      },
+      {
+        "source": 97,
+        "target": 94
+      },
+      {
+        "source": 100,
+        "target": 99
+      },
+      {
+        "source": 107,
+        "target": 106
+      },
+      {
+        "source": 106,
+        "target": 105
+      },
+      {
+        "source": 111,
+        "target": 110
+      },
+      {
+        "source": 110,
+        "target": 108
+      },
+      {
+        "source": 110,
+        "target": 109
+      },
+      {
+        "source": 134,
+        "target": 114
+      },
+      {
+        "source": 134,
+        "target": 115
+      },
+      {
+        "source": 134,
+        "target": 133
+      },
+      {
+        "source": 133,
+        "target": 132
+      },
+      {
+        "source": 132,
+        "target": 125
+      },
+      {
+        "source": 132,
+        "target": 131
+      },
+      {
+        "source": 125,
+        "target": 119
+      },
+      {
+        "source": 125,
+        "target": 124
+      },
+      {
+        "source": 119,
+        "target": 117
+      },
+      {
+        "source": 119,
+        "target": 118
+      },
+      {
+        "source": 117,
+        "target": 116
+      },
+      {
+        "source": 124,
+        "target": 120
+      },
+      {
+        "source": 124,
+        "target": 123
+      },
+      {
+        "source": 123,
+        "target": 121
+      },
+      {
+        "source": 123,
+        "target": 122
+      },
+      {
+        "source": 131,
+        "target": 130
+      },
+      {
+        "source": 130,
+        "target": 129
+      },
+      {
+        "source": 129,
+        "target": 126
+      },
+      {
+        "source": 129,
+        "target": 128
+      },
+      {
+        "source": 128,
+        "target": 127
+      },
+      {
+        "source": 138,
+        "target": 135
+      },
+      {
+        "source": 138,
+        "target": 136
+      },
+      {
+        "source": 138,
+        "target": 137
+      }
+    ]
+  },
+  "vul_root": 70,
+  "vul_node_num": 2,
+  "vul_subgraph_hashes": {
+    "69": [
+      "bba84157926f1165cd40633a37b55cd2",
+      "dcd525a793e39e66adcc8c2b9a603aa3"
+    ],
+    "70": [
+      "3af626acff99e9a0b5b4777e73b626b0",
+      "10223c426e6c9f2cea5bb25eb8eea5e6"
+    ]
+  },
+  "wl_counter": "{\"bba84157926f1165cd40633a37b55cd2\": 1, \"dcd525a793e39e66adcc8c2b9a603aa3\": 1, \"3af626acff99e9a0b5b4777e73b626b0\": 1, \"10223c426e6c9f2cea5bb25eb8eea5e6\": 1}"
+}

@@ -8,14 +8,13 @@ from retriever import Retriever
 
 
 def get_prompt(category, contract_code, do_rag=True):
-    rag_inst = 'Reference: Use the repair pattern of VUL_EX and FIX_EX as guide.\n' if do_rag else ''
+    rag_inst = 'Reference: Use the repair pattern of VUL_EX and FIX_EX as a guide.\n' if do_rag else ''
 
     system_prompt = textwrap.dedent(f"""
     You are an expert secure software engineer.
-    Task: Fix vulnerability in TARGET.
-    {rag_inst}Output: Return only the fixed source code.
-    """)[1:]
-    user_prompt = f'Fix the {category} vulnerability in TARGET code. [TARGET]{contract_code}'
+    Task: Fix the vulnerability in TARGET code.
+    {rag_inst}""")[1:] + 'Output: Return only the entire fixed source code.'
+    user_prompt = f'Fix the {category} vulnerability in TARGET. \n[TARGET]\n{contract_code}'
 
     return system_prompt, user_prompt 
    
@@ -56,14 +55,16 @@ def argument_processing(args):
     return model, args.category, args.contract
 
 
-def repair(model, category, contract, save_dir='tmp', do_rag=True):
+def repair(model, category, contract, save_dir='tmp', do_rag=True, inf_count=0):
     with open(f'../dataset/mitigate_patches/{category}/{contract}/{contract}.sol', 'r') as f:
         vul_code = f.read()
 
     sys_prmpt, usr_prmpt = get_prompt(category, vul_code, do_rag)
 
+
     if do_rag:
         # do_rag == True -> augument prompt
+        print('\nRETRIEVER:')
         rtrv = Retriever()
         rtrv.retrieve(category, contract)
         usr_prmpt += rtrv.aug_prompt
@@ -73,12 +74,15 @@ def repair(model, category, contract, save_dir='tmp', do_rag=True):
 
 
 
+    print('\nLLM REPAIR')
+
     model.run_inference(sys_prmpt, usr_prmpt) 
     if not os.path.exists(save_dir):
        os.makedirs(save_dir) 
-    model.save_output(f'{save_dir}/{contract}.sol')
-    with open(f'{save_dir}/repair_info.txt', 'w') as f:
+    model.save_output(f'{save_dir}/{contract}_{inf_count}.sol')
+    with open(f'{save_dir}/repair_info_{inf_count}.txt', 'w') as f:
         f.write(f'Model: {model.model_id}\n')
+        f.write(f'Exe time: {model.exec_time}\n')
         f.write(f'Category: {category}\n')
         f.write(f'Contract: {contract}\n')
         if do_rag:

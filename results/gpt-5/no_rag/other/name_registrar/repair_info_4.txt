@@ -1,0 +1,4 @@
+Model: gpt-5
+Exe time: 0:00:16
+Category: other
+Contract: name_registrar

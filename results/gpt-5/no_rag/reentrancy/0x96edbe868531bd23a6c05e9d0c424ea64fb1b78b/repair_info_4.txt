@@ -1,0 +1,4 @@
+Model: gpt-5
+Exe time: 0:00:49
+Category: reentrancy
+Contract: 0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b

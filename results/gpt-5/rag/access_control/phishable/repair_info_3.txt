@@ -1,0 +1,6 @@
+Model: gpt-5
+Exe time: 0:00:12
+Category: access_control
+Contract: phishable
+Nearest: mycontract
+Nearest Similarity: 1.0000000000000002

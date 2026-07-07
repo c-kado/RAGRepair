@@ -1,0 +1,4 @@
+{
+  "system_prompt": "You are an expert secure software engineer.\nTask: Fix the vulnerability in TARGET code.\nOutput: Return only the entire fixed source code.",
+  "user_prompt": "Fix the access_control vulnerability in TARGET. \n[TARGET]\n\n\npragma solidity ^0.4.24;\n\ncontract MyContract {\n\n    address owner;\n\n    function MyContract() public {\n        owner = msg.sender;\n    }\n\n    function sendTo(address receiver, uint amount) public {\n\n        require(tx.origin == owner);\n        receiver.transfer(amount);\n    }\n\n}\n"
+}
