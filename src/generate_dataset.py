@@ -227,9 +227,63 @@ def record_contract_info(contract_info):
 
     if not patch_detection['results']:
         # 脆弱性なし！
+        with open(f'{contract_dir}/contract_info.json', 'w') as f:
+            d = {'filename': contract_info['Original'], 'version': solc_ver, 'main_contract': get_maincontract(code.splitlines())}
+            json.dump(d, f, indent=2)
         return True
     else:
         return False
+
+
+def get_maincontract(contents):
+    contract = []
+    for line in contents:
+        # count contracts in solfile
+        # remove space of left side of 'line'
+        line = line.lstrip()
+        if line.startswith('contract '): 
+            contract.append(re.findall(r'contract\s+([A-Za-z_][A-Za-z0-9_]*)\s*', line)[0])
+            name =  re.findall(r'contract\s+([A-Za-z_][A-Za-z0-9_]*)\s*', line)[0]
+
+    if len(contract) == 1:
+        # solfile has only 1 contract -> target!!
+        return contract[0]
+    elif len(contract) > 1:
+        # multiple contract
+        # get main contract
+        return select_main_contract(filename, contract)
+
+
+def select_main_contract(filename, contract_name_list):
+    # TODO: remove 17-21!
+    # adjusting the case of this study
+    main_cands = ['DepositProxy', 'ModifierEntrancy', 'TokenBank', 'PoCGame', 'EtherGet', 'VaultProxy', 'PandaCore', 'MultiOwnable', 'FibonacciBalance']
+
+    main_list = []
+    for contract in contract_name_list:
+        if not contract.startswith('Log'):
+            main_list.append(contract)
+    
+    for cand in main_cands:
+        if cand in main_list:
+            return cand
+    
+    if len(main_list) == 1:
+        return main_list[0]
+
+    print(f'Select main contract of {filename}')
+    for i, contract in enumerate(contract_name_list):
+        print(f'{i}: {contract}')
+
+    index = int(input())
+
+    if 0 <= index and index < len(contract_name_list):
+        return contract_name_list[index] 
+    else:
+        return ''
+
+
+
 
 
 
