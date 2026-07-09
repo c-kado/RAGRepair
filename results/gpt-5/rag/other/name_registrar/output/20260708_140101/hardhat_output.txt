@@ -1,0 +1,31 @@
+
+
+
+
+  attack other/name_registrar.sol
+    ✔ functional check: other/name_registrar.sol (321ms)
+    1) exploit uninitialized storage vulnerability
+
+
+  1 passing (326ms)
+  1 failing
+
+  1) attack other/name_registrar.sol
+       exploit uninitialized storage vulnerability:
+     Error: Transaction reverted without a reason string
+    at <UnrecognizedContract>.<unknown> (0x5fbdb2315678afecb367f032d93f642f64180aa3)
+    at <UnrecognizedContract>.<unknown> (0xe7f1725e7734ce288f8367e1bb143e90bb3f0512)
+    at EdrProviderWrapper.request (node_modules/hardhat/src/internal/hardhat-network/provider/provider.ts:446:41)
+    at HardhatEthersSigner.sendTransaction (node_modules/@nomicfoundation/hardhat-ethers/src/signers.ts:125:18)
+    at send (node_modules/ethers/src.ts/contract/contract.ts:313:20)
+    at Proxy.attack (node_modules/ethers/src.ts/contract/contract.ts:352:16)
+    at Context.<anonymous> (test/other/name_registrar_test.js:41:5)
+  
+
+
+
+Total passing test files: 0/1
+Total failed files: 1/1
+Total failed functional tests: 0/1
+
+Test results written to /Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/tools/sb-heists/smartbugs-curated/0.4.x/scripts/test-results.json

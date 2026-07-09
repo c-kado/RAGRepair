@@ -1,0 +1,5 @@
+{
+  "filename": "reentrancy_dao.sol",
+  "version": "0.4.19",
+  "main_contract": "ReentrancyDAO"
+}

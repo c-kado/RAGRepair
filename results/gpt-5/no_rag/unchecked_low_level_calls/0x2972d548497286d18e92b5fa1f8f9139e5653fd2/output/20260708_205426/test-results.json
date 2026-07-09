@@ -1,0 +1,31 @@
+{
+    "totalTests": 2,
+    "passingTests": 0,
+    "failingTests": 2,
+    "totalFiles": 1,
+    "passingFiles": 0,
+    "failingFiles": 1,
+    "failedFunctionalCheck": 1,
+    "passedFunctionalCheck": 0,
+    "failedFunctionalCheckResults": [
+        {
+            "title": "functional check: unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2.sol",
+            "file": "unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_test.js",
+            "contractFile": "unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2.sol",
+            "state": "failed",
+            "error": "Expected transaction NOT to be reverted",
+            "stack": "AssertionError: Expected transaction NOT to be reverted\n    at Context.<anonymous> (test/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_test.js:34:5)"
+        }
+    ],
+    "passedResults": [],
+    "failedResults": [
+        {
+            "title": "exploit unchecked low level call vulnerability",
+            "file": "unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_test.js",
+            "contractFile": "unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2.sol",
+            "state": "failed",
+            "error": "Expected transaction NOT to be reverted",
+            "stack": "AssertionError: Expected transaction NOT to be reverted\n    at Context.<anonymous> (test/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_test.js:69:5)"
+        }
+    ]
+}

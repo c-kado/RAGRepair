@@ -1,0 +1,5 @@
+﻿reentrancy,total_C,total_P,format_C,format_P,compilable_C,compilable_P,non-vulnerable_C,non-vulnerable_P,no-add-vul_C,no-add-vul_P,functionality_C,functionality_P
+rag_success_count,23,115,23,115,23,112,23,112,23,112,23,112
+rag_success_rate,,,100.0,100.0,100.0,97.391,100.0,97.391,100.0,97.391,100.0,97.391
+no_rag_success_count,23,115,23,115,23,115,23,115,23,115,23,115
+no_rag_success_rate,,,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0

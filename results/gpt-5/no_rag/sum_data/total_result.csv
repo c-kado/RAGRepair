@@ -1,0 +1,3 @@
+﻿total,total_C,total_P,format_C,format_P,compilable_C,compilable_P,non-vulnerable_C,non-vulnerable_P,no-add-vul_C,no-add-vul_P,functionality_C,functionality_P
+success_count,43,215,43,215,43,214,43,214,43,214,41,185
+success_rate,,,100.0,100.0,100.0,99.534,100.0,99.534,100.0,99.534,95.348,86.046

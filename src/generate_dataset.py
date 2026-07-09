@@ -228,14 +228,14 @@ def record_contract_info(contract_info):
     if not patch_detection['results']:
         # 脆弱性なし！
         with open(f'{contract_dir}/contract_info.json', 'w') as f:
-            d = {'filename': contract_info['Original'], 'version': solc_ver, 'main_contract': get_maincontract(code.splitlines())}
+            d = {'filename': contract_info['Original'], 'version': solc_ver, 'main_contract': get_maincontract(contract_info['Original'], code.splitlines())}
             json.dump(d, f, indent=2)
         return True
     else:
         return False
 
 
-def get_maincontract(contents):
+def get_maincontract(filename, contents):
     contract = []
     for line in contents:
         # count contracts in solfile

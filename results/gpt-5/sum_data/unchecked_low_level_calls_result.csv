@@ -1,0 +1,5 @@
+﻿unchecked_low_level_calls,total_C,total_P,format_C,format_P,compilable_C,compilable_P,non-vulnerable_C,non-vulnerable_P,no-add-vul_C,no-add-vul_P,functionality_C,functionality_P
+rag_success_count,15,75,15,75,15,75,15,75,15,75,15,73
+rag_success_rate,,,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,97.333
+no_rag_success_count,15,75,15,75,15,74,15,74,15,74,13,45
+no_rag_success_rate,,,100.0,100.0,100.0,98.666,100.0,98.666,100.0,98.666,86.666,60.0

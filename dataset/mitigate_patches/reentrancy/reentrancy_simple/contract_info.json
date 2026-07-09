@@ -1,0 +1,5 @@
+{
+  "filename": "reentrancy_simple.sol",
+  "version": "0.4.15",
+  "main_contract": "Reentrance"
+}
