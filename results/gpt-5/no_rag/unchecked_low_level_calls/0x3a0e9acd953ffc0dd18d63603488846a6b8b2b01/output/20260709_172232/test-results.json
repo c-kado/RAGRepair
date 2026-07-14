@@ -1,0 +1,39 @@
+{
+    "totalTests": 3,
+    "passingTests": 0,
+    "failingTests": 3,
+    "totalFiles": 1,
+    "passingFiles": 0,
+    "failingFiles": 1,
+    "failedFunctionalCheck": 1,
+    "passedFunctionalCheck": 0,
+    "failedFunctionalCheckResults": [
+        {
+            "title": "functional check: unchecked_low_level_calls/0x3a0e9acd953ffc0dd18d63603488846a6b8b2b01.sol",
+            "file": "unchecked_low_level_calls/0x3a0e9acd953ffc0dd18d63603488846a6b8b2b01_test.js",
+            "contractFile": "unchecked_low_level_calls/0x3a0e9acd953ffc0dd18d63603488846a6b8b2b01.sol",
+            "state": "failed",
+            "error": "Expected transaction NOT to be reverted",
+            "stack": "AssertionError: Expected transaction NOT to be reverted\n    at Context.<anonymous> (test/unchecked_low_level_calls/0x3a0e9acd953ffc0dd18d63603488846a6b8b2b01_test.js:39:5)"
+        }
+    ],
+    "passedResults": [],
+    "failedResults": [
+        {
+            "title": "exploit unchecked low level call vulnerability in WithdrawToken()",
+            "file": "unchecked_low_level_calls/0x3a0e9acd953ffc0dd18d63603488846a6b8b2b01_test.js",
+            "contractFile": "unchecked_low_level_calls/0x3a0e9acd953ffc0dd18d63603488846a6b8b2b01.sol",
+            "state": "failed",
+            "error": "VM Exception while processing transaction: reverted with reason string 'I always revert!'",
+            "stack": "Error: VM Exception while processing transaction: reverted with reason string 'I always revert!'\n    at <UnrecognizedContract>.<unknown> (0xe7f1725e7734ce288f8367e1bb143e90bb3f0512)\n    at <UnrecognizedContract>.<unknown> (0x5fbdb2315678afecb367f032d93f642f64180aa3)\n    at EdrProviderWrapper.request (node_modules/hardhat/src/internal/hardhat-network/provider/provider.ts:446:41)\n    at HardhatEthersSigner.sendTransaction (node_modules/@nomicfoundation/hardhat-ethers/src/signers.ts:125:18)\n    at send (node_modules/ethers/src.ts/contract/contract.ts:313:20)\n    at Proxy.WitdrawTokenToHolder (node_modules/ethers/src.ts/contract/contract.ts:352:16)\n    at Context.<anonymous> (test/unchecked_low_level_calls/0x3a0e9acd953ffc0dd18d63603488846a6b8b2b01_test.js:78:5)"
+        },
+        {
+            "title": "exploit unchecked low level call vulnerability in WithdrawToHolder()",
+            "file": "unchecked_low_level_calls/0x3a0e9acd953ffc0dd18d63603488846a6b8b2b01_test.js",
+            "contractFile": "unchecked_low_level_calls/0x3a0e9acd953ffc0dd18d63603488846a6b8b2b01.sol",
+            "state": "failed",
+            "error": "VM Exception while processing transaction: reverted with reason string 'I always revert!'",
+            "stack": "Error: VM Exception while processing transaction: reverted with reason string 'I always revert!'\n    at <UnrecognizedContract>.<unknown> (0xe7f1725e7734ce288f8367e1bb143e90bb3f0512)\n    at <UnrecognizedContract>.<unknown> (0x5fbdb2315678afecb367f032d93f642f64180aa3)\n    at EdrProviderWrapper.request (node_modules/hardhat/src/internal/hardhat-network/provider/provider.ts:446:41)\n    at HardhatEthersSigner.sendTransaction (node_modules/@nomicfoundation/hardhat-ethers/src/signers.ts:125:18)\n    at send (node_modules/ethers/src.ts/contract/contract.ts:313:20)\n    at Proxy.WithdrawToHolder (node_modules/ethers/src.ts/contract/contract.ts:352:16)\n    at Context.<anonymous> (test/unchecked_low_level_calls/0x3a0e9acd953ffc0dd18d63603488846a6b8b2b01_test.js:132:5)"
+        }
+    ]
+}

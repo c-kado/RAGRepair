@@ -1,5 +1,164 @@
 {
   "success": true,
   "error": null,
-  "results": {}
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "transferOwnership",
+            "source_mapping": {
+              "start": 309,
+              "length": 126,
+              "filename_relative": "../results/gpt-5/rag/access_control/proxy/proxy_1.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/rag/access_control/proxy/proxy_1.sol",
+              "filename_short": "../results/gpt-5/rag/access_control/proxy/proxy_1.sol",
+              "is_dependency": false,
+              "lines": [
+                20,
+                21,
+                22,
+                23
+              ],
+              "starting_column": 3,
+              "ending_column": 4
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "Proxy",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 412,
+                  "filename_relative": "../results/gpt-5/rag/access_control/proxy/proxy_1.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/rag/access_control/proxy/proxy_1.sol",
+                  "filename_short": "../results/gpt-5/rag/access_control/proxy/proxy_1.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "transferOwnership(address)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "owner = newOwner",
+            "source_mapping": {
+              "start": 414,
+              "length": 16,
+              "filename_relative": "../results/gpt-5/rag/access_control/proxy/proxy_1.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/rag/access_control/proxy/proxy_1.sol",
+              "filename_short": "../results/gpt-5/rag/access_control/proxy/proxy_1.sol",
+              "is_dependency": false,
+              "lines": [
+                22
+              ],
+              "starting_column": 5,
+              "ending_column": 21
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transferOwnership",
+                "source_mapping": {
+                  "start": 309,
+                  "length": 126,
+                  "filename_relative": "../results/gpt-5/rag/access_control/proxy/proxy_1.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/rag/access_control/proxy/proxy_1.sol",
+                  "filename_short": "../results/gpt-5/rag/access_control/proxy/proxy_1.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    20,
+                    21,
+                    22,
+                    23
+                  ],
+                  "starting_column": 3,
+                  "ending_column": 4
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "Proxy",
+                    "source_mapping": {
+                      "start": 26,
+                      "length": 412,
+                      "filename_relative": "../results/gpt-5/rag/access_control/proxy/proxy_1.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/rag/access_control/proxy/proxy_1.sol",
+                      "filename_short": "../results/gpt-5/rag/access_control/proxy/proxy_1.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "transferOwnership(address)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "Proxy.transferOwnership(address) (../results/gpt-5/rag/access_control/proxy/proxy_1.sol#20-23) should emit an event for: \n\t- owner = newOwner (../results/gpt-5/rag/access_control/proxy/proxy_1.sol#22) \n",
+        "markdown": "[Proxy.transferOwnership(address)](../results/gpt-5/rag/access_control/proxy/proxy_1.sol#L20-L23) should emit an event for: \n\t- [owner = newOwner](../results/gpt-5/rag/access_control/proxy/proxy_1.sol#L22) \n",
+        "first_markdown_element": "../results/gpt-5/rag/access_control/proxy/proxy_1.sol#L20-L23",
+        "id": "710a07fcb3c038228dcadac92a71bd9a9e4fd6d62db598709ff2a720f9466c72",
+        "check": "events-access",
+        "impact": "Low",
+        "confidence": "Medium"
+      }
+    ]
+  }
 }

@@ -1,5 +1,836 @@
 {
   "success": true,
   "error": null,
-  "results": {}
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "shuffle",
+            "source_mapping": {
+              "start": 395,
+              "length": 120,
+              "filename_relative": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+              "filename_short": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+              "is_dependency": false,
+              "lines": [
+                21,
+                22,
+                23
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "CryptoRoulette",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 1032,
+                  "filename_relative": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                  "filename_short": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "shuffle()"
+            }
+          },
+          {
+            "type": "node",
+            "name": "secretNumber = uint8(sha3()(now,block.blockhash(block.number - 1))) % 20 + 1",
+            "source_mapping": {
+              "start": 433,
+              "length": 75,
+              "filename_relative": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+              "filename_short": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+              "is_dependency": false,
+              "lines": [
+                22
+              ],
+              "starting_column": 9,
+              "ending_column": 84
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "shuffle",
+                "source_mapping": {
+                  "start": 395,
+                  "length": 120,
+                  "filename_relative": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                  "filename_short": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    21,
+                    22,
+                    23
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "CryptoRoulette",
+                    "source_mapping": {
+                      "start": 26,
+                      "length": 1032,
+                      "filename_relative": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                      "filename_short": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        36,
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44,
+                        45,
+                        46,
+                        47
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "shuffle()"
+                }
+              }
+            }
+          }
+        ],
+        "description": "CryptoRoulette.shuffle() (../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol#21-23) uses a weak PRNG: \"secretNumber = uint8(sha3()(now,block.blockhash(block.number - 1))) % 20 + 1 (../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol#22)\" \n",
+        "markdown": "[CryptoRoulette.shuffle()](../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol#L21-L23) uses a weak PRNG: \"[secretNumber = uint8(sha3()(now,block.blockhash(block.number - 1))) % 20 + 1](../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol#L22)\" \n",
+        "first_markdown_element": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol#L21-L23",
+        "id": "fc64def1211ed84de54b60e7a8f04c8f7eb72badf1de734f2906bc9ca34e4016",
+        "check": "weak-prng",
+        "impact": "High",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "play",
+            "source_mapping": {
+              "start": 521,
+              "length": 353,
+              "filename_relative": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+              "filename_short": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+              "is_dependency": false,
+              "lines": [
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "CryptoRoulette",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 1032,
+                  "filename_relative": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                  "filename_short": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "play(uint256)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "number == secretNumber",
+            "source_mapping": {
+              "start": 740,
+              "length": 22,
+              "filename_relative": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+              "filename_short": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+              "is_dependency": false,
+              "lines": [
+                31
+              ],
+              "starting_column": 13,
+              "ending_column": 35
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "play",
+                "source_mapping": {
+                  "start": 521,
+                  "length": 353,
+                  "filename_relative": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                  "filename_short": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "CryptoRoulette",
+                    "source_mapping": {
+                      "start": 26,
+                      "length": 1032,
+                      "filename_relative": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                      "filename_short": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        36,
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44,
+                        45,
+                        46,
+                        47
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "play(uint256)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "CryptoRoulette.play(uint256) (../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol#25-37) uses a dangerous strict equality:\n\t- number == secretNumber (../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol#31)\n",
+        "markdown": "[CryptoRoulette.play(uint256)](../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol#L25-L37) uses a dangerous strict equality:\n\t- [number == secretNumber](../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol#L31)\n",
+        "first_markdown_element": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol#L25-L37",
+        "id": "b64ae5d9d424762d61d5c7f8bdd1730dfba328a9faab441ea7389fad1e71bf6e",
+        "check": "incorrect-equality",
+        "impact": "Medium",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "play",
+            "source_mapping": {
+              "start": 521,
+              "length": 353,
+              "filename_relative": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+              "filename_short": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+              "is_dependency": false,
+              "lines": [
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "CryptoRoulette",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 1032,
+                  "filename_relative": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                  "filename_short": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "play(uint256)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "number == secretNumber",
+            "source_mapping": {
+              "start": 740,
+              "length": 22,
+              "filename_relative": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+              "filename_short": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+              "is_dependency": false,
+              "lines": [
+                31
+              ],
+              "starting_column": 13,
+              "ending_column": 35
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "play",
+                "source_mapping": {
+                  "start": 521,
+                  "length": 353,
+                  "filename_relative": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                  "filename_short": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "CryptoRoulette",
+                    "source_mapping": {
+                      "start": 26,
+                      "length": 1032,
+                      "filename_relative": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                      "filename_short": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        36,
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44,
+                        45,
+                        46,
+                        47
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "play(uint256)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "CryptoRoulette.play(uint256) (../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol#25-37) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- number == secretNumber (../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol#31)\n",
+        "markdown": "[CryptoRoulette.play(uint256)](../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol#L25-L37) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- [number == secretNumber](../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol#L31)\n",
+        "first_markdown_element": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol#L25-L37",
+        "id": "5b3e1d5e5423aab28ad1769cb9eeb30fac24b9194e9bfcd7172b28e4c803d741",
+        "check": "timestamp",
+        "impact": "Low",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "kill",
+            "source_mapping": {
+              "start": 880,
+              "length": 141,
+              "filename_relative": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+              "filename_short": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+              "is_dependency": false,
+              "lines": [
+                39,
+                40,
+                41,
+                42,
+                43
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "CryptoRoulette",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 1032,
+                  "filename_relative": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                  "filename_short": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "kill()"
+            }
+          },
+          {
+            "type": "node",
+            "name": "msg.sender == ownerAddr && now > lastPlayed + 86400",
+            "source_mapping": {
+              "start": 917,
+              "length": 52,
+              "filename_relative": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+              "filename_short": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+              "is_dependency": false,
+              "lines": [
+                40
+              ],
+              "starting_column": 13,
+              "ending_column": 65
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "kill",
+                "source_mapping": {
+                  "start": 880,
+                  "length": 141,
+                  "filename_relative": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                  "filename_short": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    39,
+                    40,
+                    41,
+                    42,
+                    43
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "CryptoRoulette",
+                    "source_mapping": {
+                      "start": 26,
+                      "length": 1032,
+                      "filename_relative": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                      "filename_short": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        36,
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44,
+                        45,
+                        46,
+                        47
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "kill()"
+                }
+              }
+            }
+          }
+        ],
+        "description": "CryptoRoulette.kill() (../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol#39-43) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- msg.sender == ownerAddr && now > lastPlayed + 86400 (../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol#40)\n",
+        "markdown": "[CryptoRoulette.kill()](../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol#L39-L43) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- [msg.sender == ownerAddr && now > lastPlayed + 86400](../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol#L40)\n",
+        "first_markdown_element": "../results/gpt-5/no_rag/other/crypto_roulette/crypto_roulette_2.sol#L39-L43",
+        "id": "f5ce224484dd9f776900f65532b89a543982c4d8f6eb3c11a51651c225ab9459",
+        "check": "timestamp",
+        "impact": "Low",
+        "confidence": "Medium"
+      }
+    ]
+  }
 }

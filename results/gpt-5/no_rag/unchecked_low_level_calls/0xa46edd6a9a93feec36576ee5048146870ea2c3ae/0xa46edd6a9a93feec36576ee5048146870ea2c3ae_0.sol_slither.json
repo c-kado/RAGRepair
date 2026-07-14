@@ -1,5 +1,420 @@
 {
   "success": true,
   "error": null,
-  "results": {}
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "transfer",
+            "source_mapping": {
+              "start": 160,
+              "length": 445,
+              "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+              "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+              "is_dependency": false,
+              "lines": [
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "EBU",
+                "source_mapping": {
+                  "start": 140,
+                  "length": 639,
+                  "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+                  "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "transfer(address,address,address[],uint256[])"
+            }
+          },
+          {
+            "type": "node",
+            "name": "require(bool)(token.transferFrom(from,_tos[i],v[i]))",
+            "source_mapping": {
+              "start": 519,
+              "length": 48,
+              "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+              "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+              "is_dependency": false,
+              "lines": [
+                17
+              ],
+              "starting_column": 13,
+              "ending_column": 61
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transfer",
+                "source_mapping": {
+                  "start": 160,
+                  "length": 445,
+                  "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+                  "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "EBU",
+                    "source_mapping": {
+                      "start": 140,
+                      "length": 639,
+                      "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+                      "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "transfer(address,address,address[],uint256[])"
+                }
+              }
+            }
+          }
+        ],
+        "description": "EBU.transfer(address,address,address[],uint256[]) (../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol#9-20) uses arbitrary from in transferFrom: require(bool)(token.transferFrom(from,_tos[i],v[i])) (../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol#17)\n",
+        "markdown": "[EBU.transfer(address,address,address[],uint256[])](../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol#L9-L20) uses arbitrary from in transferFrom: [require(bool)(token.transferFrom(from,_tos[i],v[i]))](../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol#L17)\n",
+        "first_markdown_element": "../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol#L9-L20",
+        "id": "c365012a1c66d6917fb008f53e6e3b384094dae393bce0a51effdad40d6566fe",
+        "check": "arbitrary-send-erc20",
+        "impact": "High",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "isContract",
+            "source_mapping": {
+              "start": 611,
+              "length": 166,
+              "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+              "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+              "is_dependency": false,
+              "lines": [
+                22,
+                23,
+                24,
+                25,
+                26
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "EBU",
+                "source_mapping": {
+                  "start": 140,
+                  "length": 639,
+                  "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+                  "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "isContract(address)"
+            }
+          }
+        ],
+        "description": "EBU.isContract(address) (../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol#22-26) is declared view but contains assembly code\n",
+        "markdown": "[EBU.isContract(address)](../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol#L22-L26) is declared view but contains assembly code\n",
+        "first_markdown_element": "../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol#L22-L26",
+        "id": "4f90db288f3dcacf117b3d231cbc9d44101df63b122f66bf596931356f57fedc",
+        "additional_fields": {
+          "contains_assembly": true
+        },
+        "check": "constant-function-asm",
+        "impact": "Medium",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "transfer",
+            "source_mapping": {
+              "start": 160,
+              "length": 445,
+              "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+              "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+              "is_dependency": false,
+              "lines": [
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "EBU",
+                "source_mapping": {
+                  "start": 140,
+                  "length": 639,
+                  "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+                  "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "transfer(address,address,address[],uint256[])"
+            }
+          },
+          {
+            "type": "node",
+            "name": "require(bool)(token.transferFrom(from,_tos[i],v[i]))",
+            "source_mapping": {
+              "start": 519,
+              "length": 48,
+              "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+              "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+              "is_dependency": false,
+              "lines": [
+                17
+              ],
+              "starting_column": 13,
+              "ending_column": 61
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transfer",
+                "source_mapping": {
+                  "start": 160,
+                  "length": 445,
+                  "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+                  "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "EBU",
+                    "source_mapping": {
+                      "start": 140,
+                      "length": 639,
+                      "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+                      "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "transfer(address,address,address[],uint256[])"
+                }
+              }
+            }
+          }
+        ],
+        "description": "EBU.transfer(address,address,address[],uint256[]) (../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol#9-20) has external calls inside a loop: require(bool)(token.transferFrom(from,_tos[i],v[i])) (../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol#17)\n",
+        "markdown": "[EBU.transfer(address,address,address[],uint256[])](../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol#L9-L20) has external calls inside a loop: [require(bool)(token.transferFrom(from,_tos[i],v[i]))](../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol#L17)\n",
+        "first_markdown_element": "../results/gpt-5/no_rag/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae/0xa46edd6a9a93feec36576ee5048146870ea2c3ae_0.sol#L9-L20",
+        "id": "3c1ae15e25fe6b56adbe3d7109d2100cb2e08a897547febcdf80696ed58d020b",
+        "check": "calls-loop",
+        "impact": "Low",
+        "confidence": "Medium"
+      }
+    ]
+  }
 }

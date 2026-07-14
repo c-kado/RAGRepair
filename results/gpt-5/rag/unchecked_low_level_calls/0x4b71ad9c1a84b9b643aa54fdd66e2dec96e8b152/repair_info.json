@@ -1,0 +1,32 @@
+{
+  "model": "gpt-5",
+  "category": "unchecked_low_level_calls",
+  "contract": "0x4b71ad9c1a84b9b643aa54fdd66e2dec96e8b152",
+  "rag_info": {
+    "nearest_category": "unchecked_low_level_calls",
+    "nearest_contract": "0x4051334adc52057aca763453820cb0e045076ef3",
+    "nearest_similarity": "0.9999999999999998"
+  },
+  "results": [
+    {
+      "output_count": 0,
+      "exec_time": "0:00:10"
+    },
+    {
+      "output_count": 1,
+      "exec_time": "0:00:08"
+    },
+    {
+      "output_count": 2,
+      "exec_time": "0:00:05"
+    },
+    {
+      "output_count": 3,
+      "exec_time": "0:00:06"
+    },
+    {
+      "output_count": 4,
+      "exec_time": "0:00:05"
+    }
+  ]
+}

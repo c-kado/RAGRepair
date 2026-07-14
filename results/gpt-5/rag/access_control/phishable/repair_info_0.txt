@@ -4,3 +4,19 @@ Category: access_control
 Contract: phishable
 Nearest: mycontract
 Nearest Similarity: 1.0000000000000002
+
+
+
+{
+	"model": "gpt-5",
+	"category": "access_control",
+	"contract": "phishable",
+	"rag_info": {
+		"nearest_contract": "mycontract",
+		"nearest_similarity": 1.00000
+	},
+	results{
+		"output_count": 0,
+		"exec_time": "0:00:09"
+	}
+}

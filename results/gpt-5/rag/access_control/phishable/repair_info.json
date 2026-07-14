@@ -1,0 +1,32 @@
+{
+  "model": "gpt-5",
+  "category": "access_control",
+  "contract": "phishable",
+  "rag_info": {
+    "nearest_category": "access_control",
+    "nearest_contract": "mycontract",
+    "nearest_similarity": "1.0000000000000002"
+  },
+  "results": [
+    {
+      "output_count": 0,
+      "exec_time": "0:00:09"
+    },
+    {
+      "output_count": 1,
+      "exec_time": "0:00:07"
+    },
+    {
+      "output_count": 2,
+      "exec_time": "0:00:08"
+    },
+    {
+      "output_count": 3,
+      "exec_time": "0:00:12"
+    },
+    {
+      "output_count": 4,
+      "exec_time": "0:00:12"
+    }
+  ]
+}

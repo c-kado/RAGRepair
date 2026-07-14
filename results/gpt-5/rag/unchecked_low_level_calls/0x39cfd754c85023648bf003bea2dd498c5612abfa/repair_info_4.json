@@ -1,0 +1,11 @@
+{
+  "model": "gpt-5",
+  "category": "unchecked_low_level_calls",
+  "contract": "0x39cfd754c85023648bf003bea2dd498c5612abfa",
+  "exec_time": "0:00:20",
+  "rag_info": {
+    "nearest_category": "unchecked_low_level_calls",
+    "nearest_contract": "0x4051334adc52057aca763453820cb0e045076ef3",
+    "nearest_similarity": "0.9999999999999998"
+  }
+}

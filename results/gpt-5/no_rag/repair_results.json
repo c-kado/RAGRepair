@@ -38,8 +38,9 @@
                 "format": true,
                 "compilable": true,
                 "non-vulnerable": true,
-                "no-add-vul": true,
-                "functionality": true
+                "no-add-vul": false,
+                "functionality": false,
+                "fail_no-add-vul_results": "More vul in the patch than the original."
               },
               {
                 "output_count": 4,
@@ -126,8 +127,9 @@
                 "format": true,
                 "compilable": true,
                 "non-vulnerable": true,
-                "no-add-vul": true,
-                "functionality": true
+                "no-add-vul": false,
+                "functionality": false,
+                "fail_no-add-vul_results": "More vul in the patch than the original."
               },
               {
                 "output_count": 1,
@@ -213,9 +215,10 @@
                 "output_count": 4,
                 "format": true,
                 "compilable": true,
-                "non-vulnerable": true,
-                "no-add-vul": true,
-                "functionality": true
+                "non-vulnerable": false,
+                "no-add-vul": false,
+                "functionality": false,
+                "fail_non-vulnerable_results": "Detected vulnerability."
               }
             ],
             "contract_results": {
@@ -326,8 +329,9 @@
                 "format": true,
                 "compilable": true,
                 "non-vulnerable": true,
-                "no-add-vul": true,
-                "functionality": true
+                "no-add-vul": false,
+                "functionality": false,
+                "fail_no-add-vul_results": "More vul in the patch than the original."
               }
             ],
             "contract_results": {
@@ -437,9 +441,10 @@
                 "output_count": 4,
                 "format": true,
                 "compilable": true,
-                "non-vulnerable": true,
-                "no-add-vul": true,
-                "functionality": true
+                "non-vulnerable": false,
+                "no-add-vul": false,
+                "functionality": false,
+                "fail_non-vulnerable_results": "Detected vulnerability."
               }
             ],
             "contract_results": {
@@ -645,9 +650,10 @@
                 "output_count": 2,
                 "format": true,
                 "compilable": true,
-                "non-vulnerable": true,
-                "no-add-vul": true,
-                "functionality": true
+                "non-vulnerable": false,
+                "no-add-vul": false,
+                "functionality": false,
+                "fail_non-vulnerable_results": "Detected vulnerability."
               },
               {
                 "output_count": 3,
@@ -709,9 +715,10 @@
                 "output_count": 3,
                 "format": true,
                 "compilable": true,
-                "non-vulnerable": true,
-                "no-add-vul": true,
-                "functionality": true
+                "non-vulnerable": false,
+                "no-add-vul": false,
+                "functionality": false,
+                "fail_non-vulnerable_results": "Detected vulnerability."
               },
               {
                 "output_count": 4,
@@ -965,17 +972,19 @@
                 "output_count": 0,
                 "format": true,
                 "compilable": true,
-                "non-vulnerable": true,
-                "no-add-vul": true,
-                "functionality": true
+                "non-vulnerable": false,
+                "no-add-vul": false,
+                "functionality": false,
+                "fail_non-vulnerable_results": "Detected vulnerability."
               },
               {
                 "output_count": 1,
                 "format": true,
                 "compilable": true,
-                "non-vulnerable": true,
-                "no-add-vul": true,
-                "functionality": true
+                "non-vulnerable": false,
+                "no-add-vul": false,
+                "functionality": false,
+                "fail_non-vulnerable_results": "Detected vulnerability."
               },
               {
                 "output_count": 2,
@@ -989,9 +998,10 @@
                 "output_count": 3,
                 "format": true,
                 "compilable": true,
-                "non-vulnerable": true,
-                "no-add-vul": true,
-                "functionality": true
+                "non-vulnerable": false,
+                "no-add-vul": false,
+                "functionality": false,
+                "fail_non-vulnerable_results": "Detected vulnerability."
               },
               {
                 "output_count": 4,
@@ -1253,17 +1263,19 @@
                 "output_count": 1,
                 "format": true,
                 "compilable": true,
-                "non-vulnerable": true,
-                "no-add-vul": true,
-                "functionality": true
+                "non-vulnerable": false,
+                "no-add-vul": false,
+                "functionality": false,
+                "fail_non-vulnerable_results": "Detected vulnerability."
               },
               {
                 "output_count": 2,
                 "format": true,
                 "compilable": true,
-                "non-vulnerable": true,
-                "no-add-vul": true,
-                "functionality": true
+                "non-vulnerable": false,
+                "no-add-vul": false,
+                "functionality": false,
+                "fail_non-vulnerable_results": "Detected vulnerability."
               },
               {
                 "output_count": 3,
@@ -1305,9 +1317,9 @@
         "patch": {
           "format": 115,
           "compilable": 115,
-          "non-vulnerable": 115,
-          "no-add-vul": 115,
-          "functionality": 115
+          "non-vulnerable": 106,
+          "no-add-vul": 103,
+          "functionality": 103
         }
       }
     },
@@ -2153,9 +2165,9 @@
                 "format": true,
                 "compilable": true,
                 "non-vulnerable": true,
-                "no-add-vul": true,
+                "no-add-vul": false,
                 "functionality": false,
-                "fail_functionality_results": "Function results:\n[{'title': 'functional check: unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431.sol', 'file': 'unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431_test.js', 'contractFile': 'unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431.sol', 'state': 'failed', 'error': 'Expected transaction NOT to be reverted', 'stack': 'AssertionError: Expected transaction NOT to be reverted\\n    at Context.<anonymous> (test/unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431_test.js:38:5)'}]\n"
+                "fail_no-add-vul_results": "More vul in the patch than the original."
               },
               {
                 "output_count": 3,
@@ -2171,8 +2183,9 @@
                 "format": true,
                 "compilable": true,
                 "non-vulnerable": true,
-                "no-add-vul": true,
-                "functionality": true
+                "no-add-vul": false,
+                "functionality": false,
+                "fail_no-add-vul_results": "More vul in the patch than the original."
               }
             ],
             "contract_results": {
@@ -2180,7 +2193,7 @@
               "compilable": true,
               "non-vulnerable": true,
               "no-add-vul": true,
-              "functionality": true
+              "functionality": false
             }
           }
         }
@@ -2193,14 +2206,14 @@
           "compilable": 15,
           "non-vulnerable": 15,
           "no-add-vul": 15,
-          "functionality": 13
+          "functionality": 12
         },
         "patch": {
           "format": 75,
           "compilable": 74,
           "non-vulnerable": 74,
-          "no-add-vul": 74,
-          "functionality": 45
+          "no-add-vul": 72,
+          "functionality": 44
         }
       }
     },
@@ -2226,8 +2239,9 @@
                 "format": true,
                 "compilable": true,
                 "non-vulnerable": true,
-                "no-add-vul": true,
-                "functionality": true
+                "no-add-vul": false,
+                "functionality": false,
+                "fail_no-add-vul_results": "More vul in the patch than the original."
               },
               {
                 "output_count": 2,
@@ -2334,8 +2348,8 @@
           "format": 10,
           "compilable": 10,
           "non-vulnerable": 10,
-          "no-add-vul": 10,
-          "functionality": 10
+          "no-add-vul": 9,
+          "functionality": 9
         }
       }
     },
@@ -2369,8 +2383,9 @@
                 "format": true,
                 "compilable": true,
                 "non-vulnerable": true,
-                "no-add-vul": true,
-                "functionality": true
+                "no-add-vul": false,
+                "functionality": false,
+                "fail_no-add-vul_results": "More vul in the patch than the original."
               },
               {
                 "output_count": 3,
@@ -2525,8 +2540,8 @@
           "format": 15,
           "compilable": 15,
           "non-vulnerable": 15,
-          "no-add-vul": 15,
-          "functionality": 15
+          "no-add-vul": 14,
+          "functionality": 14
         }
       }
     }
@@ -2539,14 +2554,14 @@
       "compilable": 43,
       "non-vulnerable": 43,
       "no-add-vul": 43,
-      "functionality": 41
+      "functionality": 40
     },
     "patch": {
       "format": 215,
       "compilable": 214,
-      "non-vulnerable": 214,
-      "no-add-vul": 214,
-      "functionality": 185
+      "non-vulnerable": 205,
+      "no-add-vul": 198,
+      "functionality": 170
     }
   }
 }

@@ -1,0 +1,22 @@
+{
+    "totalTests": 2,
+    "passingTests": 1,
+    "failingTests": 1,
+    "totalFiles": 1,
+    "passingFiles": 0,
+    "failingFiles": 1,
+    "failedFunctionalCheck": 0,
+    "passedFunctionalCheck": 1,
+    "failedFunctionalCheckResults": [],
+    "passedResults": [],
+    "failedResults": [
+        {
+            "title": "exploit unchecked low level call vulnerability",
+            "file": "unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_test.js",
+            "contractFile": "unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2.sol",
+            "state": "failed",
+            "error": "Expected transaction NOT to be reverted, but it reverted with reason 'Low-level call failed'",
+            "stack": "AssertionError: Expected transaction NOT to be reverted, but it reverted with reason 'Low-level call failed'\n    at Context.<anonymous> (test/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_test.js:69:5)"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+  "model": "gpt-5",
+  "category": "reentrancy",
+  "contract": "0x7b368c4e805c3870b6c49a3f1f49f69af8662cf3",
+  "exec_time": "0:00:28",
+  "rag_info": {
+    "nearest_category": "reentrancy",
+    "nearest_contract": "0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f",
+    "nearest_similarity": "1.0"
+  }
+}

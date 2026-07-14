@@ -1,0 +1,27 @@
+{
+  "model": "gpt-5",
+  "category": "reentrancy",
+  "contract": "0x561eac93c92360949ab1f1403323e6db345cbf31",
+  "results": [
+    {
+      "output_count": 0,
+      "exec_time": "0:00:40"
+    },
+    {
+      "output_count": 1,
+      "exec_time": "0:00:33"
+    },
+    {
+      "output_count": 2,
+      "exec_time": "0:00:35"
+    },
+    {
+      "output_count": 3,
+      "exec_time": "0:00:32"
+    },
+    {
+      "output_count": 4,
+      "exec_time": "0:00:18"
+    }
+  ]
+}

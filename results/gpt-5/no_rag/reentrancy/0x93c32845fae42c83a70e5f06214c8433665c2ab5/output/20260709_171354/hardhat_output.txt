@@ -1,0 +1,33 @@
+
+
+
+
+  Reentrancy Attack for 0x93c32845fae42c83a70e5f06214c8433665c2ab5.sol
+    ✔ functional check: reentrancy/0x93c32845fae42c83a70e5f06214c8433665c2ab5.sol
+    1) should successfully drain funds through reentrancy attack
+
+
+  1 passing (344ms)
+  1 failing
+
+  1) Reentrancy Attack for 0x93c32845fae42c83a70e5f06214c8433665c2ab5.sol
+       should successfully drain funds through reentrancy attack:
+     Error: VM Exception while processing transaction: reverted with reason string 'Balance below MinSum'
+    at <UnrecognizedContract>.<unknown> (0xdc64a140aa3e981100a9beca4e685f962f0cf6c9)
+    at <UnrecognizedContract>.<unknown> (0x5fc8d32690cc91d4c39d9d3abcbd16989f875707)
+    at <UnrecognizedContract>.<unknown> (0xdc64a140aa3e981100a9beca4e685f962f0cf6c9)
+    at <UnrecognizedContract>.<unknown> (0x5fc8d32690cc91d4c39d9d3abcbd16989f875707)
+    at EdrProviderWrapper.request (node_modules/hardhat/src/internal/hardhat-network/provider/provider.ts:446:41)
+    at HardhatEthersSigner.sendTransaction (node_modules/@nomicfoundation/hardhat-ethers/src/signers.ts:125:18)
+    at send (node_modules/ethers/src.ts/contract/contract.ts:313:20)
+    at Proxy.attack (node_modules/ethers/src.ts/contract/contract.ts:352:16)
+    at Context.<anonymous> (test/reentrancy/0x93c32845fae42c83a70e5f06214c8433665c2ab5_test.js:82:5)
+  
+
+
+
+Total passing test files: 0/1
+Total failed files: 1/1
+Total failed functional tests: 0/1
+
+Test results written to /Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/tools/sb-heists/smartbugs-curated/0.4.x/scripts/test-results.json

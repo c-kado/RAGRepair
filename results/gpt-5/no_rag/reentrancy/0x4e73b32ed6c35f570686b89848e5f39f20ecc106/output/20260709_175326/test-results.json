@@ -1,0 +1,22 @@
+{
+    "totalTests": 2,
+    "passingTests": 1,
+    "failingTests": 1,
+    "totalFiles": 1,
+    "passingFiles": 0,
+    "failingFiles": 1,
+    "failedFunctionalCheck": 0,
+    "passedFunctionalCheck": 1,
+    "failedFunctionalCheckResults": [],
+    "passedResults": [],
+    "failedResults": [
+        {
+            "title": "should successfully drain funds through reentrancy attack",
+            "file": "reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106_test.js",
+            "contractFile": "reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol",
+            "state": "failed",
+            "error": "Transaction reverted without a reason string",
+            "stack": "Error: Transaction reverted without a reason string\n    at <UnrecognizedContract>.<unknown> (0x5fc8d32690cc91d4c39d9d3abcbd16989f875707)\n    at <UnrecognizedContract>.<unknown> (0xa513e6e4b8f2a923d98304ec87f64353c4d5c853)\n    at <UnrecognizedContract>.<unknown> (0x5fc8d32690cc91d4c39d9d3abcbd16989f875707)\n    at <UnrecognizedContract>.<unknown> (0xa513e6e4b8f2a923d98304ec87f64353c4d5c853)\n    at EdrProviderWrapper.request (node_modules/hardhat/src/internal/hardhat-network/provider/provider.ts:446:41)\n    at HardhatEthersSigner.sendTransaction (node_modules/@nomicfoundation/hardhat-ethers/src/signers.ts:125:18)\n    at send (node_modules/ethers/src.ts/contract/contract.ts:313:20)\n    at Proxy.attack (node_modules/ethers/src.ts/contract/contract.ts:352:16)\n    at Context.<anonymous> (test/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106_test.js:82:5)"
+        }
+    ]
+}

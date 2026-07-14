@@ -1,0 +1,32 @@
+{
+  "model": "gpt-5",
+  "category": "reentrancy",
+  "contract": "0xbe4041d55db380c5ae9d4a9b9703f1ed4e7e3888",
+  "rag_info": {
+    "nearest_category": "reentrancy",
+    "nearest_contract": "0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f",
+    "nearest_similarity": "1.0"
+  },
+  "results": [
+    {
+      "output_count": 0,
+      "exec_time": "0:01:06"
+    },
+    {
+      "output_count": 1,
+      "exec_time": "0:00:48"
+    },
+    {
+      "output_count": 2,
+      "exec_time": "0:00:23"
+    },
+    {
+      "output_count": 3,
+      "exec_time": "0:00:41"
+    },
+    {
+      "output_count": 4,
+      "exec_time": "0:00:40"
+    }
+  ]
+}

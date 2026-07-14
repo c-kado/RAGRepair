@@ -1,0 +1,27 @@
+{
+  "model": "gpt-5",
+  "category": "unchecked_low_level_calls",
+  "contract": "0xb11b2fed6c9354f7aa2f658d3b4d7b31d8a13b77",
+  "results": [
+    {
+      "output_count": 0,
+      "exec_time": "0:00:42"
+    },
+    {
+      "output_count": 1,
+      "exec_time": "0:00:20"
+    },
+    {
+      "output_count": 2,
+      "exec_time": "0:00:17"
+    },
+    {
+      "output_count": 3,
+      "exec_time": "0:00:16"
+    },
+    {
+      "output_count": 4,
+      "exec_time": "0:00:16"
+    }
+  ]
+}

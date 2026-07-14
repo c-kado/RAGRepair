@@ -1,0 +1,22 @@
+{
+    "totalTests": 2,
+    "passingTests": 1,
+    "failingTests": 1,
+    "totalFiles": 1,
+    "passingFiles": 0,
+    "failingFiles": 1,
+    "failedFunctionalCheck": 0,
+    "passedFunctionalCheck": 1,
+    "failedFunctionalCheckResults": [],
+    "passedResults": [],
+    "failedResults": [
+        {
+            "title": "should successfully drain funds through reentrancy attack",
+            "file": "reentrancy/reentrance_test.js",
+            "contractFile": "reentrancy/reentrance.sol",
+            "state": "failed",
+            "error": "expected 5000000000000000000 to be below 5000000000000000000.",
+            "stack": "AssertionError: expected 5000000000000000000 to be below 5000000000000000000.\n    at Context.<anonymous> (test/reentrancy/reentrance_test.js:80:33)"
+        }
+    ]
+}

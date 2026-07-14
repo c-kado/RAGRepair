@@ -80,14 +80,26 @@ def repair(model, category, contract, save_dir='tmp', do_rag=True, inf_count=0):
     if not os.path.exists(save_dir):
        os.makedirs(save_dir) 
     model.save_output(f'{save_dir}/{contract}_{inf_count}.sol')
-    with open(f'{save_dir}/repair_info_{inf_count}.txt', 'w') as f:
+
+    info = {'model': model.model_id, 'category': category, 'contract': contract, 'exec_time': model.exec_time}
+    if do_rag:
+        info['rag_info'] = {'nearest_category': rtrv.nearest_contract['Category'], 'nearest_contract': rtrv.nearest_contract['contract'], 'nearest_similarity': rtrv.nearest_sim}
+
+
+    with open(f'{save_dir}/repair_info_{inf_count}.json', 'w') as f:
+        json.dump(info, f, indent=2)
+
+        '''
         f.write(f'Model: {model.model_id}\n')
         f.write(f'Exe time: {model.exec_time}\n')
         f.write(f'Category: {category}\n')
         f.write(f'Contract: {contract}\n')
         if do_rag:
-            f.write(f'Nearest: {rtrv.nearest_contract['contract']}\n')
+            f.write(f'Nearest Category: {rtrv.nearest_contract['Category']}')
+            f.write(f'Nearest Contract: {rtrv.nearest_contract['contract']}\n')
             f.write(f'Nearest Similarity: {rtrv.nearest_sim}\n')
+            ''' 
+
 
 
 if __name__ == '__main__':

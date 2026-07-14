@@ -28,6 +28,22 @@ def main(model, do_rag, inf_time):
                 print('Inference Count: '+str(i))
                 repair.repair(model, category, contract, save_dir, do_rag, i)
 
+            sum_repair_info(save_dir, inf_time)
+
+
+def sum_repair_info(save_dir, inf_time):
+    results = []
+    
+    for i in range(0, inf_time):
+        with open(f'{save_dir}/repair_info_{i}.json', 'r') as f:
+            info = json.load(f)
+
+        results.append({'output_count': i, 'exec_time': info['exec_time']})
+
+    repair_info = {'model': info['model'], 'category': info['category'], 'contrat': info['contract'], 'rag_info': info['rag_info'], 'results': results}
+    with open(f'{save_dir}/repair_info.json', 'w') as f:
+        json.dump(repair_info, f, indent=2)
+        
 
 
 

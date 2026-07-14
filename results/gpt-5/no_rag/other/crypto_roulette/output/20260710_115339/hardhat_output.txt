@@ -1,0 +1,30 @@
+
+
+
+
+  attack other/crypto_roulette.sol
+    ✔ functional check: other/crypto_roulette.sol (402ms)
+    1) exploit uninitialized storage vulnerability
+
+
+  1 passing (406ms)
+  1 failing
+
+  1) attack other/crypto_roulette.sol
+       exploit uninitialized storage vulnerability:
+
+      AssertionError: expected 899813168801668651 to equal 1999813168801668651.
+      + expected - actual
+
+      -899813168801668651
+      +1999813168801668651
+      
+      at Context.<anonymous> (test/other/crypto_roulette_test.js:57:32)
+
+
+
+Total passing test files: 0/1
+Total failed files: 1/1
+Total failed functional tests: 0/1
+
+Test results written to /Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/tools/sb-heists/smartbugs-curated/0.4.x/scripts/test-results.json

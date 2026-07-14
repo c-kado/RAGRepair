@@ -1,3 +1,3 @@
 ﻿reentrancy,total_C,total_P,format_C,format_P,compilable_C,compilable_P,non-vulnerable_C,non-vulnerable_P,no-add-vul_C,no-add-vul_P,functionality_C,functionality_P
-success_count,23,115,23,115,23,115,23,115,23,115,23,115
-success_rate,,,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0
+success_count,23,115,23,115,23,115,23,106,23,103,23,103
+success_rate,,,100.0,100.0,100.0,100.0,100.0,92.173,100.0,89.565,100.0,89.565

@@ -1,0 +1,22 @@
+{
+    "totalTests": 2,
+    "passingTests": 1,
+    "failingTests": 1,
+    "totalFiles": 1,
+    "passingFiles": 0,
+    "failingFiles": 1,
+    "failedFunctionalCheck": 0,
+    "passedFunctionalCheck": 1,
+    "failedFunctionalCheckResults": [],
+    "passedResults": [],
+    "failedResults": [
+        {
+            "title": "should successfully drain funds through reentrancy attack",
+            "file": "reentrancy/0x7b368c4e805c3870b6c49a3f1f49f69af8662cf3_test.js",
+            "contractFile": "reentrancy/0x7b368c4e805c3870b6c49a3f1f49f69af8662cf3.sol",
+            "state": "failed",
+            "error": "Transaction reverted without a reason string",
+            "stack": "Error: Transaction reverted without a reason string\n    at <UnrecognizedContract>.<unknown> (0xdc64a140aa3e981100a9beca4e685f962f0cf6c9)\n    at <UnrecognizedContract>.<unknown> (0x5fc8d32690cc91d4c39d9d3abcbd16989f875707)\n    at <UnrecognizedContract>.<unknown> (0xdc64a140aa3e981100a9beca4e685f962f0cf6c9)\n    at <UnrecognizedContract>.<unknown> (0x5fc8d32690cc91d4c39d9d3abcbd16989f875707)\n    at <UnrecognizedContract>.<unknown> (0xdc64a140aa3e981100a9beca4e685f962f0cf6c9)\n    at <UnrecognizedContract>.<unknown> (0x5fc8d32690cc91d4c39d9d3abcbd16989f875707)\n    at <UnrecognizedContract>.<unknown> (0xdc64a140aa3e981100a9beca4e685f962f0cf6c9)\n    at <UnrecognizedContract>.<unknown> (0x5fc8d32690cc91d4c39d9d3abcbd16989f875707)\n    at EdrProviderWrapper.request (node_modules/hardhat/src/internal/hardhat-network/provider/provider.ts:446:41)\n    at HardhatEthersSigner.sendTransaction (node_modules/@nomicfoundation/hardhat-ethers/src/signers.ts:125:18)\n    at send (node_modules/ethers/src.ts/contract/contract.ts:313:20)\n    at Proxy.attack (node_modules/ethers/src.ts/contract/contract.ts:352:16)\n    at Context.<anonymous> (test/reentrancy/0x7b368c4e805c3870b6c49a3f1f49f69af8662cf3_test.js:80:5)"
+        }
+    ]
+}

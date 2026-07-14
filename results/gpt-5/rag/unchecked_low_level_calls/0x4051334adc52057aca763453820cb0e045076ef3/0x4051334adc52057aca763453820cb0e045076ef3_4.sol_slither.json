@@ -1,5 +1,478 @@
 {
   "success": true,
   "error": null,
-  "results": {}
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "caddress",
+            "source_mapping": {
+              "start": 80,
+              "length": 16,
+              "filename_relative": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+              "filename_short": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+              "is_dependency": false,
+              "lines": [
+                5
+              ],
+              "starting_column": 36,
+              "ending_column": 52
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transfer",
+                "source_mapping": {
+                  "start": 49,
+                  "length": 387,
+                  "filename_relative": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                  "filename_short": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "airdrop",
+                    "source_mapping": {
+                      "start": 26,
+                      "length": 412,
+                      "filename_relative": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                      "filename_short": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "transfer(address,address,address[],uint256)"
+                }
+              }
+            }
+          },
+          {
+            "type": "node",
+            "name": "success = caddress.call(id,from,_tos[i],v)",
+            "source_mapping": {
+              "start": 318,
+              "length": 50,
+              "filename_relative": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+              "filename_short": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+              "is_dependency": false,
+              "lines": [
+                9
+              ],
+              "starting_column": 13,
+              "ending_column": 63
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transfer",
+                "source_mapping": {
+                  "start": 49,
+                  "length": 387,
+                  "filename_relative": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                  "filename_short": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "airdrop",
+                    "source_mapping": {
+                      "start": 26,
+                      "length": 412,
+                      "filename_relative": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                      "filename_short": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "transfer(address,address,address[],uint256)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "airdrop.transfer(address,address,address[],uint256).caddress (../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol#5) lacks a zero-check on :\n\t\t- success = caddress.call(id,from,_tos[i],v) (../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol#9)\n",
+        "markdown": "[airdrop.transfer(address,address,address[],uint256).caddress](../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol#L5) lacks a zero-check on :\n\t\t- [success = caddress.call(id,from,_tos[i],v)](../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol#L9)\n",
+        "first_markdown_element": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol#L5",
+        "id": "77f2d0e39882f2fa7fa35bd86669a58767ebfe8451fcdd61bf81d4a7f9d57499",
+        "check": "missing-zero-check",
+        "impact": "Low",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "from",
+            "source_mapping": {
+              "start": 67,
+              "length": 12,
+              "filename_relative": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+              "filename_short": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+              "is_dependency": false,
+              "lines": [
+                5
+              ],
+              "starting_column": 23,
+              "ending_column": 35
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transfer",
+                "source_mapping": {
+                  "start": 49,
+                  "length": 387,
+                  "filename_relative": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                  "filename_short": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "airdrop",
+                    "source_mapping": {
+                      "start": 26,
+                      "length": 412,
+                      "filename_relative": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                      "filename_short": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "transfer(address,address,address[],uint256)"
+                }
+              }
+            }
+          },
+          {
+            "type": "node",
+            "name": "success = caddress.call(id,from,_tos[i],v)",
+            "source_mapping": {
+              "start": 318,
+              "length": 50,
+              "filename_relative": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+              "filename_short": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+              "is_dependency": false,
+              "lines": [
+                9
+              ],
+              "starting_column": 13,
+              "ending_column": 63
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transfer",
+                "source_mapping": {
+                  "start": 49,
+                  "length": 387,
+                  "filename_relative": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                  "filename_short": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "airdrop",
+                    "source_mapping": {
+                      "start": 26,
+                      "length": 412,
+                      "filename_relative": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                      "filename_short": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "transfer(address,address,address[],uint256)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "airdrop.transfer(address,address,address[],uint256).from (../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol#5) lacks a zero-check on :\n\t\t- success = caddress.call(id,from,_tos[i],v) (../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol#9)\n",
+        "markdown": "[airdrop.transfer(address,address,address[],uint256).from](../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol#L5) lacks a zero-check on :\n\t\t- [success = caddress.call(id,from,_tos[i],v)](../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol#L9)\n",
+        "first_markdown_element": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol#L5",
+        "id": "f9abe5fd599d5e9887058e1b88e1724a01c68237e995b5e54f4ed9a4d15eaa4f",
+        "check": "missing-zero-check",
+        "impact": "Low",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "transfer",
+            "source_mapping": {
+              "start": 49,
+              "length": 387,
+              "filename_relative": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+              "filename_short": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+              "is_dependency": false,
+              "lines": [
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "airdrop",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 412,
+                  "filename_relative": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                  "filename_short": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "transfer(address,address,address[],uint256)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "success = caddress.call(id,from,_tos[i],v)",
+            "source_mapping": {
+              "start": 318,
+              "length": 50,
+              "filename_relative": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+              "filename_short": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+              "is_dependency": false,
+              "lines": [
+                9
+              ],
+              "starting_column": 13,
+              "ending_column": 63
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transfer",
+                "source_mapping": {
+                  "start": 49,
+                  "length": 387,
+                  "filename_relative": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                  "filename_short": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "airdrop",
+                    "source_mapping": {
+                      "start": 26,
+                      "length": 412,
+                      "filename_relative": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                      "filename_short": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "transfer(address,address,address[],uint256)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "airdrop.transfer(address,address,address[],uint256) (../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol#5-13) has external calls inside a loop: success = caddress.call(id,from,_tos[i],v) (../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol#9)\n",
+        "markdown": "[airdrop.transfer(address,address,address[],uint256)](../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol#L5-L13) has external calls inside a loop: [success = caddress.call(id,from,_tos[i],v)](../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol#L9)\n",
+        "first_markdown_element": "../results/gpt-5/rag/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3/0x4051334adc52057aca763453820cb0e045076ef3_4.sol#L5-L13",
+        "id": "26ab95e25e2b09c824c667b9cc61b34f811dc95a281eea10635812a03a7ebad5",
+        "check": "calls-loop",
+        "impact": "Low",
+        "confidence": "Medium"
+      }
+    ]
+  }
 }

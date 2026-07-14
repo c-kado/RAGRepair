@@ -1,0 +1,6 @@
+{
+  "model": "gpt-5",
+  "category": "reentrancy",
+  "contract": "0x8c7777c45481dba411450c228cb692ac3d550344",
+  "exec_time": "0:00:21"
+}

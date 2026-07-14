@@ -1,5 +1,744 @@
 {
   "success": true,
   "error": null,
-  "results": {}
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "WithdrawToHolder",
+            "source_mapping": {
+              "start": 1427,
+              "length": 257,
+              "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+              "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+              "is_dependency": false,
+              "lines": [
+                84,
+                85,
+                86,
+                87,
+                88,
+                89,
+                90,
+                91,
+                92,
+                93,
+                94,
+                95,
+                96
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "TokenBank",
+                "source_mapping": {
+                  "start": 762,
+                  "length": 924,
+                  "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                  "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    46,
+                    47,
+                    48,
+                    49,
+                    50,
+                    51,
+                    52,
+                    53,
+                    54,
+                    55,
+                    56,
+                    57,
+                    58,
+                    59,
+                    60,
+                    61,
+                    62,
+                    63,
+                    64,
+                    65,
+                    66,
+                    67,
+                    68,
+                    69,
+                    70,
+                    71,
+                    72,
+                    73,
+                    74,
+                    75,
+                    76,
+                    77,
+                    78,
+                    79,
+                    80,
+                    81,
+                    82,
+                    83,
+                    84,
+                    85,
+                    86,
+                    87,
+                    88,
+                    89,
+                    90,
+                    91,
+                    92,
+                    93,
+                    94,
+                    95,
+                    96,
+                    97,
+                    98
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "WithdrawToHolder(address,uint256)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "_addr.call.value(_wei)()",
+            "source_mapping": {
+              "start": 1577,
+              "length": 24,
+              "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+              "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+              "is_dependency": false,
+              "lines": [
+                91
+              ],
+              "starting_column": 16,
+              "ending_column": 40
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "WithdrawToHolder",
+                "source_mapping": {
+                  "start": 1427,
+                  "length": 257,
+                  "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                  "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    84,
+                    85,
+                    86,
+                    87,
+                    88,
+                    89,
+                    90,
+                    91,
+                    92,
+                    93,
+                    94,
+                    95,
+                    96
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "TokenBank",
+                    "source_mapping": {
+                      "start": 762,
+                      "length": 924,
+                      "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                      "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        46,
+                        47,
+                        48,
+                        49,
+                        50,
+                        51,
+                        52,
+                        53,
+                        54,
+                        55,
+                        56,
+                        57,
+                        58,
+                        59,
+                        60,
+                        61,
+                        62,
+                        63,
+                        64,
+                        65,
+                        66,
+                        67,
+                        68,
+                        69,
+                        70,
+                        71,
+                        72,
+                        73,
+                        74,
+                        75,
+                        76,
+                        77,
+                        78,
+                        79,
+                        80,
+                        81,
+                        82,
+                        83,
+                        84,
+                        85,
+                        86,
+                        87,
+                        88,
+                        89,
+                        90,
+                        91,
+                        92,
+                        93,
+                        94,
+                        95,
+                        96,
+                        97,
+                        98
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "WithdrawToHolder(address,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "underlying_type": "external_calls"
+            }
+          },
+          {
+            "type": "node",
+            "name": "Holders[_addr] -= _wei",
+            "source_mapping": {
+              "start": 1633,
+              "length": 20,
+              "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+              "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+              "is_dependency": false,
+              "lines": [
+                93
+              ],
+              "starting_column": 17,
+              "ending_column": 37
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "WithdrawToHolder",
+                "source_mapping": {
+                  "start": 1427,
+                  "length": 257,
+                  "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                  "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    84,
+                    85,
+                    86,
+                    87,
+                    88,
+                    89,
+                    90,
+                    91,
+                    92,
+                    93,
+                    94,
+                    95,
+                    96
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "TokenBank",
+                    "source_mapping": {
+                      "start": 762,
+                      "length": 924,
+                      "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                      "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        46,
+                        47,
+                        48,
+                        49,
+                        50,
+                        51,
+                        52,
+                        53,
+                        54,
+                        55,
+                        56,
+                        57,
+                        58,
+                        59,
+                        60,
+                        61,
+                        62,
+                        63,
+                        64,
+                        65,
+                        66,
+                        67,
+                        68,
+                        69,
+                        70,
+                        71,
+                        72,
+                        73,
+                        74,
+                        75,
+                        76,
+                        77,
+                        78,
+                        79,
+                        80,
+                        81,
+                        82,
+                        83,
+                        84,
+                        85,
+                        86,
+                        87,
+                        88,
+                        89,
+                        90,
+                        91,
+                        92,
+                        93,
+                        94,
+                        95,
+                        96,
+                        97,
+                        98
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "WithdrawToHolder(address,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "underlying_type": "variables_written",
+              "variable_name": "Holders"
+            }
+          }
+        ],
+        "description": "Reentrancy in TokenBank.WithdrawToHolder(address,uint256) (../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#84-96):\n\tExternal calls:\n\t- _addr.call.value(_wei)() (../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#91)\n\tState variables written after the call(s):\n\t- Holders[_addr] -= _wei (../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#93)\n\tTokenBank.Holders (../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#49) can be used in cross function reentrancies:\n\t- TokenBank.Deposit() (../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#64-71)\n\t- TokenBank.Holders (../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#49)\n\t- TokenBank.WitdrawTokenToHolder(address,address,uint256) (../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#73-82)\n\t- TokenBank.WithdrawToHolder(address,uint256) (../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#84-96)\n",
+        "markdown": "Reentrancy in [TokenBank.WithdrawToHolder(address,uint256)](../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#L84-L96):\n\tExternal calls:\n\t- [_addr.call.value(_wei)()](../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#L91)\n\tState variables written after the call(s):\n\t- [Holders[_addr] -= _wei](../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#L93)\n\t[TokenBank.Holders](../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#L49) can be used in cross function reentrancies:\n\t- [TokenBank.Deposit()](../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#L64-L71)\n\t- [TokenBank.Holders](../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#L49)\n\t- [TokenBank.WitdrawTokenToHolder(address,address,uint256)](../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#L73-L82)\n\t- [TokenBank.WithdrawToHolder(address,uint256)](../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#L84-L96)\n",
+        "first_markdown_element": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#L84-L96",
+        "id": "3ad004ce0aaa2231d9d1c65e3e3c5ebd91b7aa5e2e8fe3437a34c7a99ef454e7",
+        "check": "reentrancy-eth",
+        "impact": "High",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "owner",
+            "source_mapping": {
+              "start": 534,
+              "length": 26,
+              "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+              "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+              "is_dependency": false,
+              "lines": [
+                36
+              ],
+              "starting_column": 5,
+              "ending_column": 31
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "Token",
+                "source_mapping": {
+                  "start": 502,
+                  "length": 258,
+                  "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                  "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              }
+            }
+          },
+          {
+            "type": "variable",
+            "name": "owner",
+            "source_mapping": {
+              "start": 71,
+              "length": 26,
+              "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+              "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+              "is_dependency": false,
+              "lines": [
+                6
+              ],
+              "starting_column": 5,
+              "ending_column": 31
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "Ownable",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 380,
+                  "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                  "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              }
+            }
+          }
+        ],
+        "description": "Token.owner (../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#36) shadows:\n\t- Ownable.owner (../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#6)\n",
+        "markdown": "[Token.owner](../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#L36) shadows:\n\t- [Ownable.owner](../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#L6)\n",
+        "first_markdown_element": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#L36",
+        "id": "3562d0f2ecc062039ff56009be5aa161807647b8036dff6d99279a591a19f445",
+        "check": "shadowing-state",
+        "impact": "High",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "addr",
+            "source_mapping": {
+              "start": 125,
+              "length": 12,
+              "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+              "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+              "is_dependency": false,
+              "lines": [
+                8
+              ],
+              "starting_column": 26,
+              "ending_column": 38
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "changeOwner",
+                "source_mapping": {
+                  "start": 104,
+                  "length": 96,
+                  "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                  "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "Ownable",
+                    "source_mapping": {
+                      "start": 26,
+                      "length": 380,
+                      "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                      "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "changeOwner(address)"
+                }
+              }
+            }
+          },
+          {
+            "type": "node",
+            "name": "newOwner = addr",
+            "source_mapping": {
+              "start": 178,
+              "length": 15,
+              "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+              "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+              "is_dependency": false,
+              "lines": [
+                12
+              ],
+              "starting_column": 9,
+              "ending_column": 24
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "changeOwner",
+                "source_mapping": {
+                  "start": 104,
+                  "length": 96,
+                  "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                  "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "Ownable",
+                    "source_mapping": {
+                      "start": 26,
+                      "length": 380,
+                      "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                      "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "changeOwner(address)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "Ownable.changeOwner(address).addr (../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#8) lacks a zero-check on :\n\t\t- newOwner = addr (../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#12)\n",
+        "markdown": "[Ownable.changeOwner(address).addr](../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#L8) lacks a zero-check on :\n\t\t- [newOwner = addr](../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#L12)\n",
+        "first_markdown_element": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#L8",
+        "id": "e26c196f48443fd9770dc9bb1adbee1308561a720cb169ddd0f135f9af3b5efa",
+        "check": "missing-zero-check",
+        "impact": "Low",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "onlyOwner",
+            "source_mapping": {
+              "start": 340,
+              "length": 64,
+              "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+              "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+              "is_dependency": false,
+              "lines": [
+                24,
+                25,
+                26,
+                27
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "Ownable",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 380,
+                  "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                  "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "onlyOwner()"
+            }
+          }
+        ],
+        "description": "Modifier Ownable.onlyOwner() (../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#24-27) does not always execute _; or revert\n",
+        "markdown": "Modifier [Ownable.onlyOwner()](../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#L24-L27) does not always execute _; or revert\n",
+        "first_markdown_element": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_0.sol#L24-L27",
+        "id": "e30bc8686d95fdf0c1043e4207c95af295928cd446a3f8660361b000840be847",
+        "check": "incorrect-modifier",
+        "impact": "Low",
+        "confidence": "High"
+      }
+    ]
+  }
 }

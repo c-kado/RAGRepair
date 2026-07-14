@@ -1,0 +1,11 @@
+{
+  "model": "gpt-5",
+  "category": "access_control",
+  "contract": "proxy",
+  "exec_time": "0:00:26",
+  "rag_info": {
+    "nearest_category": "reentrancy",
+    "nearest_contract": "etherstore",
+    "nearest_similarity": "0.5378528742004771"
+  }
+}

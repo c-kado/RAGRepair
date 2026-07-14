@@ -92,7 +92,7 @@ def verify_results(vul, contract, fileinfo, output_count, model_id, do_rag):
                     ('compilable', verify_compilable, [output_file]),
                     # ('differential', verify_differential, []),
                     ('non-vulnerable', verify_vulnerability, [output_file, f'{output_file}_slither.json', vul_mapping[vul]]),
-                    ('no-add-vul', verify_noaddvul, [output_file, f'{output_file}_slither.json', f'../dataset/mitigate_patches/{vul}/{contract}/output/{contract}.sol_slither.json']),
+                    ('no-add-vul', verify_noaddvul, [f'{output_file}_slither.json', f'../dataset/mitigate_patches/{vul}/{contract}/output/{contract}.sol_slither.json', vul_mapping[vul]]),
                     ('functionality', verify_functionality, [vul, output_file_dir, f'{contract}_{output_count}.sol', fileinfo])]
 
     results = {'output_count': output_count}
@@ -151,17 +151,21 @@ def verify_compilable(patched_file):
     return True, ''
 
 
-def verify_vulnerability(patched_file, output_file, detect_vul):
+def verify_vulnerability(patched_file, output_file, target_vul):
     print('Verify: Vulnerability')
-    option = ['--detect', ','.join(detect_vul)]
-    Slither.run_slither(patched_file, output_file, option)
-    return Slither.check_non_vulnerable(output_file)
-
-
-def verify_noaddvul(patched_file, output_file, original_detection_file):
-    print('Verify: No Added Vulnerability')
     Slither.run_slither(patched_file, output_file)
-    return Slither.get_vul_list(output_file, original_detection_file)
+    return Slither.check_non_vulnerable(output_file, target_vul)
+
+
+def verify_noaddvul(patch_detection_file, original_detection_file, exclude_vul):
+    print('Verify: No Added Vulnerability')
+    original_vul_count = Slither.check_nontargetvul_count(original_detection_file, exclude_vul)
+    patch_vul_count = Slither.check_nontargetvul_count(patch_detection_file, exclude_vul)
+    if patch_vul_count > original_vul_count:
+        return False, 'More vul in the patch than the original.'
+    else:
+        return True, ''
+
 
 
 

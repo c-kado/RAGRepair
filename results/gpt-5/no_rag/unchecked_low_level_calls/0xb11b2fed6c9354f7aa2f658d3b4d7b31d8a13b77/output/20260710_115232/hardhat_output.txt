@@ -1,0 +1,24 @@
+
+
+
+
+  attack unchecked_low_level_calls/0xb11b2fed6c9354f7aa2f658d3b4d7b31d8a13b77.sol
+    ✔ functional check: unchecked_low_level_calls/0xb11b2fed6c9354f7aa2f658d3b4d7b31d8a13b77.sol (575ms)
+    1) exploit unchecked low level call vulnerability
+
+
+  1 passing (591ms)
+  1 failing
+
+  1) attack unchecked_low_level_calls/0xb11b2fed6c9354f7aa2f658d3b4d7b31d8a13b77.sol
+       exploit unchecked low level call vulnerability:
+     AssertionError: Expected transaction NOT to be reverted, but it reverted with reason 'Low-level call failed'
+      at Context.<anonymous> (test/unchecked_low_level_calls/0xb11b2fed6c9354f7aa2f658d3b4d7b31d8a13b77_test.js:69:5)
+
+
+
+Total passing test files: 0/1
+Total failed files: 1/1
+Total failed functional tests: 0/1
+
+Test results written to /Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/tools/sb-heists/smartbugs-curated/0.4.x/scripts/test-results.json

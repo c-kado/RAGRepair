@@ -1,0 +1,32 @@
+{
+  "model": "gpt-5",
+  "category": "other",
+  "contract": "crypto_roulette",
+  "rag_info": {
+    "nearest_category": "other",
+    "nearest_contract": "name_registrar",
+    "nearest_similarity": "0.20412414523193154"
+  },
+  "results": [
+    {
+      "output_count": 0,
+      "exec_time": "0:00:51"
+    },
+    {
+      "output_count": 1,
+      "exec_time": "0:00:41"
+    },
+    {
+      "output_count": 2,
+      "exec_time": "0:00:29"
+    },
+    {
+      "output_count": 3,
+      "exec_time": "0:00:26"
+    },
+    {
+      "output_count": 4,
+      "exec_time": "0:00:23"
+    }
+  ]
+}

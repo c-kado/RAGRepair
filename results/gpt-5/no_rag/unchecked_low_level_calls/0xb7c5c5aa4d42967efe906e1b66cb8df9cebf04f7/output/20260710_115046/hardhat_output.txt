@@ -1,0 +1,24 @@
+
+
+
+
+  attack unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol
+    ✔ functional check: unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol (337ms)
+    1) exploit unchecked low level call vulnerability
+
+
+  1 passing (347ms)
+  1 failing
+
+  1) attack unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol
+       exploit unchecked low level call vulnerability:
+     AssertionError: Expected transaction NOT to be reverted, but it reverted with reason 'Ether transfer failed'
+      at Context.<anonymous> (test/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7_test.js:78:5)
+
+
+
+Total passing test files: 0/1
+Total failed files: 1/1
+Total failed functional tests: 0/1
+
+Test results written to /Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/tools/sb-heists/smartbugs-curated/0.4.x/scripts/test-results.json

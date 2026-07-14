@@ -1,0 +1,28 @@
+
+
+
+
+  Reentrancy Attack for 0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol
+    ✔ functional check: reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol
+    1) should successfully drain funds through reentrancy attack
+
+
+  1 passing (454ms)
+  1 failing
+
+  1) Reentrancy Attack for 0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol
+       should successfully drain funds through reentrancy attack:
+
+      AssertionError: expected 4000000000000000000 to be below 4000000000000000000.
+      + expected - actual
+
+
+      at Context.<anonymous> (test/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f_test.js:89:33)
+
+
+
+Total passing test files: 0/1
+Total failed files: 1/1
+Total failed functional tests: 0/1
+
+Test results written to /Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/tools/sb-heists/smartbugs-curated/0.4.x/scripts/test-results.json

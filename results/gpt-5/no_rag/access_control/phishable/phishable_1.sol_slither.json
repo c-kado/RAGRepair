@@ -1,5 +1,334 @@
 {
   "success": true,
   "error": null,
-  "results": {}
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_owner",
+            "source_mapping": {
+              "start": 90,
+              "length": 14,
+              "filename_relative": "../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+              "filename_short": "../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+              "is_dependency": false,
+              "lines": [
+                6
+              ],
+              "starting_column": 17,
+              "ending_column": 31
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "constructor",
+                "source_mapping": {
+                  "start": 78,
+                  "length": 66,
+                  "filename_relative": "../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+                  "filename_short": "../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    6,
+                    7,
+                    8
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "Phishable",
+                    "source_mapping": {
+                      "start": 26,
+                      "length": 360,
+                      "filename_relative": "../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+                      "filename_short": "../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "constructor(address)"
+                }
+              }
+            }
+          },
+          {
+            "type": "node",
+            "name": "owner = _owner",
+            "source_mapping": {
+              "start": 123,
+              "length": 14,
+              "filename_relative": "../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+              "filename_short": "../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+              "is_dependency": false,
+              "lines": [
+                7
+              ],
+              "starting_column": 9,
+              "ending_column": 23
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "constructor",
+                "source_mapping": {
+                  "start": 78,
+                  "length": 66,
+                  "filename_relative": "../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+                  "filename_short": "../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    6,
+                    7,
+                    8
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "Phishable",
+                    "source_mapping": {
+                      "start": 26,
+                      "length": 360,
+                      "filename_relative": "../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+                      "filename_short": "../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "constructor(address)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "Phishable.constructor(address)._owner (../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol#6) lacks a zero-check on :\n\t\t- owner = _owner (../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol#7)\n",
+        "markdown": "[Phishable.constructor(address)._owner](../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol#L6) lacks a zero-check on :\n\t\t- [owner = _owner](../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol#L7)\n",
+        "first_markdown_element": "../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol#L6",
+        "id": "7dfc65a1c6a54e46005bb723c7ec85df850a142ad93c2fb37ca68a2f083fde7a",
+        "check": "missing-zero-check",
+        "impact": "Low",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_recipient",
+            "source_mapping": {
+              "start": 288,
+              "length": 18,
+              "filename_relative": "../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+              "filename_short": "../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+              "is_dependency": false,
+              "lines": [
+                17
+              ],
+              "starting_column": 26,
+              "ending_column": 44
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "withdrawAll",
+                "source_mapping": {
+                  "start": 267,
+                  "length": 117,
+                  "filename_relative": "../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+                  "filename_short": "../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    17,
+                    18,
+                    19
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "Phishable",
+                    "source_mapping": {
+                      "start": 26,
+                      "length": 360,
+                      "filename_relative": "../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+                      "filename_short": "../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "withdrawAll(address)"
+                }
+              }
+            }
+          },
+          {
+            "type": "node",
+            "name": "_recipient.transfer(address(this).balance)",
+            "source_mapping": {
+              "start": 335,
+              "length": 42,
+              "filename_relative": "../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+              "filename_short": "../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+              "is_dependency": false,
+              "lines": [
+                18
+              ],
+              "starting_column": 9,
+              "ending_column": 51
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "withdrawAll",
+                "source_mapping": {
+                  "start": 267,
+                  "length": 117,
+                  "filename_relative": "../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+                  "filename_short": "../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    17,
+                    18,
+                    19
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "Phishable",
+                    "source_mapping": {
+                      "start": 26,
+                      "length": 360,
+                      "filename_relative": "../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+                      "filename_short": "../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "withdrawAll(address)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "Phishable.withdrawAll(address)._recipient (../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol#17) lacks a zero-check on :\n\t\t- _recipient.transfer(address(this).balance) (../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol#18)\n",
+        "markdown": "[Phishable.withdrawAll(address)._recipient](../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol#L17) lacks a zero-check on :\n\t\t- [_recipient.transfer(address(this).balance)](../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol#L18)\n",
+        "first_markdown_element": "../results/gpt-5/no_rag/access_control/phishable/phishable_1.sol#L17",
+        "id": "acefe37406406046e203d7c175a9695f2a95c525b7775cb0c99bef0c93876b37",
+        "check": "missing-zero-check",
+        "impact": "Low",
+        "confidence": "Medium"
+      }
+    ]
+  }
 }

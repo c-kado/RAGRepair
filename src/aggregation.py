@@ -120,7 +120,7 @@ class Aggregation:
 
     def combine_rag_norag_result(self, model):
         csv_list = os.listdir(f'../results/{model}/rag/sum_data')
-        os.makedirs(f'../results/{model}/sum_data', exists_ok=True)
+        os.makedirs(f'../results/{model}/sum_data', exist_ok=True)
 
         for csv_file in csv_list:
             with open(f'../results/{model}/rag/sum_data/{csv_file}', 'r', newline="") as f1, \

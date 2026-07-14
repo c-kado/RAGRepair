@@ -2193,16 +2193,18 @@
                 "format": true,
                 "compilable": true,
                 "non-vulnerable": true,
-                "no-add-vul": true,
-                "functionality": true
+                "no-add-vul": false,
+                "functionality": false,
+                "fail_no-add-vul_results": "More vul in the patch than the original."
               },
               {
                 "output_count": 1,
                 "format": true,
                 "compilable": true,
                 "non-vulnerable": true,
-                "no-add-vul": true,
-                "functionality": true
+                "no-add-vul": false,
+                "functionality": false,
+                "fail_no-add-vul_results": "More vul in the patch than the original."
               },
               {
                 "output_count": 2,
@@ -2225,8 +2227,9 @@
                 "format": true,
                 "compilable": true,
                 "non-vulnerable": true,
-                "no-add-vul": true,
-                "functionality": true
+                "no-add-vul": false,
+                "functionality": false,
+                "fail_no-add-vul_results": "More vul in the patch than the original."
               }
             ],
             "contract_results": {
@@ -2257,8 +2260,9 @@
                 "format": true,
                 "compilable": true,
                 "non-vulnerable": true,
-                "no-add-vul": true,
-                "functionality": true
+                "no-add-vul": false,
+                "functionality": false,
+                "fail_no-add-vul_results": "More vul in the patch than the original."
               },
               {
                 "output_count": 2,
@@ -2273,16 +2277,18 @@
                 "format": true,
                 "compilable": true,
                 "non-vulnerable": true,
-                "no-add-vul": true,
-                "functionality": true
+                "no-add-vul": false,
+                "functionality": false,
+                "fail_no-add-vul_results": "More vul in the patch than the original."
               },
               {
                 "output_count": 4,
                 "format": true,
                 "compilable": true,
                 "non-vulnerable": true,
-                "no-add-vul": true,
-                "functionality": true
+                "no-add-vul": false,
+                "functionality": false,
+                "fail_no-add-vul_results": "More vul in the patch than the original."
               }
             ],
             "contract_results": {
@@ -2309,8 +2315,8 @@
           "format": 10,
           "compilable": 10,
           "non-vulnerable": 10,
-          "no-add-vul": 10,
-          "functionality": 10
+          "no-add-vul": 4,
+          "functionality": 4
         }
       }
     },
@@ -2328,16 +2334,18 @@
                 "format": true,
                 "compilable": true,
                 "non-vulnerable": true,
-                "no-add-vul": true,
-                "functionality": true
+                "no-add-vul": false,
+                "functionality": false,
+                "fail_no-add-vul_results": "More vul in the patch than the original."
               },
               {
                 "output_count": 1,
                 "format": true,
                 "compilable": true,
                 "non-vulnerable": true,
-                "no-add-vul": true,
-                "functionality": true
+                "no-add-vul": false,
+                "functionality": false,
+                "fail_no-add-vul_results": "More vul in the patch than the original."
               },
               {
                 "output_count": 2,
@@ -2360,8 +2368,9 @@
                 "format": true,
                 "compilable": true,
                 "non-vulnerable": true,
-                "no-add-vul": true,
-                "functionality": true
+                "no-add-vul": false,
+                "functionality": false,
+                "fail_no-add-vul_results": "More vul in the patch than the original."
               }
             ],
             "contract_results": {
@@ -2500,8 +2509,8 @@
           "format": 15,
           "compilable": 15,
           "non-vulnerable": 15,
-          "no-add-vul": 15,
-          "functionality": 15
+          "no-add-vul": 12,
+          "functionality": 12
         }
       }
     }
@@ -2520,8 +2529,8 @@
       "format": 215,
       "compilable": 212,
       "non-vulnerable": 212,
-      "no-add-vul": 212,
-      "functionality": 210
+      "no-add-vul": 203,
+      "functionality": 201
     }
   }
 }

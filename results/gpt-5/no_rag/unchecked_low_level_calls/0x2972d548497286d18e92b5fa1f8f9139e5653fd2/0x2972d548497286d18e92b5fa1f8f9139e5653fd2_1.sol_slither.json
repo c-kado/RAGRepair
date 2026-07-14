@@ -1,5 +1,406 @@
 {
   "success": true,
   "error": null,
-  "results": {}
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "transfer",
+            "source_mapping": {
+              "start": 160,
+              "length": 404,
+              "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+              "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+              "is_dependency": false,
+              "lines": [
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "demo",
+                "source_mapping": {
+                  "start": 140,
+                  "length": 598,
+                  "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+                  "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "transfer(address,address,address[],uint256[])"
+            }
+          },
+          {
+            "type": "node",
+            "name": "require(bool)(token.transferFrom(from,_tos[i],v[i]))",
+            "source_mapping": {
+              "start": 478,
+              "length": 48,
+              "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+              "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+              "is_dependency": false,
+              "lines": [
+                15
+              ],
+              "starting_column": 13,
+              "ending_column": 61
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transfer",
+                "source_mapping": {
+                  "start": 160,
+                  "length": 404,
+                  "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+                  "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "demo",
+                    "source_mapping": {
+                      "start": 140,
+                      "length": 598,
+                      "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+                      "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "transfer(address,address,address[],uint256[])"
+                }
+              }
+            }
+          }
+        ],
+        "description": "demo.transfer(address,address,address[],uint256[]) (../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol#8-18) uses arbitrary from in transferFrom: require(bool)(token.transferFrom(from,_tos[i],v[i])) (../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol#15)\n",
+        "markdown": "[demo.transfer(address,address,address[],uint256[])](../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol#L8-L18) uses arbitrary from in transferFrom: [require(bool)(token.transferFrom(from,_tos[i],v[i]))](../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol#L15)\n",
+        "first_markdown_element": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol#L8-L18",
+        "id": "151491360d56945e689519731c1a82a1d01520c24757e29020165ebd6db4b221",
+        "check": "arbitrary-send-erc20",
+        "impact": "High",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "isContract",
+            "source_mapping": {
+              "start": 570,
+              "length": 166,
+              "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+              "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+              "is_dependency": false,
+              "lines": [
+                20,
+                21,
+                22,
+                23,
+                24
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "demo",
+                "source_mapping": {
+                  "start": 140,
+                  "length": 598,
+                  "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+                  "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "isContract(address)"
+            }
+          }
+        ],
+        "description": "demo.isContract(address) (../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol#20-24) is declared view but contains assembly code\n",
+        "markdown": "[demo.isContract(address)](../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol#L20-L24) is declared view but contains assembly code\n",
+        "first_markdown_element": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol#L20-L24",
+        "id": "176f0a9ff5dd7e1339e040177b9377786c594b26baaad491d37ee9e63a851d47",
+        "additional_fields": {
+          "contains_assembly": true
+        },
+        "check": "constant-function-asm",
+        "impact": "Medium",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "transfer",
+            "source_mapping": {
+              "start": 160,
+              "length": 404,
+              "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+              "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+              "is_dependency": false,
+              "lines": [
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "demo",
+                "source_mapping": {
+                  "start": 140,
+                  "length": 598,
+                  "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+                  "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "transfer(address,address,address[],uint256[])"
+            }
+          },
+          {
+            "type": "node",
+            "name": "require(bool)(token.transferFrom(from,_tos[i],v[i]))",
+            "source_mapping": {
+              "start": 478,
+              "length": 48,
+              "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+              "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+              "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+              "is_dependency": false,
+              "lines": [
+                15
+              ],
+              "starting_column": 13,
+              "ending_column": 61
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transfer",
+                "source_mapping": {
+                  "start": 160,
+                  "length": 404,
+                  "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+                  "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+                  "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "demo",
+                    "source_mapping": {
+                      "start": 140,
+                      "length": 598,
+                      "filename_relative": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+                      "filename_absolute": "/Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+                      "filename_short": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "transfer(address,address,address[],uint256[])"
+                }
+              }
+            }
+          }
+        ],
+        "description": "demo.transfer(address,address,address[],uint256[]) (../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol#8-18) has external calls inside a loop: require(bool)(token.transferFrom(from,_tos[i],v[i])) (../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol#15)\n",
+        "markdown": "[demo.transfer(address,address,address[],uint256[])](../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol#L8-L18) has external calls inside a loop: [require(bool)(token.transferFrom(from,_tos[i],v[i]))](../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol#L15)\n",
+        "first_markdown_element": "../results/gpt-5/no_rag/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2/0x2972d548497286d18e92b5fa1f8f9139e5653fd2_1.sol#L8-L18",
+        "id": "510afbae4a6e3c9641ce082cfdcf184ce670d09611e7af5bb6712e30e57b18bf",
+        "check": "calls-loop",
+        "impact": "Low",
+        "confidence": "Medium"
+      }
+    ]
+  }
 }
