@@ -1,0 +1,3224 @@
+{
+  "repair_results": [
+    {
+      "vul_type": "reentrancy",
+      "repair_result_list": [
+        {
+          "filename": "0x93c32845fae42c83a70e5f06214c8433665c2ab5.sol",
+          "version": "0.4.25",
+          "main_contract": "X_WALLET",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 31,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.07692307692307693
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 25,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.07692307692307693
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 26,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.07692307692307693
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 37,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.07692307692307693
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 38,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.07692307692307693
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 65
+        },
+        {
+          "filename": "reentrance.sol",
+          "version": "0.4.18",
+          "main_contract": "Reentrance",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": false,
+                "non-vulnerable": false,
+                "no-add-vul": false,
+                "functionality": false,
+                "exec_time_sec": 15,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.10526315789473684,
+                "fail_compilable_results": "../results/gpt-5/rag/reentrancy/reentrance/reentrance_0.sol:19:29: Error: Undeclared identifier.\n    balances[msg.sender] -= __amount;\n                            ^------^\n"
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": false,
+                "non-vulnerable": false,
+                "no-add-vul": false,
+                "functionality": false,
+                "exec_time_sec": 20,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.10526315789473684,
+                "fail_compilable_results": "../results/gpt-5/rag/reentrancy/reentrance/reentrance_1.sol:20:29: Error: Undeclared identifier.\n    balances[msg.sender] -= __amount;\n                            ^------^\n"
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 25,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.2631578947368421
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 18,
+                "num_diff_lines": 3,
+                "rate_diff_lines": 0.15789473684210525
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 27,
+                "num_diff_lines": 3,
+                "rate_diff_lines": 0.15789473684210525
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 19
+        },
+        {
+          "filename": "reentrancy_dao.sol",
+          "version": "0.4.19",
+          "main_contract": "ReentrancyDAO",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 23,
+                "num_diff_lines": 3,
+                "rate_diff_lines": 0.16666666666666666
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 36,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.1111111111111111
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 16,
+                "num_diff_lines": 3,
+                "rate_diff_lines": 0.16666666666666666
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 38,
+                "num_diff_lines": 3,
+                "rate_diff_lines": 0.16666666666666666
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 26,
+                "num_diff_lines": 3,
+                "rate_diff_lines": 0.16666666666666666
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 18
+        },
+        {
+          "filename": "0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f.sol",
+          "version": "0.4.19",
+          "main_contract": "PERSONAL_BANK",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 20,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.05555555555555555
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 21,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.05555555555555555
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 22,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.05555555555555555
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 11,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.05555555555555555
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 29,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.05555555555555555
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 72
+        },
+        {
+          "filename": "0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+          "version": "0.4.19",
+          "main_contract": "PENNY_BY_PENNY",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 53,
+                "num_diff_lines": 7,
+                "rate_diff_lines": 0.0875
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 30,
+                "num_diff_lines": 6,
+                "rate_diff_lines": 0.075
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 38,
+                "num_diff_lines": 7,
+                "rate_diff_lines": 0.0875
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 44,
+                "num_diff_lines": 7,
+                "rate_diff_lines": 0.0875
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 36,
+                "num_diff_lines": 7,
+                "rate_diff_lines": 0.0875
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 80
+        },
+        {
+          "filename": "0xbe4041d55db380c5ae9d4a9b9703f1ed4e7e3888.sol",
+          "version": "0.4.19",
+          "main_contract": "MONEY_BOX",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 66,
+                "num_diff_lines": 6,
+                "rate_diff_lines": 0.075
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 48,
+                "num_diff_lines": 7,
+                "rate_diff_lines": 0.0875
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 23,
+                "num_diff_lines": 8,
+                "rate_diff_lines": 0.1
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 41,
+                "num_diff_lines": 7,
+                "rate_diff_lines": 0.0875
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 40,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.0625
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 80
+        },
+        {
+          "filename": "0x4320e6f8c05b27ab4707cd1f6d5ce6f3e4b3a5a1.sol",
+          "version": "0.4.19",
+          "main_contract": "ACCURAL_DEPOSIT",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 13,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.05555555555555555
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 22,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.05555555555555555
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 13,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.05555555555555555
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 14,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.05555555555555555
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 17,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.05555555555555555
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 72
+        },
+        {
+          "filename": "0x561eac93c92360949ab1f1403323e6db345cbf31.sol",
+          "version": "0.4.19",
+          "main_contract": "BANK_SAFE",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 34,
+                "num_diff_lines": 6,
+                "rate_diff_lines": 0.08333333333333333
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 30,
+                "num_diff_lines": 6,
+                "rate_diff_lines": 0.08333333333333333
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 26,
+                "num_diff_lines": 6,
+                "rate_diff_lines": 0.08333333333333333
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 27,
+                "num_diff_lines": 6,
+                "rate_diff_lines": 0.08333333333333333
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 24,
+                "num_diff_lines": 6,
+                "rate_diff_lines": 0.08333333333333333
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 72
+        },
+        {
+          "filename": "etherstore.sol",
+          "version": "0.4.10",
+          "main_contract": "EtherStore",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 21,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.11764705882352941
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 28,
+                "num_diff_lines": 3,
+                "rate_diff_lines": 0.17647058823529413
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 36,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.11764705882352941
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 26,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.11764705882352941
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 37,
+                "num_diff_lines": 3,
+                "rate_diff_lines": 0.17647058823529413
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 17
+        },
+        {
+          "filename": "0x7541b76cb60f4c60af330c208b0623b7f54bf615.sol",
+          "version": "0.4.25",
+          "main_contract": "U_BANK",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 31,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.07692307692307693
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 50,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.06153846153846154
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 26,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.03076923076923077
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 36,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.07692307692307693
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 44,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.07692307692307693
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 65
+        },
+        {
+          "filename": "reentrancy_simple.sol",
+          "version": "0.4.15",
+          "main_contract": "Reentrance",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 17,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.25
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": false,
+                "non-vulnerable": false,
+                "no-add-vul": false,
+                "functionality": false,
+                "exec_time_sec": 19,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.125,
+                "fail_compilable_results": "../results/gpt-5/rag/reentrancy/reentrancy_simple/reentrancy_simple_1.sol:18:9: Error: Member \"Transfer\" not found or not visible after argument-dependent lookup in address\n        msg.sender.Transfer(amount);\n        ^-----------------^\n"
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 14,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.25
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 40,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.25
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 19,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.25
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 16
+        },
+        {
+          "filename": "0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
+          "version": "0.4.19",
+          "main_contract": "ETH_FUND",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 43,
+                "num_diff_lines": 6,
+                "rate_diff_lines": 0.1016949152542373
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 44,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.06779661016949153
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 50,
+                "num_diff_lines": 6,
+                "rate_diff_lines": 0.1016949152542373
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 39,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.06779661016949153
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 47,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.06779661016949153
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 59
+        },
+        {
+          "filename": "0xb93430ce38ac4a6bb47fb1fc085ea669353fd89e.sol",
+          "version": "0.4.19",
+          "main_contract": "PrivateBank",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 37,
+                "num_diff_lines": 6,
+                "rate_diff_lines": 0.1111111111111111
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 29,
+                "num_diff_lines": 7,
+                "rate_diff_lines": 0.12962962962962962
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 30,
+                "num_diff_lines": 6,
+                "rate_diff_lines": 0.1111111111111111
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 30,
+                "num_diff_lines": 6,
+                "rate_diff_lines": 0.1111111111111111
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 39,
+                "num_diff_lines": 6,
+                "rate_diff_lines": 0.1111111111111111
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 54
+        },
+        {
+          "filename": "0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol",
+          "version": "0.4.19",
+          "main_contract": "ETH_VAULT",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 28,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.07017543859649122
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 46,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.07017543859649122
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 121,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.07017543859649122
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 83,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.07017543859649122
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 60,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.07017543859649122
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 57
+        },
+        {
+          "filename": "0xaae1f51cf3339f18b6d3f3bdc75a5facd744b0b8.sol",
+          "version": "0.4.19",
+          "main_contract": "DEP_BANK",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 33,
+                "num_diff_lines": 6,
+                "rate_diff_lines": 0.08333333333333333
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 32,
+                "num_diff_lines": 6,
+                "rate_diff_lines": 0.08333333333333333
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 30,
+                "num_diff_lines": 6,
+                "rate_diff_lines": 0.08333333333333333
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 32,
+                "num_diff_lines": 6,
+                "rate_diff_lines": 0.08333333333333333
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 9,
+                "num_diff_lines": 6,
+                "rate_diff_lines": 0.08333333333333333
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 72
+        },
+        {
+          "filename": "0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+          "version": "0.4.25",
+          "main_contract": "WALLET",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 17,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.03076923076923077
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 64,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.06153846153846154
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 60,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.03076923076923077
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 16,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.06153846153846154
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 29,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.07692307692307693
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 65
+        },
+        {
+          "filename": "0x7b368c4e805c3870b6c49a3f1f49f69af8662cf3.sol",
+          "version": "0.4.25",
+          "main_contract": "W_WALLET",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 24,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.07692307692307693
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 22,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.07692307692307693
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 22,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.03076923076923077
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 27,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.03076923076923077
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 28,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.07692307692307693
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 65
+        },
+        {
+          "filename": "0x23a91059fdc9579a9fbd0edc5f2ea0bfdb70deb4.sol",
+          "version": "0.4.19",
+          "main_contract": "PrivateBank",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 21,
+                "num_diff_lines": 6,
+                "rate_diff_lines": 0.1111111111111111
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 23,
+                "num_diff_lines": 6,
+                "rate_diff_lines": 0.1111111111111111
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 31,
+                "num_diff_lines": 6,
+                "rate_diff_lines": 0.1111111111111111
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 15,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.09259259259259259
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 23,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.07407407407407407
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 54
+        },
+        {
+          "filename": "0x7a8721a9d64c74da899424c1b52acbf58ddc9782.sol",
+          "version": "0.4.19",
+          "main_contract": "PrivateDeposit",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 20,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.0625
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 30,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.078125
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 23,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.0625
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 23,
+                "num_diff_lines": 7,
+                "rate_diff_lines": 0.109375
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 41,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.078125
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 64
+        },
+        {
+          "filename": "0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol",
+          "version": "0.4.25",
+          "main_contract": "MY_BANK",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 20,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.07692307692307693
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 30,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.07692307692307693
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 33,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.07692307692307693
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 36,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.03076923076923077
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 28,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.07692307692307693
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 65
+        },
+        {
+          "filename": "0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12.sol",
+          "version": "0.4.19",
+          "main_contract": "Private_Bank",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 22,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.08928571428571429
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 20,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.08928571428571429
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 32,
+                "num_diff_lines": 6,
+                "rate_diff_lines": 0.10714285714285714
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 22,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.07142857142857142
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 24,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.07142857142857142
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 56
+        },
+        {
+          "filename": "0x8c7777c45481dba411450c228cb692ac3d550344.sol",
+          "version": "0.4.19",
+          "main_contract": "ETH_VAULT",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 32,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.07017543859649122
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 24,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.08771929824561403
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 42,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.07017543859649122
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 21,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.07017543859649122
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 24,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.07017543859649122
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 57
+        },
+        {
+          "filename": "0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol",
+          "version": "0.4.19",
+          "main_contract": "PRIVATE_ETH_CELL",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 24,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.05555555555555555
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 22,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.05555555555555555
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 25,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.05555555555555555
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 12,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.05555555555555555
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 16,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.05555555555555555
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 72
+        }
+      ],
+      "satisfying_criteria_count": {
+        "total_contract": 23,
+        "total_patch": 115,
+        "contract": {
+          "format": 23,
+          "compilable": 23,
+          "non-vulnerable": 23,
+          "no-add-vul": 23,
+          "functionality": 23
+        },
+        "patch": {
+          "format": 115,
+          "compilable": 112,
+          "non-vulnerable": 112,
+          "no-add-vul": 112,
+          "functionality": 112
+        }
+      }
+    },
+    {
+      "vul_type": "unchecked_low_level_calls",
+      "repair_result_list": [
+        {
+          "filename": "0xbaa3de6504690efb064420d89e871c27065cdd52.sol",
+          "version": "0.4.23",
+          "main_contract": "VaultProxy",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 16,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.1724137931034483
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 20,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.1724137931034483
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 13,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.1724137931034483
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 15,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.1724137931034483
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 15,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.1724137931034483
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 29
+        },
+        {
+          "filename": "0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c.sol",
+          "version": "0.4.24",
+          "main_contract": "VaultProxy",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 10,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.1724137931034483
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 21,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.1724137931034483
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 10,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.1724137931034483
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 11,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.1724137931034483
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 20,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.1724137931034483
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 29
+        },
+        {
+          "filename": "0xd5967fed03e85d1cce44cab284695b41bc675b5c.sol",
+          "version": "0.4.24",
+          "main_contract": "demo",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 8,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.09090909090909091
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 5,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.09090909090909091
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 6,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.09090909090909091
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 5,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.09090909090909091
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 21,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.09090909090909091
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 11
+        },
+        {
+          "filename": "0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+          "version": "0.4.23",
+          "main_contract": "keepMyEther",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 15,
+                "num_diff_lines": 3,
+                "rate_diff_lines": 0.2727272727272727
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 13,
+                "num_diff_lines": 3,
+                "rate_diff_lines": 0.2727272727272727
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 12,
+                "num_diff_lines": 3,
+                "rate_diff_lines": 0.2727272727272727
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 19,
+                "num_diff_lines": 3,
+                "rate_diff_lines": 0.2727272727272727
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 13,
+                "num_diff_lines": 3,
+                "rate_diff_lines": 0.2727272727272727
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 11
+        },
+        {
+          "filename": "0x2972d548497286d18e92b5fa1f8f9139e5653fd2.sol",
+          "version": "0.4.25",
+          "main_contract": "demo",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 26,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.18181818181818182
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 15,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.18181818181818182
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 15,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.18181818181818182
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 15,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.18181818181818182
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 16,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.18181818181818182
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 11
+        },
+        {
+          "filename": "0x4b71ad9c1a84b9b643aa54fdd66e2dec96e8b152.sol",
+          "version": "0.4.24",
+          "main_contract": "airPort",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 10,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.09090909090909091
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 8,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.09090909090909091
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 5,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.09090909090909091
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 6,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.09090909090909091
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 5,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.09090909090909091
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 11
+        },
+        {
+          "filename": "0x39cfd754c85023648bf003bea2dd498c5612abfa.sol",
+          "version": "0.4.18",
+          "main_contract": "TokenBank",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 20,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.024390243902439025
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 17,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.024390243902439025
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 22,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.024390243902439025
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 19,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.024390243902439025
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 20,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.024390243902439025
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 82
+        },
+        {
+          "filename": "0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839.sol",
+          "version": "0.4.19",
+          "main_contract": "TokenBank",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 18,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.012345679012345678
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 14,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.012345679012345678
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 21,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.012345679012345678
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 17,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.012345679012345678
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 21,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.012345679012345678
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 81
+        },
+        {
+          "filename": "0x4051334adc52057aca763453820cb0e045076ef3.sol",
+          "version": "0.4.24",
+          "main_contract": "airdrop",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": false,
+                "exec_time_sec": 18,
+                "num_diff_lines": 3,
+                "rate_diff_lines": 0.2727272727272727,
+                "fail_functionality_results": "Function results:\n[{'title': 'functional check: unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3.sol', 'file': 'unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3_test.js', 'contractFile': 'unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3.sol', 'state': 'failed', 'error': 'Expected transaction NOT to be reverted', 'stack': 'AssertionError: Expected transaction NOT to be reverted\\n    at Context.<anonymous> (test/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3_test.js:34:5)'}]\n"
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 12,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.09090909090909091
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": false,
+                "exec_time_sec": 17,
+                "num_diff_lines": 3,
+                "rate_diff_lines": 0.2727272727272727,
+                "fail_functionality_results": "Function results:\n[{'title': 'functional check: unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3.sol', 'file': 'unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3_test.js', 'contractFile': 'unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3.sol', 'state': 'failed', 'error': 'Expected transaction NOT to be reverted', 'stack': 'AssertionError: Expected transaction NOT to be reverted\\n    at Context.<anonymous> (test/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3_test.js:34:5)'}]\n"
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 15,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.09090909090909091
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 17,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.09090909090909091
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 11
+        },
+        {
+          "filename": "0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+          "version": "0.4.18",
+          "main_contract": "EBU",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 9,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.18181818181818182
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 9,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.18181818181818182
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 11,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.18181818181818182
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 7,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.18181818181818182
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 10,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.18181818181818182
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 11
+        },
+        {
+          "filename": "0xb11b2fed6c9354f7aa2f658d3b4d7b31d8a13b77.sol",
+          "version": "0.4.24",
+          "main_contract": "DepositProxy",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 12,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.1724137931034483
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 11,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.1724137931034483
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 10,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.1724137931034483
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 7,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.1724137931034483
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 16,
+                "num_diff_lines": 5,
+                "rate_diff_lines": 0.1724137931034483
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 29
+        },
+        {
+          "filename": "0x8fd1e427396ddb511533cf9abdbebd0a7e08da35.sol",
+          "version": "0.4.18",
+          "main_contract": "TokenBank",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 14,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.024096385542168676
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 22,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.024096385542168676
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 16,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.012048192771084338
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 21,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.024096385542168676
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 14,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.024096385542168676
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 83
+        },
+        {
+          "filename": "0x3a0e9acd953ffc0dd18d63603488846a6b8b2b01.sol",
+          "version": "0.4.18",
+          "main_contract": "TokenBank",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 22,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.024096385542168676
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 43,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.024096385542168676
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 24,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.024096385542168676
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 26,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.024096385542168676
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 18,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.024096385542168676
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 83
+        },
+        {
+          "filename": "0xe894d54dca59cb53fe9cbc5155093605c7068220.sol",
+          "version": "0.4.24",
+          "main_contract": "airDrop",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 9,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.08333333333333333
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 6,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.08333333333333333
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 23,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.08333333333333333
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 17,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.08333333333333333
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 8,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.08333333333333333
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 12
+        },
+        {
+          "filename": "0xa1fceeff3acc57d257b917e30c4df661401d6431.sol",
+          "version": "0.4.18",
+          "main_contract": "AirDropContract",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 9,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.043478260869565216
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 14,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.043478260869565216
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 12,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.043478260869565216
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 10,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.043478260869565216
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 15,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.043478260869565216
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 23
+        }
+      ],
+      "satisfying_criteria_count": {
+        "total_contract": 15,
+        "total_patch": 75,
+        "contract": {
+          "format": 15,
+          "compilable": 15,
+          "non-vulnerable": 15,
+          "no-add-vul": 15,
+          "functionality": 15
+        },
+        "patch": {
+          "format": 75,
+          "compilable": 75,
+          "non-vulnerable": 75,
+          "no-add-vul": 75,
+          "functionality": 73
+        }
+      }
+    },
+    {
+      "vul_type": "other",
+      "repair_result_list": [
+        {
+          "filename": "name_registrar.sol",
+          "version": "0.4.15",
+          "main_contract": "NameRegistrar",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": false,
+                "functionality": false,
+                "exec_time_sec": 28,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.1111111111111111,
+                "fail_no-add-vul_results": "More vul in the patch than the original."
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": false,
+                "functionality": false,
+                "exec_time_sec": 44,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.1111111111111111,
+                "fail_no-add-vul_results": "More vul in the patch than the original."
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 32,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.1111111111111111
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 22,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.1111111111111111
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": false,
+                "functionality": false,
+                "exec_time_sec": 15,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.1111111111111111,
+                "fail_no-add-vul_results": "More vul in the patch than the original."
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 18
+        },
+        {
+          "filename": "crypto_roulette.sol",
+          "version": "0.4.19",
+          "main_contract": "CryptoRoulette",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 51,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.05405405405405406
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": false,
+                "functionality": false,
+                "exec_time_sec": 41,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.02702702702702703,
+                "fail_no-add-vul_results": "More vul in the patch than the original."
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 29,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.02702702702702703
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": false,
+                "functionality": false,
+                "exec_time_sec": 26,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.02702702702702703,
+                "fail_no-add-vul_results": "More vul in the patch than the original."
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": false,
+                "functionality": false,
+                "exec_time_sec": 23,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.02702702702702703,
+                "fail_no-add-vul_results": "More vul in the patch than the original."
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 37
+        }
+      ],
+      "satisfying_criteria_count": {
+        "total_contract": 2,
+        "total_patch": 10,
+        "contract": {
+          "format": 2,
+          "compilable": 2,
+          "non-vulnerable": 2,
+          "no-add-vul": 2,
+          "functionality": 2
+        },
+        "patch": {
+          "format": 10,
+          "compilable": 10,
+          "non-vulnerable": 10,
+          "no-add-vul": 4,
+          "functionality": 4
+        }
+      }
+    },
+    {
+      "vul_type": "access_control",
+      "repair_result_list": [
+        {
+          "filename": "proxy.sol",
+          "version": "0.4.24",
+          "main_contract": "Proxy",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": false,
+                "functionality": false,
+                "exec_time_sec": 26,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.4,
+                "fail_no-add-vul_results": "More vul in the patch than the original."
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": false,
+                "functionality": false,
+                "exec_time_sec": 19,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.4,
+                "fail_no-add-vul_results": "More vul in the patch than the original."
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 24,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.2
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 12,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.1
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": false,
+                "functionality": false,
+                "exec_time_sec": 12,
+                "num_diff_lines": 4,
+                "rate_diff_lines": 0.4,
+                "fail_no-add-vul_results": "More vul in the patch than the original."
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 10
+        },
+        {
+          "filename": "phishable.sol",
+          "version": "0.4.22",
+          "main_contract": "Phishable",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 9,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.16666666666666666
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 7,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.16666666666666666
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 8,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.16666666666666666
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 12,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.16666666666666666
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 12,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.08333333333333333
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 12
+        },
+        {
+          "filename": "mycontract.sol",
+          "version": "0.4.24",
+          "main_contract": "MyContract",
+          "results": {
+            "patch_results": [
+              {
+                "output_count": 0,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 21,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.09090909090909091
+              },
+              {
+                "output_count": 1,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 14,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.18181818181818182
+              },
+              {
+                "output_count": 2,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 16,
+                "num_diff_lines": 1,
+                "rate_diff_lines": 0.09090909090909091
+              },
+              {
+                "output_count": 3,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 8,
+                "num_diff_lines": 2,
+                "rate_diff_lines": 0.18181818181818182
+              },
+              {
+                "output_count": 4,
+                "format": true,
+                "compilable": true,
+                "non-vulnerable": true,
+                "no-add-vul": true,
+                "functionality": true,
+                "exec_time_sec": 11,
+                "num_diff_lines": 3,
+                "rate_diff_lines": 0.2727272727272727
+              }
+            ],
+            "contract_results": {
+              "format": true,
+              "compilable": true,
+              "non-vulnerable": true,
+              "no-add-vul": true,
+              "functionality": true
+            }
+          },
+          "num_no_comment_lines": 11
+        }
+      ],
+      "satisfying_criteria_count": {
+        "total_contract": 3,
+        "total_patch": 15,
+        "contract": {
+          "format": 3,
+          "compilable": 3,
+          "non-vulnerable": 3,
+          "no-add-vul": 3,
+          "functionality": 3
+        },
+        "patch": {
+          "format": 15,
+          "compilable": 15,
+          "non-vulnerable": 15,
+          "no-add-vul": 12,
+          "functionality": 12
+        }
+      }
+    }
+  ],
+  "satisfying_criteria_count": {
+    "total_contract": 43,
+    "total_patch": 215,
+    "contract": {
+      "format": 43,
+      "compilable": 43,
+      "non-vulnerable": 43,
+      "no-add-vul": 43,
+      "functionality": 43
+    },
+    "patch": {
+      "format": 215,
+      "compilable": 212,
+      "non-vulnerable": 212,
+      "no-add-vul": 203,
+      "functionality": 201
+    }
+  }
+}

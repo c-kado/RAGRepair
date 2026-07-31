@@ -1,3 +1,4 @@
+from difflib import SequenceMatcher
 import json
 import sys
 import argparse
@@ -98,6 +99,12 @@ def verify_results(vul, contract, fileinfo, output_count, model_id, do_rag):
     results = {'output_count': output_count}
     results.update({verify_type: False for verify_type, _, _ in verify_funcs})
 
+    # 実行時間
+    # 元コントラクトとの差分の行数
+    # 元コントラクトとの差分の行数/元コントラクトの行数？
+    results.update({'exec_time_sec':get_exec_time(f'{output_file_dir}/repair_info_{output_count}.json')})
+    results.update(get_diff_info(output_file, f'../dataset/mitigate_patches/{vul}/{contract}/{contract}.sol'))
+
     for verify_type, func, args in verify_funcs:
         verif_success, error_message = func(*args)
         if verif_success:
@@ -106,8 +113,42 @@ def verify_results(vul, contract, fileinfo, output_count, model_id, do_rag):
             results[f'fail_{verify_type}_results'] = error_message
             return results
 
+
+
     return results
 
+
+def get_exec_time(info_file):
+    with open(info_file, 'r') as f:
+        repair_info = json.load(f)
+
+    h, m, s = map(int, repair_info['exec_time'].split(":"))
+    return h * 3600 + m * 60 + s
+
+def get_diff_info(patch_file, vul_file):
+    with open(vul_file, 'r') as f:
+        code = remove_comment(f.read())
+
+    # 空白(インデントやスペース）をなくす
+    code = [re.sub(r"\s+", "", line) for line in code.splitlines()]
+    # 空行を削除
+    code = [line for line in code if line]
+
+    with open(patch_file, 'r') as f:
+        patch = remove_comment(f.read())
+        patch = [re.sub(r"\s+", "", line) for line in patch.splitlines()]
+        patch = [line for line in patch if line]
+
+    # no_com_oricodeとno_com_patchの行の差分の数を取得
+    matcher = SequenceMatcher(None, code, patch) 
+    count = sum(
+        tag != "equal"
+        for tag, *_ in matcher.get_opcodes()
+    )
+    
+    return {'num_diff_lines': count, 'rate_diff_lines': count/len(code)}
+
+    
 
 def verify_format():
 #def verify_format(vul, fileinfo, output_file):
@@ -196,6 +237,15 @@ def verify_functionality(vul, repair_results_dir, repair_solfile, fileinfo):
             return False, f'Function results:\n{tx_results["failedFunctionalCheckResults"]}\n'
         else:
             return True, ''
+
+
+def remove_comment(code):
+    code = re.sub(r'/\*.*?\*/','\n', code, flags=re.DOTALL)
+    code = re.sub(r'//.*', '', code) 
+    code = re.sub(r'\n\s*\n+', '\n\n', code)
+
+    return code
+
 
 
 def runTx(contract_file, base_contract, main_contractname, output_dir):

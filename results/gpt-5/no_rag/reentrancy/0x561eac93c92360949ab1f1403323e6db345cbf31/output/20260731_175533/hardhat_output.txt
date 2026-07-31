@@ -1,0 +1,33 @@
+
+
+
+
+  Reentrancy Attack for 0x561eac93c92360949ab1f1403323e6db345cbf31.sol
+    ✔ functional check: reentrancy/0x561eac93c92360949ab1f1403323e6db345cbf31.sol
+    1) should successfully drain funds through reentrancy attack
+
+
+  1 passing (346ms)
+  1 failing
+
+  1) Reentrancy Attack for 0x561eac93c92360949ab1f1403323e6db345cbf31.sol
+       should successfully drain funds through reentrancy attack:
+     Error: Transaction reverted without a reason string
+    at <UnrecognizedContract>.<unknown> (0x5fc8d32690cc91d4c39d9d3abcbd16989f875707)
+    at <UnrecognizedContract>.<unknown> (0xa513e6e4b8f2a923d98304ec87f64353c4d5c853)
+    at <UnrecognizedContract>.<unknown> (0x5fc8d32690cc91d4c39d9d3abcbd16989f875707)
+    at <UnrecognizedContract>.<unknown> (0xa513e6e4b8f2a923d98304ec87f64353c4d5c853)
+    at EdrProviderWrapper.request (node_modules/hardhat/src/internal/hardhat-network/provider/provider.ts:446:41)
+    at HardhatEthersSigner.sendTransaction (node_modules/@nomicfoundation/hardhat-ethers/src/signers.ts:125:18)
+    at send (node_modules/ethers/src.ts/contract/contract.ts:313:20)
+    at Proxy.attack (node_modules/ethers/src.ts/contract/contract.ts:352:16)
+    at Context.<anonymous> (test/reentrancy/0x561eac93c92360949ab1f1403323e6db345cbf31_test.js:76:5)
+  
+
+
+
+Total passing test files: 0/1
+Total failed files: 1/1
+Total failed functional tests: 0/1
+
+Test results written to /Users/chihiro/workspace/APR_LLM_Obfuscation/RAGrepair/tools/sb-heists/smartbugs-curated/0.4.x/scripts/test-results.json
